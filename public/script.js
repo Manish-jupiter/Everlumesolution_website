@@ -1467,17 +1467,16 @@ $(function () {
   requestScrollUpdate();
 });
 
-
 window.history.scrollRestoration = 'manual';
     window.scrollTo(0, 0);
-
+ 
     // ─── Hero Carousel ──────────────────────────────────────
     (function() {
       const slides = document.querySelectorAll('.hc-hero__slide');
       const dots = document.querySelectorAll('.hc-hero__dot');
       let current = 0;
       let timer;
-
+ 
       function goTo(idx) {
         slides[current].classList.remove('is-active');
         dots[current].classList.remove('is-active');
@@ -1485,15 +1484,15 @@ window.history.scrollRestoration = 'manual';
         slides[current].classList.add('is-active');
         dots[current].classList.add('is-active');
       }
-
+ 
       function next() {
         goTo((current + 1) % slides.length);
       }
-
+ 
       function startAuto() {
         timer = setInterval(next, 5000);
       }
-
+ 
       dots.forEach(function(dot) {
         dot.addEventListener('click', function() {
           clearInterval(timer);
@@ -1501,10 +1500,10 @@ window.history.scrollRestoration = 'manual';
           startAuto();
         });
       });
-
+ 
       startAuto();
     })();
-
+ 
     // ─── Floating Particles ─────────────────────────────────
     (function() {
       var container = document.getElementById('hero-particles');
@@ -1519,7 +1518,7 @@ window.history.scrollRestoration = 'manual';
         container.appendChild(p);
       }
     })();
-
+ 
     // ─── Scroll Reveal (all directions) ─────────────────────
     (function() {
       var selectors = '[data-reveal],[data-reveal-left],[data-reveal-right],[data-reveal-scale]';
@@ -1535,13 +1534,13 @@ window.history.scrollRestoration = 'manual';
           }
         });
       }, { threshold: 0.12 });
-
+ 
       els.forEach(function(el, i) {
         if (!el.dataset.revealDelay) el.dataset.revealDelay = i % 5;
         observer.observe(el);
       });
     })();
-
+ 
     // ─── Counter Animation ──────────────────────────────────
     (function() {
       var counters = document.querySelectorAll('.hc-counter[data-target]');
@@ -1568,7 +1567,7 @@ window.history.scrollRestoration = 'manual';
       }, { threshold: 0.5 });
       if (counters.length) observer.observe(counters[0].closest('.hc-stats-strip'));
     })();
-
+ 
     // ─── Card Mouse Glow Tracking ───────────────────────────
     (function() {
       var cards = document.querySelectorAll('.hc-card');
