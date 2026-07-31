@@ -1475,6 +1475,7 @@ window.history.scrollRestoration = 'manual';
     (function() {
       const slides = document.querySelectorAll('.hc-hero__slide');
       const dots = document.querySelectorAll('.hc-hero__dot');
+      if (!slides.length || !dots.length) return;
       let current = 0;
       let timer;
 
