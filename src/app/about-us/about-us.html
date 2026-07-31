@@ -1,0 +1,172 @@
+<!-- ─── ABOUT US ────────────────────────────────────────── -->
+<article class="about">
+
+  <!-- 1. VIDEO HERO -->
+  <section class="about-hero" aria-label="About Everlume">
+    <div class="about-hero__bg" aria-hidden="true">
+      <video class="about-hero__video" autoplay muted loop playsinline preload="auto">
+        <source src="VIdeos/Evelume_video.mp4" type="video/mp4" />
+      </video>
+      <div class="about-hero__overlay"></div>
+      <div class="about-hero__grid"></div>
+    </div>
+
+    <div class="about-hero__inner">
+      <span class="about-hero__eyebrow">
+        <span class="about-hero__pulse"></span>
+        <span>Who We Are</span>
+      </span>
+      <h1 class="about-hero__title">
+        Illuminating the path to<br />
+        <span class="about-hero__title-gradient">digital transformation</span>
+      </h1>
+      <p class="about-hero__lede">
+        We help enterprises turn complex operations into smarter, faster, and
+        more scalable digital outcomes — where strategy, engineering,
+        automation, and intelligence converge.
+      </p>
+     
+    </div>
+
+   
+  </section>
+
+  <!-- 2. INTRO / STORY -->
+  <section id="about-intro" class="about-intro">
+    <div class="about-intro__container">
+      <div class="about-intro__head">
+        <span class="about-intro__eyebrow">Our Story</span>
+        <h2 class="about-intro__title">
+          Built for <span class="about-intro__title-accent">ambitious</span> enterprises
+        </h2>
+        <p class="about-intro__sub">
+          Our work sits at the intersection of strategy, engineering, automation,
+          and intelligence — helping organizations modernize the way they serve
+          customers, run operations, and grow with confidence.
+        </p>
+      </div>
+
+      <div class="about-intro__cards">
+        <div class="about-intro__card">
+          <div class="about-intro__icon">
+            <i class="ph ph-target" aria-hidden="true"></i>
+          </div>
+          <h3>More than technology</h3>
+          <p>
+            Whether the goal is to improve customer experience, reduce manual
+            effort, strengthen governance, or unlock new efficiencies, we design
+            services that connect technology to measurable business value.
+          </p>
+        </div>
+        <div class="about-intro__card">
+          <div class="about-intro__icon">
+            <i class="ph ph-rocket-launch" aria-hidden="true"></i>
+          </div>
+          <h3>Ambitious &amp; usable</h3>
+          <p>
+            Transformation should be both bold and practical. We create systems
+            that are modern, reliable, and secure — solutions that teams can
+            actually adopt, manage, and improve over time.
+          </p>
+        </div>
+        <div class="about-intro__card">
+          <div class="about-intro__icon">
+            <i class="ph ph-graph" aria-hidden="true"></i>
+          </div>
+          <h3>Outcome-led</h3>
+          <p>
+            Our approach is practical and tailored to the realities of each
+            industry we serve. Every engagement is grounded in the outcomes that
+            matter most to your business.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. VERTICAL TABS -->
+  <section class="about-tabs" aria-label="Our approach">
+    <div class="about-tabs__container">
+      <div class="about-tabs__head">
+        <span class="about-tabs__eyebrow">Explore</span>
+        <h2 class="about-tabs__title">
+          The <span class="about-tabs__title-accent">Everlume</span> way
+        </h2>
+      </div>
+
+      <div class="about-tabs__layout">
+        <!-- Left rail -->
+        <nav class="about-tabs__rail" role="tablist" aria-orientation="vertical">
+          @for (tab of tabs; track tab.id; let i = $index) {
+            <button
+              type="button"
+              role="tab"
+              class="about-tab"
+              [class.is-active]="activeIndex() === i"
+              [attr.aria-selected]="activeIndex() === i"
+              [attr.aria-controls]="'about-panel-' + tab.id"
+              [id]="'about-tab-' + tab.id"
+              (click)="setTab(i)"
+            >
+              <span class="about-tab__num">{{ (i + 1).toString().padStart(2, '0') }}</span>
+              <span class="about-tab__icon">
+                <i class="ph {{ tab.icon }}" aria-hidden="true"></i>
+              </span>
+              <span class="about-tab__label">{{ tab.label }}</span>
+              <span class="about-tab__chev" aria-hidden="true">
+                <i class="ph ph-caret-right"></i>
+              </span>
+            </button>
+          }
+        </nav>
+
+        <!-- Right panel -->
+        <div class="about-tabs__panels">
+          @for (tab of tabs; track tab.id; let i = $index) {
+            <article
+              class="about-panel"
+              role="tabpanel"
+              [id]="'about-panel-' + tab.id"
+              [attr.aria-labelledby]="'about-tab-' + tab.id"
+              [class.is-active]="activeIndex() === i"
+              [hidden]="activeIndex() !== i"
+            >
+              <div class="about-panel__head">
+                <span class="about-panel__num">{{ (i + 1).toString().padStart(2, '0') }}</span>
+                <div class="about-panel__title-wrap">
+                  <div class="about-panel__icon">
+                    <i class="ph {{ tab.icon }}" aria-hidden="true"></i>
+                  </div>
+                  <h3 class="about-panel__title">{{ tab.label }}</h3>
+                </div>
+              </div>
+              <div class="about-panel__body">
+                @for (para of tab.paragraphs; track $index) {
+                  <p>{{ para }}</p>
+                }
+              </div>
+            </article>
+          }
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. CTA STRIP -->
+  <section class="about-cta">
+    <div class="about-cta__container">
+      <div class="about-cta__glow" aria-hidden="true"></div>
+      <h2 class="about-cta__title">
+        Ready to <span class="about-cta__accent">illuminate</span> your next move?
+      </h2>
+      <p class="about-cta__sub">
+        Let's turn complexity into clarity — with services that combine
+        engineering excellence and operational intelligence.
+      </p>
+      <a routerLink="/contact-us" class="about-cta__btn">
+        <span>Talk to an expert</span>
+        <i class="ph ph-arrow-right" aria-hidden="true"></i>
+      </a>
+    </div>
+  </section>
+</article>
