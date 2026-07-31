@@ -1466,3 +1466,116 @@ $(function () {
   updateIndicators(0);
   requestScrollUpdate();
 });
+
+window.history.scrollRestoration = 'manual';
+    window.scrollTo(0, 0);
+ 
+    // ─── Hero Carousel ──────────────────────────────────────
+    (function() {
+      const slides = document.querySelectorAll('.hc-hero__slide');
+      const dots = document.querySelectorAll('.hc-hero__dot');
+      let current = 0;
+      let timer;
+ 
+      function goTo(idx) {
+        slides[current].classList.remove('is-active');
+        dots[current].classList.remove('is-active');
+        current = idx;
+        slides[current].classList.add('is-active');
+        dots[current].classList.add('is-active');
+      }
+ 
+      function next() {
+        goTo((current + 1) % slides.length);
+      }
+ 
+      function startAuto() {
+        timer = setInterval(next, 5000);
+      }
+ 
+      dots.forEach(function(dot) {
+        dot.addEventListener('click', function() {
+          clearInterval(timer);
+          goTo(Number(dot.dataset.slide));
+          startAuto();
+        });
+      });
+ 
+      startAuto();
+    })();
+ 
+    // ─── Floating Particles ─────────────────────────────────
+    (function() {
+      var container = document.getElementById('hero-particles');
+      if (!container) return;
+      for (var i = 0; i < 20; i++) {
+        var p = document.createElement('span');
+        p.className = 'hc-hero__particle';
+        p.style.left = Math.random() * 100 + '%';
+        p.style.animationDuration = (6 + Math.random() * 8) + 's';
+        p.style.animationDelay = (Math.random() * 6) + 's';
+        p.style.width = p.style.height = (2 + Math.random() * 4) + 'px';
+        container.appendChild(p);
+      }
+    })();
+ 
+    // ─── Scroll Reveal (all directions) ─────────────────────
+    (function() {
+      var selectors = '[data-reveal],[data-reveal-left],[data-reveal-right],[data-reveal-scale]';
+      var els = document.querySelectorAll(selectors);
+      var observer = new IntersectionObserver(function(entries) {
+        entries.forEach(function(entry) {
+          if (entry.isIntersecting) {
+            var delay = entry.target.dataset.revealDelay || 0;
+            setTimeout(function() {
+              entry.target.classList.add('is-visible');
+            }, delay * 150);
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.12 });
+ 
+      els.forEach(function(el, i) {
+        if (!el.dataset.revealDelay) el.dataset.revealDelay = i % 5;
+        observer.observe(el);
+      });
+    })();
+ 
+    // ─── Counter Animation ──────────────────────────────────
+    (function() {
+      var counters = document.querySelectorAll('.hc-counter[data-target]');
+      var observed = false;
+      var observer = new IntersectionObserver(function(entries) {
+        entries.forEach(function(entry) {
+          if (entry.isIntersecting && !observed) {
+            observed = true;
+            counters.forEach(function(el) {
+              var target = parseInt(el.dataset.target);
+              var duration = 1800;
+              var start = performance.now();
+              function tick(now) {
+                var elapsed = now - start;
+                var progress = Math.min(elapsed / duration, 1);
+                var ease = 1 - Math.pow(1 - progress, 3);
+                el.textContent = Math.round(target * ease);
+                if (progress < 1) requestAnimationFrame(tick);
+              }
+              requestAnimationFrame(tick);
+            });
+          }
+        });
+      }, { threshold: 0.5 });
+      if (counters.length) observer.observe(counters[0].closest('.hc-stats-strip'));
+    })();
+ 
+    // ─── Card Mouse Glow Tracking ───────────────────────────
+    (function() {
+      var cards = document.querySelectorAll('.hc-card');
+      cards.forEach(function(card) {
+        card.addEventListener('mousemove', function(e) {
+          var rect = card.getBoundingClientRect();
+          card.style.setProperty('--mouse-x', ((e.clientX - rect.left) / rect.width * 100) + '%');
+          card.style.setProperty('--mouse-y', ((e.clientY - rect.top) / rect.height * 100) + '%');
+        });
+      });
+    })();
