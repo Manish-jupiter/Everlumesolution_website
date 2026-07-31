@@ -78,65 +78,47 @@ import { RouterLink } from '@angular/router';
         </div>
         <div class="hl-capabilities__grid">
           <div class="hl-cap-card" data-reveal>
-            <div class="hl-cap-card__icon">
-              <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
-            </div>
+            <div class="hl-cap-card__icon"><i class="ph ph-warning-circle"></i></div>
             <h3>Intelligent Escalation</h3>
             <p>Automatically pause clinically sensitive, financially significant, or compliance-critical actions for human review and approval.</p>
           </div>
           <div class="hl-cap-card" data-reveal>
-            <div class="hl-cap-card__icon">
-              <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
-            </div>
+            <div class="hl-cap-card__icon"><i class="ph ph-users-three"></i></div>
             <h3>Smart Routing</h3>
             <p>Route high-risk, low-confidence, or exception-based cases to the appropriate clinician, coder, administrator, or operational reviewer.</p>
           </div>
           <div class="hl-cap-card" data-reveal>
-            <div class="hl-cap-card__icon">
-              <svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
-            </div>
+            <div class="hl-cap-card__icon"><i class="ph ph-file-text"></i></div>
             <h3>Context Presentation</h3>
             <p>Present comprehensive context, AI recommendations, confidence scores, supporting clinical evidence, and decision rationale to facilitate informed human judgement.</p>
           </div>
           <div class="hl-cap-card" data-reveal>
-            <div class="hl-cap-card__icon">
-              <svg viewBox="0 0 24 24"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
-            </div>
+            <div class="hl-cap-card__icon"><i class="ph ph-check-square"></i></div>
             <h3>Decision Capture</h3>
             <p>Capture approval, rejection, modification, and feedback decisions to ensure transparent and accountable workflow execution.</p>
           </div>
           <div class="hl-cap-card" data-reveal>
-            <div class="hl-cap-card__icon">
-              <svg viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
-            </div>
+            <div class="hl-cap-card__icon"><i class="ph ph-lock-simple"></i></div>
             <h3>Access Controls</h3>
             <p>Enforce configurable role-based access controls, approval hierarchies, segregation of duties, and escalation policies.</p>
           </div>
           <div class="hl-cap-card" data-reveal>
-            <div class="hl-cap-card__icon">
-              <svg viewBox="0 0 24 24"><path d="M12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
-            </div>
+            <div class="hl-cap-card__icon"><i class="ph ph-gear-six"></i></div>
             <h3>Configurable Thresholds</h3>
             <p>Support configurable confidence thresholds and risk-based governance rules to determine when AI can operate autonomously and when human intervention is required.</p>
           </div>
           <div class="hl-cap-card" data-reveal>
-            <div class="hl-cap-card__icon">
-              <svg viewBox="0 0 24 24"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
-            </div>
+            <div class="hl-cap-card__icon"><i class="ph ph-pulse"></i></div>
             <h3>Audit Trails</h3>
             <p>Maintain comprehensive audit trails, workflow history, AI decision logs, and reviewer actions to support regulatory compliance, operational transparency, and continuous quality improvement.</p>
           </div>
           <div class="hl-cap-card" data-reveal>
-            <div class="hl-cap-card__icon">
-              <svg viewBox="0 0 24 24"><path d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
-            </div>
+            <div class="hl-cap-card__icon"><i class="ph ph-lightning"></i></div>
             <h3>Bounded Autonomy</h3>
             <p>Enable bounded autonomy, allowing AI agents to operate independently within clearly defined governance policies while preserving human authority over critical decisions.</p>
           </div>
           <div class="hl-cap-card" data-reveal>
-            <div class="hl-cap-card__icon">
-              <svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
-            </div>
+            <div class="hl-cap-card__icon"><i class="ph ph-monitor"></i></div>
             <h3>Seamless Integration</h3>
             <p>Integrate seamlessly across clinical, administrative, operational, and revenue cycle workflows to provide consistent governance throughout the healthcare enterprise.</p>
           </div>
@@ -200,9 +182,7 @@ import { RouterLink } from '@angular/router';
     <!-- ─── GOVERNANCE ─────────────────────────────────────── -->
     <section class="hl-governance">
       <div class="hl-governance__inner" data-reveal>
-        <div class="hl-governance__icon-wrap">
-          <svg viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
-        </div>
+        <div class="hl-governance__icon-wrap"><i class="ph ph-lock-simple"></i></div>
         <h2 class="hl-section-heading">Governance and <em>Control</em></h2>
         <p>Our Human-in-the-Loop framework is designed around the principles of responsible AI, transparency, and enterprise governance. Configurable role-based approvals, risk-based decision thresholds, comprehensive audit trails, explainable AI recommendations, and continuous workflow monitoring ensure that every automated action is transparent, traceable, and aligned with organisational policies and regulatory requirements. Robust exception management and escalation workflows provide clinicians and operational leaders with complete visibility and control over AI-assisted decisions, ensuring that automation operates within clearly defined governance boundaries.</p>
         <p>This governance-first approach enables healthcare organisations to scale Agentic AI with confidence while preserving clinical judgement, patient safety, ethical decision-making, and regulatory compliance.</p>
@@ -307,9 +287,8 @@ import { RouterLink } from '@angular/router';
     .hl-cap-card:hover { transform: translateY(-8px); box-shadow: 0 20px 50px rgba(27,58,143,0.12); border-color: rgba(27,58,143,0.15); }
     .hl-cap-card__icon { width: 50px; height: 50px; background: linear-gradient(135deg, rgba(27,58,143,0.08), rgba(232,119,34,0.06)); border-radius: 14px; display: flex; align-items: center; justify-content: center; transition: background 0.3s, transform 0.3s; box-shadow: 0 2px 8px rgba(27,58,143,0.08); }
     .hl-cap-card:hover .hl-cap-card__icon { background: linear-gradient(135deg, var(--teal), var(--teal-dark)); transform: scale(1.1) rotate(-3deg); }
-    .hl-cap-card__icon svg { width: 22px; height: 22px; }
-    .hl-cap-card__icon svg path, .hl-cap-card__icon svg circle, .hl-cap-card__icon svg polyline, .hl-cap-card__icon svg line, .hl-cap-card__icon svg rect { stroke: var(--teal); fill: none; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; transition: stroke 0.3s; }
-    .hl-cap-card:hover .hl-cap-card__icon svg path, .hl-cap-card:hover .hl-cap-card__icon svg circle, .hl-cap-card:hover .hl-cap-card__icon svg polyline, .hl-cap-card:hover .hl-cap-card__icon svg line, .hl-cap-card:hover .hl-cap-card__icon svg rect { stroke: #fff; }
+    .hl-cap-card__icon i.ph { font-size: 1.4rem; color: var(--teal); transition: color 0.3s; line-height: 1; }
+    .hl-cap-card:hover .hl-cap-card__icon i.ph { color: #fff; }
     .hl-cap-card h3 { font-size: 1rem; font-weight: 700; color: var(--dark); margin: 0; }
     .hl-cap-card p { font-size: 0.88rem; color: var(--mid); line-height: 1.6; margin: 0; }
     @media (max-width: 768px) { .hl-capabilities { padding: 3.5rem 1.2rem; } .hl-capabilities__grid { grid-template-columns: 1fr; } }
@@ -339,8 +318,7 @@ import { RouterLink } from '@angular/router';
     .hl-governance__inner { max-width: 900px; margin: 0 auto; background: #fff; border-radius: 24px; padding: 3rem 3.5rem; box-shadow: 0 10px 40px rgba(27,58,143,0.08); border: 1px solid rgba(27,58,143,0.06); position: relative; overflow: hidden; text-align: center; }
     .hl-governance__inner::before { content: ""; position: absolute; top: 0; left: 0; width: 100%; height: 4px; background: linear-gradient(90deg, var(--blue), var(--orange)); }
     .hl-governance__icon-wrap { width: 60px; height: 60px; margin: 0 auto 1.5rem; background: linear-gradient(135deg, rgba(27,58,143,0.08), rgba(232,119,34,0.06)); border-radius: 16px; display: flex; align-items: center; justify-content: center; }
-    .hl-governance__icon-wrap svg { width: 28px; height: 28px; }
-    .hl-governance__icon-wrap svg path, .hl-governance__icon-wrap svg rect { stroke: var(--teal); fill: none; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+    .hl-governance__icon-wrap i.ph { font-size: 1.6rem; color: var(--teal); line-height: 1; }
     .hl-governance p { font-size: 1rem; color: #444; line-height: 1.85; margin-bottom: 1.2rem; text-align: left; }
     .hl-governance p:last-child { margin-bottom: 0; }
     @media (max-width: 768px) { .hl-governance { padding: 3rem 1.2rem; } .hl-governance__inner { padding: 2rem 1.5rem; } }

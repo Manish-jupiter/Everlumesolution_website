@@ -78,65 +78,47 @@ import { RouterLink } from '@angular/router';
         </div>
         <div class="co-capabilities__grid">
           <div class="co-cap-card" data-reveal>
-            <div class="co-cap-card__icon">
-              <svg viewBox="0 0 24 24"><polyline points="16 3 21 3 21 8"/><line x1="4" y1="20" x2="21" y2="3"/><polyline points="21 16 21 21 16 21"/><line x1="15" y1="15" x2="21" y2="21"/><line x1="4" y1="4" x2="9" y2="9"/></svg>
-            </div>
+            <div class="co-cap-card__icon"><i class="ph ph-arrows-left-right"></i></div>
             <h3>End-to-end Orchestration</h3>
             <p>Orchestrate end-to-end workflows across clinical, administrative, financial, and operational functions.</p>
           </div>
           <div class="co-cap-card" data-reveal>
-            <div class="co-cap-card__icon">
-              <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
-            </div>
+            <div class="co-cap-card__icon"><i class="ph ph-users-three"></i></div>
             <h3>Task Coordination</h3>
             <p>Coordinate tasks and handoffs between clinicians, care managers, administrative teams, and AI agents.</p>
           </div>
           <div class="co-cap-card" data-reveal>
-            <div class="co-cap-card__icon">
-              <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
-            </div>
+            <div class="co-cap-card__icon"><i class="ph ph-gear-six"></i></div>
             <h3>Dynamic Routing</h3>
             <p>Route work dynamically based on clinical priority, staff roles, workload, business rules, and workflow stage.</p>
           </div>
           <div class="co-cap-card" data-reveal>
-            <div class="co-cap-card__icon">
-              <svg viewBox="0 0 24 24"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
-            </div>
+            <div class="co-cap-card__icon"><i class="ph ph-pulse"></i></div>
             <h3>Dependency Monitoring</h3>
             <p>Monitor task dependencies and automatically initiate downstream activities as prerequisite actions are completed.</p>
           </div>
           <div class="co-cap-card" data-reveal>
-            <div class="co-cap-card__icon">
-              <svg viewBox="0 0 24 24"><path d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
-            </div>
+            <div class="co-cap-card__icon"><i class="ph ph-lightning"></i></div>
             <h3>Intelligent Triggers</h3>
             <p>Trigger intelligent reminders, notifications, escalations, and next-best actions to minimise delays and bottlenecks.</p>
           </div>
           <div class="co-cap-card" data-reveal>
-            <div class="co-cap-card__icon">
-              <svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
-            </div>
+            <div class="co-cap-card__icon"><i class="ph ph-monitor"></i></div>
             <h3>System Integration</h3>
             <p>Eliminate manual handoffs by integrating workflows across EHRs, RCM systems, scheduling platforms, CRM applications, and other enterprise systems.</p>
           </div>
           <div class="co-cap-card" data-reveal>
-            <div class="co-cap-card__icon">
-              <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
-            </div>
+            <div class="co-cap-card__icon"><i class="ph ph-calendar"></i></div>
             <h3>Care Workflow Support</h3>
             <p>Support patient scheduling, referrals, care coordination, documentation, case management, discharge planning, and revenue cycle workflows.</p>
           </div>
           <div class="co-cap-card" data-reveal>
-            <div class="co-cap-card__icon">
-              <svg viewBox="0 0 24 24"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
-            </div>
+            <div class="co-cap-card__icon"><i class="ph ph-chart-bar"></i></div>
             <h3>Real-time Visibility</h3>
             <p>Deliver real-time visibility into workflow status, operational performance, bottlenecks, service-level compliance, and process outcomes through intelligent monitoring and analytics.</p>
           </div>
           <div class="co-cap-card" data-reveal>
-            <div class="co-cap-card__icon">
-              <svg viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
-            </div>
+            <div class="co-cap-card__icon"><i class="ph ph-lock-simple"></i></div>
             <h3>Workload Optimisation</h3>
             <p>Optimise workload distribution and resource allocation to improve workforce productivity and operational efficiency. Maintain comprehensive audit trails, workflow history, AI decision logs, and governance controls to ensure transparency, compliance, and accountability.</p>
           </div>
@@ -200,9 +182,7 @@ import { RouterLink } from '@angular/router';
     <!-- ─── GOVERNANCE ─────────────────────────────────────── -->
     <section class="co-governance">
       <div class="co-governance__inner" data-reveal>
-        <div class="co-governance__icon-wrap">
-          <svg viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
-        </div>
+        <div class="co-governance__icon-wrap"><i class="ph ph-lock-simple"></i></div>
         <h2 class="co-section-heading">Governance and <em>Control</em></h2>
         <p>Our Agentic AI solutions are built on a foundation of enterprise-grade governance, transparency, and operational control. Configurable role-based routing, policy-driven workflow execution, comprehensive audit trails, and continuous process monitoring ensure that every action is traceable, compliant, and aligned with organisational policies. Human-in-the-loop oversight is embedded throughout the orchestration lifecycle, automatically escalating sensitive, high-impact, or exception-based activities for expert review and approval. This governance-first approach enables healthcare organisations to scale intelligent workflow automation with confidence while maintaining accountability, regulatory compliance, operational resilience, and trust in AI-driven decision-making.</p>
       </div>
@@ -306,9 +286,8 @@ import { RouterLink } from '@angular/router';
     .co-cap-card:hover { transform: translateY(-8px); box-shadow: 0 20px 50px rgba(27,58,143,0.12); border-color: rgba(27,58,143,0.15); }
     .co-cap-card__icon { width: 50px; height: 50px; background: linear-gradient(135deg, rgba(27,58,143,0.08), rgba(232,119,34,0.06)); border-radius: 14px; display: flex; align-items: center; justify-content: center; transition: background 0.3s, transform 0.3s; box-shadow: 0 2px 8px rgba(27,58,143,0.08); }
     .co-cap-card:hover .co-cap-card__icon { background: linear-gradient(135deg, var(--teal), var(--teal-dark)); transform: scale(1.1) rotate(-3deg); }
-    .co-cap-card__icon svg { width: 22px; height: 22px; }
-    .co-cap-card__icon svg path, .co-cap-card__icon svg circle, .co-cap-card__icon svg polyline, .co-cap-card__icon svg line, .co-cap-card__icon svg rect { stroke: var(--teal); fill: none; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; transition: stroke 0.3s; }
-    .co-cap-card:hover .co-cap-card__icon svg path, .co-cap-card:hover .co-cap-card__icon svg circle, .co-cap-card:hover .co-cap-card__icon svg polyline, .co-cap-card:hover .co-cap-card__icon svg line, .co-cap-card:hover .co-cap-card__icon svg rect { stroke: #fff; }
+    .co-cap-card__icon i.ph { font-size: 1.4rem; color: var(--teal); transition: color 0.3s; line-height: 1; }
+    .co-cap-card:hover .co-cap-card__icon i.ph { color: #fff; }
     .co-cap-card h3 { font-size: 1rem; font-weight: 700; color: var(--dark); margin: 0; }
     .co-cap-card p { font-size: 0.88rem; color: var(--mid); line-height: 1.6; margin: 0; }
     @media (max-width: 768px) { .co-capabilities { padding: 3.5rem 1.2rem; } .co-capabilities__grid { grid-template-columns: 1fr; } }
@@ -338,8 +317,7 @@ import { RouterLink } from '@angular/router';
     .co-governance__inner { max-width: 900px; margin: 0 auto; background: #fff; border-radius: 24px; padding: 3rem 3.5rem; box-shadow: 0 10px 40px rgba(27,58,143,0.08); border: 1px solid rgba(27,58,143,0.06); position: relative; overflow: hidden; text-align: center; }
     .co-governance__inner::before { content: ""; position: absolute; top: 0; left: 0; width: 100%; height: 4px; background: linear-gradient(90deg, var(--blue), var(--orange)); }
     .co-governance__icon-wrap { width: 60px; height: 60px; margin: 0 auto 1.5rem; background: linear-gradient(135deg, rgba(27,58,143,0.08), rgba(232,119,34,0.06)); border-radius: 16px; display: flex; align-items: center; justify-content: center; }
-    .co-governance__icon-wrap svg { width: 28px; height: 28px; }
-    .co-governance__icon-wrap svg path, .co-governance__icon-wrap svg rect { stroke: var(--teal); fill: none; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+    .co-governance__icon-wrap i.ph { font-size: 1.6rem; color: var(--teal); line-height: 1; }
     .co-governance p { font-size: 1rem; color: #444; line-height: 1.85; margin-bottom: 1.2rem; text-align: left; }
     .co-governance p:last-child { margin-bottom: 0; }
     @media (max-width: 768px) { .co-governance { padding: 3rem 1.2rem; } .co-governance__inner { padding: 2rem 1.5rem; } }

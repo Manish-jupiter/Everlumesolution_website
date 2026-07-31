@@ -82,51 +82,37 @@ import { RouterLink } from '@angular/router';
         </div>
         <div class="mf-deliver__grid">
           <div class="mf-cap-card" data-reveal>
-            <div class="mf-cap-card__icon">
-              <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
-            </div>
+            <div class="mf-cap-card__icon"><i class="ph ph-calendar"></i></div>
             <h3>Production Planning and Schedule Optimisation</h3>
             <p>Intelligently orchestrate production plans, schedules, and work orders to maximise throughput and on-time delivery across plants.</p>
           </div>
           <div class="mf-cap-card" data-reveal>
-            <div class="mf-cap-card__icon">
-              <svg viewBox="0 0 24 24"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
-            </div>
+            <div class="mf-cap-card__icon"><i class="ph ph-link"></i></div>
             <h3>Supply Chain and Inventory Coordination</h3>
             <p>Monitor and coordinate supplier performance, inbound logistics, inventory levels, and material flow across the entire supply chain.</p>
           </div>
           <div class="mf-cap-card" data-reveal>
-            <div class="mf-cap-card__icon">
-              <svg viewBox="0 0 24 24"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
-            </div>
+            <div class="mf-cap-card__icon"><i class="ph ph-pulse"></i></div>
             <h3>Predictive Maintenance Support</h3>
             <p>Continuously monitor equipment health, predict failures, and coordinate maintenance activities to reduce unplanned downtime.</p>
           </div>
           <div class="mf-cap-card" data-reveal>
-            <div class="mf-cap-card__icon">
-              <svg viewBox="0 0 24 24"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
-            </div>
+            <div class="mf-cap-card__icon"><i class="ph ph-eye"></i></div>
             <h3>Quality Inspection and Exception Handling</h3>
             <p>Automate quality checks, detect anomalies, manage defect workflows, and escalate quality exceptions for expert review.</p>
           </div>
           <div class="mf-cap-card" data-reveal>
-            <div class="mf-cap-card__icon">
-              <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
-            </div>
+            <div class="mf-cap-card__icon"><i class="ph ph-warning-circle"></i></div>
             <h3>Incident Triage and Root-Cause Assistance</h3>
             <p>Rapidly triage operational incidents, identify root causes, and coordinate cross-functional responses to minimise production disruption.</p>
           </div>
           <div class="mf-cap-card" data-reveal>
-            <div class="mf-cap-card__icon">
-              <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
-            </div>
+            <div class="mf-cap-card__icon"><i class="ph ph-users-three"></i></div>
             <h3>Human-in-the-Loop Controls for Critical Decisions</h3>
             <p>Ensure that safety-critical, high-impact, and compliance-sensitive decisions are reviewed and approved by qualified operational experts.</p>
           </div>
           <div class="mf-cap-card" data-reveal>
-            <div class="mf-cap-card__icon">
-              <svg viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
-            </div>
+            <div class="mf-cap-card__icon"><i class="ph ph-lock-simple"></i></div>
             <h3>Governance, Monitoring, and Performance Tracking</h3>
             <p>Provide complete operational visibility, performance analytics, and governance controls across all manufacturing workflows.</p>
           </div>
@@ -190,9 +176,7 @@ import { RouterLink } from '@angular/router';
     <!-- ─── GOVERNANCE ─────────────────────────────────────── -->
     <section class="mf-governance">
       <div class="mf-governance__inner" data-reveal>
-        <div class="mf-governance__icon-wrap">
-          <svg viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
-        </div>
+        <div class="mf-governance__icon-wrap"><i class="ph ph-lock-simple"></i></div>
         <h2 class="mf-section-heading">Governance and <em>Control</em></h2>
         <p>Our Agentic AI solutions are built on a governance-first architecture that ensures every automated decision is transparent, secure, and aligned with operational policies and regulatory requirements. Configurable business rules, role-based approvals, explainable AI decisioning, comprehensive audit trails, and continuous operational monitoring provide manufacturers with complete visibility and control across production, maintenance, quality, and supply chain workflows. Human-in-the-loop oversight is embedded throughout safety-critical, quality-sensitive, and high-impact operational processes, ensuring that complex decisions remain under expert supervision while routine activities are executed autonomously. This balanced approach enables manufacturers to confidently scale intelligent automation while maintaining operational safety, product quality, regulatory compliance, and business continuity.</p>
       </div>
@@ -209,9 +193,7 @@ import { RouterLink } from '@angular/router';
         <div class="mf-cs-panel" data-reveal>
           <div class="mf-cs-panel__num">01</div>
           <div class="mf-cs-panel__side">
-            <div class="mf-cs-panel__icon">
-              <svg viewBox="0 0 24 24"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
-            </div>
+            <div class="mf-cs-panel__icon"><i class="ph ph-link"></i></div>
             <div class="mf-cs-panel__badge">Manufacturing</div>
           </div>
           <div class="mf-cs-panel__content">
@@ -250,9 +232,7 @@ import { RouterLink } from '@angular/router';
         <div class="mf-cs-panel mf-cs-panel--alt" data-reveal>
           <div class="mf-cs-panel__num">02</div>
           <div class="mf-cs-panel__side">
-            <div class="mf-cs-panel__icon">
-              <svg viewBox="0 0 24 24"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
-            </div>
+            <div class="mf-cs-panel__icon"><i class="ph ph-pulse"></i></div>
             <div class="mf-cs-panel__badge">Healthcare</div>
           </div>
           <div class="mf-cs-panel__content">
@@ -405,9 +385,8 @@ import { RouterLink } from '@angular/router';
     .mf-cap-card:hover { transform: translateY(-8px); box-shadow: 0 20px 50px rgba(27,58,143,0.12); border-color: rgba(27,58,143,0.15); }
     .mf-cap-card__icon { width: 50px; height: 50px; background: linear-gradient(135deg, rgba(27,58,143,0.08), rgba(232,119,34,0.06)); border-radius: 14px; display: flex; align-items: center; justify-content: center; transition: background 0.3s, transform 0.3s; box-shadow: 0 2px 8px rgba(27,58,143,0.08); }
     .mf-cap-card:hover .mf-cap-card__icon { background: linear-gradient(135deg, var(--teal), var(--teal-dark)); transform: scale(1.1) rotate(-3deg); }
-    .mf-cap-card__icon svg { width: 22px; height: 22px; }
-    .mf-cap-card__icon svg path, .mf-cap-card__icon svg circle, .mf-cap-card__icon svg polyline, .mf-cap-card__icon svg line, .mf-cap-card__icon svg rect { stroke: var(--teal); fill: none; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; transition: stroke 0.3s; }
-    .mf-cap-card:hover .mf-cap-card__icon svg path, .mf-cap-card:hover .mf-cap-card__icon svg circle, .mf-cap-card:hover .mf-cap-card__icon svg polyline, .mf-cap-card:hover .mf-cap-card__icon svg line, .mf-cap-card:hover .mf-cap-card__icon svg rect { stroke: #fff; }
+    .mf-cap-card__icon i.ph { font-size: 1.4rem; color: var(--teal); transition: color 0.3s; line-height: 1; }
+    .mf-cap-card:hover .mf-cap-card__icon i.ph { color: #fff; }
     .mf-cap-card h3 { font-size: 1rem; font-weight: 700; color: var(--dark); margin: 0; }
     .mf-cap-card p { font-size: 0.88rem; color: var(--mid); line-height: 1.6; margin: 0; }
     @media (max-width: 768px) { .mf-deliver { padding: 3.5rem 1.2rem; } .mf-deliver__grid { grid-template-columns: 1fr; } }
@@ -437,8 +416,7 @@ import { RouterLink } from '@angular/router';
     .mf-governance__inner { max-width: 900px; margin: 0 auto; background: #fff; border-radius: 24px; padding: 3rem 3.5rem; box-shadow: 0 10px 40px rgba(27,58,143,0.08); border: 1px solid rgba(27,58,143,0.06); position: relative; overflow: hidden; text-align: center; }
     .mf-governance__inner::before { content: ""; position: absolute; top: 0; left: 0; width: 100%; height: 4px; background: linear-gradient(90deg, var(--blue), var(--orange)); }
     .mf-governance__icon-wrap { width: 60px; height: 60px; margin: 0 auto 1.5rem; background: linear-gradient(135deg, rgba(27,58,143,0.08), rgba(232,119,34,0.06)); border-radius: 16px; display: flex; align-items: center; justify-content: center; }
-    .mf-governance__icon-wrap svg { width: 28px; height: 28px; }
-    .mf-governance__icon-wrap svg path, .mf-governance__icon-wrap svg rect { stroke: var(--teal); fill: none; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+    .mf-governance__icon-wrap i.ph { font-size: 1.6rem; color: var(--teal); line-height: 1; }
     .mf-governance p { font-size: 1rem; color: #444; line-height: 1.85; margin-bottom: 1.2rem; text-align: left; }
     .mf-governance p:last-child { margin-bottom: 0; }
     @media (max-width: 768px) { .mf-governance { padding: 3rem 1.2rem; } .mf-governance__inner { padding: 2rem 1.5rem; } }
@@ -455,8 +433,7 @@ import { RouterLink } from '@angular/router';
     .mf-cs-panel__num { position: absolute; top: 1.5rem; right: 2.5rem; font-family: "DM Serif Display", serif; font-size: 5rem; font-weight: 400; color: rgba(27,58,143,0.05); line-height: 1; pointer-events: none; user-select: none; }
     .mf-cs-panel__side { display: flex; flex-direction: column; align-items: center; gap: 1.2rem; padding-top: 0.5rem; }
     .mf-cs-panel__icon { width: 72px; height: 72px; background: linear-gradient(135deg, rgba(27,58,143,0.1), rgba(232,119,34,0.08)); border-radius: 20px; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 16px rgba(27,58,143,0.12); }
-    .mf-cs-panel__icon svg { width: 30px; height: 30px; }
-    .mf-cs-panel__icon svg path, .mf-cs-panel__icon svg line { stroke: var(--teal); fill: none; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+    .mf-cs-panel__icon i.ph { font-size: 1.6rem; color: var(--teal); line-height: 1; }
     .mf-cs-panel__badge { background: linear-gradient(135deg, var(--blue), var(--teal-dark)); color: #fff; font-size: 0.7rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; padding: 0.35rem 0.9rem; border-radius: 999px; text-align: center; }
     .mf-cs-panel--alt .mf-cs-panel__badge { background: linear-gradient(135deg, var(--orange), #c96418); }
     /* ── content ── */

@@ -77,65 +77,47 @@ import { RouterLink } from '@angular/router';
         </div>
         <div class="cd-capabilities__grid">
           <div class="cd-cap-card" data-reveal>
-            <div class="cd-cap-card__icon">
-              <svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
-            </div>
+            <div class="cd-cap-card__icon"><i class="ph ph-file-text"></i></div>
             <h3>Patient Context Retrieval</h3>
             <p>Retrieve and analyse comprehensive patient context from Electronic Health Records (EHRs) and integrated clinical systems.</p>
           </div>
           <div class="cd-cap-card" data-reveal>
-            <div class="cd-cap-card__icon">
-              <svg viewBox="0 0 24 24"><path d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
-            </div>
+            <div class="cd-cap-card__icon"><i class="ph ph-lightning"></i></div>
             <h3>Real-time Recommendations</h3>
             <p>Deliver real-time, evidence-based recommendations within existing clinical workflows.</p>
           </div>
           <div class="cd-cap-card" data-reveal>
-            <div class="cd-cap-card__icon">
-              <svg viewBox="0 0 24 24"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
-            </div>
+            <div class="cd-cap-card__icon"><i class="ph ph-pulse"></i></div>
             <h3>Clinical Pathway Support</h3>
             <p>Support triage, differential diagnosis, treatment planning, medication management, and care pathway optimisation.</p>
           </div>
           <div class="cd-cap-card" data-reveal>
-            <div class="cd-cap-card__icon">
-              <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
-            </div>
+            <div class="cd-cap-card__icon"><i class="ph ph-warning-circle"></i></div>
             <h3>Anomaly Detection</h3>
             <p>Identify abnormal laboratory results, adverse trends, clinical deterioration, and high-risk patient patterns.</p>
           </div>
           <div class="cd-cap-card" data-reveal>
-            <div class="cd-cap-card__icon">
-              <svg viewBox="0 0 24 24"><polyline points="16 3 21 3 21 8"/><line x1="4" y1="20" x2="21" y2="3"/><polyline points="21 16 21 21 16 21"/><line x1="15" y1="15" x2="21" y2="21"/><line x1="4" y1="4" x2="9" y2="9"/></svg>
-            </div>
+            <div class="cd-cap-card__icon"><i class="ph ph-arrows-left-right"></i></div>
             <h3>Next-Best Actions</h3>
             <p>Recommend appropriate follow-up actions, diagnostic investigations, referrals, and next-best clinical interventions.</p>
           </div>
           <div class="cd-cap-card" data-reveal>
-            <div class="cd-cap-card__icon">
-              <svg viewBox="0 0 24 24"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
-            </div>
+            <div class="cd-cap-card__icon"><i class="ph ph-book-open"></i></div>
             <h3>Guideline Surfacing</h3>
             <p>Surface relevant clinical guidelines, best practices, and organisational protocols at the point of care.</p>
           </div>
           <div class="cd-cap-card" data-reveal>
-            <div class="cd-cap-card__icon">
-              <svg viewBox="0 0 24 24"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
-            </div>
+            <div class="cd-cap-card__icon"><i class="ph ph-eye"></i></div>
             <h3>Continuous Monitoring</h3>
             <p>Continuously monitor patient data and proactively notify care teams of significant clinical changes requiring attention.</p>
           </div>
           <div class="cd-cap-card" data-reveal>
-            <div class="cd-cap-card__icon">
-              <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
-            </div>
+            <div class="cd-cap-card__icon"><i class="ph ph-users-three"></i></div>
             <h3>Smart Escalation</h3>
             <p>Automatically escalate ambiguous, low-confidence, or clinically complex scenarios to clinicians for expert evaluation and decision-making.</p>
           </div>
           <div class="cd-cap-card" data-reveal>
-            <div class="cd-cap-card__icon">
-              <svg viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
-            </div>
+            <div class="cd-cap-card__icon"><i class="ph ph-lock-simple"></i></div>
             <h3>Audit &amp; Accountability</h3>
             <p>Maintain comprehensive audit trails, explainable AI recommendations, confidence scoring, and decision logs to support governance, regulatory compliance, and clinical accountability.</p>
           </div>
@@ -199,9 +181,7 @@ import { RouterLink } from '@angular/router';
     <!-- ─── GOVERNANCE ─────────────────────────────────────── -->
     <section class="cd-governance">
       <div class="cd-governance__inner" data-reveal>
-        <div class="cd-governance__icon-wrap">
-          <svg viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
-        </div>
+        <div class="cd-governance__icon-wrap"><i class="ph ph-lock-simple"></i></div>
         <h2 class="cd-section-heading">Governance and <em>Control</em></h2>
         <p>Our Agentic AI solutions are designed with a governance-first approach that prioritises patient safety, clinical accountability, and regulatory compliance. AI agents operate within clearly defined guardrails and bounded autonomy, ensuring that recommendations are generated through transparent, explainable reasoning and validated against clinical guidelines and organisational policies. Human-in-the-loop oversight is embedded throughout the decision-making process, with complex, high-risk, or low-confidence scenarios automatically escalated to clinicians for expert evaluation and final judgement. Comprehensive audit trails, confidence scoring, continuous monitoring, and explainable decision logs provide complete transparency, enabling healthcare organisations to deploy AI responsibly while maintaining trust, compliance, and the highest standards of clinical care.</p>
       </div>
@@ -305,9 +285,8 @@ import { RouterLink } from '@angular/router';
     .cd-cap-card:hover { transform: translateY(-8px); box-shadow: 0 20px 50px rgba(27,58,143,0.12); border-color: rgba(27,58,143,0.15); }
     .cd-cap-card__icon { width: 50px; height: 50px; background: linear-gradient(135deg, rgba(27,58,143,0.08), rgba(232,119,34,0.06)); border-radius: 14px; display: flex; align-items: center; justify-content: center; transition: background 0.3s, transform 0.3s; box-shadow: 0 2px 8px rgba(27,58,143,0.08); }
     .cd-cap-card:hover .cd-cap-card__icon { background: linear-gradient(135deg, var(--teal), var(--teal-dark)); transform: scale(1.1) rotate(-3deg); }
-    .cd-cap-card__icon svg { width: 22px; height: 22px; }
-    .cd-cap-card__icon svg path, .cd-cap-card__icon svg circle, .cd-cap-card__icon svg polyline, .cd-cap-card__icon svg line, .cd-cap-card__icon svg rect { stroke: var(--teal); fill: none; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; transition: stroke 0.3s; }
-    .cd-cap-card:hover .cd-cap-card__icon svg path, .cd-cap-card:hover .cd-cap-card__icon svg circle, .cd-cap-card:hover .cd-cap-card__icon svg polyline, .cd-cap-card:hover .cd-cap-card__icon svg line, .cd-cap-card:hover .cd-cap-card__icon svg rect { stroke: #fff; }
+    .cd-cap-card__icon i.ph { font-size: 1.4rem; color: var(--teal); transition: color 0.3s; line-height: 1; }
+    .cd-cap-card:hover .cd-cap-card__icon i.ph { color: #fff; }
     .cd-cap-card h3 { font-size: 1rem; font-weight: 700; color: var(--dark); margin: 0; }
     .cd-cap-card p { font-size: 0.88rem; color: var(--mid); line-height: 1.6; margin: 0; }
     @media (max-width: 768px) { .cd-capabilities { padding: 3.5rem 1.2rem; } .cd-capabilities__grid { grid-template-columns: 1fr; } }
@@ -337,8 +316,7 @@ import { RouterLink } from '@angular/router';
     .cd-governance__inner { max-width: 900px; margin: 0 auto; background: #fff; border-radius: 24px; padding: 3rem 3.5rem; box-shadow: 0 10px 40px rgba(27,58,143,0.08); border: 1px solid rgba(27,58,143,0.06); position: relative; overflow: hidden; text-align: center; }
     .cd-governance__inner::before { content: ""; position: absolute; top: 0; left: 0; width: 100%; height: 4px; background: linear-gradient(90deg, var(--blue), var(--orange)); }
     .cd-governance__icon-wrap { width: 60px; height: 60px; margin: 0 auto 1.5rem; background: linear-gradient(135deg, rgba(27,58,143,0.08), rgba(232,119,34,0.06)); border-radius: 16px; display: flex; align-items: center; justify-content: center; }
-    .cd-governance__icon-wrap svg { width: 28px; height: 28px; }
-    .cd-governance__icon-wrap svg path, .cd-governance__icon-wrap svg rect { stroke: var(--teal); fill: none; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+    .cd-governance__icon-wrap i.ph { font-size: 1.6rem; color: var(--teal); line-height: 1; }
     .cd-governance p { font-size: 1rem; color: #444; line-height: 1.85; margin-bottom: 1.2rem; text-align: left; }
     .cd-governance p:last-child { margin-bottom: 0; }
     @media (max-width: 768px) { .cd-governance { padding: 3rem 1.2rem; } .cd-governance__inner { padding: 2rem 1.5rem; } }

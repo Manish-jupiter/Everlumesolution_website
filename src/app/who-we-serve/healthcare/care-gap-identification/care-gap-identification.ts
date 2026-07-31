@@ -78,65 +78,47 @@ import { RouterLink } from '@angular/router';
         </div>
         <div class="cg-capabilities__grid">
           <div class="cg-cap-card" data-reveal>
-            <div class="cg-cap-card__icon">
-              <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
-            </div>
+            <div class="cg-cap-card__icon"><i class="ph ph-magnifying-glass"></i></div>
             <h3>Gap Detection</h3>
             <p>Identify missed preventive screenings, overdue follow-up appointments, unresolved care actions, and chronic disease management gaps.</p>
           </div>
           <div class="cg-cap-card" data-reveal>
-            <div class="cg-cap-card__icon">
-              <svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
-            </div>
+            <div class="cg-cap-card__icon"><i class="ph ph-file-text"></i></div>
             <h3>Clinical Data Analysis</h3>
             <p>Analyse structured and unstructured clinical data, including EHR records, physician notes, laboratory results, diagnostic reports, and historical encounters.</p>
           </div>
           <div class="cg-cap-card" data-reveal>
-            <div class="cg-cap-card__icon">
-              <svg viewBox="0 0 24 24"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
-            </div>
+            <div class="cg-cap-card__icon"><i class="ph ph-check-square"></i></div>
             <h3>Guideline Evaluation</h3>
             <p>Evaluate patient records against evidence-based clinical guidelines, quality measures, and organisational care protocols.</p>
           </div>
           <div class="cg-cap-card" data-reveal>
-            <div class="cg-cap-card__icon">
-              <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-            </div>
+            <div class="cg-cap-card__icon"><i class="ph ph-star"></i></div>
             <h3>Patient Prioritisation</h3>
             <p>Prioritise patients using clinical risk stratification, urgency, care programme requirements, and population health objectives.</p>
           </div>
           <div class="cg-cap-card" data-reveal>
-            <div class="cg-cap-card__icon">
-              <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.18h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.27a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7a2 2 0 0 1 1.72 2.03z"/></svg>
-            </div>
+            <div class="cg-cap-card__icon"><i class="ph ph-phone"></i></div>
             <h3>Automated Outreach</h3>
             <p>Automate patient outreach through SMS, email, patient portals, voice assistants, and care coordination workflows.</p>
           </div>
           <div class="cg-cap-card" data-reveal>
-            <div class="cg-cap-card__icon">
-              <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
-            </div>
+            <div class="cg-cap-card__icon"><i class="ph ph-calendar"></i></div>
             <h3>Smart Reminders</h3>
             <p>Generate appointment reminders, scheduling prompts, medication adherence notifications, and personalised care recommendations.</p>
           </div>
           <div class="cg-cap-card" data-reveal>
-            <div class="cg-cap-card__icon">
-              <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
-            </div>
+            <div class="cg-cap-card__icon"><i class="ph ph-users-three"></i></div>
             <h3>Follow-up Orchestration</h3>
             <p>Create and orchestrate follow-up tasks for clinicians, care managers, and administrative teams across integrated workflows.</p>
           </div>
           <div class="cg-cap-card" data-reveal>
-            <div class="cg-cap-card__icon">
-              <svg viewBox="0 0 24 24"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
-            </div>
+            <div class="cg-cap-card__icon"><i class="ph ph-pulse"></i></div>
             <h3>Real-time Monitoring</h3>
             <p>Monitor care gap closure, update clinical records automatically, and provide real-time visibility into patient engagement and programme performance.</p>
           </div>
           <div class="cg-cap-card" data-reveal>
-            <div class="cg-cap-card__icon">
-              <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-            </div>
+            <div class="cg-cap-card__icon"><i class="ph ph-shield"></i></div>
             <h3>Human-in-the-Loop</h3>
             <p>Escalate complex, low-confidence, or clinically sensitive cases to care teams for expert review through a human-in-the-loop framework.</p>
           </div>
@@ -200,9 +182,7 @@ import { RouterLink } from '@angular/router';
     <!-- ─── GOVERNANCE ─────────────────────────────────────── -->
     <section class="cg-governance">
       <div class="cg-governance__inner" data-reveal>
-        <div class="cg-governance__icon-wrap">
-          <svg viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
-        </div>
+        <div class="cg-governance__icon-wrap"><i class="ph ph-lock-simple"></i></div>
         <h2 class="cg-section-heading">Governance and <em>Control</em></h2>
         <p>Our Agentic AI solutions are built on a foundation of enterprise-grade governance, clinical safety, and regulatory compliance. Configurable clinical rules, transparent decision logic, comprehensive audit trails, and continuous workflow monitoring ensure that every recommendation is traceable and aligned with organisational policies and evidence-based care guidelines. Human-in-the-loop oversight is embedded throughout the process, automatically escalating clinically sensitive, high-risk, or low-confidence cases for expert review. This governance-first approach enables healthcare organisations to scale AI-driven care coordination while preserving clinical judgement, patient safety, accountability, and regulatory compliance.</p>
       </div>
@@ -306,9 +286,8 @@ import { RouterLink } from '@angular/router';
     .cg-cap-card:hover { transform: translateY(-8px); box-shadow: 0 20px 50px rgba(27,58,143,0.12); border-color: rgba(27,58,143,0.15); }
     .cg-cap-card__icon { width: 50px; height: 50px; background: linear-gradient(135deg, rgba(27,58,143,0.08), rgba(232,119,34,0.06)); border-radius: 14px; display: flex; align-items: center; justify-content: center; transition: background 0.3s, transform 0.3s; box-shadow: 0 2px 8px rgba(27,58,143,0.08); }
     .cg-cap-card:hover .cg-cap-card__icon { background: linear-gradient(135deg, var(--teal), var(--teal-dark)); transform: scale(1.1) rotate(-3deg); }
-    .cg-cap-card__icon svg { width: 22px; height: 22px; }
-    .cg-cap-card__icon svg path, .cg-cap-card__icon svg circle, .cg-cap-card__icon svg polyline, .cg-cap-card__icon svg line, .cg-cap-card__icon svg rect, .cg-cap-card__icon svg polygon { stroke: var(--teal); fill: none; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; transition: stroke 0.3s; }
-    .cg-cap-card:hover .cg-cap-card__icon svg path, .cg-cap-card:hover .cg-cap-card__icon svg circle, .cg-cap-card:hover .cg-cap-card__icon svg polyline, .cg-cap-card:hover .cg-cap-card__icon svg line, .cg-cap-card:hover .cg-cap-card__icon svg rect, .cg-cap-card:hover .cg-cap-card__icon svg polygon { stroke: #fff; }
+    .cg-cap-card__icon i.ph { font-size: 1.4rem; color: var(--teal); transition: color 0.3s; line-height: 1; }
+    .cg-cap-card:hover .cg-cap-card__icon i.ph { color: #fff; }
     .cg-cap-card h3 { font-size: 1rem; font-weight: 700; color: var(--dark); margin: 0; }
     .cg-cap-card p { font-size: 0.88rem; color: var(--mid); line-height: 1.6; margin: 0; }
     @media (max-width: 768px) { .cg-capabilities { padding: 3.5rem 1.2rem; } .cg-capabilities__grid { grid-template-columns: 1fr; } }
@@ -338,8 +317,7 @@ import { RouterLink } from '@angular/router';
     .cg-governance__inner { max-width: 900px; margin: 0 auto; background: #fff; border-radius: 24px; padding: 3rem 3.5rem; box-shadow: 0 10px 40px rgba(27,58,143,0.08); border: 1px solid rgba(27,58,143,0.06); position: relative; overflow: hidden; text-align: center; }
     .cg-governance__inner::before { content: ""; position: absolute; top: 0; left: 0; width: 100%; height: 4px; background: linear-gradient(90deg, var(--blue), var(--orange)); }
     .cg-governance__icon-wrap { width: 60px; height: 60px; margin: 0 auto 1.5rem; background: linear-gradient(135deg, rgba(27,58,143,0.08), rgba(232,119,34,0.06)); border-radius: 16px; display: flex; align-items: center; justify-content: center; }
-    .cg-governance__icon-wrap svg { width: 28px; height: 28px; }
-    .cg-governance__icon-wrap svg path, .cg-governance__icon-wrap svg rect { stroke: var(--teal); fill: none; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+    .cg-governance__icon-wrap i.ph { font-size: 1.6rem; color: var(--teal); line-height: 1; }
     .cg-governance p { font-size: 1rem; color: #444; line-height: 1.85; margin-bottom: 1.2rem; text-align: left; }
     .cg-governance p:last-child { margin-bottom: 0; }
     @media (max-width: 768px) { .cg-governance { padding: 3rem 1.2rem; } .cg-governance__inner { padding: 2rem 1.5rem; } }

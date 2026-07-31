@@ -77,65 +77,47 @@ import { RouterLink } from '@angular/router';
         </div>
         <div class="mc-capabilities__grid">
           <div class="mc-cap-card" data-reveal>
-            <div class="mc-cap-card__icon">
-              <svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
-            </div>
+            <div class="mc-cap-card__icon"><i class="ph ph-file-text"></i></div>
             <h3>Clinical Intelligence</h3>
             <p>Analyse clinical notes, encounter documentation, and patient records using advanced AI-powered clinical intelligence.</p>
           </div>
           <div class="mc-cap-card" data-reveal>
-            <div class="mc-cap-card__icon">
-              <svg viewBox="0 0 24 24"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
-            </div>
+            <div class="mc-cap-card__icon"><i class="ph ph-check-square"></i></div>
             <h3>Code Recommendation</h3>
             <p>Recommend accurate ICD-10, CPT, HCPCS, and specialty-specific codes based on documented clinical evidence.</p>
           </div>
           <div class="mc-cap-card" data-reveal>
-            <div class="mc-cap-card__icon">
-              <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/></svg>
-            </div>
+            <div class="mc-cap-card__icon"><i class="ph ph-table"></i></div>
             <h3>Structured Extraction</h3>
             <p>Extract structured clinical information from unstructured medical documentation.</p>
           </div>
           <div class="mc-cap-card" data-reveal>
-            <div class="mc-cap-card__icon">
-              <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
-            </div>
+            <div class="mc-cap-card__icon"><i class="ph ph-warning-circle"></i></div>
             <h3>Gap Identification</h3>
             <p>Identify missing documentation, insufficient clinical evidence, and coding inconsistencies that may impact reimbursement.</p>
           </div>
           <div class="mc-cap-card" data-reveal>
-            <div class="mc-cap-card__icon">
-              <svg viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
-            </div>
+            <div class="mc-cap-card__icon"><i class="ph ph-check-circle"></i></div>
             <h3>Coding Validation</h3>
             <p>Validate coding recommendations against coding guidelines, payer policies, and regulatory requirements.</p>
           </div>
           <div class="mc-cap-card" data-reveal>
-            <div class="mc-cap-card__icon">
-              <svg viewBox="0 0 24 24"><polyline points="16 3 21 3 21 8"/><line x1="4" y1="20" x2="21" y2="3"/><polyline points="21 16 21 21 16 21"/><line x1="15" y1="15" x2="21" y2="21"/><line x1="4" y1="4" x2="9" y2="9"/></svg>
-            </div>
+            <div class="mc-cap-card__icon"><i class="ph ph-arrows-left-right"></i></div>
             <h3>Smart Routing</h3>
             <p>Detect ambiguous or low-confidence coding scenarios and automatically route them for expert coder review.</p>
           </div>
           <div class="mc-cap-card" data-reveal>
-            <div class="mc-cap-card__icon">
-              <svg viewBox="0 0 24 24"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/></svg>
-            </div>
+            <div class="mc-cap-card__icon"><i class="ph ph-pencil-simple"></i></div>
             <h3>Documentation Improvement</h3>
             <p>Assist with documentation improvement by highlighting opportunities for greater coding specificity and completeness.</p>
           </div>
           <div class="mc-cap-card" data-reveal>
-            <div class="mc-cap-card__icon">
-              <svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
-            </div>
+            <div class="mc-cap-card__icon"><i class="ph ph-monitor"></i></div>
             <h3>System Integration</h3>
             <p>Integrate seamlessly with Electronic Health Records (EHRs), Clinical Documentation Improvement (CDI) platforms, and Revenue Cycle Management (RCM) systems.</p>
           </div>
           <div class="mc-cap-card" data-reveal>
-            <div class="mc-cap-card__icon">
-              <svg viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
-            </div>
+            <div class="mc-cap-card__icon"><i class="ph ph-lock-simple"></i></div>
             <h3>Audit &amp; Compliance</h3>
             <p>Maintain comprehensive audit trails, coding rationale, and approval workflows to support governance, compliance, and quality assurance.</p>
           </div>
@@ -199,9 +181,7 @@ import { RouterLink } from '@angular/router';
     <!-- ─── GOVERNANCE ─────────────────────────────────────── -->
     <section class="mc-governance">
       <div class="mc-governance__inner" data-reveal>
-        <div class="mc-governance__icon-wrap">
-          <svg viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
-        </div>
+        <div class="mc-governance__icon-wrap"><i class="ph ph-lock-simple"></i></div>
         <h2 class="mc-section-heading">Governance and <em>Control</em></h2>
         <p>Our Agentic AI solutions are designed with governance, transparency, and regulatory compliance at their core. Human-in-the-loop review is embedded throughout the coding workflow, ensuring that low-confidence, high-complexity, or clinically sensitive cases are automatically escalated to certified coding professionals for expert validation. Comprehensive audit trails, explainable AI recommendations, confidence scoring, continuous quality monitoring, and adherence to ICD-10, CPT, HCPCS, payer policies, and industry coding standards provide complete transparency and accountability. This governance-first approach enables healthcare organisations to realise the benefits of AI-assisted coding while preserving clinical accuracy, coding integrity, regulatory compliance, and financial confidence.</p>
       </div>
@@ -305,9 +285,8 @@ import { RouterLink } from '@angular/router';
     .mc-cap-card:hover { transform: translateY(-8px); box-shadow: 0 20px 50px rgba(27,58,143,0.12); border-color: rgba(27,58,143,0.15); }
     .mc-cap-card__icon { width: 50px; height: 50px; background: linear-gradient(135deg, rgba(27,58,143,0.08), rgba(232,119,34,0.06)); border-radius: 14px; display: flex; align-items: center; justify-content: center; transition: background 0.3s, transform 0.3s; box-shadow: 0 2px 8px rgba(27,58,143,0.08); }
     .mc-cap-card:hover .mc-cap-card__icon { background: linear-gradient(135deg, var(--teal), var(--teal-dark)); transform: scale(1.1) rotate(-3deg); }
-    .mc-cap-card__icon svg { width: 22px; height: 22px; }
-    .mc-cap-card__icon svg path, .mc-cap-card__icon svg circle, .mc-cap-card__icon svg polyline, .mc-cap-card__icon svg line, .mc-cap-card__icon svg rect { stroke: var(--teal); fill: none; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; transition: stroke 0.3s; }
-    .mc-cap-card:hover .mc-cap-card__icon svg path, .mc-cap-card:hover .mc-cap-card__icon svg circle, .mc-cap-card:hover .mc-cap-card__icon svg polyline, .mc-cap-card:hover .mc-cap-card__icon svg line, .mc-cap-card:hover .mc-cap-card__icon svg rect { stroke: #fff; }
+    .mc-cap-card__icon i.ph { font-size: 1.4rem; color: var(--teal); transition: color 0.3s; line-height: 1; }
+    .mc-cap-card:hover .mc-cap-card__icon i.ph { color: #fff; }
     .mc-cap-card h3 { font-size: 1rem; font-weight: 700; color: var(--dark); margin: 0; }
     .mc-cap-card p { font-size: 0.88rem; color: var(--mid); line-height: 1.6; margin: 0; }
     @media (max-width: 768px) { .mc-capabilities { padding: 3.5rem 1.2rem; } .mc-capabilities__grid { grid-template-columns: 1fr; } }
@@ -337,8 +316,7 @@ import { RouterLink } from '@angular/router';
     .mc-governance__inner { max-width: 900px; margin: 0 auto; background: #fff; border-radius: 24px; padding: 3rem 3.5rem; box-shadow: 0 10px 40px rgba(27,58,143,0.08); border: 1px solid rgba(27,58,143,0.06); position: relative; overflow: hidden; text-align: center; }
     .mc-governance__inner::before { content: ""; position: absolute; top: 0; left: 0; width: 100%; height: 4px; background: linear-gradient(90deg, var(--blue), var(--orange)); }
     .mc-governance__icon-wrap { width: 60px; height: 60px; margin: 0 auto 1.5rem; background: linear-gradient(135deg, rgba(27,58,143,0.08), rgba(232,119,34,0.06)); border-radius: 16px; display: flex; align-items: center; justify-content: center; }
-    .mc-governance__icon-wrap svg { width: 28px; height: 28px; }
-    .mc-governance__icon-wrap svg path, .mc-governance__icon-wrap svg rect { stroke: var(--teal); fill: none; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+    .mc-governance__icon-wrap i.ph { font-size: 1.6rem; color: var(--teal); line-height: 1; }
     .mc-governance p { font-size: 1rem; color: #444; line-height: 1.85; margin-bottom: 1.2rem; text-align: left; }
     .mc-governance p:last-child { margin-bottom: 0; }
     @media (max-width: 768px) { .mc-governance { padding: 3rem 1.2rem; } .mc-governance__inner { padding: 2rem 1.5rem; } }

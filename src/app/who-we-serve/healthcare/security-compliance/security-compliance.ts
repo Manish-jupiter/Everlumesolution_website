@@ -1,4 +1,4 @@
-import { Component, AfterViewInit, OnDestroy, ElementRef } from '@angular/core';
+﻿import { Component, AfterViewInit, OnDestroy, ElementRef } from '@angular/core';
 import { RouterLink } from '@angular/router';
 
 @Component({
@@ -73,9 +73,7 @@ import { RouterLink } from '@angular/router';
         <div class="sc-detail__panel sc-detail__panel--left" data-reveal-left>
           <div class="sc-detail__panel-num">01</div>
           <div class="sc-detail__panel-side">
-            <div class="sc-detail__panel-icon">
-              <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-            </div>
+            <div class="sc-detail__panel-icon"><i class="ph ph-shield"></i></div>
             <div class="sc-detail__panel-badge">Architecture</div>
           </div>
           <div class="sc-detail__panel-content">
@@ -94,9 +92,7 @@ import { RouterLink } from '@angular/router';
         <div class="sc-detail__panel sc-detail__panel--right" data-reveal-right>
           <div class="sc-detail__panel-num">02</div>
           <div class="sc-detail__panel-side">
-            <div class="sc-detail__panel-icon">
-              <svg viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
-            </div>
+            <div class="sc-detail__panel-icon"><i class="ph ph-lock-simple"></i></div>
             <div class="sc-detail__panel-badge">Compliance</div>
           </div>
           <div class="sc-detail__panel-content">
@@ -128,107 +124,75 @@ import { RouterLink } from '@angular/router';
         <div class="sc-domains__grid">
 
           <a routerLink="/who-we-serve/healthcare/security-compliance/integrated-security-operations" class="sc-domain-card" data-reveal>
-            <div class="sc-domain-card__icon">
-              <svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
-            </div>
+            <div class="sc-domain-card__icon"><i class="ph ph-monitor"></i></div>
             <div class="sc-domain-card__body">
               <h3>Integrated Security Operations</h3>
               <p>Unified security management combining SIEM, SOC capabilities, and coordinated incident handling across the enterprise.</p>
             </div>
-            <div class="sc-domain-card__arrow">
-              <svg viewBox="0 0 18 18" fill="none"><path d="M3.75 9H14.25M14.25 9L9.75 4.5M14.25 9L9.75 13.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            </div>
+            <div class="sc-domain-card__arrow"><i class="ph ph-arrow-right"></i></div>
           </a>
 
           <a routerLink="/who-we-serve/healthcare/security-compliance/zero-trust-security" class="sc-domain-card" data-reveal>
-            <div class="sc-domain-card__icon">
-              <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-            </div>
+            <div class="sc-domain-card__icon"><i class="ph ph-shield"></i></div>
             <div class="sc-domain-card__body">
               <h3>Zero Trust Security</h3>
               <p>Identity-driven access controls ensuring no implicit trust for users, devices, or applications within the network.</p>
             </div>
-            <div class="sc-domain-card__arrow">
-              <svg viewBox="0 0 18 18" fill="none"><path d="M3.75 9H14.25M14.25 9L9.75 4.5M14.25 9L9.75 13.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            </div>
+            <div class="sc-domain-card__arrow"><i class="ph ph-arrow-right"></i></div>
           </a>
 
           <a routerLink="/who-we-serve/healthcare/security-compliance/network-security-segmentation" class="sc-domain-card" data-reveal>
-            <div class="sc-domain-card__icon">
-              <svg viewBox="0 0 24 24"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
-            </div>
+            <div class="sc-domain-card__icon"><i class="ph ph-link"></i></div>
             <div class="sc-domain-card__body">
               <h3>Network Security and Segmentation</h3>
               <p>Cisco Layer 3 switching and VLAN-based segmentation to isolate and protect critical network zones.</p>
             </div>
-            <div class="sc-domain-card__arrow">
-              <svg viewBox="0 0 18 18" fill="none"><path d="M3.75 9H14.25M14.25 9L9.75 4.5M14.25 9L9.75 13.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            </div>
+            <div class="sc-domain-card__arrow"><i class="ph ph-arrow-right"></i></div>
           </a>
 
           <a routerLink="/who-we-serve/healthcare/security-compliance/incident-detection-response" class="sc-domain-card" data-reveal>
-            <div class="sc-domain-card__icon">
-              <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
-            </div>
+            <div class="sc-domain-card__icon"><i class="ph ph-warning-circle"></i></div>
             <div class="sc-domain-card__body">
               <h3>Incident Detection and Response</h3>
               <p>Automated detection, alerting, and coordinated response workflows to contain and remediate security incidents rapidly.</p>
             </div>
-            <div class="sc-domain-card__arrow">
-              <svg viewBox="0 0 18 18" fill="none"><path d="M3.75 9H14.25M14.25 9L9.75 4.5M14.25 9L9.75 13.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            </div>
+            <div class="sc-domain-card__arrow"><i class="ph ph-arrow-right"></i></div>
           </a>
 
           <a routerLink="/who-we-serve/healthcare/security-compliance/advanced-perimeter-protection" class="sc-domain-card" data-reveal>
-            <div class="sc-domain-card__icon">
-              <svg viewBox="0 0 24 24"><polyline points="16 3 21 3 21 8"/><line x1="4" y1="20" x2="21" y2="3"/><polyline points="21 16 21 21 16 21"/><line x1="15" y1="15" x2="21" y2="21"/><line x1="4" y1="4" x2="9" y2="9"/></svg>
-            </div>
+            <div class="sc-domain-card__icon"><i class="ph ph-arrows-left-right"></i></div>
             <div class="sc-domain-card__body">
               <h3>Advanced Perimeter Protection</h3>
               <p>Cisco Firepower Next Generation Firewalls providing deep packet inspection and threat prevention at the network edge.</p>
             </div>
-            <div class="sc-domain-card__arrow">
-              <svg viewBox="0 0 18 18" fill="none"><path d="M3.75 9H14.25M14.25 9L9.75 4.5M14.25 9L9.75 13.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            </div>
+            <div class="sc-domain-card__arrow"><i class="ph ph-arrow-right"></i></div>
           </a>
 
           <a routerLink="/who-we-serve/healthcare/security-compliance/continuous-monitoring-audit-readiness" class="sc-domain-card" data-reveal>
-            <div class="sc-domain-card__icon">
-              <svg viewBox="0 0 24 24"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
-            </div>
+            <div class="sc-domain-card__icon"><i class="ph ph-pulse"></i></div>
             <div class="sc-domain-card__body">
               <h3>Continuous Monitoring and Audit Readiness</h3>
               <p>24/7 security monitoring with comprehensive logging and audit trail capabilities to meet HIPAA, SOC 2, and HITRUST requirements.</p>
             </div>
-            <div class="sc-domain-card__arrow">
-              <svg viewBox="0 0 18 18" fill="none"><path d="M3.75 9H14.25M14.25 9L9.75 4.5M14.25 9L9.75 13.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            </div>
+            <div class="sc-domain-card__arrow"><i class="ph ph-arrow-right"></i></div>
           </a>
 
           <a routerLink="/who-we-serve/healthcare/security-compliance/endpoint-protection-threat-detection" class="sc-domain-card" data-reveal>
-            <div class="sc-domain-card__icon">
-              <svg viewBox="0 0 24 24"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
-            </div>
+            <div class="sc-domain-card__icon"><i class="ph ph-eye"></i></div>
             <div class="sc-domain-card__body">
               <h3>Endpoint Protection and Threat Detection</h3>
               <p>Microsoft Defender for Endpoint delivering real-time protection, behavioural analysis, and threat remediation across all devices.</p>
             </div>
-            <div class="sc-domain-card__arrow">
-              <svg viewBox="0 0 18 18" fill="none"><path d="M3.75 9H14.25M14.25 9L9.75 4.5M14.25 9L9.75 13.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            </div>
+            <div class="sc-domain-card__arrow"><i class="ph ph-arrow-right"></i></div>
           </a>
 
           <a routerLink="/who-we-serve/healthcare/security-compliance/operational-security-practices" class="sc-domain-card" data-reveal>
-            <div class="sc-domain-card__icon">
-              <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
-            </div>
+            <div class="sc-domain-card__icon"><i class="ph ph-users-three"></i></div>
             <div class="sc-domain-card__body">
               <h3>Operational Security Practices</h3>
               <p>Security governance, vulnerability management, patch management, and workforce security training programmes.</p>
             </div>
-            <div class="sc-domain-card__arrow">
-              <svg viewBox="0 0 18 18" fill="none"><path d="M3.75 9H14.25M14.25 9L9.75 4.5M14.25 9L9.75 13.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            </div>
+            <div class="sc-domain-card__arrow"><i class="ph ph-arrow-right"></i></div>
           </a>
 
         </div>
@@ -327,8 +291,7 @@ import { RouterLink } from '@angular/router';
     .sc-detail__panel-num { position: absolute; top: 1.5rem; right: 2.5rem; font-family: "DM Serif Display", serif; font-size: 5rem; font-weight: 400; color: rgba(27,58,143,0.05); line-height: 1; pointer-events: none; user-select: none; }
     .sc-detail__panel-side { display: flex; flex-direction: column; align-items: center; gap: 1.2rem; padding-top: 0.5rem; }
     .sc-detail__panel-icon { width: 72px; height: 72px; background: linear-gradient(135deg, rgba(27,58,143,0.1), rgba(232,119,34,0.08)); border-radius: 20px; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 16px rgba(27,58,143,0.12); }
-    .sc-detail__panel-icon svg { width: 30px; height: 30px; }
-    .sc-detail__panel-icon svg path, .sc-detail__panel-icon svg rect { stroke: var(--teal); fill: none; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+    .sc-detail__panel-icon i.ph { font-size: 1.6rem; color: var(--teal); line-height: 1; }
     .sc-detail__panel-badge { background: linear-gradient(135deg, var(--blue), var(--teal-dark)); color: #fff; font-size: 0.7rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; padding: 0.35rem 0.9rem; border-radius: 999px; text-align: center; }
     .sc-detail__panel-content h3 { font-family: "DM Serif Display", serif; font-size: 1.4rem; font-weight: 400; color: var(--dark); line-height: 1.3; margin: 0 0 1.2rem; }
     .sc-detail__panel-content p { font-size: 0.93rem; color: #444; line-height: 1.85; margin-bottom: 1rem; }
@@ -352,16 +315,15 @@ import { RouterLink } from '@angular/router';
     .sc-domain-card:hover { transform: translateY(-8px); box-shadow: 0 20px 50px rgba(27,58,143,0.12); border-color: rgba(27,58,143,0.15); }
     .sc-domain-card__icon { width: 50px; height: 50px; background: linear-gradient(135deg, rgba(27,58,143,0.08), rgba(232,119,34,0.06)); border-radius: 14px; display: flex; align-items: center; justify-content: center; transition: background 0.3s, transform 0.3s; box-shadow: 0 2px 8px rgba(27,58,143,0.08); flex-shrink: 0; }
     .sc-domain-card:hover .sc-domain-card__icon { background: linear-gradient(135deg, var(--teal), var(--teal-dark)); transform: scale(1.1) rotate(-3deg); }
-    .sc-domain-card__icon svg { width: 22px; height: 22px; }
-    .sc-domain-card__icon svg path, .sc-domain-card__icon svg circle, .sc-domain-card__icon svg polyline, .sc-domain-card__icon svg line, .sc-domain-card__icon svg rect { stroke: var(--teal); fill: none; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; transition: stroke 0.3s; }
-    .sc-domain-card:hover .sc-domain-card__icon svg path, .sc-domain-card:hover .sc-domain-card__icon svg circle, .sc-domain-card:hover .sc-domain-card__icon svg polyline, .sc-domain-card:hover .sc-domain-card__icon svg line, .sc-domain-card:hover .sc-domain-card__icon svg rect { stroke: #fff; }
+    .sc-domain-card__icon i.ph { font-size: 1.4rem; color: var(--teal); transition: color 0.3s; line-height: 1; }
+    .sc-domain-card:hover .sc-domain-card__icon i.ph { color: #fff; }
     .sc-domain-card__body { flex: 1; }
     .sc-domain-card__body h3 { font-size: 1rem; font-weight: 700; color: var(--dark); margin: 0 0 0.5rem; }
     .sc-domain-card__body p { font-size: 0.88rem; color: var(--mid); line-height: 1.6; margin: 0; }
     .sc-domain-card__arrow { width: 32px; height: 32px; border-radius: 50%; background: rgba(27,58,143,0.06); display: flex; align-items: center; justify-content: center; align-self: flex-end; transition: background 0.3s, transform 0.3s; }
     .sc-domain-card:hover .sc-domain-card__arrow { background: var(--orange); transform: translateX(4px); }
-    .sc-domain-card__arrow svg path { stroke: var(--teal); transition: stroke 0.3s; }
-    .sc-domain-card:hover .sc-domain-card__arrow svg path { stroke: #fff; }
+    .sc-domain-card__arrow i.ph { font-size: 1rem; color: var(--teal); transition: color 0.3s; line-height: 1; }
+    .sc-domain-card:hover .sc-domain-card__arrow i.ph { color: #fff; }
     @media (max-width: 768px) { .sc-domains { padding: 3.5rem 1.2rem; } .sc-domains__grid { grid-template-columns: 1fr; } }
 
     /* ─── CTA ────────────────────────────────────────────── */

@@ -78,65 +78,47 @@ import { RouterLink } from '@angular/router';
         </div>
         <div class="rp-capabilities__grid">
           <div class="rp-cap-card" data-reveal>
-            <div class="rp-cap-card__icon">
-              <svg viewBox="0 0 24 24"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
-            </div>
+            <div class="rp-cap-card__icon"><i class="ph ph-pulse"></i></div>
             <h3>Real-time Data Ingestion</h3>
             <p>Ingest real-time patient data from wearable devices, home monitoring equipment, connected medical devices, and mobile health applications.</p>
           </div>
           <div class="rp-cap-card" data-reveal>
-            <div class="rp-cap-card__icon">
-              <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
-            </div>
+            <div class="rp-cap-card__icon"><i class="ph ph-globe"></i></div>
             <h3>Data Normalisation</h3>
             <p>Normalise and consolidate data from multiple sources into a unified patient monitoring workflow.</p>
           </div>
           <div class="rp-cap-card" data-reveal>
-            <div class="rp-cap-card__icon">
-              <svg viewBox="0 0 24 24"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
-            </div>
+            <div class="rp-cap-card__icon"><i class="ph ph-heartbeat"></i></div>
             <h3>Physiological Analysis</h3>
             <p>Continuously analyse physiological readings to identify abnormal values, emerging clinical trends, and potential patient deterioration.</p>
           </div>
           <div class="rp-cap-card" data-reveal>
-            <div class="rp-cap-card__icon">
-              <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
-            </div>
+            <div class="rp-cap-card__icon"><i class="ph ph-warning-circle"></i></div>
             <h3>Adherence Monitoring</h3>
             <p>Detect missing or inconsistent monitoring data and identify potential patient non-adherence.</p>
           </div>
           <div class="rp-cap-card" data-reveal>
-            <div class="rp-cap-card__icon">
-              <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-            </div>
+            <div class="rp-cap-card__icon"><i class="ph ph-star"></i></div>
             <h3>Risk Prioritisation</h3>
             <p>Prioritise alerts and interventions using clinical risk stratification, organisational protocols, and evidence-based rules.</p>
           </div>
           <div class="rp-cap-card" data-reveal>
-            <div class="rp-cap-card__icon">
-              <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.18h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.27a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7a2 2 0 0 1 1.72 2.03z"/></svg>
-            </div>
+            <div class="rp-cap-card__icon"><i class="ph ph-phone"></i></div>
             <h3>Automated Workflows</h3>
             <p>Automatically trigger clinician notifications, patient outreach, follow-up activities, and care coordination workflows.</p>
           </div>
           <div class="rp-cap-card" data-reveal>
-            <div class="rp-cap-card__icon">
-              <svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
-            </div>
+            <div class="rp-cap-card__icon"><i class="ph ph-monitor"></i></div>
             <h3>EHR Synchronisation</h3>
             <p>Synchronise monitoring data with Electronic Health Records (EHRs), care management platforms, and longitudinal patient records.</p>
           </div>
           <div class="rp-cap-card" data-reveal>
-            <div class="rp-cap-card__icon">
-              <svg viewBox="0 0 24 24"><path d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
-            </div>
+            <div class="rp-cap-card__icon"><i class="ph ph-lightning"></i></div>
             <h3>Actionable Insights</h3>
             <p>Generate actionable insights and recommendations to support proactive clinical decision-making and chronic disease management.</p>
           </div>
           <div class="rp-cap-card" data-reveal>
-            <div class="rp-cap-card__icon">
-              <svg viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
-            </div>
+            <div class="rp-cap-card__icon"><i class="ph ph-lock-simple"></i></div>
             <h3>Human-in-the-Loop</h3>
             <p>Escalate urgent, clinically significant, or low-confidence scenarios to the appropriate care teams through a human-in-the-loop framework. Maintain comprehensive audit trails, monitoring history, and AI decision logs to support governance, regulatory compliance, and operational transparency.</p>
           </div>
@@ -200,9 +182,7 @@ import { RouterLink } from '@angular/router';
     <!-- ─── GOVERNANCE ─────────────────────────────────────── -->
     <section class="rp-governance">
       <div class="rp-governance__inner" data-reveal>
-        <div class="rp-governance__icon-wrap">
-          <svg viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
-        </div>
+        <div class="rp-governance__icon-wrap"><i class="ph ph-lock-simple"></i></div>
         <h2 class="rp-section-heading">Governance and <em>Control</em></h2>
         <p>Our Agentic AI solutions are designed with enterprise-grade governance, patient safety, and regulatory compliance at their core. Configurable clinical thresholds, evidence-based alerting, transparent decision logic, and comprehensive audit trails ensure that every recommendation is explainable, traceable, and aligned with organisational policies and clinical guidelines. Human-in-the-loop oversight is embedded throughout the monitoring process, with urgent, high-risk, or low-confidence scenarios automatically escalated to clinicians for expert assessment and intervention. This governance-first approach enables healthcare organisations to scale intelligent remote monitoring programmes while maintaining clinical accountability, patient safety, regulatory compliance, and trust in AI-driven care.</p>
       </div>
@@ -306,9 +286,8 @@ import { RouterLink } from '@angular/router';
     .rp-cap-card:hover { transform: translateY(-8px); box-shadow: 0 20px 50px rgba(27,58,143,0.12); border-color: rgba(27,58,143,0.15); }
     .rp-cap-card__icon { width: 50px; height: 50px; background: linear-gradient(135deg, rgba(27,58,143,0.08), rgba(232,119,34,0.06)); border-radius: 14px; display: flex; align-items: center; justify-content: center; transition: background 0.3s, transform 0.3s; box-shadow: 0 2px 8px rgba(27,58,143,0.08); }
     .rp-cap-card:hover .rp-cap-card__icon { background: linear-gradient(135deg, var(--teal), var(--teal-dark)); transform: scale(1.1) rotate(-3deg); }
-    .rp-cap-card__icon svg { width: 22px; height: 22px; }
-    .rp-cap-card__icon svg path, .rp-cap-card__icon svg circle, .rp-cap-card__icon svg polyline, .rp-cap-card__icon svg line, .rp-cap-card__icon svg rect, .rp-cap-card__icon svg polygon { stroke: var(--teal); fill: none; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; transition: stroke 0.3s; }
-    .rp-cap-card:hover .rp-cap-card__icon svg path, .rp-cap-card:hover .rp-cap-card__icon svg circle, .rp-cap-card:hover .rp-cap-card__icon svg polyline, .rp-cap-card:hover .rp-cap-card__icon svg line, .rp-cap-card:hover .rp-cap-card__icon svg rect, .rp-cap-card:hover .rp-cap-card__icon svg polygon { stroke: #fff; }
+    .rp-cap-card__icon i.ph { font-size: 1.4rem; color: var(--teal); transition: color 0.3s; line-height: 1; }
+    .rp-cap-card:hover .rp-cap-card__icon i.ph { color: #fff; }
     .rp-cap-card h3 { font-size: 1rem; font-weight: 700; color: var(--dark); margin: 0; }
     .rp-cap-card p { font-size: 0.88rem; color: var(--mid); line-height: 1.6; margin: 0; }
     @media (max-width: 768px) { .rp-capabilities { padding: 3.5rem 1.2rem; } .rp-capabilities__grid { grid-template-columns: 1fr; } }
@@ -338,8 +317,7 @@ import { RouterLink } from '@angular/router';
     .rp-governance__inner { max-width: 900px; margin: 0 auto; background: #fff; border-radius: 24px; padding: 3rem 3.5rem; box-shadow: 0 10px 40px rgba(27,58,143,0.08); border: 1px solid rgba(27,58,143,0.06); position: relative; overflow: hidden; text-align: center; }
     .rp-governance__inner::before { content: ""; position: absolute; top: 0; left: 0; width: 100%; height: 4px; background: linear-gradient(90deg, var(--blue), var(--orange)); }
     .rp-governance__icon-wrap { width: 60px; height: 60px; margin: 0 auto 1.5rem; background: linear-gradient(135deg, rgba(27,58,143,0.08), rgba(232,119,34,0.06)); border-radius: 16px; display: flex; align-items: center; justify-content: center; }
-    .rp-governance__icon-wrap svg { width: 28px; height: 28px; }
-    .rp-governance__icon-wrap svg path, .rp-governance__icon-wrap svg rect { stroke: var(--teal); fill: none; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+    .rp-governance__icon-wrap i.ph { font-size: 1.6rem; color: var(--teal); line-height: 1; }
     .rp-governance p { font-size: 1rem; color: #444; line-height: 1.85; margin-bottom: 1.2rem; text-align: left; }
     .rp-governance p:last-child { margin-bottom: 0; }
     @media (max-width: 768px) { .rp-governance { padding: 3rem 1.2rem; } .rp-governance__inner { padding: 2rem 1.5rem; } }
