@@ -1,0 +1,156 @@
+<!--
+  Site header: logo + primary navigation.
+  - Desktop (≥992px): horizontal nav with hover / click dropdowns.
+  - Mobile   (<992px): hamburger opens a left sidebar; body dims behind.
+  Icons use the Phosphor Icons web font loaded from index.html.
+-->
+<header
+  class="site-nav"
+  [class.is-mobile-open]="mobileOpen()"
+  [class.is-scrolled]="opaque()"
+>
+  <div class="site-nav__inner">
+    <a routerLink="/" class="site-nav__logo" aria-label="Everlume Solutions — home">
+      <img [src]="logoSrc()" alt="Everlume Solutions" />
+    </a>
+
+    <!-- Desktop nav -->
+    <nav class="site-nav__desktop" aria-label="Primary">
+      <ul class="site-nav__list">
+        @for (item of menu; track item.label; let i = $index) {
+          <li
+            class="site-nav__item"
+            [class.has-children]="!!item.children"
+            [class.is-open]="openIndex() === i"
+          >
+            @if (item.children) {
+              <button
+                type="button"
+                class="site-nav__link"
+                [attr.aria-expanded]="openIndex() === i"
+                (click)="toggleParent(i, $event)"
+              >
+                <i class="ph {{ item.icon }}" aria-hidden="true"></i>
+                <span>{{ item.label }}</span>
+                <i class="ph ph-caret-down site-nav__chev" aria-hidden="true"></i>
+              </button>
+
+              <div class="site-nav__dropdown" role="menu">
+                <ul>
+                  @for (child of item.children; track child.label) {
+                    <li>
+                      <a
+                        [routerLink]="child.link"
+                        routerLinkActive="is-active"
+                        role="menuitem"
+                      >
+                        <i class="ph {{ child.icon }}" aria-hidden="true"></i>
+                        <span>{{ child.label }}</span>
+                      </a>
+                    </li>
+                  }
+                </ul>
+              </div>
+            } @else {
+              <a
+                [routerLink]="item.link"
+                routerLinkActive="is-active"
+                class="site-nav__link"
+              >
+                <i class="ph {{ item.icon }}" aria-hidden="true"></i>
+                <span>{{ item.label }}</span>
+              </a>
+            }
+          </li>
+        }
+      </ul>
+    </nav>
+
+    <!-- Hamburger (mobile only) -->
+    <button
+      type="button"
+      class="site-nav__burger"
+      [attr.aria-expanded]="mobileOpen()"
+      aria-controls="mobile-sidebar"
+      aria-label="Open menu"
+      (click)="toggleMobile()"
+    >
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+
+  <!-- Body-dim backdrop (mobile) -->
+  <div
+    class="site-nav__backdrop"
+    [class.is-visible]="showBackdrop()"
+    (click)="closeMobile()"
+    aria-hidden="true"
+  ></div>
+
+  <!-- Mobile sidebar -->
+  <aside
+    id="mobile-sidebar"
+    class="site-nav__sidebar"
+    [class.is-open]="mobileOpen()"
+    aria-label="Mobile navigation"
+  >
+    <div class="site-nav__sidebar-head">
+      <a routerLink="/" class="site-nav__logo" (click)="closeMobile()">
+        <img src="Images/Logo_everlume-white.png" alt="Everlume Solutions" />
+      </a>
+      <button
+        type="button"
+        class="site-nav__close"
+        aria-label="Close menu"
+        (click)="closeMobile()"
+      >
+        <i class="ph ph-x" aria-hidden="true"></i>
+      </button>
+    </div>
+
+    <ul class="site-nav__sidebar-list">
+      @for (item of menu; track item.label; let i = $index) {
+        <li class="site-nav__acc" [class.is-open]="openIndex() === i">
+          @if (item.children) {
+            <button
+              type="button"
+              class="site-nav__acc-head"
+              [attr.aria-expanded]="openIndex() === i"
+              (click)="toggleParent(i)"
+            >
+              <i class="ph {{ item.icon }}" aria-hidden="true"></i>
+              <span>{{ item.label }}</span>
+              <i class="ph ph-caret-down site-nav__chev" aria-hidden="true"></i>
+            </button>
+            <div class="site-nav__acc-panel">
+              <ul>
+                @for (child of item.children; track child.label) {
+                  <li>
+                    <a
+                      [routerLink]="child.link"
+                      routerLinkActive="is-active"
+                      (click)="closeMobile()"
+                    >
+                      <i class="ph {{ child.icon }}" aria-hidden="true"></i>
+                      <span>{{ child.label }}</span>
+                    </a>
+                  </li>
+                }
+              </ul>
+            </div>
+          } @else {
+            <a
+              [routerLink]="item.link"
+              routerLinkActive="is-active"
+              class="site-nav__acc-head site-nav__acc-head--leaf"
+              (click)="closeMobile()"
+            >
+              <i class="ph {{ item.icon }}" aria-hidden="true"></i>
+              <span>{{ item.label }}</span>
+            </a>
+          }
+        </li>
+      }
+    </ul>
+  </aside>
+</header>

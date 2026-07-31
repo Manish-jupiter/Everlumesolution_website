@@ -1,0 +1,15 @@
+/* =========================================================
+   Root layout.
+   The header is position: fixed, so we reserve top padding on
+   the routed <main> for every page EXCEPT the landing page —
+   whose hero video is designed to sit under the transparent nav.
+   ========================================================= */
+
+.app-main {
+  padding-top: 88px;
+}
+
+/* Landing page keeps its hero flush under the transparent overlay. */
+.app-main:has(app-landing-page) {
+  padding-top: 0;
+}

@@ -1,0 +1,5 @@
+/* Landing page owns the full-bleed scrolling story.
+   Original section styles live in the global styles.css. */
+:host {
+  display: block;
+}
