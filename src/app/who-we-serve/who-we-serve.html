@@ -1,29 +1,4 @@
-<section class="offer-hub">
-  <header class="offer-hub__head">
-    <span class="offer-hub__eyebrow">Who We Serve</span>
-    <h1>Deep expertise across industries.</h1>
-    <p>
-      We partner with market leaders in regulated, data-heavy, and
-      transformation-driven industries.
-    </p>
-  </header>
-
-  <div class="offer-hub__grid">
-    @for (i of industries; track i.link) {
-      <a
-        [routerLink]="[i.link]"
-        routerLinkActive="is-active"
-        class="offer-hub__card"
-      >
-        <span class="offer-hub__icon"><i class="ph {{ i.icon }}"></i></span>
-        <strong>{{ i.label }}</strong>
-        <small>{{ i.description }}</small>
-        <span class="offer-hub__arrow"><i class="ph ph-arrow-right"></i></span>
-      </a>
-    }
-  </div>
-
-  <div class="offer-hub__outlet">
+  <div>
     <router-outlet />
   </div>
-</section>
+
