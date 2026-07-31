@@ -132,11 +132,7 @@
               [hidden]="activeIndex() !== i"
             >
               <div class="about-panel__head">
-                <span class="about-panel__num">{{ (i + 1).toString().padStart(2, '0') }}</span>
                 <div class="about-panel__title-wrap">
-                  <div class="about-panel__icon">
-                    <i class="ph {{ tab.icon }}" aria-hidden="true"></i>
-                  </div>
                   <h3 class="about-panel__title">{{ tab.label }}</h3>
                 </div>
               </div>

@@ -481,12 +481,45 @@
 }
 .about-panel__icon i.ph { font-size: 1.4rem; }
 .about-panel__title {
+  position: relative;
   font-family: 'DM Serif Display', serif;
-  font-size: clamp(1.5rem, 2.5vw, 2rem);
-  line-height: 1.2;
+  font-size: clamp(1.8rem, 3vw, 2.4rem);
+  line-height: 1.15;
   margin: 0;
+  padding: 0.35rem 0 0.6rem 1.15rem;
   color: var(--ab-ink);
   text-transform: capitalize;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+  background: linear-gradient(120deg, var(--ab-ink) 0%, var(--ab-ink) 55%, var(--ab-navy) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.about-panel__title::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.55rem;
+  bottom: 0.7rem;
+  width: 5px;
+  border-radius: 6px;
+  background: linear-gradient(180deg, var(--ab-orange), var(--ab-navy));
+  box-shadow: 0 8px 22px -10px rgba(232, 119, 34, 0.55);
+}
+.about-panel__title::after {
+  content: '';
+  display: block;
+  width: 64px;
+  height: 3px;
+  margin-top: 0.85rem;
+  border-radius: 3px;
+  background: linear-gradient(90deg, var(--ab-orange), var(--ab-navy));
+  animation: aboutTitleBar 0.7s cubic-bezier(0.2, 0.8, 0.2, 1) both;
+}
+@keyframes aboutTitleBar {
+  from { transform: scaleX(0); transform-origin: left; opacity: 0; }
+  to { transform: scaleX(1); opacity: 1; }
 }
 .about-panel__body p {
   font-size: 1rem;
