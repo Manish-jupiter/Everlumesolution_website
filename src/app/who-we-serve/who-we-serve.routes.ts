@@ -7,6 +7,7 @@ export const routes: Routes = [
     path: '',
     component: WhoWeServe,
     children: [
+      { path: '', pathMatch: 'full', redirectTo: 'telecom' },
       {
         path: 'healthcare',
         loadComponent: () =>

@@ -102,7 +102,7 @@ export class Header implements OnInit, OnDestroy {
   /** Whether the mobile sidebar is open. */
   readonly mobileOpen = signal(false);
 
-  /** True when the viewport is below the desktop breakpoint (992px). */
+  /** True when the viewport is below the desktop breakpoint (1200px). */
   readonly isMobile = signal(this.detectMobile());
 
   /** True after the user has scrolled past the top of the page. */
@@ -219,6 +219,6 @@ export class Header implements OnInit, OnDestroy {
 
   private detectMobile(): boolean {
     if (typeof window === 'undefined') return false;
-    return window.matchMedia('(max-width: 991.98px)').matches;
+    return window.matchMedia('(max-width: 1199.98px)').matches;
   }
 }
