@@ -245,23 +245,74 @@ import { AfterViewInit, Component, ElementRef, OnDestroy } from '@angular/core';
         <div class="hc-why__content" data-reveal-left>
 
         <div class="hc-why__features">
-          <div class="hc-why__feature" data-reveal>
-            <div class="hc-why__feature-icon">
+          <div class="hc-why__feature bv-feature" data-reveal>
+            <div class="hc-why__feature-icon bv-feature__icon">
               <svg viewBox="0 0 24 24"><path d="M12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
             </div>
-            <div class="hc-why__feature-text">
-              <strong>Business Value</strong>
-              <ul>
-                <li><span>Accelerate decision-making across customer, risk, compliance, and operational workflows.</span></li>
-                <li><span>Reduce manual effort and improve workforce productivity through intelligent automation.</span></li>
-                <li><span>Strengthen fraud detection, risk management, and regulatory compliance with AI-driven monitoring and decision support.</span></li>
-                <li><span>Deliver faster, more personalised customer service and improve response times across all banking channels.</span></li>
-                <li><span>Provide end-to-end visibility into workflow status, operational bottlenecks, and business performance through real-time insights.</span></li>
-                <li><span>Increase operational scalability while improving consistency, accuracy, and enterprise-wide governance.</span></li>
-              </ul>
-          <span>Reduce operational costs and enhance business resilience through intelligent workflow orchestration.</span>
-         
+            <div class="hc-why__feature-text bv">
+              <div class="bv__header">
+                <span class="bv__eyebrow">Impact areas</span>
+                <strong class="bv__title">Business <em>Value</em></strong>
+                <span class="bv__lede">The measurable outcomes Agentic AI unlocks across your bank.</span>
               </div>
+
+              <ol class="bv__list">
+                <li class="bv__item">
+                  <span class="bv__num">01</span>
+                  <div class="bv__icon">
+                    <svg viewBox="0 0 24 24"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+                  </div>
+                  <p class="bv__text">Accelerate decision-making across customer, risk, compliance, and operational workflows.</p>
+                </li>
+
+                <li class="bv__item">
+                  <span class="bv__num">02</span>
+                  <div class="bv__icon">
+                    <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.6 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9"/></svg>
+                  </div>
+                  <p class="bv__text">Reduce manual effort and improve workforce productivity through intelligent automation.</p>
+                </li>
+
+                <li class="bv__item">
+                  <span class="bv__num">03</span>
+                  <div class="bv__icon">
+                    <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg>
+                  </div>
+                  <p class="bv__text">Strengthen fraud detection, risk management, and regulatory compliance with AI-driven monitoring and decision support.</p>
+                </li>
+
+                <li class="bv__item">
+                  <span class="bv__num">04</span>
+                  <div class="bv__icon">
+                    <svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+                  </div>
+                  <p class="bv__text">Deliver faster, more personalised customer service and improve response times across all banking channels.</p>
+                </li>
+
+                <li class="bv__item">
+                  <span class="bv__num">05</span>
+                  <div class="bv__icon">
+                    <svg viewBox="0 0 24 24"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+                  </div>
+                  <p class="bv__text">Provide end-to-end visibility into workflow status, operational bottlenecks, and business performance through real-time insights.</p>
+                </li>
+
+                <li class="bv__item">
+                  <span class="bv__num">06</span>
+                  <div class="bv__icon">
+                    <svg viewBox="0 0 24 24"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>
+                  </div>
+                  <p class="bv__text">Increase operational scalability while improving consistency, accuracy, and enterprise-wide governance.</p>
+                </li>
+              </ol>
+
+              <div class="bv__callout">
+                <span class="bv__callout-icon">
+                  <svg viewBox="0 0 24 24"><path d="M12 2v6M12 22v-6M4.93 4.93l4.24 4.24M14.83 14.83l4.24 4.24M2 12h6M22 12h-6M4.93 19.07l4.24-4.24M14.83 9.17l4.24-4.24"/></svg>
+                </span>
+                <p><strong>Bottom line:</strong> <span>Reduce operational costs and enhance business resilience through intelligent workflow orchestration.</span></p>
+              </div>
+            </div>
           </div>
           <div class="hc-why__feature" data-reveal>
             <div class="hc-why__feature-icon">
@@ -275,34 +326,7 @@ import { AfterViewInit, Component, ElementRef, OnDestroy } from '@angular/core';
         </div>
         </div>
 
-      <div class="hc-why__abstract" data-reveal-right>
-        <div class="hc-why__hex-grid">
-          <div class="hc-why__hex hc-why__hex--1"></div>
-          <div class="hc-why__hex hc-why__hex--2"></div>
-          <div class="hc-why__hex hc-why__hex--3"></div>
-          <div class="hc-why__hex hc-why__hex--4"></div>
-          <div class="hc-why__hex hc-why__hex--5"></div>
-          <div class="hc-why__hex hc-why__hex--6"></div>
-          <div class="hc-why__hex hc-why__hex--7"></div>
-          <div class="hc-why__hex hc-why__hex--8"></div>
-          <div class="hc-why__hex hc-why__hex--9"></div>
-          <div class="hc-why__hex-line hc-why__hex-line--1"></div>
-          <div class="hc-why__hex-line hc-why__hex-line--2"></div>
-          <div class="hc-why__hex-line hc-why__hex-line--3"></div>
-          <div class="hc-why__hex-line hc-why__hex-line--4"></div>
-          <div class="hc-why__data-node hc-why__data-node--1"></div>
-          <div class="hc-why__data-node hc-why__data-node--2"></div>
-          <div class="hc-why__data-node hc-why__data-node--3"></div>
-          <div class="hc-why__data-node hc-why__data-node--4"></div>
-        </div>
-        <div class="hc-why__center-ring"></div>
-        <div class="hc-why__center-badge">
-          <span class="hc-why__center-badge-icon">
-            <svg viewBox="0 0 24 24"><path d="M12 2a4 4 0 0 1 4 4c0 1.5-.8 2.8-2 3.4V11h3a3 3 0 0 1 3 3v1.5a1.5 1.5 0 0 1-3 0V14h-1v4a3 3 0 0 1-3 3h-2a3 3 0 0 1-3-3v-4H7v1.5a1.5 1.5 0 0 1-3 0V14a3 3 0 0 1 3-3h3V9.4A4 4 0 0 1 12 2z"/></svg>
-          </span>
-          <span>Agentic<br/>Intelligence</span>
-        </div>
-      </div>
+     
       </div>
 
       <div class="hc-why__quote" data-reveal>
@@ -319,35 +343,48 @@ import { AfterViewInit, Component, ElementRef, OnDestroy } from '@angular/core';
       <h2 class="hc-outcomes__title">Agentic AI for Banking Risk and Compliance</h2>
       <h3>Key Capabilities</h3>
 
-      <div class="hc-outcomes__grid">
-        <div class="hc-outcome-card">
-          <div class="hc-outcome-card__icon">⚡</div>
-          <span class="hc-outcome-card__text">Unified underwriting, fraud management, and compliance workflows across multiple banking systems. </span>
+      <div class="hc-outcomes__grid cap-grid">
+        <div class="cap-card" data-reveal>
+          <span class="cap-card__num">01</span>
+          <div class="cap-card__icon"><i class="ph ph-squares-four"></i></div>
+          <p class="cap-card__text">Unified underwriting, fraud management, and compliance workflows across multiple banking systems.</p>
+          <span class="cap-card__bar"></span>
         </div>
-        <div class="hc-outcome-card">
-          <div class="hc-outcome-card__icon">📉</div>
-          <span class="hc-outcome-card__text">AI-driven document intelligence for automated extraction, validation, and verification of customer and transaction data. </span>
+        <div class="cap-card" data-reveal>
+          <span class="cap-card__num">02</span>
+          <div class="cap-card__icon"><i class="ph ph-file-magnifying-glass"></i></div>
+          <p class="cap-card__text">AI-driven document intelligence for automated extraction, validation, and verification of customer and transaction data.</p>
+          <span class="cap-card__bar"></span>
         </div>
-        <div class="hc-outcome-card">
-          <div class="hc-outcome-card__icon">😊</div>
-          <span class="hc-outcome-card__text">Intelligent case prioritisation based on risk scores, business rules, and regulatory requirements. </span>
+        <div class="cap-card" data-reveal>
+          <span class="cap-card__num">03</span>
+          <div class="cap-card__icon"><i class="ph ph-funnel"></i></div>
+          <p class="cap-card__text">Intelligent case prioritisation based on risk scores, business rules, and regulatory requirements.</p>
+          <span class="cap-card__bar"></span>
         </div>
-        <div class="hc-outcome-card">
-          <div class="hc-outcome-card__icon">🔄</div>
-          <span class="hc-outcome-card__text">Explainable AI recommendations to support consistent, transparent, and defensible decision-making. </span>
+        <div class="cap-card" data-reveal>
+          <span class="cap-card__num">04</span>
+          <div class="cap-card__icon"><i class="ph ph-lightbulb-filament"></i></div>
+          <p class="cap-card__text">Explainable AI recommendations to support consistent, transparent, and defensible decision-making.</p>
+          <span class="cap-card__bar"></span>
         </div>
-        <div class="hc-outcome-card">
-          <div class="hc-outcome-card__icon">👁️</div>
-          <span class="hc-outcome-card__text">Human-in-the-loop approval workflows for high-risk, complex, or compliance-sensitive cases. </span>
+        <div class="cap-card" data-reveal>
+          <span class="cap-card__num">05</span>
+          <div class="cap-card__icon"><i class="ph ph-user-focus"></i></div>
+          <p class="cap-card__text">Human-in-the-loop approval workflows for high-risk, complex, or compliance-sensitive cases.</p>
+          <span class="cap-card__bar"></span>
         </div>
-        <div class="hc-outcome-card">
-          <div class="hc-outcome-card__icon">😊</div>
-          <span class="hc-outcome-card__text">Automated audit trails, decision logs, and regulatory reporting to strengthen governance and compliance. </span>
+        <div class="cap-card" data-reveal>
+          <span class="cap-card__num">06</span>
+          <div class="cap-card__icon"><i class="ph ph-shield-check"></i></div>
+          <p class="cap-card__text">Automated audit trails, decision logs, and regulatory reporting to strengthen governance and compliance.</p>
+          <span class="cap-card__bar"></span>
         </div>
-      
-      <div class="hc-outcome-card">
-          <div class="hc-outcome-card__icon">👁️</div>
-          <span class="hc-outcome-card__text">Real-time workflow visibility through operational dashboards, SLA monitoring, and exception management</span>
+        <div class="cap-card" data-reveal>
+          <span class="cap-card__num">07</span>
+          <div class="cap-card__icon"><i class="ph ph-gauge"></i></div>
+          <p class="cap-card__text">Real-time workflow visibility through operational dashboards, SLA monitoring, and exception management.</p>
+          <span class="cap-card__bar"></span>
         </div>
       </div>
 
@@ -398,48 +435,50 @@ The solution also incorporated AI-powered document intelligence, real-time risk 
             </div>
             <div class="hc-why__feature-text">
               <strong>Business Outcomes</strong>
-             <ul>
-              <li><span>Accelerated underwriting, fraud investigation, and compliance review cycles.</span></li>
-              <li><span>Reduced manual effort and significantly improved workforce productivity.</span></li>
-              <li><span>Lower false-positive rates through AI-assisted risk assessment and intelligent case prioritisation.</span></li>
-              <li><span>Improved consistency, transparency, and regulatory compliance across risk decisions.</span></li>
-              <li><span>Enhanced customer experience through faster onboarding, lending decisions, and issue resolution.</span></li>
-              <li><span>Increased operational resilience and scalability while maintaining enterprise-grade governance and control.</span></li>
-
-             </ul>
+              <ol class="bo-list">
+                <li class="bo-item" data-reveal>
+                  <span class="bo-item__num">01</span>
+                  <span class="bo-item__connector"></span>
+                  <p class="bo-item__text">Accelerated underwriting, fraud investigation, and compliance review cycles.</p>
+                  <span class="bo-item__icon"><i class="ph ph-lightning"></i></span>
+                </li>
+                <li class="bo-item" data-reveal>
+                  <span class="bo-item__num">02</span>
+                  <span class="bo-item__connector"></span>
+                  <p class="bo-item__text">Reduced manual effort and significantly improved workforce productivity.</p>
+                  <span class="bo-item__icon"><i class="ph ph-trend-up"></i></span>
+                </li>
+                <li class="bo-item" data-reveal>
+                  <span class="bo-item__num">03</span>
+                  <span class="bo-item__connector"></span>
+                  <p class="bo-item__text">Lower false-positive rates through AI-assisted risk assessment and intelligent case prioritisation.</p>
+                  <span class="bo-item__icon"><i class="ph ph-target"></i></span>
+                </li>
+                <li class="bo-item" data-reveal>
+                  <span class="bo-item__num">04</span>
+                  <span class="bo-item__connector"></span>
+                  <p class="bo-item__text">Improved consistency, transparency, and regulatory compliance across risk decisions.</p>
+                  <span class="bo-item__icon"><i class="ph ph-scales"></i></span>
+                </li>
+                <li class="bo-item" data-reveal>
+                  <span class="bo-item__num">05</span>
+                  <span class="bo-item__connector"></span>
+                  <p class="bo-item__text">Enhanced customer experience through faster onboarding, lending decisions, and issue resolution.</p>
+                  <span class="bo-item__icon"><i class="ph ph-smiley"></i></span>
+                </li>
+                <li class="bo-item" data-reveal>
+                  <span class="bo-item__num">06</span>
+                  <span class="bo-item__connector"></span>
+                  <p class="bo-item__text">Increased operational resilience and scalability while maintaining enterprise-grade governance and control.</p>
+                  <span class="bo-item__icon"><i class="ph ph-shield-check"></i></span>
+                </li>
+              </ol>
             </div>
           </div>
         </div>
         </div>
 
-      <div class="hc-why__abstract" data-reveal-right>
-        <div class="hc-why__hex-grid">
-          <div class="hc-why__hex hc-why__hex--1"></div>
-          <div class="hc-why__hex hc-why__hex--2"></div>
-          <div class="hc-why__hex hc-why__hex--3"></div>
-          <div class="hc-why__hex hc-why__hex--4"></div>
-          <div class="hc-why__hex hc-why__hex--5"></div>
-          <div class="hc-why__hex hc-why__hex--6"></div>
-          <div class="hc-why__hex hc-why__hex--7"></div>
-          <div class="hc-why__hex hc-why__hex--8"></div>
-          <div class="hc-why__hex hc-why__hex--9"></div>
-          <div class="hc-why__hex-line hc-why__hex-line--1"></div>
-          <div class="hc-why__hex-line hc-why__hex-line--2"></div>
-          <div class="hc-why__hex-line hc-why__hex-line--3"></div>
-          <div class="hc-why__hex-line hc-why__hex-line--4"></div>
-          <div class="hc-why__data-node hc-why__data-node--1"></div>
-          <div class="hc-why__data-node hc-why__data-node--2"></div>
-          <div class="hc-why__data-node hc-why__data-node--3"></div>
-          <div class="hc-why__data-node hc-why__data-node--4"></div>
-        </div>
-        <div class="hc-why__center-ring"></div>
-        <div class="hc-why__center-badge">
-          <span class="hc-why__center-badge-icon">
-            <svg viewBox="0 0 24 24"><path d="M12 2a4 4 0 0 1 4 4c0 1.5-.8 2.8-2 3.4V11h3a3 3 0 0 1 3 3v1.5a1.5 1.5 0 0 1-3 0V14h-1v4a3 3 0 0 1-3 3h-2a3 3 0 0 1-3-3v-4H7v1.5a1.5 1.5 0 0 1-3 0V14a3 3 0 0 1 3-3h3V9.4A4 4 0 0 1 12 2z"/></svg>
-          </span>
-          <span>Agentic<br/>Intelligence</span>
-        </div>
-      </div>
+     
       </div>
 
       <div class="hc-why__quote" data-reveal>
@@ -1177,7 +1216,7 @@ The solution also incorporated AI-powered document intelligence, real-time risk 
 
     .hc-why__bottom {
       display: grid;
-      grid-template-columns: 1.2fr 1fr;
+      // grid-template-columns: 1.2fr 1fr;
       gap: 2rem;
       align-items: start;
     }
@@ -1547,6 +1586,111 @@ The solution also incorporated AI-powered document intelligence, real-time risk 
       margin-bottom: 3rem;
     }
 
+    /* ═════ Key Capabilities — unique card grid ═════════════ */
+    .cap-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 1.5rem;
+      margin-bottom: 3rem;
+    }
+    .cap-card {
+      position: relative;
+      padding: 2.4rem 1.6rem 1.8rem;
+      border-radius: 20px;
+      background: linear-gradient(180deg, #ffffff 0%, #fafbff 100%);
+      border: 1px solid rgba(27, 58, 143, 0.08);
+      box-shadow: 0 14px 30px -22px rgba(27, 58, 143, 0.35);
+      text-align: left;
+      overflow: hidden;
+      transition: transform 0.4s cubic-bezier(0.2, 0.8, 0.2, 1),
+                  box-shadow 0.4s ease,
+                  border-color 0.4s ease;
+    }
+    .cap-card::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(circle at 100% 0%, rgba(232, 119, 34, 0.14), transparent 55%);
+      opacity: 0;
+      transition: opacity 0.45s ease;
+      pointer-events: none;
+    }
+    .cap-card:hover {
+      transform: translateY(-8px);
+      border-color: transparent;
+      box-shadow: 0 28px 48px -22px rgba(27, 58, 143, 0.42);
+    }
+    .cap-card:hover::before { opacity: 1; }
+
+    .cap-card__num {
+      position: absolute;
+      top: 1rem;
+      right: 1.2rem;
+      font-family: 'DM Serif Display', Georgia, serif;
+      font-size: 2.2rem;
+      line-height: 1;
+      background: linear-gradient(135deg, rgba(232, 119, 34, 0.55), rgba(27, 58, 143, 0.25));
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      opacity: 0.85;
+      transition: transform 0.4s ease, opacity 0.4s ease;
+    }
+    .cap-card:hover .cap-card__num {
+      transform: scale(1.12) translateY(-2px);
+      opacity: 1;
+    }
+
+    .cap-card__icon {
+      width: 60px;
+      height: 60px;
+      border-radius: 18px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, rgba(232, 119, 34, 0.14), rgba(27, 58, 143, 0.14));
+      color: var(--orange);
+      margin-bottom: 1.15rem;
+      position: relative;
+      z-index: 1;
+      transition: background 0.4s ease, color 0.4s ease,
+                  transform 0.4s ease, box-shadow 0.4s ease;
+    }
+    .cap-card__icon i {
+      font-size: 1.75rem;
+      line-height: 1;
+    }
+    .cap-card:hover .cap-card__icon {
+      background: linear-gradient(135deg, var(--orange), var(--blue));
+      color: #ffffff;
+      transform: rotate(-6deg) scale(1.05);
+      box-shadow: 0 16px 30px -12px rgba(232, 119, 34, 0.55);
+    }
+
+    .cap-card__text {
+      margin: 0 0 1.4rem;
+      font-size: 0.94rem;
+      line-height: 1.6;
+      color: var(--dark);
+      font-weight: 500;
+      position: relative;
+      z-index: 1;
+    }
+
+    .cap-card__bar {
+      position: absolute;
+      left: 1.6rem;
+      right: 1.6rem;
+      bottom: 1rem;
+      height: 3px;
+      border-radius: 3px;
+      background: linear-gradient(90deg, var(--orange), var(--blue));
+      transform: scaleX(0.18);
+      transform-origin: left;
+      transition: transform 0.5s cubic-bezier(0.2, 0.8, 0.2, 1);
+    }
+    .cap-card:hover .cap-card__bar { transform: scaleX(1); }
+
     .hc-outcome-card {
       background: #fff;
       border-radius: 16px;
@@ -1593,9 +1737,17 @@ The solution also incorporated AI-powered document intelligence, real-time risk 
       box-shadow: 0 4px 20px rgba(0,0,0,0.04);
     }
 
+    @media (max-width: 960px) {
+      .cap-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    }
+
     @media (max-width: 768px) {
       .hc-outcomes { padding: 3.5rem 1.2rem; }
       .hc-outcomes__grid { grid-template-columns: 1fr 1fr; }
+    }
+
+    @media (max-width: 560px) {
+      .cap-grid { grid-template-columns: 1fr; }
     }
 
     @media (max-width: 480px) {
@@ -1923,6 +2075,355 @@ The solution also incorporated AI-powered document intelligence, real-time risk 
 
     /* ─── FOOTER RESET ───────────────────────────────────── */
     .site-footer { margin-top: 0; }
+
+    /* ═════ Business Outcomes — timeline bars ═══════════════ */
+    .bo-list {
+      list-style: none;
+      padding: 0;
+      margin: 0.75rem 0 0;
+      display: flex;
+      flex-direction: column;
+      gap: 0.85rem;
+    }
+    .bo-item {
+      position: relative;
+      display: grid;
+      grid-template-columns: 58px 22px 1fr 44px;
+      align-items: center;
+      gap: 0.85rem;
+      padding: 1rem 1.15rem 1rem 1rem;
+      border-radius: 14px;
+      background: linear-gradient(90deg, #ffffff 0%, #fafbff 100%);
+      border: 1px solid rgba(27, 58, 143, 0.08);
+      box-shadow: 0 8px 22px -18px rgba(27, 58, 143, 0.35);
+      overflow: hidden;
+      transition: transform 0.35s ease, box-shadow 0.35s ease,
+                  border-color 0.35s ease, background 0.35s ease;
+    }
+    .bo-item::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      width: 4px;
+      background: linear-gradient(180deg, var(--orange), var(--blue));
+      transform: scaleY(0);
+      transform-origin: top;
+      transition: transform 0.45s cubic-bezier(0.2, 0.8, 0.2, 1);
+    }
+    .bo-item::after {
+      content: '';
+      position: absolute;
+      right: -30%;
+      top: -80%;
+      width: 220px;
+      height: 220px;
+      background: radial-gradient(circle, rgba(232, 119, 34, 0.16), transparent 65%);
+      opacity: 0;
+      transition: opacity 0.45s ease;
+      pointer-events: none;
+    }
+    .bo-item:hover {
+      transform: translateX(4px);
+      border-color: transparent;
+      box-shadow: 0 18px 34px -18px rgba(27, 58, 143, 0.42);
+    }
+    .bo-item:hover::before { transform: scaleY(1); }
+    .bo-item:hover::after { opacity: 1; }
+    .bo-item:nth-child(even) {
+      background: linear-gradient(90deg, #fafbff 0%, #ffffff 100%);
+    }
+
+    .bo-item__num {
+      font-family: 'DM Serif Display', Georgia, serif;
+      font-size: 1.75rem;
+      line-height: 1;
+      background: linear-gradient(135deg, var(--orange), var(--blue));
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      text-align: center;
+      position: relative;
+      z-index: 1;
+    }
+    .bo-item__connector {
+      position: relative;
+      display: block;
+      width: 22px;
+      height: 2px;
+      background: linear-gradient(90deg, rgba(232, 119, 34, 0.55), rgba(27, 58, 143, 0.2));
+      border-radius: 2px;
+    }
+    .bo-item__connector::before,
+    .bo-item__connector::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      transform: translateY(-50%);
+    }
+    .bo-item__connector::before {
+      left: -2px;
+      background: var(--orange);
+      box-shadow: 0 0 0 3px rgba(232, 119, 34, 0.18);
+    }
+    .bo-item__connector::after {
+      right: -2px;
+      background: var(--blue);
+    }
+
+    .bo-item__text {
+      margin: 0;
+      font-size: 0.95rem;
+      line-height: 1.55;
+      color: var(--dark);
+      font-weight: 500;
+      position: relative;
+      z-index: 1;
+    }
+
+    .bo-item__icon {
+      width: 44px;
+      height: 44px;
+      border-radius: 12px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, rgba(232, 119, 34, 0.12), rgba(27, 58, 143, 0.12));
+      color: var(--orange);
+      position: relative;
+      z-index: 1;
+      transition: background 0.35s ease, color 0.35s ease,
+                  transform 0.4s ease, box-shadow 0.35s ease;
+    }
+    .bo-item__icon i { font-size: 1.35rem; line-height: 1; }
+    .bo-item:hover .bo-item__icon {
+      background: linear-gradient(135deg, var(--orange), var(--blue));
+      color: #ffffff;
+      transform: rotate(-8deg) scale(1.08);
+      box-shadow: 0 12px 22px -10px rgba(232, 119, 34, 0.55);
+    }
+
+    @media (max-width: 640px) {
+      .bo-item {
+        grid-template-columns: 46px 1fr 40px;
+        gap: 0.6rem;
+        padding: 0.85rem 0.95rem;
+      }
+      .bo-item__connector { display: none; }
+      .bo-item__num { font-size: 1.45rem; }
+      .bo-item__icon { width: 40px; height: 40px; }
+    }
+
+    /* ═════ Business Value redesign ═════════════════════════ */
+    .bv { width: 100%; }
+    .bv__header { margin-bottom: 2rem; }
+    .bv__eyebrow {
+      display: inline-block;
+      padding: 0.35rem 0.85rem;
+      border-radius: 999px;
+      background: linear-gradient(135deg, rgba(232, 119, 34, 0.15), rgba(27, 58, 143, 0.15));
+      color: var(--orange);
+      font-size: 0.72rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      font-weight: 700;
+      margin-bottom: 0.85rem;
+    }
+    .bv__title {
+      display: block;
+      font-family: 'DM Serif Display', Georgia, serif;
+      font-size: clamp(1.7rem, 2.6vw, 2.2rem);
+      line-height: 1.2;
+      color: var(--dark);
+      font-weight: 400;
+      margin-bottom: 0.5rem;
+    }
+    .bv__title em {
+      background: linear-gradient(135deg, var(--orange), var(--blue));
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      font-style: italic;
+    }
+    .bv__lede {
+      margin: 0;
+      color: var(--mid);
+      font-size: 0.98rem;
+      line-height: 1.65;
+      max-width: 640px;
+    }
+    .bv__list {
+      list-style: none;
+      padding: 0;
+      margin: 0 0 1.5rem;
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 1rem;
+    }
+    .bv__item {
+      position: relative;
+      display: grid;
+      grid-template-columns: 46px 40px 1fr;
+      gap: 0.85rem;
+      align-items: center;
+      padding: 1.1rem 1.2rem 1.1rem 1.4rem;
+      border-radius: 16px;
+      background: linear-gradient(180deg, #ffffff 0%, #fafbff 100%);
+      border: 1px solid rgba(27, 58, 143, 0.08);
+      box-shadow: 0 12px 28px -20px rgba(27, 58, 143, 0.28);
+      transition: transform 0.35s ease, box-shadow 0.35s ease, border-color 0.35s ease;
+      overflow: hidden;
+    }
+    .bv__item::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      width: 4px;
+      background: linear-gradient(180deg, var(--orange), var(--blue));
+      transform: scaleY(0);
+      transform-origin: top;
+      transition: transform 0.4s cubic-bezier(0.2, 0.8, 0.2, 1);
+    }
+    .bv__item::after {
+      content: '';
+      position: absolute;
+      top: -60%;
+      right: -30%;
+      width: 180px;
+      height: 180px;
+      background: radial-gradient(circle, rgba(232, 119, 34, 0.14), transparent 70%);
+      opacity: 0;
+      transition: opacity 0.4s ease;
+      pointer-events: none;
+    }
+    .bv__item:hover {
+      transform: translateY(-4px);
+      border-color: transparent;
+      box-shadow: 0 24px 42px -22px rgba(27, 58, 143, 0.4);
+    }
+    .bv__item:hover::before { transform: scaleY(1); }
+    .bv__item:hover::after { opacity: 1; }
+    .bv__num {
+      font-family: 'DM Serif Display', Georgia, serif;
+      font-size: 1.7rem;
+      line-height: 1;
+      background: linear-gradient(135deg, var(--orange), var(--blue));
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      font-weight: 400;
+      text-align: center;
+      position: relative;
+      z-index: 1;
+    }
+    .bv__icon {
+      width: 40px;
+      height: 40px;
+      border-radius: 12px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, rgba(232, 119, 34, 0.12), rgba(27, 58, 143, 0.12));
+      color: var(--orange);
+      transition: background 0.35s ease, color 0.35s ease, transform 0.35s ease;
+      position: relative;
+      z-index: 1;
+    }
+    .bv__item:hover .bv__icon {
+      background: linear-gradient(135deg, var(--orange), var(--blue));
+      color: #ffffff;
+      transform: rotate(-6deg) scale(1.05);
+    }
+    .bv__icon svg {
+      width: 20px;
+      height: 20px;
+      stroke: currentColor;
+      stroke-width: 2;
+      fill: none;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+    .bv__text {
+      margin: 0;
+      font-size: 0.95rem;
+      line-height: 1.55;
+      color: var(--dark);
+      position: relative;
+      z-index: 1;
+    }
+    .bv__callout {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.9rem;
+      padding: 1.15rem 1.3rem;
+      border-radius: 14px;
+      background: linear-gradient(135deg, rgba(232, 119, 34, 0.08), rgba(27, 58, 143, 0.1));
+      border: 1px dashed rgba(232, 119, 34, 0.4);
+      position: relative;
+      overflow: hidden;
+    }
+    .bv__callout::before {
+      content: '';
+      position: absolute;
+      top: -40%;
+      left: -15%;
+      width: 240px;
+      height: 240px;
+      background: radial-gradient(circle, rgba(232, 119, 34, 0.15), transparent 70%);
+      pointer-events: none;
+    }
+    .bv__callout-icon {
+      width: 38px;
+      height: 38px;
+      flex-shrink: 0;
+      border-radius: 10px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, var(--orange), var(--blue));
+      color: #ffffff;
+      position: relative;
+      z-index: 1;
+      box-shadow: 0 12px 24px -10px rgba(232, 119, 34, 0.55);
+    }
+    .bv__callout-icon svg {
+      width: 18px;
+      height: 18px;
+      stroke: currentColor;
+      stroke-width: 2;
+      fill: none;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+    .bv__callout p {
+      margin: 0;
+      font-size: 1rem;
+      line-height: 1.6;
+      color: var(--dark);
+      position: relative;
+      z-index: 1;
+    }
+    .bv__callout p strong {
+      color: var(--orange);
+      font-weight: 700;
+      margin-right: 0.35rem;
+    }
+    @media (max-width: 768px) {
+      .bv__list { grid-template-columns: 1fr; }
+      .bv__item {
+        grid-template-columns: 40px 36px 1fr;
+        gap: 0.65rem;
+        padding: 0.95rem 1rem 0.95rem 1.15rem;
+      }
+      .bv__num { font-size: 1.4rem; }
+      .bv__callout { padding: 1rem 1.15rem; }
+    }
     `,
   ],
 })
