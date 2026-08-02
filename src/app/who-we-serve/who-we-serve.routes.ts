@@ -116,6 +116,26 @@ export const routes: Routes = [
         loadComponent: () => import('./retail/retail').then((m) => m.Retail),
       },
       {
+        path: 'retail/solutions',
+        loadComponent: () =>
+          import('./retail/retail-solutions/retail-solutions').then((m) => m.RetailSolutions),
+      },
+      {
+        path: 'retail/inventory-optimization-agent',
+        loadComponent: () =>
+          import('./retail/inventory-optimization-agent/inventory-optimization-agent').then((m) => m.InventoryOptimizationAgent),
+      },
+      {
+        path: 'retail/personalized-shopping-agent',
+        loadComponent: () =>
+          import('./retail/personalized-shopping-agent/personalized-shopping-agent').then((m) => m.PersonalizedShoppingAgent),
+      },
+      {
+        path: 'retail/customer-service-returns-agent',
+        loadComponent: () =>
+          import('./retail/customer-service-returns-agent/customer-service-returns-agent').then((m) => m.CustomerServiceReturnsAgent),
+      },
+      {
         path: 'manufacturing',
         loadComponent: () =>
           import('./manufacturing/manufacturing').then((m) => m.Manufacturing),
