@@ -8,6 +8,10 @@ export const routes: Routes = [
     component: WhatWeOffer,
     children: [
       {
+        path: '',
+        loadComponent: () => import('./hub/hub').then((m) => m.WhatWeOfferHub),
+      },
+      {
         path: 'ai-services',
         loadComponent: () =>
           import('./ai-services/ai-services').then((m) => m.AiServices),
