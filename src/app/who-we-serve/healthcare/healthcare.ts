@@ -94,7 +94,7 @@ import { RouterLink } from '@angular/router';
         <p class="hc-intro__text">
           Built on secure, scalable, and compliant AI architectures, our solutions enable healthcare organisations to reduce operational costs, improve workforce productivity, enhance patient experiences, and achieve measurable business outcomes while maintaining the highest standards of security, privacy, and regulatory compliance.
         </p>
-        <a href="#" class="hc-intro__btn">
+        <a routerLink="/customer-delight" class="hc-intro__btn">
           Customer Delight
           <svg width="16" height="16" viewBox="0 0 18 18" fill="none"><path d="M3.75 9H14.25M14.25 9L9.75 4.5M14.25 9L9.75 13.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
         </a>

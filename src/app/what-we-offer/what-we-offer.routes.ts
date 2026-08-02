@@ -8,6 +8,10 @@ export const routes: Routes = [
     component: WhatWeOffer,
     children: [
       {
+        path: '',
+        loadComponent: () => import('./hub/hub').then((m) => m.WhatWeOfferHub),
+      },
+      {
         path: 'ai-services',
         loadComponent: () =>
           import('./ai-services/ai-services').then((m) => m.AiServices),
@@ -80,6 +84,62 @@ export const routes: Routes = [
         loadComponent: () =>
           import('./cloud-engineering/cloud-engineering').then(
             (m) => m.CloudEngineering,
+          ),
+      },
+      {
+        path: 'cloud-engineering/cloud-strategy-architecture-design',
+        loadComponent: () =>
+          import('./cloud-engineering/cloud-strategy-architecture-design/cloud-strategy-architecture-design').then(
+            (m) => m.CloudStrategyArchitectureDesign,
+          ),
+      },
+      {
+        path: 'cloud-engineering/application-infrastructure-migration',
+        loadComponent: () =>
+          import('./cloud-engineering/application-infrastructure-migration/application-infrastructure-migration').then(
+            (m) => m.ApplicationInfrastructureMigration,
+          ),
+      },
+      {
+        path: 'cloud-engineering/cloud-native-app-development',
+        loadComponent: () =>
+          import('./cloud-engineering/cloud-native-app-development/cloud-native-app-development').then(
+            (m) => m.CeCloudNativeAppDevelopment,
+          ),
+      },
+      {
+        path: 'cloud-engineering/devops-cicd-enablement',
+        loadComponent: () =>
+          import('./cloud-engineering/devops-cicd-enablement/devops-cicd-enablement').then(
+            (m) => m.DevOpsCicdEnablement,
+          ),
+      },
+      {
+        path: 'cloud-engineering/infrastructure-as-code-automation',
+        loadComponent: () =>
+          import('./cloud-engineering/infrastructure-as-code-automation/infrastructure-as-code-automation').then(
+            (m) => m.InfrastructureAsCodeAutomation,
+          ),
+      },
+      {
+        path: 'cloud-engineering/security-identity-compliance-controls',
+        loadComponent: () =>
+          import('./cloud-engineering/security-identity-compliance-controls/security-identity-compliance-controls').then(
+            (m) => m.SecurityIdentityComplianceControls,
+          ),
+      },
+      {
+        path: 'cloud-engineering/monitoring-optimization-finops-support',
+        loadComponent: () =>
+          import('./cloud-engineering/monitoring-optimization-finops-support/monitoring-optimization-finops-support').then(
+            (m) => m.MonitoringOptimizationFinopsSupport,
+          ),
+      },
+      {
+        path: 'cloud-engineering/backup-recovery-resilience-planning',
+        loadComponent: () =>
+          import('./cloud-engineering/backup-recovery-resilience-planning/backup-recovery-resilience-planning').then(
+            (m) => m.BackupRecoveryResiliencePlanning,
           ),
       },
       {

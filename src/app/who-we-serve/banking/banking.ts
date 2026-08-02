@@ -1,9 +1,10 @@
 import { AfterViewInit, Component, ElementRef, OnDestroy } from '@angular/core';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-banking',
   standalone: true,
-  imports: [],
+  imports: [RouterLink],
   template: `
 
      <!-- ─── BREADCRUMB ───────────────────────────────────────── -->
@@ -93,7 +94,7 @@ import { AfterViewInit, Component, ElementRef, OnDestroy } from '@angular/core';
         <p class="hc-intro__text">
         From intelligent customer onboarding and Know Your Customer (KYC) verification to credit underwriting, fraud detection, anti-money laundering (AML) investigations, payment operations, regulatory reporting, collections, and customer service automation, our Agentic AI solutions optimise every stage of the banking value chain. Built on secure, scalable, and governance-first AI architectures, they empower financial institutions to reduce operational costs, improve productivity, strengthen risk management, and accelerate digital transformation while ensuring the highest standards of security, regulatory compliance, and responsible AI. 
         </p>
-        <a href="#" class="hc-intro__btn">
+        <a routerLink="/customer-delight" class="hc-intro__btn">
           Customer Delight
           <svg width="16" height="16" viewBox="0 0 18 18" fill="none"><path d="M3.75 9H14.25M14.25 9L9.75 4.5M14.25 9L9.75 13.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
         </a>
@@ -1216,7 +1217,7 @@ The solution also incorporated AI-powered document intelligence, real-time risk 
 
     .hc-why__bottom {
       display: grid;
-      // grid-template-columns: 1.2fr 1fr;
+      /* grid-template-columns: 1.2fr 1fr; */
       gap: 2rem;
       align-items: start;
     }

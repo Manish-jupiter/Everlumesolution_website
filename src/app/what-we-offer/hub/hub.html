@@ -1,0 +1,25 @@
+<section class="offer-hub">
+  <header class="offer-hub__head">
+    <span class="offer-hub__eyebrow">What We Offer</span>
+    <h1>Services that illuminate what's next.</h1>
+    <p>
+      Explore our full-stack service portfolio — from AI and cloud to data,
+      automation, and managed operations.
+    </p>
+  </header>
+
+  <div class="offer-hub__grid">
+    @for (o of offerings; track o.link) {
+      <a
+        [routerLink]="o.link"
+        routerLinkActive="is-active"
+        class="offer-hub__card"
+      >
+        <span class="offer-hub__icon"><i class="ph {{ o.icon }}"></i></span>
+        <strong>{{ o.label }}</strong>
+        <small>{{ o.description }}</small>
+        <span class="offer-hub__arrow"><i class="ph ph-arrow-right"></i></span>
+      </a>
+    }
+  </div>
+</section>
