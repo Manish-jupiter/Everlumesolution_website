@@ -383,7 +383,7 @@ interface SecurityTopic {
 
       /* ── 3. Intro section ─────────────────────── */
       .um-intro {
-        background: linear-gradient(180deg, #ffffff 0%, #f6f7fb 100%);
+        background: linear-gradient(180deg, #edebeb 0%, #f6f7fb 100%);
         padding: 5rem 1.5rem;
         font-family: 'DM Sans', system-ui, sans-serif;
         color: var(--um-ink);
@@ -408,17 +408,14 @@ interface SecurityTopic {
       }
       .um-intro__grid {
         display: grid;
-        grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
-        gap: 2.5rem;
+        gap: 2rem;
         align-items: start;
       }
       .um-intro__lead {
         position: relative;
         padding: 1.75rem 1.75rem 1.75rem 2.5rem;
         background: #ffffff;
-        border-radius: 20px;
-        border: 1px solid rgba(27, 58, 143, 0.08);
-        box-shadow: 0 24px 48px -32px rgba(16, 21, 42, 0.35);
+        
       }
       .um-intro__lead::before {
         content: '';
@@ -670,6 +667,40 @@ interface SecurityTopic {
         padding: 1.75rem 1.75rem 1.85rem;
         transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
         overflow: hidden;
+      }
+
+      /* Per-card light gradient tints */
+      .um-sec__card:nth-child(8n + 1) {
+        background: linear-gradient(135deg, #fffaf3 0%, #fff1e0 100%);
+        border-color: rgba(232, 119, 34, 0.14);
+      }
+      .um-sec__card:nth-child(8n + 2) {
+        background: linear-gradient(135deg, #f8faff 0%, #ebf0ff 100%);
+        border-color: rgba(27, 58, 143, 0.14);
+      }
+      .um-sec__card:nth-child(8n + 3) {
+        background: linear-gradient(135deg, #f6fefa 0%, #e6faee 100%);
+        border-color: rgba(5, 150, 105, 0.15);
+      }
+      .um-sec__card:nth-child(8n + 4) {
+        background: linear-gradient(135deg, #fef8fb 0%, #fbeaf2 100%);
+        border-color: rgba(224, 75, 107, 0.15);
+      }
+      .um-sec__card:nth-child(8n + 5) {
+        background: linear-gradient(135deg, #faf9ff 0%, #efecff 100%);
+        border-color: rgba(124, 58, 237, 0.15);
+      }
+      .um-sec__card:nth-child(8n + 6) {
+        background: linear-gradient(135deg, #fffef5 0%, #fff8dc 100%);
+        border-color: rgba(202, 138, 4, 0.15);
+      }
+      .um-sec__card:nth-child(8n + 7) {
+        background: linear-gradient(135deg, #f5fdff 0%, #e2f7fb 100%);
+        border-color: rgba(14, 165, 233, 0.15);
+      }
+      .um-sec__card:nth-child(8n + 8) {
+        background: linear-gradient(135deg, #fff7f8 0%, #ffebee 100%);
+        border-color: rgba(244, 63, 94, 0.15);
       }
       .um-sec__card::before {
         content: '';
