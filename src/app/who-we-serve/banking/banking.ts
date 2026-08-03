@@ -1217,7 +1217,7 @@ The solution also incorporated AI-powered document intelligence, real-time risk 
 
     .hc-why__bottom {
       display: grid;
-      // grid-template-columns: 1.2fr 1fr;
+      /* grid-template-columns: 1.2fr 1fr; */
       gap: 2rem;
       align-items: start;
     }
