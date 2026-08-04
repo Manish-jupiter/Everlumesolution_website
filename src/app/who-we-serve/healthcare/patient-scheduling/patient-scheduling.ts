@@ -275,7 +275,7 @@ import { RouterLink } from '@angular/router';
     .ps-hero__overlay {
       position: absolute;
       inset: 0;
-      background: linear-gradient(180deg, rgba(15,23,42,0.35) 0%, rgba(27,58,143,0.78) 100%);
+      background: radial-gradient(ellipse at 20% 30%, rgba(232, 119, 34, 0.28), transparent 55%), radial-gradient(ellipse at 80% 70%, rgba(27, 58, 143, 0.45), transparent 55%), linear-gradient(180deg, rgba(16, 21, 42, 0.35), rgba(16, 21, 42, 0.85));
     }
     .ps-hero__abstract-ring {
       position: absolute;

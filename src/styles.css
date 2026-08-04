@@ -77,8 +77,14 @@ body.body--menu-open {
 }
 
 /* Global breadcrumb normalization: force blue variant across pages */
+
+.dp-sub-bc{
+  background: #1B3A8F !important;
+  margin-top: 10px !important;
+}
 .breadcrumb-bar {
   background: #142d6b !important;
+  margin-top: 10px !important;
 }
 
 .breadcrumb-bar a,
@@ -659,7 +665,7 @@ body.body--menu-open .nav.nav--scrolled {
 }
 
 .hero__overlay {
-  background: linear-gradient(to bottom, rgb(33 33 34 / 82%) 0%, rgba(8, 12, 28, 0.45) 40%, rgba(8, 12, 28, 0.75) 100%);
+  background: radial-gradient(ellipse at 20% 30%, rgba(232, 119, 34, 0.28), transparent 55%), radial-gradient(ellipse at 80% 70%, rgba(27, 58, 143, 0.45), transparent 55%), linear-gradient(180deg, rgba(16, 21, 42, 0.35), rgba(16, 21, 42, 0.85));
     inset: 0;
     position: absolute;
 }
@@ -3128,7 +3134,7 @@ body.body--menu-open .nav.nav--scrolled {
   margin-bottom: 1.2rem;
   width: auto;
   filter: brightness(1.8) contrast(1.1);
-  display:none;
+ 
 }
 
 .site-footer__brand-text {

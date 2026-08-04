@@ -155,7 +155,7 @@ import { RouterLink } from '@angular/router';
     .ce-hero { position: relative; height: 60vh; min-height: 400px; overflow: hidden; display: flex; flex-direction: column; }
     .ce-hero__bg { position: absolute; inset: 0; }
     .ce-hero__bg img { width: 100%; height: 100%; object-fit: cover; }
-    .ce-hero__overlay { position: absolute; inset: 0; background: linear-gradient(135deg, rgba(6,13,31,0.88) 0%, rgba(27,58,143,0.7) 100%); }
+    .ce-hero__overlay { position: absolute; inset: 0; background: radial-gradient(ellipse at 20% 30%, rgba(232, 119, 34, 0.28), transparent 55%), radial-gradient(ellipse at 80% 70%, rgba(27, 58, 143, 0.45), transparent 55%), linear-gradient(180deg, rgba(16, 21, 42, 0.35), rgba(16, 21, 42, 0.85)); }
     .ce-hero__abstract-ring { position: absolute; top: -60px; right: -60px; width: 400px; height: 400px; border: 1.5px solid rgba(255,255,255,0.06); border-radius: 50%; animation: spinSlow 40s linear infinite; pointer-events: none; }
     .ce-hero__abstract-blob { position: absolute; bottom: -80px; left: 15%; width: 300px; height: 300px; background: radial-gradient(circle, rgba(232,119,34,0.12) 0%, transparent 70%); border-radius: 50%; animation: drift 18s ease-in-out infinite; pointer-events: none; }
     .ce-hero__particles { position: absolute; inset: 0; pointer-events: none; z-index: 1; }

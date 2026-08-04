@@ -127,7 +127,7 @@ import { RouterLink } from '@angular/router';
     .ai-hero { position:relative; height:60vh; min-height:400px; overflow:hidden; }
     .ai-hero__bg { position:absolute; inset:0; }
     .ai-hero__bg img { width:100%; height:100%; object-fit:cover; }
-    .ai-hero__overlay { position:absolute; inset:0; background:linear-gradient(135deg, rgba(6,13,31,.88), rgba(27,58,143,.7)); }
+    .ai-hero__overlay { position:absolute; inset:0; background: radial-gradient(ellipse at 20% 30%, rgba(232, 119, 34, 0.28), transparent 55%), radial-gradient(ellipse at 80% 70%, rgba(27, 58, 143, 0.45), transparent 55%), linear-gradient(180deg, rgba(16, 21, 42, 0.35), rgba(16, 21, 42, 0.85)); }
     .ai-hero__abstract-ring { position:absolute; top:-60px; right:-60px; width:400px; height:400px; border:1.5px solid rgba(255,255,255,.06); border-radius:50%; animation:spinSlow 40s linear infinite; }
     .ai-hero__abstract-blob { position:absolute; bottom:-80px; left:15%; width:300px; height:300px; border-radius:50%; background:radial-gradient(circle, rgba(232,119,34,.12), transparent 70%); animation:drift 18s ease-in-out infinite; }
     .ai-hero__particles { position:absolute; inset:0; z-index:1; pointer-events:none; }
