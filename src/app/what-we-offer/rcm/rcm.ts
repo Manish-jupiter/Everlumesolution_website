@@ -1,4 +1,4 @@
-import { AfterViewInit, Component, ElementRef, OnDestroy } from '@angular/core';
+﻿import { AfterViewInit, Component, ElementRef, OnDestroy } from '@angular/core';
 import { RouterLink } from '@angular/router';
 
 @Component({
@@ -7,14 +7,14 @@ import { RouterLink } from '@angular/router';
   imports: [RouterLink],
   template: `
     <div class="breadcrumb-bar">
-      <a routerLink="/">Home</a><span class="sep">›</span>
-      <a routerLink="/what-we-offer">What We Offer</a><span class="sep">›</span>
+      <a routerLink="/">Home</a><span class="sep">></span>
+      <a routerLink="/what-we-offer">What We Offer</a><span class="sep">></span>
       <span class="current">RCM as a Service</span>
     </div>
 
     <section class="rcm-hero">
       <div class="rcm-hero__bg">
-        <img src="https://images.unsplash.com/photo-1587370560942-ad2a04eabb6d?auto=format&fit=crop&w=1800&q=80" alt="RCM" />
+        <img src="Images/image_055.jpg" alt="RCM" />
         <div class="rcm-hero__overlay"></div>
       </div>
       <div class="rcm-hero__particles" id="rcm-particles"></div>
@@ -245,3 +245,5 @@ export class Rcm implements AfterViewInit, OnDestroy {
     this.revealObserver?.disconnect();
   }
 }
+
+

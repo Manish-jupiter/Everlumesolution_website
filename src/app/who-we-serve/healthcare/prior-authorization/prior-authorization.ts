@@ -1,4 +1,4 @@
-import { Component, AfterViewInit, OnDestroy, ElementRef } from '@angular/core';
+﻿import { Component, AfterViewInit, OnDestroy, ElementRef } from '@angular/core';
 import { RouterLink } from '@angular/router';
 
 @Component({
@@ -6,19 +6,19 @@ import { RouterLink } from '@angular/router';
   standalone: true,
   imports: [RouterLink],
   template: `
-    <!-- ─── BREADCRUMB ─────────────────────────────────────── -->
+    <!-- â”€â”€â”€ BREADCRUMB â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ -->
     <div class="breadcrumb-bar">
       <a routerLink="/">Home</a>
-      <span class="sep">›</span>
+      <span class="sep">></span>
       <a routerLink="/who-we-serve/healthcare">Healthcare</a>
-      <span class="sep">›</span>
+      <span class="sep">></span>
       <span class="current">Prior Authorisation and Eligibility Support</span>
     </div>
 
-    <!-- ─── HERO ───────────────────────────────────────────── -->
+    <!-- â”€â”€â”€ HERO â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ -->
     <section class="pa-hero">
       <div class="pa-hero__bg">
-        <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=1800&q=80" alt="Prior authorisation" />
+        <img src="Images/image_044.jpg" alt="Prior authorisation" />
         <div class="pa-hero__overlay"></div>
       </div>
       <div class="pa-hero__abstract-ring"></div>
@@ -38,7 +38,7 @@ import { RouterLink } from '@angular/router';
       </div>
     </section>
 
-    <!-- ─── INTRO ──────────────────────────────────────────── -->
+    <!-- â”€â”€â”€ INTRO â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ -->
     <section class="pa-intro">
       <div class="pa-intro__blob"></div>
       <div class="pa-intro__dots"></div>
@@ -54,10 +54,10 @@ import { RouterLink } from '@angular/router';
           <div class="pa-intro__dot-grid"></div>
           <div class="pa-intro__ring"></div>
           <div class="pa-intro__img">
-            <img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?auto=format&fit=crop&w=800&q=80" alt="Prior auth AI" loading="lazy" />
+            <img src="Images/image_039.jpg" alt="Prior auth AI" loading="lazy" />
           </div>
           <div class="pa-intro__float-card">
-            <div class="pa-intro__float-icon">🔍</div>
+            <div class="pa-intro__float-icon">ðŸ”</div>
             <div class="pa-intro__float-text">
               <strong>Smart Verification</strong>
               <span>AI-powered workflows</span>
@@ -67,7 +67,7 @@ import { RouterLink } from '@angular/router';
       </div>
     </section>
 
-    <!-- ─── KEY CAPABILITIES ───────────────────────────────── -->
+    <!-- â”€â”€â”€ KEY CAPABILITIES â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ -->
     <section class="pa-capabilities" id="pa-capabilities">
       <div class="pa-capabilities__ring"></div>
       <div class="pa-capabilities__blob"></div>
@@ -131,7 +131,7 @@ import { RouterLink } from '@angular/router';
       </div>
     </section>
 
-    <!-- ─── WHY IT MATTERS ─────────────────────────────────── -->
+    <!-- â”€â”€â”€ WHY IT MATTERS â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ -->
     <section class="pa-why">
       <div class="pa-why__bg-grid"></div>
       <div class="pa-why__glow-1"></div>
@@ -145,7 +145,7 @@ import { RouterLink } from '@angular/router';
       </div>
     </section>
 
-    <!-- ─── BUSINESS VALUE ─────────────────────────────────── -->
+    <!-- â”€â”€â”€ BUSINESS VALUE â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ -->
     <section class="pa-value" data-reveal>
       <div class="pa-value__ring"></div>
       <div class="pa-value__inner">
@@ -153,38 +153,38 @@ import { RouterLink } from '@angular/router';
         <h2 class="pa-section-heading">Business value</h2>
         <div class="pa-value__grid">
           <div class="pa-value-card">
-            <div class="pa-value-card__icon">⚡</div>
+            <div class="pa-value-card__icon">âš¡</div>
             <span>Accelerate prior authorisation turnaround times and improve patient access to treatment.</span>
           </div>
           <div class="pa-value-card">
-            <div class="pa-value-card__icon">✅</div>
+            <div class="pa-value-card__icon">âœ…</div>
             <span>Increase first-pass submission quality, reducing incomplete, delayed, and rejected requests.</span>
           </div>
           <div class="pa-value-card">
-            <div class="pa-value-card__icon">📉</div>
+            <div class="pa-value-card__icon">ðŸ“‰</div>
             <span>Significantly reduce administrative effort for clinical, revenue cycle, and care management teams.</span>
           </div>
           <div class="pa-value-card">
-            <div class="pa-value-card__icon">⚙️</div>
+            <div class="pa-value-card__icon">âš™ï¸</div>
             <span>Improve operational efficiency by automating repetitive eligibility, documentation, and validation tasks.</span>
           </div>
           <div class="pa-value-card">
-            <div class="pa-value-card__icon">📊</div>
+            <div class="pa-value-card__icon">ðŸ“Š</div>
             <span>Enhance visibility into authorisation status, workflow bottlenecks, and operational performance through real-time tracking and reporting.</span>
           </div>
           <div class="pa-value-card">
-            <div class="pa-value-card__icon">🤝</div>
+            <div class="pa-value-card__icon">ðŸ¤</div>
             <span>Improve payer-provider collaboration through consistent, accurate, and policy-compliant submissions.</span>
           </div>
           <div class="pa-value-card">
-            <div class="pa-value-card__icon">📈</div>
+            <div class="pa-value-card__icon">ðŸ“ˆ</div>
             <span>Deliver measurable improvements in productivity, cost efficiency, and patient satisfaction.</span>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ─── GOVERNANCE ─────────────────────────────────────── -->
+    <!-- â”€â”€â”€ GOVERNANCE â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ -->
     <section class="pa-governance">
       <div class="pa-governance__inner" data-reveal>
         <div class="pa-governance__icon-wrap"><i class="ph ph-lock-simple"></i></div>
@@ -194,7 +194,7 @@ import { RouterLink } from '@angular/router';
       </div>
     </section>
 
-    <!-- ─── CTA BAND ──────────────────────────────────────── -->
+    <!-- â”€â”€â”€ CTA BAND â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ -->
     <section class="pa-cta">
       <div class="pa-cta__ring"></div>
       <div class="pa-cta__dots"></div>
@@ -219,7 +219,7 @@ import { RouterLink } from '@angular/router';
       --teal-light: #E87722;
     }
 
-    /* ─── BREADCRUMB ─────────────────────────────────────── */
+    /* â”€â”€â”€ BREADCRUMB â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
     .breadcrumb-bar { background: var(--teal-dark); padding: 0.55rem 3rem; }
     .breadcrumb-bar a, .breadcrumb-bar span { color: rgba(255,255,255,0.65); font-size: 0.8rem; font-weight: 500; text-decoration: none; }
     .breadcrumb-bar a:hover { color: #fff; }
@@ -227,14 +227,14 @@ import { RouterLink } from '@angular/router';
     .breadcrumb-bar .current { color: var(--teal-light); font-weight: 600; }
     @media (max-width: 768px) { .breadcrumb-bar { padding: 0.55rem 1rem; margin-top: 58px; } }
 
-    /* ─── SHARED ─────────────────────────────────────────── */
+    /* â”€â”€â”€ SHARED â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
     .pa-eyebrow { display: inline-block; color: var(--teal); font-size: 0.78rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 1rem; }
     .pa-eyebrow--light { color: var(--orange); }
     .pa-section-heading { font-family: "DM Serif Display", serif; font-size: clamp(1.8rem, 3vw, 2.5rem); color: var(--dark); font-weight: 400; line-height: 1.2; margin-bottom: 1.2rem; }
     .pa-section-heading em { color: var(--orange); font-style: italic; }
     .pa-section-heading--light { color: #fff; }
 
-    /* ─── HERO ───────────────────────────────────────────── */
+    /* â”€â”€â”€ HERO â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
     .pa-hero { position: relative; height: 55vh; min-height: 360px; max-height: 480px; overflow: hidden; }
     .pa-hero__bg { position: absolute; inset: 0; }
     .pa-hero__bg img { width: 100%; height: 100%; object-fit: cover; transform: scale(1.05); animation: heroZoom 12s ease-out forwards; }
@@ -258,7 +258,7 @@ import { RouterLink } from '@angular/router';
     @keyframes fadeUp { to { opacity: 1; transform: translateY(0); } }
     @media (max-width: 768px) { .pa-hero { height: 50vh; min-height: 320px; } .pa-hero__sub { font-size: 0.88rem; } }
 
-    /* ─── INTRO ──────────────────────────────────────────── */
+    /* â”€â”€â”€ INTRO â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
     .pa-intro { padding: 6rem 3rem; max-width: 1200px; margin: 0 auto; position: relative; overflow: hidden; }
     .pa-intro__blob { position: absolute; top: -60px; right: -80px; width: 300px; height: 300px; background: radial-gradient(circle, rgba(27,58,143,0.06) 0%, transparent 70%); border-radius: 50%; animation: drift 15s ease-in-out infinite; pointer-events: none; }
     .pa-intro__dots { position: absolute; bottom: -40px; left: -40px; width: 150px; height: 150px; background-image: radial-gradient(circle, rgba(232,119,34,0.2) 1.5px, transparent 1.5px); background-size: 16px 16px; opacity: 0.6; pointer-events: none; animation: float 10s ease-in-out infinite; }
@@ -277,7 +277,7 @@ import { RouterLink } from '@angular/router';
     .pa-intro__float-text span { font-size: 0.75rem; color: var(--mid); }
     @media (max-width: 991px) { .pa-intro { padding: 4rem 1.5rem; } .pa-intro__grid { grid-template-columns: 1fr; gap: 2.5rem; } .pa-intro__float-card { right: 10px; bottom: -20px; } }
 
-    /* ─── CAPABILITIES ───────────────────────────────────── */
+    /* â”€â”€â”€ CAPABILITIES â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
     .pa-capabilities { padding: 6rem 3rem; background: linear-gradient(180deg, rgba(27,58,143,0.04) 0%, var(--bg) 100%); position: relative; overflow: hidden; }
     .pa-capabilities__ring { position: absolute; top: 100px; left: -120px; width: 350px; height: 350px; border: 1.5px solid rgba(27,58,143,0.06); border-radius: 50%; pointer-events: none; animation: spinSlow 40s linear infinite; }
     .pa-capabilities__blob { position: absolute; bottom: 50px; right: -80px; width: 200px; height: 200px; background: rgba(232,119,34,0.04); border-radius: 50%; filter: blur(60px); animation: drift 15s ease-in-out infinite; pointer-events: none; }
@@ -298,7 +298,7 @@ import { RouterLink } from '@angular/router';
     .pa-cap-card p { font-size: 0.88rem; color: var(--mid); line-height: 1.6; margin: 0; }
     @media (max-width: 768px) { .pa-capabilities { padding: 3.5rem 1.2rem; } .pa-capabilities__grid { grid-template-columns: 1fr; } }
 
-    /* ─── WHY IT MATTERS ─────────────────────────────────── */
+    /* â”€â”€â”€ WHY IT MATTERS â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
     .pa-why { padding: 5rem 3rem; background: linear-gradient(135deg, #060d1f 0%, #0a1635 40%, #0f1f4a 100%); position: relative; overflow: hidden; }
     .pa-why__bg-grid { position: absolute; inset: 0; background-image: linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px); background-size: 60px 60px; pointer-events: none; }
     .pa-why__glow-1 { position: absolute; width: 400px; height: 400px; border-radius: 50%; background: radial-gradient(circle, rgba(232,119,34,0.15) 0%, transparent 70%); top: -100px; right: -100px; pointer-events: none; animation: drift 18s ease-in-out infinite; }
@@ -307,7 +307,7 @@ import { RouterLink } from '@angular/router';
     .pa-why__text { font-size: 1rem; color: rgba(255,255,255,0.7); line-height: 1.85; max-width: 850px; margin: 0 auto; }
     @media (max-width: 768px) { .pa-why { padding: 3.5rem 1.2rem; } }
 
-    /* ─── BUSINESS VALUE ─────────────────────────────────── */
+    /* â”€â”€â”€ BUSINESS VALUE â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
     .pa-value { padding: 6rem 3rem; background: linear-gradient(180deg, var(--bg) 0%, rgba(232,119,34,0.04) 100%); position: relative; overflow: hidden; }
     .pa-value__ring { position: absolute; top: 60px; right: -60px; width: 180px; height: 180px; border: 1.5px dashed rgba(232,119,34,0.12); border-radius: 50%; animation: spinSlow 35s linear infinite reverse; pointer-events: none; }
     .pa-value__inner { max-width: 1100px; margin: 0 auto; text-align: center; position: relative; z-index: 1; }
@@ -318,7 +318,7 @@ import { RouterLink } from '@angular/router';
     .pa-value-card span { font-size: 0.9rem; font-weight: 500; color: var(--dark); line-height: 1.6; }
     @media (max-width: 768px) { .pa-value { padding: 3.5rem 1.2rem; } .pa-value__grid { grid-template-columns: 1fr; } }
 
-    /* ─── GOVERNANCE ─────────────────────────────────────── */
+    /* â”€â”€â”€ GOVERNANCE â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
     .pa-governance { padding: 5rem 3rem; background: var(--bg); }
     .pa-governance__inner { max-width: 900px; margin: 0 auto; background: #fff; border-radius: 24px; padding: 3rem 3.5rem; box-shadow: 0 10px 40px rgba(27,58,143,0.08); border: 1px solid rgba(27,58,143,0.06); position: relative; overflow: hidden; text-align: center; }
     .pa-governance__inner::before { content: ""; position: absolute; top: 0; left: 0; width: 100%; height: 4px; background: linear-gradient(90deg, var(--blue), var(--orange)); }
@@ -328,7 +328,7 @@ import { RouterLink } from '@angular/router';
     .pa-governance p:last-child { margin-bottom: 0; }
     @media (max-width: 768px) { .pa-governance { padding: 3rem 1.2rem; } .pa-governance__inner { padding: 2rem 1.5rem; } }
 
-    /* ─── CTA ────────────────────────────────────────────── */
+    /* â”€â”€â”€ CTA â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
     .pa-cta { background: linear-gradient(135deg, #142d6b 0%, #1B3A8F 100%); padding: 4rem 3rem; text-align: center; position: relative; overflow: hidden; }
     .pa-cta::before { content: ""; position: absolute; width: 400px; height: 400px; border-radius: 50%; background: rgba(232,119,34,0.08); top: -150px; right: -100px; pointer-events: none; }
     .pa-cta__ring { position: absolute; bottom: -80px; left: 10%; width: 250px; height: 250px; border: 2px solid rgba(255,255,255,0.08); border-radius: 50%; animation: spinSlow 20s linear infinite; }
@@ -339,12 +339,12 @@ import { RouterLink } from '@angular/router';
     .pa-cta__btn:hover { transform: translateY(-3px); box-shadow: 0 10px 30px rgba(232,119,34,0.4); color: #fff; }
     @media (max-width: 768px) { .pa-cta { padding: 3rem 1.2rem; } }
 
-    /* ─── ANIMATIONS ─────────────────────────────────────── */
+    /* â”€â”€â”€ ANIMATIONS â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
     @keyframes spinSlow { to { transform: rotate(360deg); } }
     @keyframes float { 0%,100% { transform: translateY(0) rotate(0deg); } 33% { transform: translateY(-15px) rotate(2deg); } 66% { transform: translateY(8px) rotate(-1deg); } }
     @keyframes drift { 0%,100% { transform: translate(0,0); } 25% { transform: translate(20px,-10px); } 50% { transform: translate(-10px,-20px); } 75% { transform: translate(-20px,10px); } }
 
-    /* ─── REVEAL ─────────────────────────────────────────── */
+    /* â”€â”€â”€ REVEAL â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
     [data-reveal] { opacity: 0; transform: translateY(40px); transition: opacity 0.8s cubic-bezier(0.22,1,0.36,1), transform 0.8s cubic-bezier(0.22,1,0.36,1); }
     [data-reveal].is-visible { opacity: 1; transform: translateY(0); }
     [data-reveal-left] { opacity: 0; transform: translateX(-40px); transition: opacity 0.8s cubic-bezier(0.22,1,0.36,1), transform 0.8s cubic-bezier(0.22,1,0.36,1); }
@@ -410,3 +410,6 @@ export class PriorAuthorization implements AfterViewInit, OnDestroy {
     if (this.revealObserver) this.revealObserver.disconnect();
   }
 }
+
+
+

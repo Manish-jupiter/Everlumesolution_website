@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+﻿import { Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
 
 @Component({
@@ -7,9 +7,9 @@ import { RouterLink } from '@angular/router';
   imports: [RouterLink],
   template: `
     <div class="breadcrumb-bar">
-      <a routerLink="/">Home</a><span class="sep">›</span>
-      <a routerLink="/who-we-serve">Who We Serve</a><span class="sep">›</span>
-      <a routerLink="/who-we-serve/retail">Retail</a><span class="sep">›</span>
+      <a routerLink="/">Home</a><span class="sep">></span>
+      <a routerLink="/who-we-serve">Who We Serve</a><span class="sep">></span>
+      <a routerLink="/who-we-serve/retail">Retail</a><span class="sep">></span>
       <span class="current">Our Solutions</span>
     </div>
 
@@ -21,7 +21,7 @@ import { RouterLink } from '@angular/router';
       <div class="rs-header__inner">
         <div class="rs-header__badge">
           <i class="ph ph-layout"></i>
-          <span>Agentic AI · Retail Solutions</span>
+          <span>Agentic AI Â· Retail Solutions</span>
         </div>
         <h1 class="rs-header__title">Purpose-built agents for <em>every retail challenge</em></h1>
         <p class="rs-header__sub">Explore our suite of Agentic AI solutions engineered to address the most critical operational challenges across modern retail ecosystems. Each agent is designed to integrate, orchestrate, and deliver measurable business outcomes.</p>
@@ -153,3 +153,4 @@ import { RouterLink } from '@angular/router';
   `],
 })
 export class RetailSolutions {}
+

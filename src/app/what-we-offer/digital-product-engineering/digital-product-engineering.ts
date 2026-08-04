@@ -1,4 +1,4 @@
-import { Component, AfterViewInit, OnDestroy, ElementRef } from '@angular/core';
+﻿import { Component, AfterViewInit, OnDestroy, ElementRef } from '@angular/core';
 import { RouterLink } from '@angular/router';
 
 @Component({
@@ -6,17 +6,17 @@ import { RouterLink } from '@angular/router';
   standalone: true,
   imports: [RouterLink],
   template: `
-    <!-- ─── BREADCRUMB ─────────────────────────────────────── -->
+    <!-- â”€â”€â”€ BREADCRUMB â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ -->
     <div class="breadcrumb-bar">
-      <a routerLink="/">Home</a><span class="sep">›</span>
-      <a routerLink="/what-we-offer">What We Offer</a><span class="sep">›</span>
+      <a routerLink="/">Home</a><span class="sep">></span>
+      <a routerLink="/what-we-offer">What We Offer</a><span class="sep">></span>
       <span class="current">Digital Product Engineering</span>
     </div>
 
-    <!-- ─── HERO ───────────────────────────────────────────── -->
+    <!-- â”€â”€â”€ HERO â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ -->
     <section class="dp-hero">
       <div class="dp-hero__bg">
-        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1800&q=80" alt="Digital Product Engineering" />
+        <img src="Images/image_005.jpg" alt="Digital Product Engineering" />
         <div class="dp-hero__overlay"></div>
       </div>
       <div class="dp-hero__particles" id="dp-particles"></div>
@@ -25,14 +25,14 @@ import { RouterLink } from '@angular/router';
       <div class="dp-hero__content" data-reveal>
         <div class="dp-hero__badge"><span class="dp-hero__badge-dot"></span><span>What We Offer</span></div>
         <h1 class="dp-hero__heading">Digital Product<br/><em>Engineering</em></h1>
-        <p class="dp-hero__sub">End-to-end product engineering — strategy, design, build, and continuous delivery for market-defining digital products and platforms.</p>
+        <p class="dp-hero__sub">End-to-end product engineering â€” strategy, design, build, and continuous delivery for market-defining digital products and platforms.</p>
         <a href="#dp-overview" class="dp-hero__cta">Explore Capabilities
           <svg width="16" height="16" viewBox="0 0 18 18" fill="none"><path d="M3.75 9H14.25M14.25 9L9.75 4.5M14.25 9L9.75 13.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
         </a>
       </div>
     </section>
 
-    <!-- ─── OVERVIEW + WHAT WE DELIVER ────────────────────── -->
+    <!-- â”€â”€â”€ OVERVIEW + WHAT WE DELIVER â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ -->
     <section class="dp-overview" id="dp-overview">
       <div class="dp-overview__blob"></div>
       <div class="dp-overview__dots"></div>
@@ -42,7 +42,7 @@ import { RouterLink } from '@angular/router';
           <span class="dp-eyebrow">Overview</span>
           <h2 class="dp-section-heading">Digital Product <em>Engineering</em></h2>
           <p>Accelerate innovation and bring digital products to market faster with our end-to-end Digital Product Engineering services. We help organisations conceive, design, build, modernise, and scale intelligent digital products and platforms that deliver measurable business value, exceptional user experiences, and sustainable competitive advantage. By combining product strategy, user-centred design, software engineering, cloud-native technologies, artificial intelligence, data, and DevSecOps, we transform ideas into secure, scalable, and market-ready digital solutions.</p>
-          <p>We partner with clients throughout the entire product lifecycle — from product discovery, market validation, and experience design to architecture, development, testing, deployment, and continuous optimisation. Whether launching a new digital product, modernising a legacy platform, or accelerating enterprise innovation, our multidisciplinary teams help organisations reduce time-to-market, improve product quality, and deliver differentiated digital experiences that evolve alongside changing customer expectations and business priorities.</p>
+          <p>We partner with clients throughout the entire product lifecycle â€” from product discovery, market validation, and experience design to architecture, development, testing, deployment, and continuous optimisation. Whether launching a new digital product, modernising a legacy platform, or accelerating enterprise innovation, our multidisciplinary teams help organisations reduce time-to-market, improve product quality, and deliver differentiated digital experiences that evolve alongside changing customer expectations and business priorities.</p>
           <p>Our engineering approach combines agile delivery, cloud-native architecture, API-first development, microservices, AI-driven capabilities, automation, cybersecurity, and continuous integration and delivery (CI/CD) to build resilient, high-performing digital platforms. Every solution is designed for scalability, interoperability, security, and operational excellence, enabling organisations to innovate rapidly while maintaining enterprise-grade reliability and governance.</p>
           <p>From customer-facing applications and enterprise platforms to SaaS products, mobile experiences, digital marketplaces, and industry-specific solutions, we help organisations create intelligent digital products that drive customer engagement, improve operational efficiency, unlock new revenue opportunities, and accelerate digital transformation.</p>
           <p>Built on secure, scalable, and governance-first engineering practices, our Digital Product Engineering services ensure that technology investments remain adaptable, future-ready, and aligned with long-term business strategy. The result is a modern digital product ecosystem that empowers organisations to innovate continuously, respond rapidly to market changes, and deliver exceptional experiences across every customer and employee touchpoint.</p>
@@ -90,7 +90,7 @@ import { RouterLink } from '@angular/router';
       </div>
     </section>
 
-    <!-- ─── WHY IT MATTERS ─────────────────────────────────── -->
+    <!-- â”€â”€â”€ WHY IT MATTERS â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ -->
     <section class="dp-why">
       <div class="dp-why__bg-grid"></div>
       <div class="dp-why__glow-1"></div>
@@ -105,7 +105,7 @@ import { RouterLink } from '@angular/router';
       </div>
     </section>
 
-    <!-- ─── BUSINESS VALUE ─────────────────────────────────── -->
+    <!-- â”€â”€â”€ BUSINESS VALUE â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ -->
     <section class="dp-value" data-reveal>
       <div class="dp-value__ring"></div>
       <div class="dp-value__inner">
@@ -123,7 +123,7 @@ import { RouterLink } from '@angular/router';
       </div>
     </section>
 
-    <!-- ─── GOVERNANCE ─────────────────────────────────────── -->
+    <!-- â”€â”€â”€ GOVERNANCE â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ -->
     <section class="dp-governance">
       <div class="dp-governance__inner" data-reveal>
         <div class="dp-governance__icon-wrap"><i class="ph ph-shield-check"></i></div>
@@ -132,7 +132,7 @@ import { RouterLink } from '@angular/router';
       </div>
     </section>
 
-    <!-- ─── TAGLINE ─────────────────────────────────────────── -->
+    <!-- â”€â”€â”€ TAGLINE â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ -->
     <section class="dp-tagline">
       <div class="dp-tagline__inner" data-reveal>
         <p>Transform ideas into market-leading digital products with a strategic partner that combines <em>product vision</em>, <em>experience design</em>, <em>engineering excellence</em>, and <em>continuous innovation</em>.</p>
@@ -286,4 +286,6 @@ export class DigitalProductEngineering implements AfterViewInit, OnDestroy {
 
   ngOnDestroy(): void { this.revealObserver?.disconnect(); }
 }
+
+
 

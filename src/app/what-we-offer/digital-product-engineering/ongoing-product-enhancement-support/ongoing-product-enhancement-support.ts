@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+﻿import { Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
 
 @Component({
@@ -7,9 +7,9 @@ import { RouterLink } from '@angular/router';
   imports: [RouterLink],
   template: `
     <div class="breadcrumb-bar">
-      <a routerLink="/">Home</a><span class="sep">›</span>
-      <a routerLink="/what-we-offer">What We Offer</a><span class="sep">›</span>
-      <a routerLink="/what-we-offer/digital-product-engineering">Digital Product Engineering</a><span class="sep">›</span>
+      <a routerLink="/">Home</a><span class="sep">></span>
+      <a routerLink="/what-we-offer">What We Offer</a><span class="sep">></span>
+      <a routerLink="/what-we-offer/digital-product-engineering">Digital Product Engineering</a><span class="sep">></span>
       <span class="current">Ongoing Product Enhancement &amp; Support</span>
     </div>
     <section class="stub-page">
@@ -17,7 +17,7 @@ import { RouterLink } from '@angular/router';
         <span class="stub-eyebrow">Digital Product Engineering</span>
         <h1 class="stub-title">Ongoing Product Enhancement <em>and Support</em></h1>
         <p class="stub-lead">Keep your digital products competitive, secure, and performant with structured enhancement programmes, proactive maintenance, and responsive support models.</p>
-        <p class="stub-body">Our product lifecycle services extend beyond launch — covering continuous feature delivery, performance optimisation, security patching, dependency management, SLA-based support operations, and data-driven product evolution. We operate as an embedded extension of your product team, using usage analytics and customer feedback loops to prioritise the right enhancements at the right time.</p>
+        <p class="stub-body">Our product lifecycle services extend beyond launch â€” covering continuous feature delivery, performance optimisation, security patching, dependency management, SLA-based support operations, and data-driven product evolution. We operate as an embedded extension of your product team, using usage analytics and customer feedback loops to prioritise the right enhancements at the right time.</p>
         <a routerLink="/what-we-offer/digital-product-engineering" class="stub-back"><i class="ph ph-arrow-left"></i> Back to Digital Product Engineering</a>
       </div>
     </section>
@@ -41,3 +41,4 @@ import { RouterLink } from '@angular/router';
   `],
 })
 export class OngoingProductEnhancementSupport {}
+

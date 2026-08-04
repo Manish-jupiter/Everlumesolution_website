@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+﻿import { Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
 
 @Component({
@@ -7,16 +7,16 @@ import { RouterLink } from '@angular/router';
   imports: [RouterLink],
   template: `
     <div class="breadcrumb-bar">
-      <a routerLink="/">Home</a><span class="sep">›</span>
-      <a routerLink="/what-we-offer">What We Offer</a><span class="sep">›</span>
-      <a routerLink="/what-we-offer/digital-product-engineering">Digital Product Engineering</a><span class="sep">›</span>
+      <a routerLink="/">Home</a><span class="sep">></span>
+      <a routerLink="/what-we-offer">What We Offer</a><span class="sep">></span>
+      <a routerLink="/what-we-offer/digital-product-engineering">Digital Product Engineering</a><span class="sep">></span>
       <span class="current">Legacy Application Modernization</span>
     </div>
     <section class="stub-page">
       <div class="stub-page__inner">
         <span class="stub-eyebrow">Digital Product Engineering</span>
         <h1 class="stub-title">Legacy Application <em>Modernization</em></h1>
-        <p class="stub-lead">Transform ageing applications into modern, maintainable, and scalable platforms — minimising disruption while unlocking new capabilities and reducing total cost of ownership.</p>
+        <p class="stub-lead">Transform ageing applications into modern, maintainable, and scalable platforms â€” minimising disruption while unlocking new capabilities and reducing total cost of ownership.</p>
         <p class="stub-body">Our modernisation frameworks cover the full spectrum: re-hosting, re-platforming, re-factoring, re-architecting, and greenfield replacement. We apply strangler-fig patterns, event sourcing, and progressive decoupling strategies to migrate monolithic systems into composable architectures while protecting business continuity. Every modernisation programme is risk-rated and phased for predictable outcomes.</p>
         <a routerLink="/what-we-offer/digital-product-engineering" class="stub-back"><i class="ph ph-arrow-left"></i> Back to Digital Product Engineering</a>
       </div>
@@ -41,3 +41,4 @@ import { RouterLink } from '@angular/router';
   `],
 })
 export class LegacyApplicationModernization {}
+

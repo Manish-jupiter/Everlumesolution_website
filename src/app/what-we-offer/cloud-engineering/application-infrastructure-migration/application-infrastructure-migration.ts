@@ -7,9 +7,9 @@ import { RouterLink } from '@angular/router';
   imports: [RouterLink],
   template: `
     <div class="dp-sub-bc">
-      <a routerLink="/">Home</a><span class="sep">›</span>
-      <a routerLink="/what-we-offer">What We Offer</a><span class="sep">›</span>
-      <a routerLink="/what-we-offer/cloud-engineering">Cloud Engineering</a><span class="sep">›</span>
+      <a routerLink="/">Home</a><span class="sep">></span>
+      <a routerLink="/what-we-offer">What We Offer</a><span class="sep">></span>
+      <a routerLink="/what-we-offer/cloud-engineering">Cloud Engineering</a><span class="sep">></span>
       <span class="cur">Application &amp; Infrastructure Migration</span>
     </div>
     <header class="dp-sub-hdr">
@@ -61,3 +61,4 @@ import { RouterLink } from '@angular/router';
   `],
 })
 export class ApplicationInfrastructureMigration {}
+

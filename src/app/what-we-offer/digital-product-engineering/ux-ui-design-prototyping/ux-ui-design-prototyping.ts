@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+﻿import { Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
 
 @Component({
@@ -7,9 +7,9 @@ import { RouterLink } from '@angular/router';
   imports: [RouterLink],
   template: `
     <div class="breadcrumb-bar">
-      <a routerLink="/">Home</a><span class="sep">›</span>
-      <a routerLink="/what-we-offer">What We Offer</a><span class="sep">›</span>
-      <a routerLink="/what-we-offer/digital-product-engineering">Digital Product Engineering</a><span class="sep">›</span>
+      <a routerLink="/">Home</a><span class="sep">></span>
+      <a routerLink="/what-we-offer">What We Offer</a><span class="sep">></span>
+      <a routerLink="/what-we-offer/digital-product-engineering">Digital Product Engineering</a><span class="sep">></span>
       <span class="current">UX/UI Design &amp; Prototyping</span>
     </div>
     <section class="stub-page">
@@ -41,3 +41,4 @@ import { RouterLink } from '@angular/router';
   `],
 })
 export class UxUiDesignPrototyping {}
+

@@ -1,44 +1,44 @@
-$(function () {
+﻿$(function () {
   const personas = [
     {
       title: "CTOs & Tech Leaders",
       desc: "Drive digital strategy, modernize infrastructure, and build scalable technology ecosystems.",
-      img: "https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=900&q=80"
+      img: "Images/image_040.jpg"
     },
     {
       title: "Product Managers",
       desc: "Turn product vision into reality with agile engineering, rapid prototyping, and data-driven iteration.",
-      img: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=900&q=80"
+      img: "Images/image_010.jpg"
     },
     {
       title: "Enterprise Teams",
       desc: "Scale operations with cloud migration, automation, and AI-powered workflow optimization.",
-      img: "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=900&q=80"
+      img: "Images/image_032.jpg"
     },
     {
       title: "Startup Founders",
       desc: "Go from MVP to market with full-stack engineering, DevOps, and growth-ready architecture.",
-      img: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=900&q=80"
+      img: "Images/image_014.jpg"
     },
     {
       title: "Data Scientists",
       desc: "Build robust data pipelines, deploy ML models at scale, and unlock actionable business intelligence.",
-      img: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=900&q=80"
+      img: "Images/image_043.jpg"
     },
     {
       title: "Security Officers",
       desc: "Implement zero-trust architecture, compliance frameworks, and real-time threat detection.",
-      img: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=900&q=80"
+      img: "Images/image_018.jpg"
     },
     {
       title: "Operations Teams",
       desc: "Automate repetitive tasks, optimize IT infrastructure, and ensure 99.9% uptime with intelligent monitoring.",
-      img: "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&w=900&q=80"
+      img: "Images/image_056.jpg"
     },
     {
       title: "Innovation Labs",
-      desc: "Explore emerging tech — generative AI, IoT, blockchain — and bring proof-of-concepts to production.",
-      img: "https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=900&q=80"
+      desc: "Explore emerging tech â€” generative AI, IoT, blockchain â€” and bring proof-of-concepts to production.",
+      img: "Images/image_025.jpg"
     }
   ];
 
@@ -75,7 +75,7 @@ $(function () {
   let expeditionCompleted = false;
   const EXPEDITION_AUTO_DELAY = 3000;
 
-  // ── Intro scroll section ────────────────────────────────
+  // â”€â”€ Intro scroll section â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
   const $introScroll = $("#intro-scroll");
   const $introText1 = $("#intro-text-1");
   const $introText2 = $("#intro-text-2");
@@ -123,8 +123,8 @@ $(function () {
     // Skip text updates when auto-play is handling it
     if (introAutoActive) return;
 
-    // Phase 1 (p 0→0.48): Show text 1, color words progressively
-    // Phase 2 (p 0.52→1): Show text 2, color words + rotate illustration
+    // Phase 1 (p 0â†’0.48): Show text 1, color words progressively
+    // Phase 2 (p 0.52â†’1): Show text 2, color words + rotate illustration
     if (p < 0.50) {
       $introPin.removeClass('phase-2');
       $introText1.addClass('intro-scroll__text--active');
@@ -147,14 +147,14 @@ $(function () {
       });
     }
 
-    // Scroll reached last text fully — jump
+    // Scroll reached last text fully â€” jump
     if (p >= 0.92 && !introCompleted) {
       introJumpToNext();
     }
   }
-  // ── /Intro scroll section ───────────────────────────────
+  // â”€â”€ /Intro scroll section â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
-  // ── Intro auto-advance ──────────────────────────────────
+  // â”€â”€ Intro auto-advance â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
   var introAutoTimer = null;
   var introAutoActive = false;
   var introCompleted = false;
@@ -215,7 +215,7 @@ $(function () {
         $(introWords2[introAutoWordIdx]).addClass('lit');
         introAutoWordIdx++;
       } else {
-        // All text2 words done — jump to next section
+        // All text2 words done â€” jump to next section
         clearInterval(introAutoTimer);
         introAutoTimer = null;
         introJumpToNext();
@@ -277,9 +277,9 @@ $(function () {
     }
   }
   $(window).on("scroll.introVisibility", checkIntroVisibility);
-  // ── /Intro auto-advance ─────────────────────────────────
+  // â”€â”€ /Intro auto-advance â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
-  // ── Editorial slider section ─────────────────────────────
+  // â”€â”€ Editorial slider section â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
   var $editorialSection = $("#editorial-section");
   var $editorialStrip = $("#editorial-strip");
   var $editorialCards = $editorialStrip.find(".editorial__card");
@@ -294,7 +294,7 @@ $(function () {
   const EDITORIAL_AUTO_DELAY = 5000;
 
   function syncEditorialHeight() {
-    // No track needed — scroll-locked slider, section is just 100vh
+    // No track needed â€” scroll-locked slider, section is just 100vh
   }
 
   function updateEditorialScroll() {
@@ -357,7 +357,7 @@ $(function () {
 
     var delta = e.deltaY || e.detail || 0;
     if (delta > 0) {
-      // Scroll down → next card
+      // Scroll down â†’ next card
       editorialAutoIndex++;
       if (editorialAutoIndex >= editorialCount) {
         editorialAutoIndex = editorialCount - 1;
@@ -368,7 +368,7 @@ $(function () {
       applyEditorialSlide(editorialAutoIndex);
       editorialResetTimer();
     } else if (delta < 0) {
-      // Scroll up → previous card or escape to previous section
+      // Scroll up â†’ previous card or escape to previous section
       if (editorialAutoIndex > 0) {
         editorialAutoIndex--;
         applyEditorialSlide(editorialAutoIndex);
@@ -484,7 +484,7 @@ $(function () {
     }
   }
   $(window).on("scroll.editorialVisibility", checkEditorialVisibility);
-  // ── /Editorial slider section ───────────────────────────
+  // â”€â”€ /Editorial slider section â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
   const $storySection = $("#story-scroll");
   const $storyBg = $storySection.find(".story-scroll__bg");
@@ -920,7 +920,7 @@ $(function () {
     }
   }
 
-  // ── Story auto-advance slider ───────────────────────────
+  // â”€â”€ Story auto-advance slider â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
   var storyAutoTimer = null;
   var storyAutoIndex = 0;
   var storyAutoActive = false;
@@ -1212,7 +1212,7 @@ $(function () {
     }
   }
 
-  // ── Expedition auto-advance ─────────────────────────────
+  // â”€â”€ Expedition auto-advance â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
   function isExpeditionInView() {
     if (!$expeditionSection.length) return false;
     var rect = $expeditionSection[0].getBoundingClientRect();
@@ -1285,7 +1285,7 @@ $(function () {
       expeditionResetAutoTimer();
     }
   });
-  // ── /Expedition auto-advance ────────────────────────────
+  // â”€â”€ /Expedition auto-advance â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
   function setupPraiseTitle() {
     if (!$praiseTitle.length) {
@@ -1411,7 +1411,7 @@ $(function () {
     document.documentElement.style.setProperty("--nav-height", navHeight + "px");
   }
 
-  // ── Hero video autoplay + nav state ───────────────
+  // â”€â”€ Hero video autoplay + nav state â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
   const $heroVideo = $(".hero__bg-video");
   const $heroEl = $("#hero");
 
@@ -1471,7 +1471,7 @@ $(function () {
 window.history.scrollRestoration = 'manual';
     window.scrollTo(0, 0);
 
-    // ─── Hero Carousel ──────────────────────────────────────
+    // â”€â”€â”€ Hero Carousel â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
     (function() {
       const slides = document.querySelectorAll('.hc-hero__slide');
       const dots = document.querySelectorAll('.hc-hero__dot');
@@ -1506,7 +1506,7 @@ window.history.scrollRestoration = 'manual';
       startAuto();
     })();
 
-    // ─── Floating Particles ─────────────────────────────────
+    // â”€â”€â”€ Floating Particles â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
     (function() {
       var container = document.getElementById('hero-particles');
       if (!container) return;
@@ -1521,7 +1521,7 @@ window.history.scrollRestoration = 'manual';
       }
     })();
 
-    // ─── Scroll Reveal (all directions) ─────────────────────
+    // â”€â”€â”€ Scroll Reveal (all directions) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
     (function() {
       var selectors = '[data-reveal],[data-reveal-left],[data-reveal-right],[data-reveal-scale]';
       var els = document.querySelectorAll(selectors);
@@ -1543,7 +1543,7 @@ window.history.scrollRestoration = 'manual';
       });
     })();
 
-    // ─── Counter Animation ──────────────────────────────────
+    // â”€â”€â”€ Counter Animation â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
     (function() {
       var counters = document.querySelectorAll('.hc-counter[data-target]');
       var observed = false;
@@ -1570,7 +1570,7 @@ window.history.scrollRestoration = 'manual';
       if (counters.length) observer.observe(counters[0].closest('.hc-stats-strip'));
     })();
 
-    // ─── Card Mouse Glow Tracking ───────────────────────────
+    // â”€â”€â”€ Card Mouse Glow Tracking â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
     (function() {
       var cards = document.querySelectorAll('.hc-card');
       cards.forEach(function(card) {
@@ -1581,3 +1581,11 @@ window.history.scrollRestoration = 'manual';
         });
       });
     })();
+
+
+
+
+
+
+
+

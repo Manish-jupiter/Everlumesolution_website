@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+﻿import { Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
 
 @Component({
@@ -7,9 +7,9 @@ import { RouterLink } from '@angular/router';
   imports: [RouterLink],
   template: `
     <div class="breadcrumb-bar">
-      <a routerLink="/">Home</a><span class="sep">›</span>
-      <a routerLink="/who-we-serve">Who We Serve</a><span class="sep">›</span>
-      <a routerLink="/who-we-serve/retail/retail-solutions">Our Solutions</a><span class="sep">›</span>
+      <a routerLink="/">Home</a><span class="sep">></span>
+      <a routerLink="/who-we-serve">Who We Serve</a><span class="sep">></span>
+      <a routerLink="/who-we-serve/retail/retail-solutions">Our Solutions</a><span class="sep">></span>
       <span class="current">Customer Service and Returns Agent</span>
     </div>
 
@@ -21,7 +21,7 @@ import { RouterLink } from '@angular/router';
       <div class="ra-header__inner">
         <div class="ra-header__badge">
           <i class="ph ph-headset"></i>
-          <span>Agentic AI · Retail</span>
+          <span>Agentic AI Â· Retail</span>
         </div>
         <h1 class="ra-header__title">Customer Service and <em>Returns Agent</em></h1>
         <p class="ra-header__sub">Automates routine customer service interactions, orchestrates returns and refund workflows, and provides personalised post-purchase support across every customer touchpoint.</p>
@@ -191,3 +191,4 @@ export class CustomerServiceReturnsAgent {
     document.querySelectorAll('[data-reveal]').forEach(el => observer.observe(el));
   }
 }
+

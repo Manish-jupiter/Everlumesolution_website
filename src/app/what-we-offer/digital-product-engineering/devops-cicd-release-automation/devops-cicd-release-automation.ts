@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+﻿import { Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
 
 @Component({
@@ -7,9 +7,9 @@ import { RouterLink } from '@angular/router';
   imports: [RouterLink],
   template: `
     <div class="breadcrumb-bar">
-      <a routerLink="/">Home</a><span class="sep">›</span>
-      <a routerLink="/what-we-offer">What We Offer</a><span class="sep">›</span>
-      <a routerLink="/what-we-offer/digital-product-engineering">Digital Product Engineering</a><span class="sep">›</span>
+      <a routerLink="/">Home</a><span class="sep">></span>
+      <a routerLink="/what-we-offer">What We Offer</a><span class="sep">></span>
+      <a routerLink="/what-we-offer/digital-product-engineering">Digital Product Engineering</a><span class="sep">></span>
       <span class="current">DevOps, CI/CD &amp; Release Automation</span>
     </div>
     <section class="stub-page">
@@ -17,7 +17,7 @@ import { RouterLink } from '@angular/router';
         <span class="stub-eyebrow">Digital Product Engineering</span>
         <h1 class="stub-title">DevOps, CI/CD and <em>Release Automation</em></h1>
         <p class="stub-lead">Accelerate delivery cycles, reduce release risk, and build a culture of continuous improvement through end-to-end DevOps engineering and automated pipeline design.</p>
-        <p class="stub-body">We design and implement CI/CD pipelines that enforce quality gates, automate infrastructure provisioning with IaC, and enable trunk-based development at scale. Our DevOps practice covers Git workflow standardisation, automated testing integration, environment parity, secrets management, release orchestration, progressive delivery techniques, and SRE practices — so your teams ship faster and more safely.</p>
+        <p class="stub-body">We design and implement CI/CD pipelines that enforce quality gates, automate infrastructure provisioning with IaC, and enable trunk-based development at scale. Our DevOps practice covers Git workflow standardisation, automated testing integration, environment parity, secrets management, release orchestration, progressive delivery techniques, and SRE practices â€” so your teams ship faster and more safely.</p>
         <a routerLink="/what-we-offer/digital-product-engineering" class="stub-back"><i class="ph ph-arrow-left"></i> Back to Digital Product Engineering</a>
       </div>
     </section>
@@ -41,3 +41,4 @@ import { RouterLink } from '@angular/router';
   `],
 })
 export class DevOpsCicdReleaseAutomation {}
+

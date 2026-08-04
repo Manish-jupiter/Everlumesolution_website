@@ -6,7 +6,8 @@
    ========================================================= */
 
 .app-main {
-  padding-top: 88px;
+  /* padding-top: 88px; */
+  padding-top:75px;
 }
 
 /* Landing page keeps its hero flush under the transparent overlay. */

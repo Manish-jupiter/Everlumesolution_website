@@ -9,16 +9,16 @@ import { RouterLink } from '@angular/router';
     <!-- ─── BREADCRUMB ─────────────────────────────────────── -->
     <div class="breadcrumb-bar">
       <a routerLink="/">Home</a>
-      <span class="sep">›</span>
+      <span class="sep">></span>
       <a routerLink="/who-we-serve/healthcare">Healthcare</a>
-      <span class="sep">›</span>
+      <span class="sep">></span>
       <span class="current">Security &amp; Compliance</span>
     </div>
 
     <!-- ─── HERO ───────────────────────────────────────────── -->
     <section class="sc-hero">
       <div class="sc-hero__bg">
-        <img src="https://images.unsplash.com/photo-1510511459019-5dda7724fd87?auto=format&fit=crop&w=1800&q=80" alt="Security and Compliance" />
+        <img src="Images/image_015.jpg" alt="Security and Compliance" />
         <div class="sc-hero__overlay"></div>
       </div>
       <div class="sc-hero__abstract-ring"></div>
@@ -53,7 +53,7 @@ import { RouterLink } from '@angular/router';
           <div class="sc-intro__dot-grid"></div>
           <div class="sc-intro__ring"></div>
           <div class="sc-intro__img">
-            <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&w=800&q=80" alt="Security Architecture" loading="lazy" />
+            <img src="Images/image_041.jpg" alt="Security Architecture" loading="lazy" />
           </div>
           <div class="sc-intro__float-card">
             <div class="sc-intro__float-icon">🔐</div>
@@ -388,3 +388,6 @@ export class SecurityCompliance implements AfterViewInit, OnDestroy {
     if (this.revealObserver) this.revealObserver.disconnect();
   }
 }
+
+
+

@@ -1,4 +1,4 @@
-import { Component, AfterViewInit, OnDestroy, ElementRef } from '@angular/core';
+﻿import { Component, AfterViewInit, OnDestroy, ElementRef } from '@angular/core';
 import { RouterLink } from '@angular/router';
 
 @Component({
@@ -6,19 +6,19 @@ import { RouterLink } from '@angular/router';
   standalone: true,
   imports: [RouterLink],
   template: `
-    <!-- ─── BREADCRUMB ─────────────────────────────────────── -->
+    <!-- â”€â”€â”€ BREADCRUMB â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ -->
     <div class="breadcrumb-bar">
       <a routerLink="/">Home</a>
-      <span class="sep">›</span>
+      <span class="sep">></span>
       <a routerLink="/who-we-serve/healthcare">Healthcare</a>
-      <span class="sep">›</span>
+      <span class="sep">></span>
       <span class="current">Clinical Decision Support Integration</span>
     </div>
 
-    <!-- ─── HERO ───────────────────────────────────────────── -->
+    <!-- â”€â”€â”€ HERO â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ -->
     <section class="cd-hero">
       <div class="cd-hero__bg">
-        <img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?auto=format&fit=crop&w=1800&q=80" alt="Clinical Decision Support" />
+        <img src="Images/image_038.jpg" alt="Clinical Decision Support" />
         <div class="cd-hero__overlay"></div>
       </div>
       <div class="cd-hero__abstract-ring"></div>
@@ -38,7 +38,7 @@ import { RouterLink } from '@angular/router';
       </div>
     </section>
 
-    <!-- ─── INTRO ──────────────────────────────────────────── -->
+    <!-- â”€â”€â”€ INTRO â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ -->
     <section class="cd-intro">
       <div class="cd-intro__blob"></div>
       <div class="cd-intro__dots"></div>
@@ -53,10 +53,10 @@ import { RouterLink } from '@angular/router';
           <div class="cd-intro__dot-grid"></div>
           <div class="cd-intro__ring"></div>
           <div class="cd-intro__img">
-            <img src="https://images.unsplash.com/photo-1584982751601-97dcc096659c?auto=format&fit=crop&w=800&q=80" alt="Clinical Decision Support AI" loading="lazy" />
+            <img src="Images/image_054.jpg" alt="Clinical Decision Support AI" loading="lazy" />
           </div>
           <div class="cd-intro__float-card">
-            <div class="cd-intro__float-icon">🧠</div>
+            <div class="cd-intro__float-icon">ðŸ§ </div>
             <div class="cd-intro__float-text">
               <strong>Smart Decisions</strong>
               <span>AI-powered support</span>
@@ -66,7 +66,7 @@ import { RouterLink } from '@angular/router';
       </div>
     </section>
 
-    <!-- ─── KEY CAPABILITIES ───────────────────────────────── -->
+    <!-- â”€â”€â”€ KEY CAPABILITIES â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ -->
     <section class="cd-capabilities" id="cd-capabilities">
       <div class="cd-capabilities__ring"></div>
       <div class="cd-capabilities__blob"></div>
@@ -125,7 +125,7 @@ import { RouterLink } from '@angular/router';
       </div>
     </section>
 
-    <!-- ─── WHY IT MATTERS ─────────────────────────────────── -->
+    <!-- â”€â”€â”€ WHY IT MATTERS â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ -->
     <section class="cd-why">
       <div class="cd-why__bg-grid"></div>
       <div class="cd-why__glow-1"></div>
@@ -139,7 +139,7 @@ import { RouterLink } from '@angular/router';
       </div>
     </section>
 
-    <!-- ─── BUSINESS VALUE ─────────────────────────────────── -->
+    <!-- â”€â”€â”€ BUSINESS VALUE â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ -->
     <section class="cd-value" data-reveal>
       <div class="cd-value__ring"></div>
       <div class="cd-value__inner">
@@ -147,38 +147,38 @@ import { RouterLink } from '@angular/router';
         <h2 class="cd-section-heading">Business value</h2>
         <div class="cd-value__grid">
           <div class="cd-value-card">
-            <div class="cd-value-card__icon">⚡</div>
+            <div class="cd-value-card__icon">âš¡</div>
             <span>Deliver faster access to evidence-based, patient-specific clinical guidance at the point of care.</span>
           </div>
           <div class="cd-value-card">
-            <div class="cd-value-card__icon">✅</div>
+            <div class="cd-value-card__icon">âœ…</div>
             <span>Improve consistency and quality of clinical decision-making across care teams and specialties.</span>
           </div>
           <div class="cd-value-card">
-            <div class="cd-value-card__icon">🧠</div>
+            <div class="cd-value-card__icon">ðŸ§ </div>
             <span>Reduce clinician cognitive burden by filtering, prioritising, and contextualising relevant clinical information.</span>
           </div>
           <div class="cd-value-card">
-            <div class="cd-value-card__icon">🎯</div>
+            <div class="cd-value-card__icon">ðŸŽ¯</div>
             <span>Enhance early identification of high-risk patients and enable timely clinical interventions.</span>
           </div>
           <div class="cd-value-card">
-            <div class="cd-value-card__icon">📋</div>
+            <div class="cd-value-card__icon">ðŸ“‹</div>
             <span>Improve adherence to evidence-based care pathways, organisational protocols, and clinical best practices.</span>
           </div>
           <div class="cd-value-card">
-            <div class="cd-value-card__icon">📈</div>
+            <div class="cd-value-card__icon">ðŸ“ˆ</div>
             <span>Increase workflow efficiency by embedding intelligent decision support within existing clinical systems.</span>
           </div>
           <div class="cd-value-card">
-            <div class="cd-value-card__icon">🏥</div>
+            <div class="cd-value-card__icon">ðŸ¥</div>
             <span>Strengthen patient safety, care quality, and operational performance while supporting value-based care initiatives.</span>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ─── GOVERNANCE ─────────────────────────────────────── -->
+    <!-- â”€â”€â”€ GOVERNANCE â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ -->
     <section class="cd-governance">
       <div class="cd-governance__inner" data-reveal>
         <div class="cd-governance__icon-wrap"><i class="ph ph-lock-simple"></i></div>
@@ -187,7 +187,7 @@ import { RouterLink } from '@angular/router';
       </div>
     </section>
 
-    <!-- ─── CTA BAND ──────────────────────────────────────── -->
+    <!-- â”€â”€â”€ CTA BAND â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ -->
     <section class="cd-cta">
       <div class="cd-cta__ring"></div>
       <div class="cd-cta__dots"></div>
@@ -212,7 +212,7 @@ import { RouterLink } from '@angular/router';
       --teal-light: #E87722;
     }
 
-    /* ─── BREADCRUMB ─────────────────────────────────────── */
+    /* â”€â”€â”€ BREADCRUMB â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
     .breadcrumb-bar { background: var(--teal-dark); padding: 0.55rem 3rem; }
     .breadcrumb-bar a, .breadcrumb-bar span { color: rgba(255,255,255,0.65); font-size: 0.8rem; font-weight: 500; text-decoration: none; }
     .breadcrumb-bar a:hover { color: #fff; }
@@ -220,14 +220,14 @@ import { RouterLink } from '@angular/router';
     .breadcrumb-bar .current { color: var(--teal-light); font-weight: 600; }
     @media (max-width: 768px) { .breadcrumb-bar { padding: 0.55rem 1rem; margin-top: 58px; } }
 
-    /* ─── SHARED ─────────────────────────────────────────── */
+    /* â”€â”€â”€ SHARED â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
     .cd-eyebrow { display: inline-block; color: var(--teal); font-size: 0.78rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 1rem; }
     .cd-eyebrow--light { color: var(--orange); }
     .cd-section-heading { font-family: "DM Serif Display", serif; font-size: clamp(1.8rem, 3vw, 2.5rem); color: var(--dark); font-weight: 400; line-height: 1.2; margin-bottom: 1.2rem; }
     .cd-section-heading em { color: var(--orange); font-style: italic; }
     .cd-section-heading--light { color: #fff; }
 
-    /* ─── HERO ───────────────────────────────────────────── */
+    /* â”€â”€â”€ HERO â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
     .cd-hero { position: relative; height: 55vh; min-height: 360px; max-height: 480px; overflow: hidden; }
     .cd-hero__bg { position: absolute; inset: 0; }
     .cd-hero__bg img { width: 100%; height: 100%; object-fit: cover; transform: scale(1.05); animation: heroZoom 12s ease-out forwards; }
@@ -251,7 +251,7 @@ import { RouterLink } from '@angular/router';
     @keyframes fadeUp { to { opacity: 1; transform: translateY(0); } }
     @media (max-width: 768px) { .cd-hero { height: 50vh; min-height: 320px; } .cd-hero__sub { font-size: 0.88rem; } }
 
-    /* ─── INTRO ──────────────────────────────────────────── */
+    /* â”€â”€â”€ INTRO â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
     .cd-intro { padding: 6rem 3rem; max-width: 1200px; margin: 0 auto; position: relative; overflow: hidden; }
     .cd-intro__blob { position: absolute; top: -60px; right: -80px; width: 300px; height: 300px; background: radial-gradient(circle, rgba(27,58,143,0.06) 0%, transparent 70%); border-radius: 50%; animation: drift 15s ease-in-out infinite; pointer-events: none; }
     .cd-intro__dots { position: absolute; bottom: -40px; left: -40px; width: 150px; height: 150px; background-image: radial-gradient(circle, rgba(232,119,34,0.2) 1.5px, transparent 1.5px); background-size: 16px 16px; opacity: 0.6; pointer-events: none; animation: float 10s ease-in-out infinite; }
@@ -270,7 +270,7 @@ import { RouterLink } from '@angular/router';
     .cd-intro__float-text span { font-size: 0.75rem; color: var(--mid); }
     @media (max-width: 991px) { .cd-intro { padding: 4rem 1.5rem; } .cd-intro__grid { grid-template-columns: 1fr; gap: 2.5rem; } .cd-intro__float-card { right: 10px; bottom: -20px; } }
 
-    /* ─── CAPABILITIES ───────────────────────────────────── */
+    /* â”€â”€â”€ CAPABILITIES â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
     .cd-capabilities { padding: 6rem 3rem; background: linear-gradient(180deg, rgba(27,58,143,0.04) 0%, var(--bg) 100%); position: relative; overflow: hidden; }
     .cd-capabilities__ring { position: absolute; top: 100px; left: -120px; width: 350px; height: 350px; border: 1.5px solid rgba(27,58,143,0.06); border-radius: 50%; pointer-events: none; animation: spinSlow 40s linear infinite; }
     .cd-capabilities__blob { position: absolute; bottom: 50px; right: -80px; width: 200px; height: 200px; background: rgba(232,119,34,0.04); border-radius: 50%; filter: blur(60px); animation: drift 15s ease-in-out infinite; pointer-events: none; }
@@ -291,7 +291,7 @@ import { RouterLink } from '@angular/router';
     .cd-cap-card p { font-size: 0.88rem; color: var(--mid); line-height: 1.6; margin: 0; }
     @media (max-width: 768px) { .cd-capabilities { padding: 3.5rem 1.2rem; } .cd-capabilities__grid { grid-template-columns: 1fr; } }
 
-    /* ─── WHY IT MATTERS ─────────────────────────────────── */
+    /* â”€â”€â”€ WHY IT MATTERS â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
     .cd-why { padding: 5rem 3rem; background: linear-gradient(135deg, #060d1f 0%, #0a1635 40%, #0f1f4a 100%); position: relative; overflow: hidden; }
     .cd-why__bg-grid { position: absolute; inset: 0; background-image: linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px); background-size: 60px 60px; pointer-events: none; }
     .cd-why__glow-1 { position: absolute; width: 400px; height: 400px; border-radius: 50%; background: radial-gradient(circle, rgba(232,119,34,0.15) 0%, transparent 70%); top: -100px; right: -100px; pointer-events: none; animation: drift 18s ease-in-out infinite; }
@@ -300,7 +300,7 @@ import { RouterLink } from '@angular/router';
     .cd-why__text { font-size: 1rem; color: rgba(255,255,255,0.7); line-height: 1.85; max-width: 850px; margin: 0 auto; }
     @media (max-width: 768px) { .cd-why { padding: 3.5rem 1.2rem; } }
 
-    /* ─── BUSINESS VALUE ─────────────────────────────────── */
+    /* â”€â”€â”€ BUSINESS VALUE â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
     .cd-value { padding: 6rem 3rem; background: linear-gradient(180deg, var(--bg) 0%, rgba(232,119,34,0.04) 100%); position: relative; overflow: hidden; }
     .cd-value__ring { position: absolute; top: 60px; right: -60px; width: 180px; height: 180px; border: 1.5px dashed rgba(232,119,34,0.12); border-radius: 50%; animation: spinSlow 35s linear infinite reverse; pointer-events: none; }
     .cd-value__inner { max-width: 1100px; margin: 0 auto; text-align: center; position: relative; z-index: 1; }
@@ -311,7 +311,7 @@ import { RouterLink } from '@angular/router';
     .cd-value-card span { font-size: 0.9rem; font-weight: 500; color: var(--dark); line-height: 1.6; }
     @media (max-width: 768px) { .cd-value { padding: 3.5rem 1.2rem; } .cd-value__grid { grid-template-columns: 1fr; } }
 
-    /* ─── GOVERNANCE ─────────────────────────────────────── */
+    /* â”€â”€â”€ GOVERNANCE â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
     .cd-governance { padding: 5rem 3rem; background: var(--bg); }
     .cd-governance__inner { max-width: 900px; margin: 0 auto; background: #fff; border-radius: 24px; padding: 3rem 3.5rem; box-shadow: 0 10px 40px rgba(27,58,143,0.08); border: 1px solid rgba(27,58,143,0.06); position: relative; overflow: hidden; text-align: center; }
     .cd-governance__inner::before { content: ""; position: absolute; top: 0; left: 0; width: 100%; height: 4px; background: linear-gradient(90deg, var(--blue), var(--orange)); }
@@ -321,7 +321,7 @@ import { RouterLink } from '@angular/router';
     .cd-governance p:last-child { margin-bottom: 0; }
     @media (max-width: 768px) { .cd-governance { padding: 3rem 1.2rem; } .cd-governance__inner { padding: 2rem 1.5rem; } }
 
-    /* ─── CTA ────────────────────────────────────────────── */
+    /* â”€â”€â”€ CTA â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
     .cd-cta { background: linear-gradient(135deg, #142d6b 0%, #1B3A8F 100%); padding: 4rem 3rem; text-align: center; position: relative; overflow: hidden; }
     .cd-cta::before { content: ""; position: absolute; width: 400px; height: 400px; border-radius: 50%; background: rgba(232,119,34,0.08); top: -150px; right: -100px; pointer-events: none; }
     .cd-cta__ring { position: absolute; bottom: -80px; left: 10%; width: 250px; height: 250px; border: 2px solid rgba(255,255,255,0.08); border-radius: 50%; animation: spinSlow 20s linear infinite; }
@@ -332,12 +332,12 @@ import { RouterLink } from '@angular/router';
     .cd-cta__btn:hover { transform: translateY(-3px); box-shadow: 0 10px 30px rgba(232,119,34,0.4); color: #fff; }
     @media (max-width: 768px) { .cd-cta { padding: 3rem 1.2rem; } }
 
-    /* ─── ANIMATIONS ─────────────────────────────────────── */
+    /* â”€â”€â”€ ANIMATIONS â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
     @keyframes spinSlow { to { transform: rotate(360deg); } }
     @keyframes float { 0%,100% { transform: translateY(0) rotate(0deg); } 33% { transform: translateY(-15px) rotate(2deg); } 66% { transform: translateY(8px) rotate(-1deg); } }
     @keyframes drift { 0%,100% { transform: translate(0,0); } 25% { transform: translate(20px,-10px); } 50% { transform: translate(-10px,-20px); } 75% { transform: translate(-20px,10px); } }
 
-    /* ─── REVEAL ─────────────────────────────────────────── */
+    /* â”€â”€â”€ REVEAL â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
     [data-reveal] { opacity: 0; transform: translateY(40px); transition: opacity 0.8s cubic-bezier(0.22,1,0.36,1), transform 0.8s cubic-bezier(0.22,1,0.36,1); }
     [data-reveal].is-visible { opacity: 1; transform: translateY(0); }
     [data-reveal-left] { opacity: 0; transform: translateX(-40px); transition: opacity 0.8s cubic-bezier(0.22,1,0.36,1), transform 0.8s cubic-bezier(0.22,1,0.36,1); }
@@ -403,3 +403,6 @@ export class ClinicalDigitalSupport implements AfterViewInit, OnDestroy {
     if (this.revealObserver) this.revealObserver.disconnect();
   }
 }
+
+
+

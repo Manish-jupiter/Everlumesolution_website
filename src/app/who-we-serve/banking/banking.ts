@@ -1,4 +1,4 @@
-import { AfterViewInit, Component, ElementRef, OnDestroy } from '@angular/core';
+﻿import { AfterViewInit, Component, ElementRef, OnDestroy } from '@angular/core';
 import { RouterLink } from '@angular/router';
 
 @Component({
@@ -7,27 +7,27 @@ import { RouterLink } from '@angular/router';
   imports: [RouterLink],
   template: `
 
-     <!-- ─── BREADCRUMB ───────────────────────────────────────── -->
+     <!-- â”€â”€â”€ BREADCRUMB â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ -->
   <div class="breadcrumb-bar">
     <a href="index.html">Home</a>
-    <span class="sep">›</span>
+    <span class="sep">></span>
     <a href="#">Services</a>
-    <span class="sep">›</span>
+    <span class="sep">></span>
     <span class="current">Banking Agentic AI</span>
   </div>
 
-  <!-- ─── HERO CAROUSEL ────────────────────────────────────── -->
+  <!-- â”€â”€â”€ HERO CAROUSEL â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ -->
   <section class="hc-hero" id="hc-hero">
     <div class="hc-hero__slide is-active">
-      <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=1800&q=80" alt="Healthcare technology" />
+      <img src="Images/banking-slider-01.jpg" alt="Healthcare technology" />
       <div class="hc-hero__overlay"></div>
     </div>
     <div class="hc-hero__slide">
-      <img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?auto=format&fit=crop&w=1800&q=80" alt="Medical professionals" />
+      <img src="Images/banking-slider-02.jpg" alt="Medical professionals" />
       <div class="hc-hero__overlay"></div>
     </div>
     <div class="hc-hero__slide">
-      <img src="https://images.unsplash.com/photo-1584982751601-97dcc096659c?auto=format&fit=crop&w=1800&q=80" alt="AI in healthcare" />
+      <img src="Images/banking-slider-03.jpg" alt="AI in healthcare" />
       <div class="hc-hero__overlay"></div>
     </div>
 
@@ -57,7 +57,7 @@ import { RouterLink } from '@angular/router';
     </div>
   </section>
 
-  <!-- ─── STATS STRIP ──────────────────────────────────────── -->
+  <!-- â”€â”€â”€ STATS STRIP â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ -->
   <div class="hc-stats-strip" data-reveal-scale>
     <div class="hc-stat">
       <span class="hc-counter" data-target="40">0</span><span class="hc-counter">%</span>
@@ -77,7 +77,7 @@ import { RouterLink } from '@angular/router';
     </div>
   </div>
 
-  <!-- ─── INTRO ────────────────────────────────────────────── -->
+  <!-- â”€â”€â”€ INTRO â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ -->
   <section class="hc-intro" style="position:relative; overflow:hidden;">
     <div class="hc-intro__blob"></div>
     <div class="hc-intro__dots-pattern"></div>
@@ -86,7 +86,7 @@ import { RouterLink } from '@angular/router';
         <span class="hc-intro__eyebrow">Agentic AI for Banking</span>
         <h2 class="hc-intro__heading">Enterprise-grade AI that <em>transforms</em> banking operations</h2>
         <p class="hc-intro__text">
-        Transform banking operations with intelligent AI agents that can reason, orchestrate, and execute complex business processes across risk management, compliance, operations, lending, and customer engagement. Our Agentic AI solutions enable banks and financial institutions to accelerate decision-making, enhance operational efficiency, strengthen regulatory compliance, and deliver exceptional customer experiences through secure, intelligent automation—while maintaining robust human oversight and governance.
+        Transform banking operations with intelligent AI agents that can reason, orchestrate, and execute complex business processes across risk management, compliance, operations, lending, and customer engagement. Our Agentic AI solutions enable banks and financial institutions to accelerate decision-making, enhance operational efficiency, strengthen regulatory compliance, and deliver exceptional customer experiences through secure, intelligent automationâ€”while maintaining robust human oversight and governance.
           </p>
         <p class="hc-intro__text">
         We design and deploy enterprise-grade, banking-ready Agentic AI solutions that seamlessly integrate with core banking platforms, loan origination systems, payment networks, customer relationship management (CRM) applications, risk and compliance platforms, fraud management systems, and digital banking ecosystems. By intelligently coordinating activities across people, systems, and AI agents, our solutions streamline end-to-end workflows, eliminate operational silos, and enable faster, more informed business decisions. 
@@ -109,10 +109,10 @@ import { RouterLink } from '@angular/router';
         <div class="hc-intro__plus"></div>
         <div class="hc-intro__glow"></div>
         <div class="hc-intro__img">
-          <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=800&q=80" alt="Banking AI integration" loading="lazy" />
+          <img src="Images/image_047.jpg" alt="Banking AI integration" loading="lazy" />
         </div>
         <div class="hc-intro__float-card">
-          <div class="hc-intro__float-icon">🤖</div>
+          <div class="hc-intro__float-icon">ðŸ¤–</div>
           <div class="hc-intro__float-text">
             <strong>AI-Powered</strong>
             <span>Autonomous workflows</span>
@@ -122,7 +122,7 @@ import { RouterLink } from '@angular/router';
     </div>
   </section>
 
-  <!-- ─── WHAT WE DELIVER ──────────────────────────────────── -->
+  <!-- â”€â”€â”€ WHAT WE DELIVER â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ -->
   <section class="hc-deliver" id="hc-deliver" style="position:relative; overflow:hidden;">
     <div class="hc-deliver__abstract abstract-ring"></div>
     <div class="hc-deliver__abstract-2 abstract-blob"></div>
@@ -140,7 +140,7 @@ import { RouterLink } from '@angular/router';
           </div>
           <span class="hc-card__title">Fraud detection and case triage.</span>
           <!--<span class="hc-card__desc">AI-driven appointment optimization, automated reminders, and intelligent care coordination across providers.</span>
-          <span class="hc-card__arrow">Learn more →</span>-->
+          <span class="hc-card__arrow">Learn more â†’</span>-->
         </a>
 
         <a routerLink="/who-we-serve/healthcare/prior-authorization" class="hc-card" data-reveal>
@@ -149,7 +149,7 @@ import { RouterLink } from '@angular/router';
           </div>
           <span class="hc-card__title">Underwriting and credit decision support.</span>
           <!--<span class="hc-card__desc">Automated eligibility verification and prior auth workflows that reduce denials and accelerate approvals.</span>
-          <span class="hc-card__arrow">Learn more →</span>-->
+          <span class="hc-card__arrow">Learn more â†’</span>-->
         </a>
 
         <a routerLink="/who-we-serve/healthcare/claims-processing" class="hc-card" data-reveal>
@@ -158,7 +158,7 @@ import { RouterLink } from '@angular/router';
           </div>
           <span class="hc-card__title">Compliance and regulatory workflow automation.</span>
          <!-- <span class="hc-card__desc">Intelligent claims adjudication, error detection, and automated follow-up to maximize clean claim rates.</span>
-          <span class="hc-card__arrow">Learn more →</span>-->
+          <span class="hc-card__arrow">Learn more â†’</span>-->
         </a>
 
         <a routerLink="/who-we-serve/healthcare/medical-coding" class="hc-card" data-reveal>
@@ -167,7 +167,7 @@ import { RouterLink } from '@angular/router';
           </div>
           <span class="hc-card__title">Customer service and request handling.</span>
           <!--<span class="hc-card__desc">AI-assisted code suggestion and validation ensuring accuracy, compliance, and faster reimbursement cycles.</span>
-          <span class="hc-card__arrow">Learn more →</span>-->
+          <span class="hc-card__arrow">Learn more â†’</span>-->
         </a>
 
         <a routerLink="/who-we-serve/healthcare/care-gap-identification" class="hc-card" data-reveal>
@@ -176,7 +176,7 @@ import { RouterLink } from '@angular/router';
           </div>
           <span class="hc-card__title">Document review and data extraction.</span>
           <!--<span class="hc-card__desc">Proactive identification of care gaps with automated patient outreach and follow-up orchestration.</span>
-          <span class="hc-card__arrow">Learn more →</span>-->
+          <span class="hc-card__arrow">Learn more â†’</span>-->
         </a>
 
         <a routerLink="/who-we-serve/healthcare/clinical-digital-support" class="hc-card" data-reveal>
@@ -185,7 +185,7 @@ import { RouterLink } from '@angular/router';
           </div>
           <span class="hc-card__title">Human-in-the-loop controls for critical decisions.</span>
           <!--<span class="hc-card__desc">Seamless integration with clinical decision support tools to enhance diagnostic and treatment workflows.</span>
-          <span class="hc-card__arrow">Learn more →</span>-->
+          <span class="hc-card__arrow">Learn more â†’</span>-->
         </a>
 
         <a routerLink="/who-we-serve/healthcare/remote-patient-monitoring" class="hc-card" data-reveal>
@@ -194,7 +194,7 @@ import { RouterLink } from '@angular/router';
           </div>
           <span class="hc-card__title">Governance monitoring, and audit support.</span>
           <!--<span class="hc-card__desc">Real-time data aggregation from wearables and IoT devices with intelligent alerting and care escalation.</span>
-          <span class="hc-card__arrow">Learn more →</span>-->
+          <span class="hc-card__arrow">Learn more â†’</span>-->
         </a>
 
         <!--<a routerLink="/who-we-serve/healthcare/clinical-operational-workflow" class="hc-card" data-reveal>
@@ -203,7 +203,7 @@ import { RouterLink } from '@angular/router';
           </div>
           <span class="hc-card__title">Clinical & Operational Workflow Integration</span>
           <span class="hc-card__desc">End-to-end workflow orchestration connecting clinical and administrative systems for unified operations.</span>
-          <span class="hc-card__arrow">Learn more →</span>
+          <span class="hc-card__arrow">Learn more â†’</span>
         </a>-->
 
        <!-- <a routerLink="/who-we-serve/healthcare/human-in-the-loop" class="hc-card" data-reveal>
@@ -212,7 +212,7 @@ import { RouterLink } from '@angular/router';
           </div>
           <span class="hc-card__title">Human-in-the-Loop Controls</span>
           <span class="hc-card__desc">Configurable escalation paths and approval gates ensuring human oversight for critical decisions.</span>
-          <span class="hc-card__arrow">Learn more →</span>
+          <span class="hc-card__arrow">Learn more â†’</span>
         </a> -->
 
         <!-- <a routerLink="/who-we-serve/healthcare/security-compliance" class="hc-card" data-reveal>
@@ -221,13 +221,13 @@ import { RouterLink } from '@angular/router';
           </div>
           <span class="hc-card__title">Security & Compliance</span>
           <span class="hc-card__desc">HIPAA-compliant architectures with enterprise-grade encryption, audit trails, and regulatory adherence.</span>
-          <span class="hc-card__arrow">Learn more →</span>
+          <span class="hc-card__arrow">Learn more â†’</span>
         </a> -->
       </div>
     </div>
   </section>
 
-  <!-- ─── WHY IT MATTERS ───────────────────────────────────── -->
+  <!-- â”€â”€â”€ WHY IT MATTERS â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ -->
   <section class="hc-why">
     <div class="hc-why__bg-grid"></div>
     <div class="hc-why__glow-1"></div>
@@ -336,7 +336,7 @@ import { RouterLink } from '@angular/router';
     </div>
   </section>
 
-  <!-- ─── OUTCOMES ─────────────────────────────────────────── -->
+  <!-- â”€â”€â”€ OUTCOMES â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ -->
   <section class="hc-outcomes" data-reveal style="position:relative; overflow:hidden;">
     <div class="hc-outcomes__ring"></div>
     <div class="hc-outcomes__inner" style="position:relative; z-index:1;">
@@ -395,7 +395,7 @@ import { RouterLink } from '@angular/router';
     </div>
   </section>
 
-  <!-- ─── WHY IT MATTERS ───────────────────────────────────── -->
+  <!-- â”€â”€â”€ WHY IT MATTERS â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ -->
   <section class="hc-why">
     <div class="hc-why__bg-grid"></div>
     <div class="hc-why__glow-1"></div>
@@ -406,7 +406,7 @@ import { RouterLink } from '@angular/router';
         <span class="hc-why__eyebrow">Agentic AI for Banking Risk and Compliance</span>
         <h2 class="hc-why__heading">Transforming Banking Operations with AI-Powered Intelligent Automation</h2>
         <p class="hc-why__text">
-        A leading retail bank was facing increasing operational complexity across its risk management, fraud prevention, and regulatory compliance functions. Critical workflows—including credit underwriting, fraud investigations, KYC reviews, AML monitoring, and compliance assessments—were fragmented across multiple legacy systems, requiring employees to navigate disparate applications to gather information, validate customer records, investigate anomalies, and document decisions.
+        A leading retail bank was facing increasing operational complexity across its risk management, fraud prevention, and regulatory compliance functions. Critical workflowsâ€”including credit underwriting, fraud investigations, KYC reviews, AML monitoring, and compliance assessmentsâ€”were fragmented across multiple legacy systems, requiring employees to navigate disparate applications to gather information, validate customer records, investigate anomalies, and document decisions.
 This highly manual operating model resulted in longer processing times, inconsistent decision-making, elevated operational costs, and increased customer friction. Underwriters, fraud analysts, and compliance professionals were spending a significant portion of their time collecting and reconciling data rather than applying their expertise to high-value risk assessment and decision-making. In addition, a high volume of false positives and repeated manual reviews reduced productivity and delayed customer onboarding, lending decisions, and fraud resolution.
 
               </p>
@@ -488,7 +488,7 @@ The solution also incorporated AI-powered document intelligence, real-time risk 
     </div>
   </section>
 
-  <!-- ─── CTA BAND ─────────────────────────────────────────── -->
+  <!-- â”€â”€â”€ CTA BAND â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ -->
   <section class="hc-cta-band">
     <div class="hc-cta-band__ring"></div>
     <div class="hc-cta-band__dots"></div>
@@ -517,7 +517,7 @@ The solution also incorporated AI-powered document intelligence, real-time risk 
       --teal-light: #E87722;
       --emerald: #E87722;
     }
-/* ─── BREADCRUMB ─────────────────────────────────────── */
+/* â”€â”€â”€ BREADCRUMB â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
     .breadcrumb-bar {
       background: var(--teal-dark);
       padding: 0.55rem 3rem;
@@ -537,7 +537,7 @@ The solution also incorporated AI-powered document intelligence, real-time risk 
       .breadcrumb-bar { padding: 0.55rem 1rem; margin-top: 58px; }
     }
 
-    /* ─── HERO CAROUSEL ──────────────────────────────────── */
+    /* â”€â”€â”€ HERO CAROUSEL â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
     .hc-hero {
       position: relative;
       height: 85vh;
@@ -704,7 +704,7 @@ The solution also incorporated AI-powered document intelligence, real-time risk 
       .hc-hero__sub { font-size: 0.92rem; }
     }
 
-    /* ─── INTRO SECTION ──────────────────────────────────── */
+    /* â”€â”€â”€ INTRO SECTION â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
     .hc-intro {
       padding: 6rem 3rem;
       padding-top: 7rem;
@@ -968,7 +968,7 @@ The solution also incorporated AI-powered document intelligence, real-time risk 
       .hc-intro__float-card { right: 10px; bottom: -20px; }
     }
 
-    /* ─── WHAT WE DELIVER — CLICKABLE CARDS ──────────────── */
+    /* â”€â”€â”€ WHAT WE DELIVER â€” CLICKABLE CARDS â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
     .hc-deliver {
       padding: 6rem 3rem;
       background: linear-gradient(180deg, rgba(27,58,143,0.04) 0%, var(--bg) 100%);
@@ -1164,7 +1164,7 @@ The solution also incorporated AI-powered document intelligence, real-time risk 
       .hc-deliver__grid { grid-template-columns: 1fr; }
     }
 
-    /* ─── WHY IT MATTERS — REDESIGNED ────────────────────── */
+    /* â”€â”€â”€ WHY IT MATTERS â€” REDESIGNED â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
     .hc-why {
       padding: 4rem 3rem;
       background: linear-gradient(135deg, #060d1f 0%, #0a1635 40%, #0f1f4a 100%);
@@ -1334,7 +1334,7 @@ The solution also incorporated AI-powered document intelligence, real-time risk 
       line-height: 1.5;
     }
 
-    /* Abstract side — hexagonal network pattern */
+    /* Abstract side â€” hexagonal network pattern */
     .hc-why__abstract {
       position: relative;
       width: 100%;
@@ -1548,7 +1548,7 @@ The solution also incorporated AI-powered document intelligence, real-time risk 
       .hc-why__quote { padding: 1.4rem; }
     }
 
-    /* ─── OUTCOMES ───────────────────────────────────────── */
+    /* â”€â”€â”€ OUTCOMES â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
     .hc-outcomes {
       padding: 6rem 3rem;
       background: linear-gradient(180deg, var(--bg) 0%, rgba(232,119,34,0.04) 100%);
@@ -1587,7 +1587,7 @@ The solution also incorporated AI-powered document intelligence, real-time risk 
       margin-bottom: 3rem;
     }
 
-    /* ═════ Key Capabilities — unique card grid ═════════════ */
+    /* â•â•â•â•â• Key Capabilities â€” unique card grid â•â•â•â•â•â•â•â•â•â•â•â•â• */
     .cap-grid {
       display: grid;
       grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -1755,7 +1755,7 @@ The solution also incorporated AI-powered document intelligence, real-time risk 
       .hc-outcomes__grid { grid-template-columns: 1fr; }
     }
 
-    /* ─── CTA BAND ───────────────────────────────────────── */
+    /* â”€â”€â”€ CTA BAND â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
     .hc-cta-band {
       background: linear-gradient(135deg, #142d6b 0%, #1B3A8F 100%);
       padding: 4rem 3rem;
@@ -1815,7 +1815,7 @@ The solution also incorporated AI-powered document intelligence, real-time risk 
       .hc-cta-band { padding: 3rem 1.2rem; }
     }
 
-    /* ─── ABSTRACT BLOBS & SHAPES ────────────────────────── */
+    /* â”€â”€â”€ ABSTRACT BLOBS & SHAPES â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
     .abstract-blob {
       position: absolute;
       border-radius: 50%;
@@ -1984,7 +1984,7 @@ The solution also incorporated AI-powered document intelligence, real-time risk 
       pointer-events: none;
     }
 
-    /* ─── REVEAL ANIMATION ───────────────────────────────── */
+    /* â”€â”€â”€ REVEAL ANIMATION â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
     [data-reveal] {
       opacity: 0;
       transform: translateY(40px);
@@ -2029,7 +2029,7 @@ The solution also incorporated AI-powered document intelligence, real-time risk 
       transform: scale(1);
     }
 
-    /* ─── COUNTER ANIMATION ───────────────────────────────── */
+    /* â”€â”€â”€ COUNTER ANIMATION â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
     .hc-counter {
       font-family: "DM Serif Display", serif;
       font-size: 2.2rem;
@@ -2074,10 +2074,10 @@ The solution also incorporated AI-powered document intelligence, real-time risk 
       }
     }
 
-    /* ─── FOOTER RESET ───────────────────────────────────── */
+    /* â”€â”€â”€ FOOTER RESET â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
     .site-footer { margin-top: 0; }
 
-    /* ═════ Business Outcomes — timeline bars ═══════════════ */
+    /* â•â•â•â•â• Business Outcomes â€” timeline bars â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */
     .bo-list {
       list-style: none;
       padding: 0;
@@ -2219,7 +2219,7 @@ The solution also incorporated AI-powered document intelligence, real-time risk 
       .bo-item__icon { width: 40px; height: 40px; }
     }
 
-    /* ═════ Business Value redesign ═════════════════════════ */
+    /* â•â•â•â•â• Business Value redesign â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */
     .bv { width: 100%; }
     .bv__header { margin-bottom: 2rem; }
     .bv__eyebrow {
@@ -2542,3 +2542,7 @@ export class Banking implements AfterViewInit, OnDestroy  {
     if (this.counterObserver) this.counterObserver.disconnect();
   }
 }
+
+
+
+

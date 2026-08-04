@@ -1,4 +1,4 @@
-import { Component, AfterViewInit, OnDestroy, ElementRef } from '@angular/core';
+﻿import { Component, AfterViewInit, OnDestroy, ElementRef } from '@angular/core';
 import { RouterLink } from '@angular/router';
 
 @Component({
@@ -6,19 +6,19 @@ import { RouterLink } from '@angular/router';
   standalone: true,
   imports: [RouterLink],
   template: `
-    <!-- ─── BREADCRUMB ─────────────────────────────────────── -->
+    <!-- â”€â”€â”€ BREADCRUMB â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ -->
     <div class="breadcrumb-bar">
       <a routerLink="/">Home</a>
-      <span class="sep">›</span>
+      <span class="sep">></span>
       <a routerLink="/who-we-serve/healthcare">Healthcare</a>
-      <span class="sep">›</span>
+      <span class="sep">></span>
       <span class="current">Care Gap Identification and Follow-up Automation</span>
     </div>
 
-    <!-- ─── HERO ───────────────────────────────────────────── -->
+    <!-- â”€â”€â”€ HERO â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ -->
     <section class="cg-hero">
       <div class="cg-hero__bg">
-        <img src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&w=1800&q=80" alt="Care Gap Identification" />
+        <img src="Images/image_048.jpg" alt="Care Gap Identification" />
         <div class="cg-hero__overlay"></div>
       </div>
       <div class="cg-hero__abstract-ring"></div>
@@ -38,7 +38,7 @@ import { RouterLink } from '@angular/router';
       </div>
     </section>
 
-    <!-- ─── INTRO ──────────────────────────────────────────── -->
+    <!-- â”€â”€â”€ INTRO â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ -->
     <section class="cg-intro">
       <div class="cg-intro__blob"></div>
       <div class="cg-intro__dots"></div>
@@ -54,10 +54,10 @@ import { RouterLink } from '@angular/router';
           <div class="cg-intro__dot-grid"></div>
           <div class="cg-intro__ring"></div>
           <div class="cg-intro__img">
-            <img src="https://images.unsplash.com/photo-1666214280391-8ff5bd3c0bf0?auto=format&fit=crop&w=800&q=80" alt="Care Gap AI" loading="lazy" />
+            <img src="Images/image_059.jpg" alt="Care Gap AI" loading="lazy" />
           </div>
           <div class="cg-intro__float-card">
-            <div class="cg-intro__float-icon">🎯</div>
+            <div class="cg-intro__float-icon">ðŸŽ¯</div>
             <div class="cg-intro__float-text">
               <strong>Proactive Care</strong>
               <span>AI-powered follow-up</span>
@@ -67,7 +67,7 @@ import { RouterLink } from '@angular/router';
       </div>
     </section>
 
-    <!-- ─── KEY CAPABILITIES ───────────────────────────────── -->
+    <!-- â”€â”€â”€ KEY CAPABILITIES â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ -->
     <section class="cg-capabilities" id="cg-capabilities">
       <div class="cg-capabilities__ring"></div>
       <div class="cg-capabilities__blob"></div>
@@ -126,7 +126,7 @@ import { RouterLink } from '@angular/router';
       </div>
     </section>
 
-    <!-- ─── WHY IT MATTERS ─────────────────────────────────── -->
+    <!-- â”€â”€â”€ WHY IT MATTERS â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ -->
     <section class="cg-why">
       <div class="cg-why__bg-grid"></div>
       <div class="cg-why__glow-1"></div>
@@ -140,7 +140,7 @@ import { RouterLink } from '@angular/router';
       </div>
     </section>
 
-    <!-- ─── BUSINESS VALUE ─────────────────────────────────── -->
+    <!-- â”€â”€â”€ BUSINESS VALUE â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ -->
     <section class="cg-value" data-reveal>
       <div class="cg-value__ring"></div>
       <div class="cg-value__inner">
@@ -148,38 +148,38 @@ import { RouterLink } from '@angular/router';
         <h2 class="cg-section-heading">Business value</h2>
         <div class="cg-value__grid">
           <div class="cg-value-card">
-            <div class="cg-value-card__icon">⚡</div>
+            <div class="cg-value-card__icon">âš¡</div>
             <span>Accelerate the identification and closure of preventive, chronic care, and post-discharge care gaps.</span>
           </div>
           <div class="cg-value-card">
-            <div class="cg-value-card__icon">✅</div>
+            <div class="cg-value-card__icon">âœ…</div>
             <span>Improve patient engagement and follow-up completion rates through intelligent, personalised outreach.</span>
           </div>
           <div class="cg-value-card">
-            <div class="cg-value-card__icon">📉</div>
+            <div class="cg-value-card__icon">ðŸ“‰</div>
             <span>Reduce manual chart reviews and administrative effort by automating care gap detection and workflow coordination.</span>
           </div>
           <div class="cg-value-card">
-            <div class="cg-value-card__icon">🤝</div>
+            <div class="cg-value-card__icon">ðŸ¤</div>
             <span>Enhance care continuity and coordination across providers, care teams, and patient engagement channels.</span>
           </div>
           <div class="cg-value-card">
-            <div class="cg-value-card__icon">📊</div>
-            <span>Improve quality performance against HEDIS®, CMS Star Ratings, and other value-based care measures.</span>
+            <div class="cg-value-card__icon">ðŸ“Š</div>
+            <span>Improve quality performance against HEDISÂ®, CMS Star Ratings, and other value-based care measures.</span>
           </div>
           <div class="cg-value-card">
-            <div class="cg-value-card__icon">🏥</div>
+            <div class="cg-value-card__icon">ðŸ¥</div>
             <span>Strengthen population health management through proactive risk identification, prioritisation, and intervention.</span>
           </div>
           <div class="cg-value-card">
-            <div class="cg-value-card__icon">📈</div>
+            <div class="cg-value-card__icon">ðŸ“ˆ</div>
             <span>Increase operational efficiency while delivering better clinical outcomes, patient satisfaction, and financial performance.</span>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ─── GOVERNANCE ─────────────────────────────────────── -->
+    <!-- â”€â”€â”€ GOVERNANCE â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ -->
     <section class="cg-governance">
       <div class="cg-governance__inner" data-reveal>
         <div class="cg-governance__icon-wrap"><i class="ph ph-lock-simple"></i></div>
@@ -188,7 +188,7 @@ import { RouterLink } from '@angular/router';
       </div>
     </section>
 
-    <!-- ─── CTA BAND ──────────────────────────────────────── -->
+    <!-- â”€â”€â”€ CTA BAND â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ -->
     <section class="cg-cta">
       <div class="cg-cta__ring"></div>
       <div class="cg-cta__dots"></div>
@@ -213,7 +213,7 @@ import { RouterLink } from '@angular/router';
       --teal-light: #E87722;
     }
 
-    /* ─── BREADCRUMB ─────────────────────────────────────── */
+    /* â”€â”€â”€ BREADCRUMB â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
     .breadcrumb-bar { background: var(--teal-dark); padding: 0.55rem 3rem; }
     .breadcrumb-bar a, .breadcrumb-bar span { color: rgba(255,255,255,0.65); font-size: 0.8rem; font-weight: 500; text-decoration: none; }
     .breadcrumb-bar a:hover { color: #fff; }
@@ -221,14 +221,14 @@ import { RouterLink } from '@angular/router';
     .breadcrumb-bar .current { color: var(--teal-light); font-weight: 600; }
     @media (max-width: 768px) { .breadcrumb-bar { padding: 0.55rem 1rem; margin-top: 58px; } }
 
-    /* ─── SHARED ─────────────────────────────────────────── */
+    /* â”€â”€â”€ SHARED â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
     .cg-eyebrow { display: inline-block; color: var(--teal); font-size: 0.78rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 1rem; }
     .cg-eyebrow--light { color: var(--orange); }
     .cg-section-heading { font-family: "DM Serif Display", serif; font-size: clamp(1.8rem, 3vw, 2.5rem); color: var(--dark); font-weight: 400; line-height: 1.2; margin-bottom: 1.2rem; }
     .cg-section-heading em { color: var(--orange); font-style: italic; }
     .cg-section-heading--light { color: #fff; }
 
-    /* ─── HERO ───────────────────────────────────────────── */
+    /* â”€â”€â”€ HERO â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
     .cg-hero { position: relative; height: 55vh; min-height: 360px; max-height: 480px; overflow: hidden; }
     .cg-hero__bg { position: absolute; inset: 0; }
     .cg-hero__bg img { width: 100%; height: 100%; object-fit: cover; transform: scale(1.05); animation: heroZoom 12s ease-out forwards; }
@@ -252,7 +252,7 @@ import { RouterLink } from '@angular/router';
     @keyframes fadeUp { to { opacity: 1; transform: translateY(0); } }
     @media (max-width: 768px) { .cg-hero { height: 50vh; min-height: 320px; } .cg-hero__sub { font-size: 0.88rem; } }
 
-    /* ─── INTRO ──────────────────────────────────────────── */
+    /* â”€â”€â”€ INTRO â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
     .cg-intro { padding: 6rem 3rem; max-width: 1200px; margin: 0 auto; position: relative; overflow: hidden; }
     .cg-intro__blob { position: absolute; top: -60px; right: -80px; width: 300px; height: 300px; background: radial-gradient(circle, rgba(27,58,143,0.06) 0%, transparent 70%); border-radius: 50%; animation: drift 15s ease-in-out infinite; pointer-events: none; }
     .cg-intro__dots { position: absolute; bottom: -40px; left: -40px; width: 150px; height: 150px; background-image: radial-gradient(circle, rgba(232,119,34,0.2) 1.5px, transparent 1.5px); background-size: 16px 16px; opacity: 0.6; pointer-events: none; animation: float 10s ease-in-out infinite; }
@@ -271,7 +271,7 @@ import { RouterLink } from '@angular/router';
     .cg-intro__float-text span { font-size: 0.75rem; color: var(--mid); }
     @media (max-width: 991px) { .cg-intro { padding: 4rem 1.5rem; } .cg-intro__grid { grid-template-columns: 1fr; gap: 2.5rem; } .cg-intro__float-card { right: 10px; bottom: -20px; } }
 
-    /* ─── CAPABILITIES ───────────────────────────────────── */
+    /* â”€â”€â”€ CAPABILITIES â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
     .cg-capabilities { padding: 6rem 3rem; background: linear-gradient(180deg, rgba(27,58,143,0.04) 0%, var(--bg) 100%); position: relative; overflow: hidden; }
     .cg-capabilities__ring { position: absolute; top: 100px; left: -120px; width: 350px; height: 350px; border: 1.5px solid rgba(27,58,143,0.06); border-radius: 50%; pointer-events: none; animation: spinSlow 40s linear infinite; }
     .cg-capabilities__blob { position: absolute; bottom: 50px; right: -80px; width: 200px; height: 200px; background: rgba(232,119,34,0.04); border-radius: 50%; filter: blur(60px); animation: drift 15s ease-in-out infinite; pointer-events: none; }
@@ -292,7 +292,7 @@ import { RouterLink } from '@angular/router';
     .cg-cap-card p { font-size: 0.88rem; color: var(--mid); line-height: 1.6; margin: 0; }
     @media (max-width: 768px) { .cg-capabilities { padding: 3.5rem 1.2rem; } .cg-capabilities__grid { grid-template-columns: 1fr; } }
 
-    /* ─── WHY IT MATTERS ─────────────────────────────────── */
+    /* â”€â”€â”€ WHY IT MATTERS â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
     .cg-why { padding: 5rem 3rem; background: linear-gradient(135deg, #060d1f 0%, #0a1635 40%, #0f1f4a 100%); position: relative; overflow: hidden; }
     .cg-why__bg-grid { position: absolute; inset: 0; background-image: linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px); background-size: 60px 60px; pointer-events: none; }
     .cg-why__glow-1 { position: absolute; width: 400px; height: 400px; border-radius: 50%; background: radial-gradient(circle, rgba(232,119,34,0.15) 0%, transparent 70%); top: -100px; right: -100px; pointer-events: none; animation: drift 18s ease-in-out infinite; }
@@ -301,7 +301,7 @@ import { RouterLink } from '@angular/router';
     .cg-why__text { font-size: 1rem; color: rgba(255,255,255,0.7); line-height: 1.85; max-width: 850px; margin: 0 auto; }
     @media (max-width: 768px) { .cg-why { padding: 3.5rem 1.2rem; } }
 
-    /* ─── BUSINESS VALUE ─────────────────────────────────── */
+    /* â”€â”€â”€ BUSINESS VALUE â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
     .cg-value { padding: 6rem 3rem; background: linear-gradient(180deg, var(--bg) 0%, rgba(232,119,34,0.04) 100%); position: relative; overflow: hidden; }
     .cg-value__ring { position: absolute; top: 60px; right: -60px; width: 180px; height: 180px; border: 1.5px dashed rgba(232,119,34,0.12); border-radius: 50%; animation: spinSlow 35s linear infinite reverse; pointer-events: none; }
     .cg-value__inner { max-width: 1100px; margin: 0 auto; text-align: center; position: relative; z-index: 1; }
@@ -312,7 +312,7 @@ import { RouterLink } from '@angular/router';
     .cg-value-card span { font-size: 0.9rem; font-weight: 500; color: var(--dark); line-height: 1.6; }
     @media (max-width: 768px) { .cg-value { padding: 3.5rem 1.2rem; } .cg-value__grid { grid-template-columns: 1fr; } }
 
-    /* ─── GOVERNANCE ─────────────────────────────────────── */
+    /* â”€â”€â”€ GOVERNANCE â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
     .cg-governance { padding: 5rem 3rem; background: var(--bg); }
     .cg-governance__inner { max-width: 900px; margin: 0 auto; background: #fff; border-radius: 24px; padding: 3rem 3.5rem; box-shadow: 0 10px 40px rgba(27,58,143,0.08); border: 1px solid rgba(27,58,143,0.06); position: relative; overflow: hidden; text-align: center; }
     .cg-governance__inner::before { content: ""; position: absolute; top: 0; left: 0; width: 100%; height: 4px; background: linear-gradient(90deg, var(--blue), var(--orange)); }
@@ -322,7 +322,7 @@ import { RouterLink } from '@angular/router';
     .cg-governance p:last-child { margin-bottom: 0; }
     @media (max-width: 768px) { .cg-governance { padding: 3rem 1.2rem; } .cg-governance__inner { padding: 2rem 1.5rem; } }
 
-    /* ─── CTA ────────────────────────────────────────────── */
+    /* â”€â”€â”€ CTA â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
     .cg-cta { background: linear-gradient(135deg, #142d6b 0%, #1B3A8F 100%); padding: 4rem 3rem; text-align: center; position: relative; overflow: hidden; }
     .cg-cta::before { content: ""; position: absolute; width: 400px; height: 400px; border-radius: 50%; background: rgba(232,119,34,0.08); top: -150px; right: -100px; pointer-events: none; }
     .cg-cta__ring { position: absolute; bottom: -80px; left: 10%; width: 250px; height: 250px; border: 2px solid rgba(255,255,255,0.08); border-radius: 50%; animation: spinSlow 20s linear infinite; }
@@ -333,12 +333,12 @@ import { RouterLink } from '@angular/router';
     .cg-cta__btn:hover { transform: translateY(-3px); box-shadow: 0 10px 30px rgba(232,119,34,0.4); color: #fff; }
     @media (max-width: 768px) { .cg-cta { padding: 3rem 1.2rem; } }
 
-    /* ─── ANIMATIONS ─────────────────────────────────────── */
+    /* â”€â”€â”€ ANIMATIONS â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
     @keyframes spinSlow { to { transform: rotate(360deg); } }
     @keyframes float { 0%,100% { transform: translateY(0) rotate(0deg); } 33% { transform: translateY(-15px) rotate(2deg); } 66% { transform: translateY(8px) rotate(-1deg); } }
     @keyframes drift { 0%,100% { transform: translate(0,0); } 25% { transform: translate(20px,-10px); } 50% { transform: translate(-10px,-20px); } 75% { transform: translate(-20px,10px); } }
 
-    /* ─── REVEAL ─────────────────────────────────────────── */
+    /* â”€â”€â”€ REVEAL â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
     [data-reveal] { opacity: 0; transform: translateY(40px); transition: opacity 0.8s cubic-bezier(0.22,1,0.36,1), transform 0.8s cubic-bezier(0.22,1,0.36,1); }
     [data-reveal].is-visible { opacity: 1; transform: translateY(0); }
     [data-reveal-left] { opacity: 0; transform: translateX(-40px); transition: opacity 0.8s cubic-bezier(0.22,1,0.36,1), transform 0.8s cubic-bezier(0.22,1,0.36,1); }
@@ -404,3 +404,6 @@ export class CareGapIdentification implements AfterViewInit, OnDestroy {
     if (this.revealObserver) this.revealObserver.disconnect();
   }
 }
+
+
+

@@ -64,6 +64,8 @@
   height: 55px;
   width: auto;
   display: block;
+  display: none;
+
 }
 
 /* ── Desktop nav ─────────────────────────────────────────── */

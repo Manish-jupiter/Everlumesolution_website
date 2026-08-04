@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+﻿import { Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
 
 @Component({
@@ -7,16 +7,16 @@ import { RouterLink } from '@angular/router';
   imports: [RouterLink],
   template: `
     <div class="breadcrumb-bar">
-      <a routerLink="/">Home</a><span class="sep">›</span>
-      <a routerLink="/what-we-offer">What We Offer</a><span class="sep">›</span>
-      <a routerLink="/what-we-offer/digital-product-engineering">Digital Product Engineering</a><span class="sep">›</span>
+      <a routerLink="/">Home</a><span class="sep">></span>
+      <a routerLink="/what-we-offer">What We Offer</a><span class="sep">></span>
+      <a routerLink="/what-we-offer/digital-product-engineering">Digital Product Engineering</a><span class="sep">></span>
       <span class="current">AI and Data Integration</span>
     </div>
     <section class="stub-page">
       <div class="stub-page__inner">
         <span class="stub-eyebrow">Digital Product Engineering</span>
         <h1 class="stub-title">AI and <em>Data Integration</em></h1>
-        <p class="stub-lead">Embed intelligence directly into your products — integrating AI models, machine learning pipelines, and data platforms to deliver personalised, predictive, and automated experiences.</p>
+        <p class="stub-lead">Embed intelligence directly into your products â€” integrating AI models, machine learning pipelines, and data platforms to deliver personalised, predictive, and automated experiences.</p>
         <p class="stub-body">We help product teams integrate LLMs, recommendation engines, anomaly detection, and analytics capabilities into product workflows without sacrificing reliability or explainability. From data pipeline engineering and feature store design to model serving, A/B testing infrastructure, and responsible AI governance frameworks, we ensure your data and AI investments materialise as measurable product outcomes.</p>
         <a routerLink="/what-we-offer/digital-product-engineering" class="stub-back"><i class="ph ph-arrow-left"></i> Back to Digital Product Engineering</a>
       </div>
@@ -41,3 +41,4 @@ import { RouterLink } from '@angular/router';
   `],
 })
 export class AiDataIntegration {}
+

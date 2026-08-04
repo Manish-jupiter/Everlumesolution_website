@@ -1,4 +1,4 @@
-import { Component, AfterViewInit, ElementRef, OnDestroy } from '@angular/core';
+﻿import { Component, AfterViewInit, ElementRef, OnDestroy } from '@angular/core';
 import { RouterLink } from '@angular/router';
 
 @Component({
@@ -7,14 +7,14 @@ import { RouterLink } from '@angular/router';
   imports: [RouterLink],
   template: `
     <div class="breadcrumb-bar">
-      <a routerLink="/">Home</a><span class="sep">›</span>
-      <a routerLink="/what-we-offer">What We Offer</a><span class="sep">›</span>
+      <a routerLink="/">Home</a><span class="sep">></span>
+      <a routerLink="/what-we-offer">What We Offer</a><span class="sep">></span>
       <span class="current">Data Services</span>
     </div>
 
     <section class="ds-hero">
       <div class="ds-hero__bg">
-        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1800&q=80" alt="Data Services" />
+        <img src="Images/image_030.jpg" alt="Data Services" />
         <div class="ds-hero__overlay"></div>
       </div>
       <div class="ds-hero__particles" id="ds-particles"></div>
@@ -259,3 +259,5 @@ export class DataServices implements AfterViewInit, OnDestroy {
     this.revealObserver?.disconnect();
   }
 }
+
+

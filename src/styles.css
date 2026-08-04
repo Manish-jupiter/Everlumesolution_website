@@ -1,5 +1,5 @@
-/* =============================================================================
-   EVERLUME SOLUTIONS — GLOBAL STYLES
+﻿/* =============================================================================
+   EVERLUME SOLUTIONS â€” GLOBAL STYLES
    All CSS lives in this file (project-wide/global stylesheet).
    Ported 1:1 from the original static site (style.css) to preserve the design
    and every animation effect exactly as-is.
@@ -21,8 +21,8 @@ html {
 }
 
 /* =========================================================
-   CUSTOM SCROLLBARS — themed to the Everlume palette
-   (orange #E87722 → navy #1B3A8F gradient, subtle track).
+   CUSTOM SCROLLBARS â€” themed to the Everlume palette
+   (orange #E87722 â†’ navy #1B3A8F gradient, subtle track).
    ========================================================= */
 
 /* Firefox */
@@ -55,7 +55,7 @@ html {
   background: transparent;
 }
 
-/* Dark-themed panels (e.g. mobile sidebar) — softer track for dark bg. */
+/* Dark-themed panels (e.g. mobile sidebar) â€” softer track for dark bg. */
 .site-nav__sidebar,
 .site-nav__dropdown {
   scrollbar-color: #e87722 rgba(255, 255, 255, 0.06);
@@ -74,6 +74,29 @@ body {
 
 body.body--menu-open {
   overflow: hidden;
+}
+
+/* Global breadcrumb normalization: force blue variant across pages */
+.breadcrumb-bar {
+  background: #142d6b !important;
+}
+
+.breadcrumb-bar a,
+.breadcrumb-bar span {
+  color: rgba(255, 255, 255, 0.65) !important;
+}
+
+.breadcrumb-bar a:hover {
+  color: #ffffff !important;
+}
+
+.breadcrumb-bar .sep {
+  color: rgba(255, 255, 255, 0.3) !important;
+}
+
+.breadcrumb-bar .current {
+  color: #e87722 !important;
+  font-weight: 600 !important;
 }
 
 .nav {
@@ -285,7 +308,7 @@ body.body--menu-open .nav.nav--scrolled {
   transform: translateY(-6px) rotate(-45deg);
 }
 
-/* ─── Responsive Mobile Nav ─── */
+/* â”€â”€â”€ Responsive Mobile Nav â”€â”€â”€ */
 @media (max-width: 991px) {
   .nav {
     padding: 0.8rem 1.2rem;
@@ -588,7 +611,7 @@ body.body--menu-open .nav.nav--scrolled {
   text-underline-offset: 0.35rem;
 }
 
-/* ─── Hero ───────────────────────────────────────────────── */
+/* â”€â”€â”€ Hero â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 .hero {
   height: 100vh;
   min-height: 600px;
@@ -762,9 +785,9 @@ body.body--menu-open .nav.nav--scrolled {
   }
 }
 
-/* ─── /Hero ──────────────────────────────────────────────── */
+/* â”€â”€â”€ /Hero â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 
-/* ─── Story Scroll ───────────────────────────────────────── */
+/* â”€â”€â”€ Story Scroll â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 .story-scroll {
   --story-progress: 0;
   height: var(--story-scroll-height, 280vh);
@@ -799,7 +822,7 @@ body.body--menu-open .nav.nav--scrolled {
   transition: opacity 0.2s linear, transform 0.2s ease;
 }
 
-/* ── Floating particles ─────────────────────────── */
+/* â”€â”€ Floating particles â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 .story-scroll__particles {
   inset: 0;
   position: absolute;
@@ -899,7 +922,7 @@ body.body--menu-open .nav.nav--scrolled {
   80% { transform: translate(10px, 15px) scale(1.1); }
 }
 
-/* ── Orbit ring ─────────────────────────────────── */
+/* â”€â”€ Orbit ring â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 .story-scroll__orbit {
   position: absolute;
   width: 620px;
@@ -981,7 +1004,7 @@ body.body--menu-open .nav.nav--scrolled {
   to { transform: rotate(360deg); }
 }
 
-/* ── Gradient streak ─────────────────────────────── */
+/* â”€â”€ Gradient streak â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 .story-scroll__streak {
   position: absolute;
   width: 200%;
@@ -1018,7 +1041,7 @@ body.body--menu-open .nav.nav--scrolled {
   transition: none;
 }
 
-/* ── Left blobs ─────────────────────────────────── */
+/* â”€â”€ Left blobs â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 .story-scroll__blob--l1 {
   background: radial-gradient(circle at 40% 38%, #7ba3ff 0%, #3366cc 55%, #1B3A8F 100%);
   height: 560px;
@@ -1051,7 +1074,7 @@ body.body--menu-open .nav.nav--scrolled {
   z-index: 3;
 }
 
-/* ── Right blobs ────────────────────────────────── */
+/* â”€â”€ Right blobs â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 .story-scroll__blob--r1 {
   background: radial-gradient(circle at 56% 42%, #ffd4a8 0%, #E87722 48%, #c96418 100%);
   height: 480px;
@@ -1189,9 +1212,9 @@ body.body--menu-open .nav.nav--scrolled {
   }
 }
 
-/* ─── /Story Scroll ─────────────────────────────────────── */
+/* â”€â”€â”€ /Story Scroll â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 
-/* ─── Intro Scroll ───────────────────────────────────────── */
+/* â”€â”€â”€ Intro Scroll â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 .intro-scroll {
   height: var(--intro-scroll-height, 280vh);
   position: relative;
@@ -1263,7 +1286,7 @@ body.body--menu-open .nav.nav--scrolled {
   50% { opacity: 1; transform: translateX(-50%) scale(1.08); }
 }
 
-/* ── Floating particles ────────────────── */
+/* â”€â”€ Floating particles â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 .intro-scroll__particles {
   position: absolute;
   inset: 0;
@@ -1294,7 +1317,7 @@ body.body--menu-open .nav.nav--scrolled {
   75% { transform: translateY(-25px) translateX(12px); opacity: 0.8; }
 }
 
-/* ── Animated SVG illustration ────────────── */
+/* â”€â”€ Animated SVG illustration â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 .intro-scroll__illustration {
   position: absolute;
   inset: 0;
@@ -1372,7 +1395,7 @@ body.body--menu-open .nav.nav--scrolled {
   50% { opacity: 0.9; transform: scale(1.15); }
 }
 
-/* ── Text content ────────────────────────── */
+/* â”€â”€ Text content â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 .intro-scroll__content {
   position: relative;
   width: 100%;
@@ -1419,7 +1442,7 @@ body.body--menu-open .nav.nav--scrolled {
   text-shadow: 0 0 30px rgba(232, 119, 34, 0.25), 0 0 60px rgba(27, 58, 143, 0.1);
 }
 
-/* ── Scroll progress indicator ─────────── */
+/* â”€â”€ Scroll progress indicator â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 .intro-scroll__progress {
   position: absolute;
   bottom: 40px;
@@ -1457,7 +1480,7 @@ body.body--menu-open .nav.nav--scrolled {
   }
 }
 
-/* ─── /Intro Scroll ─────────────────────────────────────── */
+/* â”€â”€â”€ /Intro Scroll â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 
 .personas {
   position: relative;
@@ -1499,7 +1522,7 @@ body.body--menu-open .nav.nav--scrolled {
   pointer-events: none;
 }
 
-/* ── Floating decorative icons ─────────────────── */
+/* â”€â”€ Floating decorative icons â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 .personas__decor {
   inset: 0;
   position: absolute;
@@ -1729,7 +1752,7 @@ body.body--menu-open .nav.nav--scrolled {
     linear-gradient(175deg, #f5f5f3 0%, #edf0f8 35%, #e4e9f4 70%, #dfe5f2 100%);
 }
 
-/* ── Background decorations ───────────────────────── */
+/* â”€â”€ Background decorations â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 .cta-block__bg {
   inset: 0;
   overflow: hidden;
@@ -1786,7 +1809,7 @@ body.body--menu-open .nav.nav--scrolled {
   50% { transform: translate(-20px, 15px) scale(1.1); opacity: 1; }
 }
 
-/* ── Decorative shapes ───────────────────────────── */
+/* â”€â”€ Decorative shapes â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 .cta-block__grid-lines {
   inset: 0;
   position: absolute;
@@ -1824,7 +1847,7 @@ body.body--menu-open .nav.nav--scrolled {
   50% { transform: translateY(-15px) rotate(5deg); }
 }
 
-/* ── Floating orbs ───────────────────────────────── */
+/* â”€â”€ Floating orbs â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 .cta-block__orb {
   border-radius: 50%;
   position: absolute;
@@ -1884,7 +1907,7 @@ body.body--menu-open .nav.nav--scrolled {
   75% { transform: translate(18px, 8px); }
 }
 
-/* ── Content card ────────────────────────────────── */
+/* â”€â”€ Content card â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 .cta-block__content {
   align-items: center;
   backdrop-filter: blur(16px);
@@ -1920,7 +1943,7 @@ body.body--menu-open .nav.nav--scrolled {
   top: 0;
 }
 
-/* ── Badge pill ──────────────────────────────────── */
+/* â”€â”€ Badge pill â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 .cta-block__badge {
   align-items: center;
   background: rgba(27, 58, 143, 0.06);
@@ -1951,7 +1974,7 @@ body.body--menu-open .nav.nav--scrolled {
   50% { opacity: 0.5; transform: scale(0.7); }
 }
 
-/* ── Heading ─────────────────────────────────────── */
+/* â”€â”€ Heading â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 .cta-block__heading {
   color: #111111;
   font-family: "DM Serif Display", Georgia, serif;
@@ -1976,7 +1999,7 @@ body.body--menu-open .nav.nav--scrolled {
   50% { background-position: 100% 50%; }
 }
 
-/* ── Copy ────────────────────────────────────────── */
+/* â”€â”€ Copy â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 .cta-block__copy {
   color: #555555;
   font-size: clamp(0.9rem, 1.4vw, 1.02rem);
@@ -1985,7 +2008,7 @@ body.body--menu-open .nav.nav--scrolled {
   max-width: 50ch;
 }
 
-/* ── Bento metrics grid ──────────────────────────── */
+/* â”€â”€ Bento metrics grid â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 .cta-block__bento {
   display: grid;
   gap: 0.8rem;
@@ -2085,7 +2108,7 @@ body.body--menu-open .nav.nav--scrolled {
   text-transform: uppercase;
 }
 
-/* ── CTA Button ──────────────────────────────────── */
+/* â”€â”€ CTA Button â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 .cta-block__btn-wrap {
   align-items: center;
   background: linear-gradient(135deg, #1B3A8F 0%, #153078 100%);
@@ -2127,7 +2150,7 @@ body.body--menu-open .nav.nav--scrolled {
   transform: translateX(4px);
 }
 
-/* ── Floating tech tags ──────────────────────────── */
+/* â”€â”€ Floating tech tags â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 .cta-block__tags {
   inset: 0;
   pointer-events: none;
@@ -2170,7 +2193,7 @@ body.body--menu-open .nav.nav--scrolled {
   50% { transform: translateX(-50%) translateY(-8px); opacity: 1; }
 }
 
-/* ── Responsive ──────────────────────────────────── */
+/* â”€â”€ Responsive â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 @media (max-width: 768px) {
   .cta-block__bento {
     grid-template-columns: 1fr;
@@ -2180,7 +2203,7 @@ body.body--menu-open .nav.nav--scrolled {
   .cta-block__heading { text-align: center; }
 }
 
-/* ─── Editorial Section ─────────────────────────────────── */
+/* â”€â”€â”€ Editorial Section â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 .editorial {
   position: relative;
   background: linear-gradient(160deg, #f0f4fa 0%, #fdf8f3 50%, #f4f7fd 100%);
@@ -2461,7 +2484,7 @@ body.body--menu-open .nav.nav--scrolled {
   transition: width 0.12s linear;
 }
 
-/* ─── Editorial Responsive ──────────────────────────────── */
+/* â”€â”€â”€ Editorial Responsive â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 @media (max-width: 980px) {
   .editorial__topbar {
     padding: 1.4rem 1.8rem 0;
@@ -2564,7 +2587,7 @@ body.body--menu-open .nav.nav--scrolled {
   }
 }
 
-/* ─── /Editorial Section ────────────────────────────────── */
+/* â”€â”€â”€ /Editorial Section â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 
 .expedition-scroll {
   --expedition-height: 240vh;
@@ -2587,7 +2610,7 @@ body.body--menu-open .nav.nav--scrolled {
 }
 
 .expedition-scroll__bg {
-  background-image: url("https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1800&q=80");
+  background-image: url("/Images/image_003.jpg");
   background-position: center;
   background-size: cover;
   inset: 0;
@@ -2960,7 +2983,7 @@ body.body--menu-open .nav.nav--scrolled {
   z-index: 1;
 }
 
-/* ── CTA block at top ──────────────────────────────── */
+/* â”€â”€ CTA block at top â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 .site-footer__cta-block {
   align-items: center;
   border-bottom: 1px solid rgba(255, 255, 255, 0.06);
@@ -3066,7 +3089,7 @@ body.body--menu-open .nav.nav--scrolled {
   width: 18px;
 }
 
-/* ── Footer columns ────────────────────────────────── */
+/* â”€â”€ Footer columns â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 .site-footer__columns {
   display: grid;
   gap: 2rem;
@@ -3105,6 +3128,7 @@ body.body--menu-open .nav.nav--scrolled {
   margin-bottom: 1.2rem;
   width: auto;
   filter: brightness(1.8) contrast(1.1);
+  display:none;
 }
 
 .site-footer__brand-text {
@@ -3115,7 +3139,7 @@ body.body--menu-open .nav.nav--scrolled {
   max-width: 30ch;
 }
 
-/* ── Socials ─────────────────────────────────────── */
+/* â”€â”€ Socials â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 .site-footer__socials {
   display: flex;
   gap: 0.6rem;
@@ -3164,7 +3188,7 @@ body.body--menu-open .nav.nav--scrolled {
   margin: 0;
 }
 
-/* ── Bottom bar ──────────────────────────────────── */
+/* â”€â”€ Bottom bar â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 .site-footer__bottom {
   align-items: center;
   border-top: 1px solid rgba(255, 255, 255, 0.06);
@@ -3499,10 +3523,10 @@ body.body--menu-open .nav.nav--scrolled {
   }
 }
 
-/* ─── MOBILE-ONLY (≤480px) ────────────────────────────────── */
+/* â”€â”€â”€ MOBILE-ONLY (â‰¤480px) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 @media (max-width: 480px) {
 
-  /* ── Nav Logo ────────────────────────────── */
+  /* â”€â”€ Nav Logo â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
   .nav__logo-img {
     height: 56px;
   }
@@ -3510,7 +3534,7 @@ body.body--menu-open .nav.nav--scrolled {
     height: 44px;
   }
 
-  /* ── Story Scroll ──────────────────────── */
+  /* â”€â”€ Story Scroll â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
   .story-scroll {
     height: auto !important;
   }
@@ -3546,7 +3570,7 @@ body.body--menu-open .nav.nav--scrolled {
     width: 24px;
   }
 
-  /* ── Editorial / How We Work ───────────── */
+  /* â”€â”€ Editorial / How We Work â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
   .editorial {
     height: auto !important;
     min-height: auto;
@@ -3642,7 +3666,7 @@ body.body--menu-open .nav.nav--scrolled {
     display: none;
   }
 
-  /* ── Expedition / Services ─────────────── */
+  /* â”€â”€ Expedition / Services â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
   .expedition-scroll {
     --expedition-height: 120vh;
   }
@@ -3696,7 +3720,7 @@ body.body--menu-open .nav.nav--scrolled {
     font-size: 0.72rem;
   }
 
-  /* ── CTA Block ─────────────────────────── */
+  /* â”€â”€ CTA Block â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
   .cta-block {
     padding: 3rem 1rem;
   }
@@ -3737,7 +3761,7 @@ body.body--menu-open .nav.nav--scrolled {
     display: none;
   }
 
-  /* ── Personas / Who We Serve ────────────── */
+  /* â”€â”€ Personas / Who We Serve â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
   .personas__sticky {
     height: 80vh;
   }
@@ -3780,7 +3804,7 @@ body.body--menu-open .nav.nav--scrolled {
     justify-content: center;
   }
 
-  /* ── Praise / Testimonials ─────────────── */
+  /* â”€â”€ Praise / Testimonials â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
   .praise-scroll {
     height: auto !important;
     overflow: visible;
@@ -3849,7 +3873,7 @@ body.body--menu-open .nav.nav--scrolled {
     opacity: 0.3;
   }
 
-  /* ── Footer ────────────────────────────── */
+  /* â”€â”€ Footer â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
   .site-footer__inner {
     padding: 2.5rem 1rem 1.5rem;
   }
@@ -3904,5 +3928,6 @@ body.body--menu-open .nav.nav--scrolled {
     padding: 0.7rem 1.5rem;
   }
 }
+
 
 

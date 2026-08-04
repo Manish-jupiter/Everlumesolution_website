@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+﻿import { Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
 
 @Component({
@@ -7,9 +7,9 @@ import { RouterLink } from '@angular/router';
   imports: [RouterLink],
   template: `
     <div class="breadcrumb-bar">
-      <a routerLink="/">Home</a><span class="sep">›</span>
-      <a routerLink="/what-we-offer">What We Offer</a><span class="sep">›</span>
-      <a routerLink="/what-we-offer/digital-product-engineering">Digital Product Engineering</a><span class="sep">›</span>
+      <a routerLink="/">Home</a><span class="sep">></span>
+      <a routerLink="/what-we-offer">What We Offer</a><span class="sep">></span>
+      <a routerLink="/what-we-offer/digital-product-engineering">Digital Product Engineering</a><span class="sep">></span>
       <span class="current">API-First &amp; Microservices Architecture</span>
     </div>
     <section class="stub-page">
@@ -17,7 +17,7 @@ import { RouterLink } from '@angular/router';
         <span class="stub-eyebrow">Digital Product Engineering</span>
         <h1 class="stub-title">API-First and <em>Microservices Architecture</em></h1>
         <p class="stub-lead">Decouple complexity, accelerate integration, and enable independent deployability with API-first design principles and microservices architecture patterns.</p>
-        <p class="stub-body">We design and implement well-governed API ecosystems — RESTful, GraphQL, and event-driven — enabling teams to innovate independently without system-wide risk. Our microservices blueprints address bounded context design, service mesh implementation, API gateway patterns, contract testing, distributed tracing, and end-to-end observability so your platform grows without increasing brittleness.</p>
+        <p class="stub-body">We design and implement well-governed API ecosystems â€” RESTful, GraphQL, and event-driven â€” enabling teams to innovate independently without system-wide risk. Our microservices blueprints address bounded context design, service mesh implementation, API gateway patterns, contract testing, distributed tracing, and end-to-end observability so your platform grows without increasing brittleness.</p>
         <a routerLink="/what-we-offer/digital-product-engineering" class="stub-back"><i class="ph ph-arrow-left"></i> Back to Digital Product Engineering</a>
       </div>
     </section>
@@ -41,3 +41,4 @@ import { RouterLink } from '@angular/router';
   `],
 })
 export class ApiFirstMicroservicesArchitecture {}
+

@@ -1,4 +1,4 @@
-import { AfterViewInit, Component, ElementRef, OnDestroy } from '@angular/core';
+﻿import { AfterViewInit, Component, ElementRef, OnDestroy } from '@angular/core';
 import { RouterLink } from '@angular/router';
 
 @Component({
@@ -14,7 +14,7 @@ import { RouterLink } from '@angular/router';
 
     <section class="ai-hero">
       <div class="ai-hero__bg">
-        <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=1800&q=80" alt="AI Services" />
+        <img src="Images/image_060.jpg" alt="AI Services" />
         <div class="ai-hero__overlay"></div>
       </div>
       <div class="ai-hero__particles" id="ai-particles"></div>
@@ -244,3 +244,4 @@ export class AiServices implements AfterViewInit, OnDestroy {
     this.revealObserver?.disconnect();
   }
 }
+

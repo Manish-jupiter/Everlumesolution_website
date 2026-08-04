@@ -8,15 +8,15 @@ import { RouterLink } from '@angular/router';
   template: `
     <!-- BREADCRUMB -->
     <div class="breadcrumb-bar">
-      <a routerLink="/">Home</a><span class="sep">›</span>
-      <a routerLink="/what-we-offer">What We Offer</a><span class="sep">›</span>
+      <a routerLink="/">Home</a><span class="sep">></span>
+      <a routerLink="/what-we-offer">What We Offer</a><span class="sep">></span>
       <span class="current">Cloud Engineering</span>
     </div>
 
     <!-- HERO -->
     <section class="ce-hero">
       <div class="ce-hero__bg">
-        <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1800&q=80" alt="Cloud Engineering" />
+        <img src="Images/image_003.jpg" alt="Cloud Engineering" />
         <div class="ce-hero__overlay"></div>
       </div>
       <div class="ce-hero__particles" id="ce-particles"></div>
@@ -273,3 +273,5 @@ export class CloudEngineering implements AfterViewInit, OnDestroy {
 
   ngOnDestroy(): void { this.revealObserver?.disconnect(); }
 }
+
+

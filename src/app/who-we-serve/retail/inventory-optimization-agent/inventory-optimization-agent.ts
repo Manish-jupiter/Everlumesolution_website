@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+﻿import { Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
 
 @Component({
@@ -7,9 +7,9 @@ import { RouterLink } from '@angular/router';
   imports: [RouterLink],
   template: `
     <div class="breadcrumb-bar">
-      <a routerLink="/">Home</a><span class="sep">›</span>
-      <a routerLink="/who-we-serve">Who We Serve</a><span class="sep">›</span>
-      <a routerLink="/who-we-serve/retail/retail-solutions">Our Solutions</a><span class="sep">›</span>
+      <a routerLink="/">Home</a><span class="sep">></span>
+      <a routerLink="/who-we-serve">Who We Serve</a><span class="sep">></span>
+      <a routerLink="/who-we-serve/retail/retail-solutions">Our Solutions</a><span class="sep">></span>
       <span class="current">Inventory Optimization Agent</span>
     </div>
 
@@ -21,7 +21,7 @@ import { RouterLink } from '@angular/router';
       <div class="ra-header__inner">
         <div class="ra-header__badge">
           <i class="ph ph-cube"></i>
-          <span>Agentic AI · Retail</span>
+          <span>Agentic AI Â· Retail</span>
         </div>
         <h1 class="ra-header__title">Inventory <em>Optimization Agent</em></h1>
         <p class="ra-header__sub">Continuously monitors stock levels, analyses demand patterns, and orchestrates intelligent replenishment decisions across stores, warehouses, distribution centres, and digital channels.</p>
@@ -209,3 +209,4 @@ export class InventoryOptimizationAgent {
     document.querySelectorAll('[data-reveal]').forEach(el => observer.observe(el));
   }
 }
+

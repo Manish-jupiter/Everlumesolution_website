@@ -1,4 +1,4 @@
-import { Component, AfterViewInit, OnDestroy, ElementRef } from '@angular/core';
+﻿import { Component, AfterViewInit, OnDestroy, ElementRef } from '@angular/core';
 import { RouterLink } from '@angular/router';
 
 @Component({
@@ -6,19 +6,19 @@ import { RouterLink } from '@angular/router';
   standalone: true,
   imports: [RouterLink],
   template: `
-    <!-- ─── BREADCRUMB ─────────────────────────────────────── -->
+    <!-- â”€â”€â”€ BREADCRUMB â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ -->
     <div class="breadcrumb-bar">
       <a routerLink="/">Home</a>
-      <span class="sep">›</span>
+      <span class="sep">></span>
       <a routerLink="/who-we-serve/healthcare">Healthcare</a>
-      <span class="sep">›</span>
+      <span class="sep">></span>
       <span class="current">Patient Scheduling &amp; Coordination</span>
     </div>
 
-    <!-- ─── HERO ───────────────────────────────────────────── -->
+    <!-- â”€â”€â”€ HERO â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ -->
     <section class="ps-hero">
       <div class="ps-hero__bg">
-        <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=1800&q=80" alt="Patient scheduling" />
+        <img src="Images/image_046.jpg" alt="Patient scheduling" />
         <div class="ps-hero__overlay"></div>
       </div>
       <div class="ps-hero__abstract-ring"></div>
@@ -38,7 +38,7 @@ import { RouterLink } from '@angular/router';
       </div>
     </section>
 
-    <!-- ─── INTRO ──────────────────────────────────────────── -->
+    <!-- â”€â”€â”€ INTRO â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ -->
     <section class="ps-intro">
       <div class="ps-intro__blob"></div>
       <div class="ps-intro__dots"></div>
@@ -54,10 +54,10 @@ import { RouterLink } from '@angular/router';
           <div class="ps-intro__dot-grid"></div>
           <div class="ps-intro__ring"></div>
           <div class="ps-intro__img">
-            <img src="https://images.unsplash.com/photo-1551076805-e1869033e561?auto=format&fit=crop&w=800&q=80" alt="AI scheduling" loading="lazy" />
+            <img src="Images/image_029.jpg" alt="AI scheduling" loading="lazy" />
           </div>
           <div class="ps-intro__float-card">
-            <div class="ps-intro__float-icon">📅</div>
+            <div class="ps-intro__float-icon">ðŸ“…</div>
             <div class="ps-intro__float-text">
               <strong>Smart Scheduling</strong>
               <span>AI-optimised workflows</span>
@@ -67,7 +67,7 @@ import { RouterLink } from '@angular/router';
       </div>
     </section>
 
-    <!-- ─── CAPABILITIES ───────────────────────────────────── -->
+    <!-- â”€â”€â”€ CAPABILITIES â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ -->
     <section class="ps-capabilities" id="ps-capabilities">
       <div class="ps-capabilities__ring"></div>
       <div class="ps-capabilities__blob"></div>
@@ -111,7 +111,7 @@ import { RouterLink } from '@angular/router';
       </div>
     </section>
 
-    <!-- ─── WHY IT MATTERS ─────────────────────────────────── -->
+    <!-- â”€â”€â”€ WHY IT MATTERS â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ -->
     <section class="ps-why">
       <div class="ps-why__bg-grid"></div>
       <div class="ps-why__glow-1"></div>
@@ -155,7 +155,7 @@ import { RouterLink } from '@angular/router';
       </div>
     </section>
 
-    <!-- ─── BUSINESS VALUE ─────────────────────────────────── -->
+    <!-- â”€â”€â”€ BUSINESS VALUE â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ -->
     <section class="ps-value" data-reveal>
       <div class="ps-value__ring"></div>
       <div class="ps-value__inner">
@@ -163,30 +163,30 @@ import { RouterLink } from '@angular/router';
         <h2 class="ps-section-heading">Business value</h2>
         <div class="ps-value__grid">
           <div class="ps-value-card">
-            <div class="ps-value-card__icon">📉</div>
+            <div class="ps-value-card__icon">ðŸ“‰</div>
             <span>Lower no-show rates.</span>
           </div>
           <div class="ps-value-card">
-            <div class="ps-value-card__icon">⚡</div>
+            <div class="ps-value-card__icon">âš¡</div>
             <span>Faster appointment turnaround.</span>
           </div>
           <div class="ps-value-card">
-            <div class="ps-value-card__icon">📞</div>
+            <div class="ps-value-card__icon">ðŸ“ž</div>
             <span>Reduced call center workload.</span>
           </div>
           <div class="ps-value-card">
-            <div class="ps-value-card__icon">📊</div>
+            <div class="ps-value-card__icon">ðŸ“Š</div>
             <span>Better utilization of provider schedules.</span>
           </div>
           <div class="ps-value-card">
-            <div class="ps-value-card__icon">😊</div>
+            <div class="ps-value-card__icon">ðŸ˜Š</div>
             <span>Improved patient satisfaction and access.</span>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ─── CTA BAND ──────────────────────────────────────── -->
+    <!-- â”€â”€â”€ CTA BAND â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ -->
     <section class="ps-cta">
       <div class="ps-cta__ring"></div>
       <div class="ps-cta__dots"></div>
@@ -211,7 +211,7 @@ import { RouterLink } from '@angular/router';
       --teal-light: #E87722;
     }
 
-    /* ─── BREADCRUMB ─────────────────────────────────────── */
+    /* â”€â”€â”€ BREADCRUMB â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
     .breadcrumb-bar {
       background: var(--teal-dark);
       padding: 0.55rem 3rem;
@@ -229,7 +229,7 @@ import { RouterLink } from '@angular/router';
       .breadcrumb-bar { padding: 0.55rem 1rem; margin-top: 58px; }
     }
 
-    /* ─── SHARED ─────────────────────────────────────────── */
+    /* â”€â”€â”€ SHARED â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
     .ps-eyebrow {
       display: inline-block;
       color: var(--teal);
@@ -252,7 +252,7 @@ import { RouterLink } from '@angular/router';
     .ps-section-heading em { color: var(--orange); font-style: italic; }
     .ps-section-heading--light { color: #fff; }
 
-    /* ─── HERO ───────────────────────────────────────────── */
+    /* â”€â”€â”€ HERO â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
     .ps-hero {
       position: relative;
       height: 55vh;
@@ -389,7 +389,7 @@ import { RouterLink } from '@angular/router';
       .ps-hero__sub { font-size: 0.88rem; }
     }
 
-    /* ─── INTRO ──────────────────────────────────────────── */
+    /* â”€â”€â”€ INTRO â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
     .ps-intro {
       padding: 6rem 3rem;
       max-width: 1200px;
@@ -490,7 +490,7 @@ import { RouterLink } from '@angular/router';
       .ps-intro__float-card { right: 10px; bottom: -20px; }
     }
 
-    /* ─── CAPABILITIES ───────────────────────────────────── */
+    /* â”€â”€â”€ CAPABILITIES â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
     .ps-capabilities {
       padding: 6rem 3rem;
       background: linear-gradient(180deg, rgba(27,58,143,0.04) 0%, var(--bg) 100%);
@@ -590,7 +590,7 @@ import { RouterLink } from '@angular/router';
       .ps-capabilities__grid { grid-template-columns: 1fr; }
     }
 
-    /* ─── WHY IT MATTERS ─────────────────────────────────── */
+    /* â”€â”€â”€ WHY IT MATTERS â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
     .ps-why {
       padding: 5rem 3rem;
       background: linear-gradient(135deg, #060d1f 0%, #0a1635 40%, #0f1f4a 100%);
@@ -681,7 +681,7 @@ import { RouterLink } from '@angular/router';
       .ps-why__features { grid-template-columns: 1fr; }
     }
 
-    /* ─── BUSINESS VALUE ─────────────────────────────────── */
+    /* â”€â”€â”€ BUSINESS VALUE â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
     .ps-value {
       padding: 6rem 3rem;
       background: linear-gradient(180deg, var(--bg) 0%, rgba(232,119,34,0.04) 100%);
@@ -740,7 +740,7 @@ import { RouterLink } from '@angular/router';
       .ps-value__grid { grid-template-columns: 1fr; }
     }
 
-    /* ─── CTA ────────────────────────────────────────────── */
+    /* â”€â”€â”€ CTA â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
     .ps-cta {
       background: linear-gradient(135deg, #142d6b 0%, #1B3A8F 100%);
       padding: 4rem 3rem;
@@ -804,7 +804,7 @@ import { RouterLink } from '@angular/router';
       .ps-cta { padding: 3rem 1.2rem; }
     }
 
-    /* ─── ANIMATIONS ─────────────────────────────────────── */
+    /* â”€â”€â”€ ANIMATIONS â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
     @keyframes spinSlow { to { transform: rotate(360deg); } }
     @keyframes float {
       0%,100% { transform: translateY(0) rotate(0deg); }
@@ -818,7 +818,7 @@ import { RouterLink } from '@angular/router';
       75% { transform: translate(-20px,10px); }
     }
 
-    /* ─── REVEAL ─────────────────────────────────────────── */
+    /* â”€â”€â”€ REVEAL â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
     [data-reveal] {
       opacity: 0; transform: translateY(40px);
       transition: opacity 0.8s cubic-bezier(0.22,1,0.36,1), transform 0.8s cubic-bezier(0.22,1,0.36,1);
@@ -896,3 +896,6 @@ export class PatientScheduling implements AfterViewInit, OnDestroy {
     if (this.revealObserver) this.revealObserver.disconnect();
   }
 }
+
+
+

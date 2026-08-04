@@ -1,4 +1,4 @@
-import { Component, AfterViewInit, OnDestroy, ElementRef } from '@angular/core';
+﻿import { Component, AfterViewInit, OnDestroy, ElementRef } from '@angular/core';
 import { RouterLink } from '@angular/router';
 
 @Component({
@@ -6,19 +6,19 @@ import { RouterLink } from '@angular/router';
   standalone: true,
   imports: [RouterLink],
   template: `
-    <!-- ─── BREADCRUMB ─────────────────────────────────────── -->
+    <!-- â”€â”€â”€ BREADCRUMB â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ -->
     <div class="breadcrumb-bar">
       <a routerLink="/">Home</a>
-      <span class="sep">›</span>
+      <span class="sep">></span>
       <a routerLink="/who-we-serve">Who We Serve</a>
-      <span class="sep">›</span>
+      <span class="sep">></span>
       <span class="current">Manufacturing</span>
     </div>
 
-    <!-- ─── HERO ───────────────────────────────────────────── -->
+    <!-- â”€â”€â”€ HERO â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ -->
     <section class="mf-hero">
       <div class="mf-hero__bg">
-        <img src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?auto=format&fit=crop&w=1800&q=80" alt="Manufacturing" />
+        <img src="Images/image_011.jpg" alt="Manufacturing" />
         <div class="mf-hero__overlay"></div>
       </div>
       <div class="mf-hero__abstract-ring"></div>
@@ -38,7 +38,7 @@ import { RouterLink } from '@angular/router';
       </div>
     </section>
 
-    <!-- ─── INTRO ──────────────────────────────────────────── -->
+    <!-- â”€â”€â”€ INTRO â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ -->
     <section class="mf-intro">
       <div class="mf-intro__blob"></div>
       <div class="mf-intro__dots"></div>
@@ -46,7 +46,7 @@ import { RouterLink } from '@angular/router';
         <div class="mf-intro__text" data-reveal-left>
           <span class="mf-eyebrow">Overview</span>
           <h2 class="mf-section-heading">Intelligent AI agents that <em>orchestrate</em> manufacturing operations</h2>
-          <p>Our Agentic AI solutions empower manufacturers to optimise production, enhance operational resilience, improve product quality, and accelerate decision-making through secure, intelligent automation—while maintaining robust human oversight and governance.</p>
+          <p>Our Agentic AI solutions empower manufacturers to optimise production, enhance operational resilience, improve product quality, and accelerate decision-making through secure, intelligent automationâ€”while maintaining robust human oversight and governance.</p>
           <p>We design and deploy enterprise-grade, manufacturing-ready Agentic AI solutions that seamlessly integrate with Enterprise Resource Planning (ERP) systems, Manufacturing Execution Systems (MES), Supply Chain Management (SCM) platforms, Industrial IoT (IIoT) devices, Computerised Maintenance Management Systems (CMMS), Product Lifecycle Management (PLM) applications, quality management systems, and plant operations environments. By intelligently coordinating activities across people, machines, enterprise systems, and AI agents, our solutions eliminate operational silos, streamline end-to-end manufacturing processes, and enable faster, data-driven decisions across the production ecosystem.</p>
           <p>From predictive maintenance and production scheduling to quality assurance, inventory optimisation, supplier collaboration, warehouse operations, and supply chain orchestration, our Agentic AI solutions optimise every stage of the manufacturing value chain. Built on secure, scalable, and governance-first AI architectures, they enable manufacturers to reduce downtime, increase asset utilisation, improve product quality, strengthen supply chain resilience, lower operating costs, and accelerate digital transformation while maintaining the highest standards of operational safety, regulatory compliance, and responsible AI.</p>
           <div class="mf-intro__actions">
@@ -58,10 +58,10 @@ import { RouterLink } from '@angular/router';
           <div class="mf-intro__dot-grid"></div>
           <div class="mf-intro__ring"></div>
           <div class="mf-intro__img">
-            <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=800&q=80" alt="Manufacturing AI" loading="lazy" />
+            <img src="Images/image_051.jpg" alt="Manufacturing AI" loading="lazy" />
           </div>
           <div class="mf-intro__float-card">
-            <div class="mf-intro__float-icon">🏭</div>
+            <div class="mf-intro__float-icon">ðŸ­</div>
             <div class="mf-intro__float-text">
               <strong>Smart Factory</strong>
               <span>AI-powered operations</span>
@@ -71,7 +71,7 @@ import { RouterLink } from '@angular/router';
       </div>
     </section>
 
-    <!-- ─── WHAT WE DELIVER ────────────────────────────────── -->
+    <!-- â”€â”€â”€ WHAT WE DELIVER â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ -->
     <section class="mf-deliver" id="mf-deliver">
       <div class="mf-deliver__ring"></div>
       <div class="mf-deliver__blob"></div>
@@ -120,7 +120,7 @@ import { RouterLink } from '@angular/router';
       </div>
     </section>
 
-    <!-- ─── WHY IT MATTERS ─────────────────────────────────── -->
+    <!-- â”€â”€â”€ WHY IT MATTERS â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ -->
     <section class="mf-why">
       <div class="mf-why__bg-grid"></div>
       <div class="mf-why__glow-1"></div>
@@ -134,7 +134,7 @@ import { RouterLink } from '@angular/router';
       </div>
     </section>
 
-    <!-- ─── BUSINESS VALUE ─────────────────────────────────── -->
+    <!-- â”€â”€â”€ BUSINESS VALUE â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ -->
     <section class="mf-value" data-reveal>
       <div class="mf-value__ring"></div>
       <div class="mf-value__inner">
@@ -142,38 +142,38 @@ import { RouterLink } from '@angular/router';
         <h2 class="mf-section-heading">Business value</h2>
         <div class="mf-value__grid">
           <div class="mf-value-card">
-            <div class="mf-value-card__icon">⚙️</div>
+            <div class="mf-value-card__icon">âš™ï¸</div>
             <span>Reduce unplanned equipment downtime through predictive monitoring and intelligent maintenance orchestration.</span>
           </div>
           <div class="mf-value-card">
-            <div class="mf-value-card__icon">⚡</div>
+            <div class="mf-value-card__icon">âš¡</div>
             <span>Accelerate operational decision-making with real-time production, inventory, and supply chain intelligence.</span>
           </div>
           <div class="mf-value-card">
-            <div class="mf-value-card__icon">📈</div>
+            <div class="mf-value-card__icon">ðŸ“ˆ</div>
             <span>Improve production efficiency, asset utilisation, and throughput across manufacturing operations.</span>
           </div>
           <div class="mf-value-card">
-            <div class="mf-value-card__icon">📦</div>
+            <div class="mf-value-card__icon">ðŸ“¦</div>
             <span>Enhance inventory visibility and optimise material flow across plants, warehouses, and suppliers.</span>
           </div>
           <div class="mf-value-card">
-            <div class="mf-value-card__icon">✅</div>
+            <div class="mf-value-card__icon">âœ…</div>
             <span>Improve product quality and consistency through AI-assisted quality monitoring and process optimisation.</span>
           </div>
           <div class="mf-value-card">
-            <div class="mf-value-card__icon">🤖</div>
+            <div class="mf-value-card__icon">ðŸ¤–</div>
             <span>Reduce manual effort across production planning, maintenance, quality assurance, and supply chain operations through intelligent workflow orchestration.</span>
           </div>
           <div class="mf-value-card">
-            <div class="mf-value-card__icon">🏭</div>
+            <div class="mf-value-card__icon">ðŸ­</div>
             <span>Strengthen operational resilience while lowering manufacturing costs and improving on-time delivery performance.</span>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ─── GOVERNANCE ─────────────────────────────────────── -->
+    <!-- â”€â”€â”€ GOVERNANCE â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ -->
     <section class="mf-governance">
       <div class="mf-governance__inner" data-reveal>
         <div class="mf-governance__icon-wrap"><i class="ph ph-lock-simple"></i></div>
@@ -182,7 +182,7 @@ import { RouterLink } from '@angular/router';
       </div>
     </section>
 
-    <!-- ─── CASE STUDIES ────────────────────────────────────── -->
+    <!-- â”€â”€â”€ CASE STUDIES â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ -->
     <section class="mf-case">
       <div class="mf-case__inner">
         <div class="mf-case__header" data-reveal>
@@ -240,7 +240,7 @@ import { RouterLink } from '@angular/router';
             <div class="mf-cs-section">
               <div class="mf-cs-section__label mf-cs-section__label--blue">Business Challenge</div>
               <p>A leading multi-site healthcare organisation was facing growing operational inefficiencies due to fragmented patient workflows spanning appointment scheduling, insurance verification, prior authorisation, clinical documentation, revenue cycle management, and post-care follow-up. Clinical and administrative teams were required to navigate multiple Electronic Health Record (EHR) systems, billing platforms, payer portals, and partner applications to coordinate patient care, resulting in excessive manual effort, delayed care delivery, and increased administrative costs.</p>
-              <p>Operating across multiple hospitals, specialty clinics, and ambulatory care centres, the organisation struggled with inconsistent processes, disconnected data, and limited visibility into end-to-end patient journeys. Routine activities—including eligibility verification, pre-visit preparation, prior authorisation, claims validation, and care coordination—required repeated handoffs between departments, leading to avoidable delays, duplicate effort, revenue leakage, and missed opportunities to enhance patient satisfaction and workforce productivity.</p>
+              <p>Operating across multiple hospitals, specialty clinics, and ambulatory care centres, the organisation struggled with inconsistent processes, disconnected data, and limited visibility into end-to-end patient journeys. Routine activitiesâ€”including eligibility verification, pre-visit preparation, prior authorisation, claims validation, and care coordinationâ€”required repeated handoffs between departments, leading to avoidable delays, duplicate effort, revenue leakage, and missed opportunities to enhance patient satisfaction and workforce productivity.</p>
             </div>
             <div class="mf-cs-section">
               <div class="mf-cs-section__label mf-cs-section__label--orange">Solution Delivered</div>
@@ -263,7 +263,7 @@ import { RouterLink } from '@angular/router';
             </div>
             <div class="mf-cs-section">
               <div class="mf-cs-section__label mf-cs-section__label--green">Business Outcomes</div>
-              <p>The organisation transformed fragmented, manually coordinated patient operations into a unified, AI-driven workflow ecosystem that streamlined collaboration across clinical, administrative, and revenue cycle teams. The solution delivered measurable improvements in appointment readiness, prior authorisation turnaround times, claims quality, and patient follow-up compliance while strengthening revenue cycle performance and enhancing the overall patient experience—successfully scaling intelligent automation without compromising clinical quality, regulatory compliance, or patient safety.</p>
+              <p>The organisation transformed fragmented, manually coordinated patient operations into a unified, AI-driven workflow ecosystem that streamlined collaboration across clinical, administrative, and revenue cycle teams. The solution delivered measurable improvements in appointment readiness, prior authorisation turnaround times, claims quality, and patient follow-up compliance while strengthening revenue cycle performance and enhancing the overall patient experienceâ€”successfully scaling intelligent automation without compromising clinical quality, regulatory compliance, or patient safety.</p>
             </div>
           </div>
         </div>
@@ -271,7 +271,7 @@ import { RouterLink } from '@angular/router';
       </div>
     </section>
 
-    <!-- ─── CTA BAND ──────────────────────────────────────── -->
+    <!-- â”€â”€â”€ CTA BAND â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ -->
     <section class="mf-cta">
       <div class="mf-cta__ring"></div>
       <div class="mf-cta__dots"></div>
@@ -296,7 +296,7 @@ import { RouterLink } from '@angular/router';
       --teal-light: #E87722;
     }
 
-    /* ─── BREADCRUMB ─────────────────────────────────────── */
+    /* â”€â”€â”€ BREADCRUMB â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
     .breadcrumb-bar { background: var(--teal-dark); padding: 0.55rem 3rem; }
     .breadcrumb-bar a, .breadcrumb-bar span { color: rgba(255,255,255,0.65); font-size: 0.8rem; font-weight: 500; text-decoration: none; }
     .breadcrumb-bar a:hover { color: #fff; }
@@ -304,14 +304,14 @@ import { RouterLink } from '@angular/router';
     .breadcrumb-bar .current { color: var(--teal-light); font-weight: 600; }
     @media (max-width: 768px) { .breadcrumb-bar { padding: 0.55rem 1rem; margin-top: 58px; } }
 
-    /* ─── SHARED ─────────────────────────────────────────── */
+    /* â”€â”€â”€ SHARED â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
     .mf-eyebrow { display: inline-block; color: var(--teal); font-size: 0.78rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 1rem; }
     .mf-eyebrow--light { color: var(--orange); }
     .mf-section-heading { font-family: "DM Serif Display", serif; font-size: clamp(1.8rem, 3vw, 2.5rem); color: var(--dark); font-weight: 400; line-height: 1.2; margin-bottom: 1.2rem; }
     .mf-section-heading em { color: var(--orange); font-style: italic; }
     .mf-section-heading--light { color: #fff; }
 
-    /* ─── HERO ───────────────────────────────────────────── */
+    /* â”€â”€â”€ HERO â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
     .mf-hero { position: relative; height: 55vh; min-height: 360px; max-height: 480px; overflow: hidden; }
     .mf-hero__bg { position: absolute; inset: 0; }
     .mf-hero__bg img { width: 100%; height: 100%; object-fit: cover; transform: scale(1.05); animation: heroZoom 12s ease-out forwards; }
@@ -335,7 +335,7 @@ import { RouterLink } from '@angular/router';
     @keyframes fadeUp { to { opacity: 1; transform: translateY(0); } }
     @media (max-width: 768px) { .mf-hero { height: 50vh; min-height: 320px; } .mf-hero__sub { font-size: 0.88rem; } }
 
-    /* ─── INTRO ──────────────────────────────────────────── */
+    /* â”€â”€â”€ INTRO â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
     .mf-intro { padding: 6rem 3rem; max-width: 1200px; margin: 0 auto; position: relative; overflow: hidden; }
     .mf-intro__blob { position: absolute; top: -60px; right: -80px; width: 300px; height: 300px; background: radial-gradient(circle, rgba(27,58,143,0.06) 0%, transparent 70%); border-radius: 50%; animation: drift 15s ease-in-out infinite; pointer-events: none; }
     .mf-intro__dots { position: absolute; bottom: -40px; left: -40px; width: 150px; height: 150px; background-image: radial-gradient(circle, rgba(232,119,34,0.2) 1.5px, transparent 1.5px); background-size: 16px 16px; opacity: 0.6; pointer-events: none; animation: float 10s ease-in-out infinite; }
@@ -370,7 +370,7 @@ import { RouterLink } from '@angular/router';
     .mf-intro__btn--outline:hover { background: var(--blue); color: #fff; transform: translateY(-2px); box-shadow: 0 10px 28px rgba(27,58,143,0.2); }
     @media (max-width: 991px) { .mf-intro { padding: 4rem 1.5rem; } .mf-intro__grid { grid-template-columns: 1fr; gap: 2.5rem; } .mf-intro__float-card { right: 10px; bottom: -20px; } }
 
-    /* ─── WHAT WE DELIVER ────────────────────────────────── */
+    /* â”€â”€â”€ WHAT WE DELIVER â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
     .mf-deliver { padding: 6rem 3rem; background: linear-gradient(180deg, rgba(27,58,143,0.04) 0%, var(--bg) 100%); position: relative; overflow: hidden; }
     .mf-deliver__ring { position: absolute; top: 100px; left: -120px; width: 350px; height: 350px; border: 1.5px solid rgba(27,58,143,0.06); border-radius: 50%; pointer-events: none; animation: spinSlow 40s linear infinite; }
     .mf-deliver__blob { position: absolute; bottom: 50px; right: -80px; width: 200px; height: 200px; background: rgba(232,119,34,0.04); border-radius: 50%; filter: blur(60px); animation: drift 15s ease-in-out infinite; pointer-events: none; }
@@ -391,7 +391,7 @@ import { RouterLink } from '@angular/router';
     .mf-cap-card p { font-size: 0.88rem; color: var(--mid); line-height: 1.6; margin: 0; }
     @media (max-width: 768px) { .mf-deliver { padding: 3.5rem 1.2rem; } .mf-deliver__grid { grid-template-columns: 1fr; } }
 
-    /* ─── WHY IT MATTERS ─────────────────────────────────── */
+    /* â”€â”€â”€ WHY IT MATTERS â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
     .mf-why { padding: 5rem 3rem; background: linear-gradient(135deg, #060d1f 0%, #0a1635 40%, #0f1f4a 100%); position: relative; overflow: hidden; }
     .mf-why__bg-grid { position: absolute; inset: 0; background-image: linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px); background-size: 60px 60px; pointer-events: none; }
     .mf-why__glow-1 { position: absolute; width: 400px; height: 400px; border-radius: 50%; background: radial-gradient(circle, rgba(232,119,34,0.15) 0%, transparent 70%); top: -100px; right: -100px; pointer-events: none; animation: drift 18s ease-in-out infinite; }
@@ -400,7 +400,7 @@ import { RouterLink } from '@angular/router';
     .mf-why__text { font-size: 1rem; color: rgba(255,255,255,0.7); line-height: 1.85; max-width: 850px; margin: 0 auto; }
     @media (max-width: 768px) { .mf-why { padding: 3.5rem 1.2rem; } }
 
-    /* ─── BUSINESS VALUE ─────────────────────────────────── */
+    /* â”€â”€â”€ BUSINESS VALUE â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
     .mf-value { padding: 6rem 3rem; background: linear-gradient(180deg, var(--bg) 0%, rgba(232,119,34,0.04) 100%); position: relative; overflow: hidden; }
     .mf-value__ring { position: absolute; top: 60px; right: -60px; width: 180px; height: 180px; border: 1.5px dashed rgba(232,119,34,0.12); border-radius: 50%; animation: spinSlow 35s linear infinite reverse; pointer-events: none; }
     .mf-value__inner { max-width: 1100px; margin: 0 auto; text-align: center; position: relative; z-index: 1; }
@@ -411,7 +411,7 @@ import { RouterLink } from '@angular/router';
     .mf-value-card span { font-size: 0.9rem; font-weight: 500; color: var(--dark); line-height: 1.6; }
     @media (max-width: 768px) { .mf-value { padding: 3.5rem 1.2rem; } .mf-value__grid { grid-template-columns: 1fr; } }
 
-    /* ─── GOVERNANCE ─────────────────────────────────────── */
+    /* â”€â”€â”€ GOVERNANCE â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
     .mf-governance { padding: 5rem 3rem; background: var(--bg); }
     .mf-governance__inner { max-width: 900px; margin: 0 auto; background: #fff; border-radius: 24px; padding: 3rem 3.5rem; box-shadow: 0 10px 40px rgba(27,58,143,0.08); border: 1px solid rgba(27,58,143,0.06); position: relative; overflow: hidden; text-align: center; }
     .mf-governance__inner::before { content: ""; position: absolute; top: 0; left: 0; width: 100%; height: 4px; background: linear-gradient(90deg, var(--blue), var(--orange)); }
@@ -421,11 +421,11 @@ import { RouterLink } from '@angular/router';
     .mf-governance p:last-child { margin-bottom: 0; }
     @media (max-width: 768px) { .mf-governance { padding: 3rem 1.2rem; } .mf-governance__inner { padding: 2rem 1.5rem; } }
 
-    /* ─── CASE STUDIES ────────────────────────────────────── */
+    /* â”€â”€â”€ CASE STUDIES â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
     .mf-case { padding: 6rem 3rem; background: linear-gradient(180deg, rgba(27,58,143,0.03) 0%, #fff 100%); }
     .mf-case__inner { max-width: 1200px; margin: 0 auto; }
     .mf-case__header { margin-bottom: 3.5rem; }
-    /* ── panel ── */
+    /* â”€â”€ panel â”€â”€ */
     .mf-cs-panel { position: relative; background: #fff; border-radius: 24px; padding: 3rem 3rem 3rem 3.5rem; display: grid; grid-template-columns: 160px 1fr; gap: 2.5rem; align-items: start; overflow: hidden; box-shadow: 0 8px 40px rgba(27,58,143,0.08); border: 1px solid rgba(27,58,143,0.06); margin-bottom: 2.5rem; }
     .mf-cs-panel:last-child { margin-bottom: 0; }
     .mf-cs-panel::before { content: ""; position: absolute; top: 0; left: 0; width: 6px; height: 100%; background: linear-gradient(180deg, var(--blue), var(--orange)); border-radius: 24px 0 0 24px; }
@@ -436,7 +436,7 @@ import { RouterLink } from '@angular/router';
     .mf-cs-panel__icon i.ph { font-size: 1.6rem; color: var(--teal); line-height: 1; }
     .mf-cs-panel__badge { background: linear-gradient(135deg, var(--blue), var(--teal-dark)); color: #fff; font-size: 0.7rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; padding: 0.35rem 0.9rem; border-radius: 999px; text-align: center; }
     .mf-cs-panel--alt .mf-cs-panel__badge { background: linear-gradient(135deg, var(--orange), #c96418); }
-    /* ── content ── */
+    /* â”€â”€ content â”€â”€ */
     .mf-cs-panel__content h3 { font-family: "DM Serif Display", serif; font-size: 1.35rem; font-weight: 400; color: var(--dark); line-height: 1.3; margin: 0 0 1.8rem; padding-right: 4rem; }
     .mf-cs-section { margin-bottom: 1.6rem; padding-bottom: 1.6rem; border-bottom: 1px solid rgba(27,58,143,0.06); }
     .mf-cs-section:last-child { margin-bottom: 0; padding-bottom: 0; border-bottom: none; }
@@ -452,7 +452,7 @@ import { RouterLink } from '@angular/router';
     .mf-cs-caps li::before { content: ""; position: absolute; left: 0; top: 0.6em; width: 6px; height: 6px; background: var(--orange); border-radius: 50%; }
     @media (max-width: 991px) { .mf-case { padding: 3.5rem 1.2rem; } .mf-cs-panel { grid-template-columns: 1fr; padding: 2.5rem 1.8rem; } .mf-cs-panel__side { flex-direction: row; } .mf-cs-panel__num { font-size: 3.5rem; top: 1rem; right: 1.2rem; } .mf-cs-caps { grid-template-columns: 1fr; } .mf-cs-panel__content h3 { padding-right: 0; } }
 
-    /* ─── CTA ────────────────────────────────────────────── */
+    /* â”€â”€â”€ CTA â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
     .mf-cta { background: linear-gradient(135deg, #142d6b 0%, #1B3A8F 100%); padding: 4rem 3rem; text-align: center; position: relative; overflow: hidden; }
     .mf-cta::before { content: ""; position: absolute; width: 400px; height: 400px; border-radius: 50%; background: rgba(232,119,34,0.08); top: -150px; right: -100px; pointer-events: none; }
     .mf-cta__ring { position: absolute; bottom: -80px; left: 10%; width: 250px; height: 250px; border: 2px solid rgba(255,255,255,0.08); border-radius: 50%; animation: spinSlow 20s linear infinite; }
@@ -464,12 +464,12 @@ import { RouterLink } from '@angular/router';
     .mf-cta__btn:hover { transform: translateY(-3px); box-shadow: 0 10px 30px rgba(232,119,34,0.4); color: #fff; }
     @media (max-width: 768px) { .mf-cta { padding: 3rem 1.2rem; } }
 
-    /* ─── ANIMATIONS ─────────────────────────────────────── */
+    /* â”€â”€â”€ ANIMATIONS â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
     @keyframes spinSlow { to { transform: rotate(360deg); } }
     @keyframes float { 0%,100% { transform: translateY(0) rotate(0deg); } 33% { transform: translateY(-15px) rotate(2deg); } 66% { transform: translateY(8px) rotate(-1deg); } }
     @keyframes drift { 0%,100% { transform: translate(0,0); } 25% { transform: translate(20px,-10px); } 50% { transform: translate(-10px,-20px); } 75% { transform: translate(-20px,10px); } }
 
-    /* ─── REVEAL ─────────────────────────────────────────── */
+    /* â”€â”€â”€ REVEAL â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
     [data-reveal] { opacity: 0; transform: translateY(40px); transition: opacity 0.8s cubic-bezier(0.22,1,0.36,1), transform 0.8s cubic-bezier(0.22,1,0.36,1); }
     [data-reveal].is-visible { opacity: 1; transform: translateY(0); }
     [data-reveal-left] { opacity: 0; transform: translateX(-40px); transition: opacity 0.8s cubic-bezier(0.22,1,0.36,1), transform 0.8s cubic-bezier(0.22,1,0.36,1); }
@@ -533,3 +533,6 @@ export class Manufacturing implements AfterViewInit, OnDestroy {
     if (this.revealObserver) this.revealObserver.disconnect();
   }
 }
+
+
+
