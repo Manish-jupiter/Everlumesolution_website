@@ -359,7 +359,6 @@ import { RouterLink } from '@angular/router';
                 </span>
                 <span *ngIf="isSubmitting" class="cu-spinner"></span>
               </button>
-              
             </div>
           </form>
         </section>
@@ -554,7 +553,7 @@ export class ContactUs implements AfterViewInit, OnDestroy {
     this.contactForm = this.fb.nonNullable.group({
       name:            ['', [Validators.required, Validators.minLength(2)]],
       organisation:    ['', [Validators.required]],
-      phone:           ['', [Validators.required, Validators.pattern(/^[0-9]{10}$/)]],
+      phone:           ['', [Validators.required, Validators.pattern(/^[0-9+()\-\s]{7,20}$/)]],
       email:           ['', [Validators.required, Validators.email]],
       serviceInterest: ['', [Validators.required]],
       timeline:        ['', [Validators.required]],

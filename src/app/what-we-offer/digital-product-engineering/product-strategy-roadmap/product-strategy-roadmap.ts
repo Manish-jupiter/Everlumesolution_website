@@ -16,8 +16,10 @@ import { RouterLink } from '@angular/router';
       <div class="stub-page__inner">
         <span class="stub-eyebrow">Digital Product Engineering</span>
         <h1 class="stub-title">Product Strategy and <em>Roadmap Planning</em></h1>
-        <p class="stub-lead">Define a clear product vision, validate market opportunities, and build an actionable roadmap aligned with business strategy and customer needs. Our product strategy experts work alongside your teams to identify the right product bets, prioritise features, and create phased delivery roadmaps that balance innovation with execution confidence.</p>
-        <p class="stub-body">From initial discovery workshops and competitive analysis to OKR alignment, go-to-market planning, and product portfolio governance, we help organisations establish a strong strategic foundation for every digital product investment.</p>
+        <p class="stub-lead">Successful digital products begin with a clear vision, a well-defined strategy, and a roadmap aligned to business objectives and market opportunities. Our Product Strategy and Roadmap Planning services help organisations identify the right opportunities, define product direction, and establish a structured execution plan that delivers measurable business value while supporting long-term growth.</p>
+        <p class="stub-body">We work closely with business leaders, product owners, and technology teams to understand market dynamics, customer needs, competitive positioning, and organisational priorities. Through a collaborative discovery process, we identify high-value opportunities, validate product concepts, define strategic objectives, and prioritise features and capabilities based on customer impact, technical feasibility, business value, and expected return on investment.</p>
+        <p class="stub-body">Our approach balances short-term business priorities with long-term product vision, ensuring that every release contributes to a cohesive and scalable product strategy. By aligning business, product, design, and engineering teams around a shared roadmap, we help organisations make informed investment decisions, optimise resource allocation, and accelerate product delivery with greater confidence and predictability.</p>
+        <p class="stub-body">The outcome is a comprehensive product strategy and execution roadmap that defines product vision, prioritised initiatives, delivery milestones, technology considerations, and success metrics. Rather than focusing solely on feature delivery, we help organisations build products that solve meaningful customer problems, adapt to changing market conditions, and create sustainable competitive advantage.</p>
         <a routerLink="/what-we-offer/digital-product-engineering" class="stub-back"><i class="ph ph-arrow-left"></i> Back to Digital Product Engineering</a>
       </div>
     </section>
@@ -34,8 +36,8 @@ import { RouterLink } from '@angular/router';
     .stub-title { font-family: "DM Serif Display", serif; font-size: clamp(1.6rem,3vw,2.2rem); font-weight: 400; color: #111; line-height: 1.2; margin-bottom: 1.5rem; }
     .stub-title em { font-style: italic; color: #E87722; }
     .stub-lead { font-size: 1.05rem; color: #333; line-height: 1.8; margin-bottom: 1.2rem; }
-    .stub-body { font-size: 0.97rem; color: #555; line-height: 1.8; margin-bottom: 2rem; }
-    .stub-back { display: inline-flex; align-items: center; gap: 0.45rem; color: #1B3A8F; font-weight: 600; font-size: 0.88rem; border: 2px solid #1B3A8F; border-radius: 999px; padding: 0.6rem 1.4rem; transition: all 0.25s; }
+    .stub-body { font-size: 0.97rem; color: #555; line-height: 1.8; margin-bottom: 1.2rem; }
+    .stub-back { display: inline-flex; align-items: center; gap: 0.45rem; color: #1B3A8F; font-weight: 600; font-size: 0.88rem; border: 2px solid #1B3A8F; border-radius: 999px; padding: 0.6rem 1.4rem; transition: all 0.25s; margin-top: 1rem; }
     .stub-back:hover { background: #1B3A8F; color: #fff; }
     @media (max-width: 768px) { .stub-page { padding: 3rem 1.2rem; } .stub-page__inner { padding: 2rem 1.5rem; } }
   `],

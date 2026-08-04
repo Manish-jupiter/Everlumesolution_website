@@ -1,4 +1,4 @@
-﻿import { Component } from '@angular/core';
+import { Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
 
 @Component({
@@ -16,8 +16,11 @@ import { RouterLink } from '@angular/router';
       <div class="stub-page__inner">
         <span class="stub-eyebrow">Digital Product Engineering</span>
         <h1 class="stub-title">Ongoing Product Enhancement <em>and Support</em></h1>
-        <p class="stub-lead">Keep your digital products competitive, secure, and performant with structured enhancement programmes, proactive maintenance, and responsive support models.</p>
-        <p class="stub-body">Our product lifecycle services extend beyond launch â€” covering continuous feature delivery, performance optimisation, security patching, dependency management, SLA-based support operations, and data-driven product evolution. We operate as an embedded extension of your product team, using usage analytics and customer feedback loops to prioritise the right enhancements at the right time.</p>
+        <p class="stub-lead">Successful digital products evolve continuously to meet changing customer expectations, business priorities, and technology advancements. Our Ongoing Product Enhancement and Support services ensure your products continue to deliver value long after launch through continuous innovation, proactive optimisation, and enterprise-grade operational support. We partner with your organisation to keep digital products secure, reliable, scalable, and aligned with your long-term business strategy.</p>
+        <p class="stub-body">Our multidisciplinary teams provide end-to-end product lifecycle support, including performance optimisation, feature enhancements, defect resolution, platform maintenance, security updates, technology upgrades, and ongoing technical support. By continuously analysing product performance, user behaviour, operational metrics, and customer feedback, we identify opportunities to improve functionality, enhance user experiences, and introduce new capabilities that drive greater business value.</p>
+        <p class="stub-body">We adopt a continuous product improvement approach that combines agile delivery, DevSecOps, automated testing, performance monitoring, and data-driven decision-making to ensure products remain responsive to evolving market demands. Whether expanding product capabilities, integrating emerging technologies, modernising underlying platforms, or optimising application performance, we help organisations innovate with confidence while maintaining operational stability.</p>
+        <p class="stub-body">Built on a governance-first delivery model, our services incorporate proactive monitoring, service management, release planning, security and compliance reviews, capacity optimisation, and continuous quality assurance. This ensures that every enhancement is delivered with minimal disruption while maintaining the highest standards of reliability, performance, and security.</p>
+        <p class="stub-body">The result is a continuously evolving digital product that adapts to changing business needs, delivers exceptional user experiences, and remains secure, resilient, and future-ready — maximising long-term return on investment while enabling sustained innovation and competitive advantage.</p>
         <a routerLink="/what-we-offer/digital-product-engineering" class="stub-back"><i class="ph ph-arrow-left"></i> Back to Digital Product Engineering</a>
       </div>
     </section>
@@ -34,11 +37,10 @@ import { RouterLink } from '@angular/router';
     .stub-title { font-family: "DM Serif Display", serif; font-size: clamp(1.6rem,3vw,2.2rem); font-weight: 400; color: #111; line-height: 1.2; margin-bottom: 1.5rem; }
     .stub-title em { font-style: italic; color: #E87722; }
     .stub-lead { font-size: 1.05rem; color: #333; line-height: 1.8; margin-bottom: 1.2rem; }
-    .stub-body { font-size: 0.97rem; color: #555; line-height: 1.8; margin-bottom: 2rem; }
-    .stub-back { display: inline-flex; align-items: center; gap: 0.45rem; color: #1B3A8F; font-weight: 600; font-size: 0.88rem; border: 2px solid #1B3A8F; border-radius: 999px; padding: 0.6rem 1.4rem; transition: all 0.25s; }
+    .stub-body { font-size: 0.97rem; color: #555; line-height: 1.8; margin-bottom: 1.2rem; }
+    .stub-back { display: inline-flex; align-items: center; gap: 0.45rem; color: #1B3A8F; font-weight: 600; font-size: 0.88rem; border: 2px solid #1B3A8F; border-radius: 999px; padding: 0.6rem 1.4rem; transition: all 0.25s; margin-top: 1rem; }
     .stub-back:hover { background: #1B3A8F; color: #fff; }
     @media (max-width: 768px) { .stub-page { padding: 3rem 1.2rem; } .stub-page__inner { padding: 2rem 1.5rem; } }
   `],
 })
 export class OngoingProductEnhancementSupport {}
-

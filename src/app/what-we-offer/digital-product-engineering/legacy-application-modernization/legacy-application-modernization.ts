@@ -1,4 +1,4 @@
-﻿import { Component } from '@angular/core';
+import { Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
 
 @Component({
@@ -10,14 +10,17 @@ import { RouterLink } from '@angular/router';
       <a routerLink="/">Home</a><span class="sep">></span>
       <a routerLink="/what-we-offer">What We Offer</a><span class="sep">></span>
       <a routerLink="/what-we-offer/digital-product-engineering">Digital Product Engineering</a><span class="sep">></span>
-      <span class="current">Legacy Application Modernization</span>
+      <span class="current">Legacy Application Modernisation</span>
     </div>
     <section class="stub-page">
       <div class="stub-page__inner">
         <span class="stub-eyebrow">Digital Product Engineering</span>
         <h1 class="stub-title">Legacy Application <em>Modernization</em></h1>
-        <p class="stub-lead">Transform ageing applications into modern, maintainable, and scalable platforms â€” minimising disruption while unlocking new capabilities and reducing total cost of ownership.</p>
-        <p class="stub-body">Our modernisation frameworks cover the full spectrum: re-hosting, re-platforming, re-factoring, re-architecting, and greenfield replacement. We apply strangler-fig patterns, event sourcing, and progressive decoupling strategies to migrate monolithic systems into composable architectures while protecting business continuity. Every modernisation programme is risk-rated and phased for predictable outcomes.</p>
+        <p class="stub-lead">Unlock the full potential of your existing technology investments by transforming legacy applications into modern, agile, and cloud-ready digital platforms. Our Legacy Application Modernisation services help organisations revitalise ageing systems, reduce technical debt, improve operational efficiency, and create a technology foundation that supports innovation, scalability, and long-term business growth.</p>
+        <p class="stub-body">We work closely with organisations to assess application portfolios, identify modernisation opportunities, and define the most appropriate transformation strategy based on business objectives, technical complexity, and operational priorities. Whether through rehosting, replatforming, refactoring, rearchitecting, or selective application rebuilding, we modernise legacy systems while preserving critical business functionality and minimising operational disruption.</p>
+        <p class="stub-body">Our modernisation approach leverages cloud-native architectures, microservices, APIs, containerisation, automation, and DevSecOps practices to improve application performance, resilience, maintainability, and interoperability. By decoupling monolithic applications and integrating them seamlessly with modern enterprise platforms, organisations gain the flexibility to introduce new capabilities, accelerate product innovation, and respond more rapidly to changing business and customer requirements.</p>
+        <p class="stub-body">Beyond technology transformation, we focus on ensuring business continuity throughout the modernisation journey. Our structured delivery methodology incorporates phased migration, comprehensive testing, data integrity validation, security controls, governance, and change management to minimise risk while maintaining uninterrupted business operations.</p>
+        <p class="stub-body">The result is a modern, scalable, and future-ready application landscape that reduces technical debt, lowers operational costs, improves system performance, enhances developer productivity, and provides a resilient foundation for continuous innovation and digital transformation.</p>
         <a routerLink="/what-we-offer/digital-product-engineering" class="stub-back"><i class="ph ph-arrow-left"></i> Back to Digital Product Engineering</a>
       </div>
     </section>
@@ -34,11 +37,10 @@ import { RouterLink } from '@angular/router';
     .stub-title { font-family: "DM Serif Display", serif; font-size: clamp(1.6rem,3vw,2.2rem); font-weight: 400; color: #111; line-height: 1.2; margin-bottom: 1.5rem; }
     .stub-title em { font-style: italic; color: #E87722; }
     .stub-lead { font-size: 1.05rem; color: #333; line-height: 1.8; margin-bottom: 1.2rem; }
-    .stub-body { font-size: 0.97rem; color: #555; line-height: 1.8; margin-bottom: 2rem; }
-    .stub-back { display: inline-flex; align-items: center; gap: 0.45rem; color: #1B3A8F; font-weight: 600; font-size: 0.88rem; border: 2px solid #1B3A8F; border-radius: 999px; padding: 0.6rem 1.4rem; transition: all 0.25s; }
+    .stub-body { font-size: 0.97rem; color: #555; line-height: 1.8; margin-bottom: 1.2rem; }
+    .stub-back { display: inline-flex; align-items: center; gap: 0.45rem; color: #1B3A8F; font-weight: 600; font-size: 0.88rem; border: 2px solid #1B3A8F; border-radius: 999px; padding: 0.6rem 1.4rem; transition: all 0.25s; margin-top: 1rem; }
     .stub-back:hover { background: #1B3A8F; color: #fff; }
     @media (max-width: 768px) { .stub-page { padding: 3rem 1.2rem; } .stub-page__inner { padding: 2rem 1.5rem; } }
   `],
 })
 export class LegacyApplicationModernization {}
-

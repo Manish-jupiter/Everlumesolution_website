@@ -1,4 +1,4 @@
-﻿import { AfterViewInit, Component, ElementRef, OnDestroy } from '@angular/core';
+import { AfterViewInit, Component, ElementRef, OnDestroy } from '@angular/core';
 import { RouterLink } from '@angular/router';
 
 @Component({
@@ -44,10 +44,6 @@ import { RouterLink } from '@angular/router';
       </div>
       <h1 class="hc-hero__heading">Intelligent agents for<br/><em>smarter Banking</em></h1>
       <p class="hc-hero__sub">Autonomous AI workflows that streamline customer engagement, optimize banking operations, and deliver measurable outcomes across the entire financial services lifecycle.</p>
-      <a href="#hc-deliver" class="hc-hero__cta">
-        Explore Our Solutions
-        <svg width="16" height="16" viewBox="0 0 18 18" fill="none"><path d="M3.75 9H14.25M14.25 9L9.75 4.5M14.25 9L9.75 13.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
-      </a>
     </div>
 
     <div class="hc-hero__dots" id="hc-hero-dots">

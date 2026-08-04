@@ -1,4 +1,4 @@
-﻿import { Component, AfterViewInit, OnDestroy, ElementRef } from '@angular/core';
+import { Component, AfterViewInit, OnDestroy, ElementRef } from '@angular/core';
 import { RouterLink } from '@angular/router';
 
 @Component({
@@ -31,10 +31,6 @@ import { RouterLink } from '@angular/router';
         </div>
         <h1 class="mc-hero__heading">Medical<br/><em>Coding</em></h1>
         <p class="mc-hero__sub">AI-assisted code suggestion and validation ensuring accuracy, compliance, and faster reimbursement cycles.</p>
-        <a href="#mc-capabilities" class="mc-hero__cta">
-          Explore Capabilities
-          <svg width="16" height="16" viewBox="0 0 18 18" fill="none"><path d="M3.75 9H14.25M14.25 9L9.75 4.5M14.25 9L9.75 13.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </a>
       </div>
     </section>
 

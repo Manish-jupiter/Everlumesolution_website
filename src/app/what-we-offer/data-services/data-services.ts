@@ -1,4 +1,4 @@
-﻿import { Component, AfterViewInit, ElementRef, OnDestroy } from '@angular/core';
+import { Component, AfterViewInit, ElementRef, OnDestroy } from '@angular/core';
 import { RouterLink } from '@angular/router';
 
 @Component({
@@ -24,9 +24,6 @@ import { RouterLink } from '@angular/router';
         <div class="ds-hero__badge"><span class="ds-hero__badge-dot"></span><span>What We Offer</span></div>
         <h1 class="ds-hero__heading">Data <em>Services</em></h1>
         <p class="ds-hero__sub">Build trusted, governed, and scalable enterprise data ecosystems that power analytics, AI, and confident decision-making.</p>
-        <a href="#ds-overview" class="ds-hero__cta">Explore Capabilities
-          <svg width="16" height="16" viewBox="0 0 18 18" fill="none"><path d="M3.75 9H14.25M14.25 9L9.75 4.5M14.25 9L9.75 13.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </a>
       </div>
     </section>
 

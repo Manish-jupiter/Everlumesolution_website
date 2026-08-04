@@ -1,4 +1,4 @@
-﻿import { Component, AfterViewInit, OnDestroy, ElementRef } from '@angular/core';
+import { Component, AfterViewInit, OnDestroy, ElementRef } from '@angular/core';
 import { RouterLink } from '@angular/router';
 
 @Component({
@@ -31,10 +31,6 @@ import { RouterLink } from '@angular/router';
         </div>
         <h1 class="hl-hero__heading">Human-in-the-Loop<br/><em>Controls</em></h1>
         <p class="hl-hero__sub">Enabling healthcare organisations to confidently adopt Agentic AI while ensuring that clinical judgement, regulatory compliance, and organisational governance remain central to every critical decision.</p>
-        <a href="#hl-capabilities" class="hl-hero__cta">
-          Explore Capabilities
-          <svg width="16" height="16" viewBox="0 0 18 18" fill="none"><path d="M3.75 9H14.25M14.25 9L9.75 4.5M14.25 9L9.75 13.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </a>
       </div>
     </section>
 

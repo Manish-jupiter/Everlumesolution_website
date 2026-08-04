@@ -16,8 +16,11 @@ import { RouterLink } from '@angular/router';
       <div class="stub-page__inner">
         <span class="stub-eyebrow">Digital Product Engineering</span>
         <h1 class="stub-title">Cloud-Native Application <em>Development</em></h1>
-        <p class="stub-lead">Build scalable, resilient, and high-performing cloud-native applications using modern frameworks, containerisation, and serverless architectures designed for enterprise scale.</p>
-        <p class="stub-body">Our cloud-native engineering teams leverage Kubernetes, Docker, serverless functions, event-driven architectures, and managed cloud services across AWS, Azure, and Google Cloud to build applications that are observable, elastic, and cost-optimised. We design for 12-factor principles, automated scaling, blue-green deployments, and zero-downtime operations from day one.</p>
+        <p class="stub-lead">Build modern, resilient, and scalable applications designed to thrive in today's cloud-first digital landscape. Our Cloud-Native Application Development services help organisations accelerate innovation by leveraging cloud-native architectures, microservices, containers, serverless computing, and DevSecOps practices to deliver high-performing applications that are secure, flexible, and built for continuous evolution.</p>
+        <p class="stub-body">We design and develop cloud-native applications that fully utilise the capabilities of leading cloud platforms, enabling organisations to improve scalability, increase operational resilience, optimise infrastructure costs, and accelerate the delivery of new features and services. Whether developing new digital products or modernising legacy applications, our engineering approach ensures solutions are architected for agility, performance, and long-term sustainability.</p>
+        <p class="stub-body">Our cloud-native development methodology incorporates modern architectural patterns, API-first design, event-driven services, containerisation, Kubernetes orchestration, Infrastructure as Code (IaC), automated testing, and continuous integration and delivery (CI/CD). This enables development teams to release software more frequently, respond rapidly to changing business requirements, and maintain high levels of availability and reliability across distributed environments.</p>
+        <p class="stub-body">By embracing cloud-native engineering principles, organisations gain the flexibility to scale applications dynamically, integrate seamlessly with enterprise systems, and continuously innovate without the constraints of traditional infrastructure. Every solution is built with enterprise-grade security, observability, resilience, and governance to ensure reliable operations in mission-critical environments.</p>
+        <p class="stub-body">The result is a future-ready digital platform that delivers superior performance, accelerated time-to-market, operational efficiency, and the scalability required to support business growth, evolving customer expectations, and continuous innovation.</p>
         <a routerLink="/what-we-offer/digital-product-engineering" class="stub-back"><i class="ph ph-arrow-left"></i> Back to Digital Product Engineering</a>
       </div>
     </section>
@@ -34,8 +37,8 @@ import { RouterLink } from '@angular/router';
     .stub-title { font-family: "DM Serif Display", serif; font-size: clamp(1.6rem,3vw,2.2rem); font-weight: 400; color: #111; line-height: 1.2; margin-bottom: 1.5rem; }
     .stub-title em { font-style: italic; color: #E87722; }
     .stub-lead { font-size: 1.05rem; color: #333; line-height: 1.8; margin-bottom: 1.2rem; }
-    .stub-body { font-size: 0.97rem; color: #555; line-height: 1.8; margin-bottom: 2rem; }
-    .stub-back { display: inline-flex; align-items: center; gap: 0.45rem; color: #1B3A8F; font-weight: 600; font-size: 0.88rem; border: 2px solid #1B3A8F; border-radius: 999px; padding: 0.6rem 1.4rem; transition: all 0.25s; }
+    .stub-body { font-size: 0.97rem; color: #555; line-height: 1.8; margin-bottom: 1.2rem; }
+    .stub-back { display: inline-flex; align-items: center; gap: 0.45rem; color: #1B3A8F; font-weight: 600; font-size: 0.88rem; border: 2px solid #1B3A8F; border-radius: 999px; padding: 0.6rem 1.4rem; transition: all 0.25s; margin-top: 1rem; }
     .stub-back:hover { background: #1B3A8F; color: #fff; }
     @media (max-width: 768px) { .stub-page { padding: 3rem 1.2rem; } .stub-page__inner { padding: 2rem 1.5rem; } }
   `],

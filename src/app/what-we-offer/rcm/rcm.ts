@@ -1,4 +1,4 @@
-﻿import { AfterViewInit, Component, ElementRef, OnDestroy } from '@angular/core';
+import { AfterViewInit, Component, ElementRef, OnDestroy } from '@angular/core';
 import { RouterLink } from '@angular/router';
 
 @Component({
@@ -24,9 +24,6 @@ import { RouterLink } from '@angular/router';
         <div class="rcm-hero__badge"><span class="rcm-hero__badge-dot"></span><span>What We Offer</span></div>
         <h1 class="rcm-hero__heading">Revenue Cycle Management <em>as a Service</em></h1>
         <p class="rcm-hero__sub">Optimise reimbursement, reduce denials, and improve cash flow with intelligent, scalable, healthcare-focused RCM operations.</p>
-        <a href="#rcm-overview" class="rcm-hero__cta">Explore Capabilities
-          <svg width="16" height="16" viewBox="0 0 18 18" fill="none"><path d="M3.75 9H14.25M14.25 9L9.75 4.5M14.25 9L9.75 13.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </a>
       </div>
     </section>
 
