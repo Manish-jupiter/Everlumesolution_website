@@ -127,7 +127,6 @@ import { RouterLink } from '@angular/router';
             <div class="sc-domain-card__icon"><i class="ph ph-monitor"></i></div>
             <div class="sc-domain-card__body">
               <h3>Integrated Security Operations</h3>
-              <p>Unified security management combining SIEM, SOC capabilities, and coordinated incident handling across the enterprise.</p>
             </div>
             <div class="sc-domain-card__arrow"><i class="ph ph-arrow-right"></i></div>
           </a>
@@ -136,7 +135,6 @@ import { RouterLink } from '@angular/router';
             <div class="sc-domain-card__icon"><i class="ph ph-shield"></i></div>
             <div class="sc-domain-card__body">
               <h3>Zero Trust Security</h3>
-              <p>Identity-driven access controls ensuring no implicit trust for users, devices, or applications within the network.</p>
             </div>
             <div class="sc-domain-card__arrow"><i class="ph ph-arrow-right"></i></div>
           </a>
@@ -145,7 +143,6 @@ import { RouterLink } from '@angular/router';
             <div class="sc-domain-card__icon"><i class="ph ph-link"></i></div>
             <div class="sc-domain-card__body">
               <h3>Network Security and Segmentation</h3>
-              <p>Cisco Layer 3 switching and VLAN-based segmentation to isolate and protect critical network zones.</p>
             </div>
             <div class="sc-domain-card__arrow"><i class="ph ph-arrow-right"></i></div>
           </a>
@@ -154,7 +151,6 @@ import { RouterLink } from '@angular/router';
             <div class="sc-domain-card__icon"><i class="ph ph-warning-circle"></i></div>
             <div class="sc-domain-card__body">
               <h3>Incident Detection and Response</h3>
-              <p>Automated detection, alerting, and coordinated response workflows to contain and remediate security incidents rapidly.</p>
             </div>
             <div class="sc-domain-card__arrow"><i class="ph ph-arrow-right"></i></div>
           </a>
@@ -163,7 +159,6 @@ import { RouterLink } from '@angular/router';
             <div class="sc-domain-card__icon"><i class="ph ph-arrows-left-right"></i></div>
             <div class="sc-domain-card__body">
               <h3>Advanced Perimeter Protection</h3>
-              <p>Cisco Firepower Next Generation Firewalls providing deep packet inspection and threat prevention at the network edge.</p>
             </div>
             <div class="sc-domain-card__arrow"><i class="ph ph-arrow-right"></i></div>
           </a>
@@ -172,7 +167,6 @@ import { RouterLink } from '@angular/router';
             <div class="sc-domain-card__icon"><i class="ph ph-pulse"></i></div>
             <div class="sc-domain-card__body">
               <h3>Continuous Monitoring and Audit Readiness</h3>
-              <p>24/7 security monitoring with comprehensive logging and audit trail capabilities to meet HIPAA, SOC 2, and HITRUST requirements.</p>
             </div>
             <div class="sc-domain-card__arrow"><i class="ph ph-arrow-right"></i></div>
           </a>
@@ -181,7 +175,6 @@ import { RouterLink } from '@angular/router';
             <div class="sc-domain-card__icon"><i class="ph ph-eye"></i></div>
             <div class="sc-domain-card__body">
               <h3>Endpoint Protection and Threat Detection</h3>
-              <p>Microsoft Defender for Endpoint delivering real-time protection, behavioural analysis, and threat remediation across all devices.</p>
             </div>
             <div class="sc-domain-card__arrow"><i class="ph ph-arrow-right"></i></div>
           </a>
@@ -190,7 +183,6 @@ import { RouterLink } from '@angular/router';
             <div class="sc-domain-card__icon"><i class="ph ph-users-three"></i></div>
             <div class="sc-domain-card__body">
               <h3>Operational Security Practices</h3>
-              <p>Security governance, vulnerability management, patch management, and workforce security training programmes.</p>
             </div>
             <div class="sc-domain-card__arrow"><i class="ph ph-arrow-right"></i></div>
           </a>

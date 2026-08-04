@@ -6,17 +6,16 @@ import { RouterLink } from '@angular/router';
   standalone: true,
   imports: [RouterLink],
   template: `
-    <div class="breadcrumb-bar">
-      <a routerLink="/">Home</a><span class="sep">›</span>
-      <a routerLink="/who-we-serve/healthcare">Healthcare</a><span class="sep">›</span>
-      <a routerLink="/who-we-serve/healthcare/security-compliance">Security &amp; Compliance</a><span class="sep">›</span>
-      <span class="current">Zero Trust Security</span>
-    </div>
-    <section class="stub-page">
-      <h1>Zero Trust Security</h1>
-      <p>Identity-driven access controls ensuring no implicit trust for users, devices, or applications within the network.</p>
-    </section>
+    <div class="dp-sub-bc"><a routerLink="/">Home</a><span class="sep">›</span><a routerLink="/who-we-serve/healthcare">Healthcare</a><span class="sep">›</span><a routerLink="/who-we-serve/healthcare/security-compliance">Security &amp; Compliance</a><span class="sep">›</span><span class="cur">Zero Trust Security</span></div>
+    <header class="dp-sub-hdr"><div class="dp-sub-hdr__grid"></div><div class="dp-sub-hdr__glow"></div><div class="dp-sub-hdr__inner"><div class="dp-sub-hdr__badge"><i class="ph ph-shield"></i><span>Security &amp; Compliance</span></div><h1 class="dp-sub-hdr__title">Zero Trust <em>Security</em></h1></div></header>
+    <section class="dp-sub-body"><div class="dp-sub-body__inner">
+      <p>The organisation follows a Zero Trust security model based on the principle of "never trust, always verify." Every user, device, and connection is evaluated before access is granted, regardless of whether the request originates from inside or outside the corporate network.</p>
+      <p>Identity-aware access controls ensure that access decisions are based upon authenticated users, device health, security posture, and business need. Least-privilege principles restrict users to only the resources required to perform their responsibilities, reducing opportunities for unauthorised access and limiting the potential impact of compromised accounts.</p>
+      <p>Network segmentation further reinforces Zero Trust principles by restricting unnecessary communications between systems and limiting lateral movement within the enterprise environment.</p>
+      <p>Continuous monitoring ensures that access decisions remain dynamic and responsive to changing risk conditions throughout each user session.</p>
+    </div></section>
+    <section class="dp-sub-cta"><a routerLink="/who-we-serve/healthcare/security-compliance" class="dp-sub-cta__back"><i class="ph ph-arrow-left"></i> Back to Security &amp; Compliance</a><a routerLink="/contact-us" class="dp-sub-cta__btn">Talk to an Expert <i class="ph ph-arrow-right"></i></a></section>
   `,
-  styles: [`.breadcrumb-bar{background:#142d6b;padding:.55rem 3rem}.breadcrumb-bar a,.breadcrumb-bar span{color:rgba(255,255,255,.65);font-size:.8rem;font-weight:500;text-decoration:none}.breadcrumb-bar .sep{margin:0 .45rem;color:rgba(255,255,255,.3)}.breadcrumb-bar .current{color:#E87722;font-weight:600}.stub-page{padding:6rem 3rem;max-width:900px;margin:0 auto}.stub-page h1{font-family:"DM Serif Display",serif;font-size:2.5rem;color:#111;margin-bottom:1rem}.stub-page p{font-size:1rem;color:#555;line-height:1.8}`],
+  styles: [`:host { display:block; font-family:'DM Sans',system-ui,sans-serif; } .dp-sub-bc{background:#142d6b;padding:.55rem 3rem;display:flex;gap:.4rem;flex-wrap:wrap;} .dp-sub-bc a,.dp-sub-bc span{color:rgba(255,255,255,.65);font-size:.8rem;text-decoration:none;} .dp-sub-bc .cur{color:#E87722;font-weight:600;} .dp-sub-hdr{background:linear-gradient(135deg,#060d1f,#1B3A8F);padding:5rem 3rem;text-align:center;position:relative;overflow:hidden;} .dp-sub-hdr__grid{position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.03) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.03) 1px,transparent 1px);background-size:50px 50px;} .dp-sub-hdr__glow{position:absolute;width:400px;height:400px;border-radius:50%;background:radial-gradient(circle,rgba(232,119,34,.14),transparent 70%);top:-120px;right:-80px;} .dp-sub-hdr__inner{position:relative;z-index:2;} .dp-sub-hdr__badge{display:inline-flex;gap:.5rem;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.18);border-radius:999px;padding:.4rem 1.2rem;margin-bottom:1.8rem;} .dp-sub-hdr__badge i.ph{color:#E87722;} .dp-sub-hdr__badge span{color:rgba(255,255,255,.85);font-size:.78rem;text-transform:uppercase;letter-spacing:.07em;} .dp-sub-hdr__title{font-family:"DM Serif Display",serif;font-size:clamp(2rem,4vw,3rem);color:#fff;font-weight:400;} .dp-sub-hdr__title em{color:#E87722;font-style:italic;} .dp-sub-body{padding:5rem 3rem;background:#f5f5f3;} .dp-sub-body__inner{max-width:900px;margin:0 auto;background:#fff;border-radius:24px;padding:3.5rem;position:relative;border:1px solid rgba(27,58,143,.06);box-shadow:0 8px 40px rgba(27,58,143,.07);} .dp-sub-body__inner::before{content:"";position:absolute;top:0;left:0;width:100%;height:4px;background:linear-gradient(90deg,#1B3A8F,#E87722);} .dp-sub-body__inner p{font-size:1rem;color:#444;line-height:1.85;margin-bottom:1.4rem;} .dp-sub-cta{padding:2.5rem 3rem;background:linear-gradient(135deg,#142d6b,#1B3A8F);display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;} .dp-sub-cta__back{color:rgba(255,255,255,.75);text-decoration:none;font-weight:600;} .dp-sub-cta__btn{background:#E87722;color:#fff;text-decoration:none;font-weight:700;padding:.75rem 1.8rem;border-radius:999px;}`],
 })
 export class ZeroTrustSecurity {}

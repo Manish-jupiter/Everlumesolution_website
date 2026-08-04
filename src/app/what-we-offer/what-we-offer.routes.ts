@@ -17,6 +17,62 @@ export const routes: Routes = [
           import('./ai-services/ai-services').then((m) => m.AiServices),
       },
       {
+        path: 'ai-services/ai-strategy-use-case-discovery',
+        loadComponent: () =>
+          import('./ai-services/ai-strategy-use-case-discovery/ai-strategy-use-case-discovery').then(
+            (m) => m.AiStrategyUseCaseDiscovery,
+          ),
+      },
+      {
+        path: 'ai-services/machine-learning-predictive-modelling',
+        loadComponent: () =>
+          import('./ai-services/machine-learning-predictive-modelling/machine-learning-predictive-modelling').then(
+            (m) => m.MachineLearningPredictiveModelling,
+          ),
+      },
+      {
+        path: 'ai-services/natural-language-processing-conversational-ai',
+        loadComponent: () =>
+          import('./ai-services/natural-language-processing-conversational-ai/natural-language-processing-conversational-ai').then(
+            (m) => m.NaturalLanguageProcessingConversationalAi,
+          ),
+      },
+      {
+        path: 'ai-services/computer-vision-intelligent-automation',
+        loadComponent: () =>
+          import('./ai-services/computer-vision-intelligent-automation/computer-vision-intelligent-automation').then(
+            (m) => m.ComputerVisionIntelligentAutomation,
+          ),
+      },
+      {
+        path: 'ai-services/data-preparation-model-integration',
+        loadComponent: () =>
+          import('./ai-services/data-preparation-model-integration/data-preparation-model-integration').then(
+            (m) => m.DataPreparationModelIntegration,
+          ),
+      },
+      {
+        path: 'ai-services/deployment-monitoring-optimization',
+        loadComponent: () =>
+          import('./ai-services/deployment-monitoring-optimization/deployment-monitoring-optimization').then(
+            (m) => m.DeploymentMonitoringOptimization,
+          ),
+      },
+      {
+        path: 'ai-services/governance-security-responsible-ai-controls',
+        loadComponent: () =>
+          import('./ai-services/governance-security-responsible-ai-controls/governance-security-responsible-ai-controls').then(
+            (m) => m.GovernanceSecurityResponsibleAiControls,
+          ),
+      },
+      {
+        path: 'ai-services/ongoing-support-enhancement',
+        loadComponent: () =>
+          import('./ai-services/ongoing-support-enhancement/ongoing-support-enhancement').then(
+            (m) => m.OngoingSupportEnhancement,
+          ),
+      },
+      {
         path: 'digital-product-engineering',
         loadComponent: () =>
           import('./digital-product-engineering/digital-product-engineering').then(
@@ -148,8 +204,120 @@ export const routes: Routes = [
           import('./data-services/data-services').then((m) => m.DataServices),
       },
       {
+        path: 'data-services/data-strategy-architecture',
+        loadComponent: () =>
+          import('./data-services/data-strategy-architecture/data-strategy-architecture').then(
+            (m) => m.DataStrategyArchitecture,
+          ),
+      },
+      {
+        path: 'data-services/data-integration-pipeline-development',
+        loadComponent: () =>
+          import('./data-services/data-integration-pipeline-development/data-integration-pipeline-development').then(
+            (m) => m.DataIntegrationPipelineDevelopment,
+          ),
+      },
+      {
+        path: 'data-services/data-quality-validation',
+        loadComponent: () =>
+          import('./data-services/data-quality-validation/data-quality-validation').then(
+            (m) => m.DataQualityValidation,
+          ),
+      },
+      {
+        path: 'data-services/master-data-metadata-management',
+        loadComponent: () =>
+          import('./data-services/master-data-metadata-management/master-data-metadata-management').then(
+            (m) => m.MasterDataMetadataManagement,
+          ),
+      },
+      {
+        path: 'data-services/api-cloud-data-delivery',
+        loadComponent: () =>
+          import('./data-services/api-cloud-data-delivery/api-cloud-data-delivery').then(
+            (m) => m.ApiCloudDataDelivery,
+          ),
+      },
+      {
+        path: 'data-services/governance-security-access-controls',
+        loadComponent: () =>
+          import('./data-services/governance-security-access-controls/governance-security-access-controls').then(
+            (m) => m.GovernanceSecurityAccessControls,
+          ),
+      },
+      {
+        path: 'data-services/reporting-analytics-enablement',
+        loadComponent: () =>
+          import('./data-services/reporting-analytics-enablement/reporting-analytics-enablement').then(
+            (m) => m.ReportingAnalyticsEnablement,
+          ),
+      },
+      {
+        path: 'data-services/ongoing-monitoring-support',
+        loadComponent: () =>
+          import('./data-services/ongoing-monitoring-support/ongoing-monitoring-support').then(
+            (m) => m.OngoingMonitoringSupport,
+          ),
+      },
+      {
         path: 'rcm',
         loadComponent: () => import('./rcm/rcm').then((m) => m.Rcm),
+      },
+      {
+        path: 'rcm/patient-access-front-end-verification',
+        loadComponent: () =>
+          import('./rcm/patient-access-front-end-verification/patient-access-front-end-verification').then(
+            (m) => m.PatientAccessFrontEndVerification,
+          ),
+      },
+      {
+        path: 'rcm/charge-capture-clinical-coding-support',
+        loadComponent: () =>
+          import('./rcm/charge-capture-clinical-coding-support/charge-capture-clinical-coding-support').then(
+            (m) => m.ChargeCaptureClinicalCodingSupport,
+          ),
+      },
+      {
+        path: 'rcm/claims-submission-clearinghouse-coordination',
+        loadComponent: () =>
+          import('./rcm/claims-submission-clearinghouse-coordination/claims-submission-clearinghouse-coordination').then(
+            (m) => m.ClaimsSubmissionClearinghouseCoordination,
+          ),
+      },
+      {
+        path: 'rcm/denial-prevention-management-appeals',
+        loadComponent: () =>
+          import('./rcm/denial-prevention-management-appeals/denial-prevention-management-appeals').then(
+            (m) => m.DenialPreventionManagementAppeals,
+          ),
+      },
+      {
+        path: 'rcm/payment-posting-reconciliation',
+        loadComponent: () =>
+          import('./rcm/payment-posting-reconciliation/payment-posting-reconciliation').then(
+            (m) => m.PaymentPostingReconciliation,
+          ),
+      },
+      {
+        path: 'rcm/underpayment-detection-contract-compliance',
+        loadComponent: () =>
+          import('./rcm/underpayment-detection-contract-compliance/underpayment-detection-contract-compliance').then(
+            (m) => m.UnderpaymentDetectionContractCompliance,
+          ),
+      },
+      {
+        path: 'rcm/patient-billing-collections-support',
+        loadComponent: () =>
+          import('./rcm/patient-billing-collections-support/patient-billing-collections-support').then(
+            (m) => m.PatientBillingCollectionsSupport,
+          ),
+      },
+      {
+        path: 'rcm/reporting-analytics-kpi-tracking',
+        loadComponent: () =>
+          import('./rcm/reporting-analytics-kpi-tracking/reporting-analytics-kpi-tracking').then(
+            (m) => m.ReportingAnalyticsKpiTracking,
+          ),
       },
       {
         path: 'automation-services',
