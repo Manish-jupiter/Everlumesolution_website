@@ -11,6 +11,7 @@
 }
 
 /* Landing page keeps its hero flush under the transparent overlay. */
-.app-main:has(app-landing-page) {
+.app-main:has(app-landing-page),
+.app-main:has(app-landing1) {
   padding-top: 0;
 }

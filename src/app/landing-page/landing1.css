@@ -295,11 +295,11 @@
     100% 100%, 100% 100%, 100% 100%, 100% 100%, 100% 100%,
     100% 100%, 100% 100%, 100% 100%, 100% 100%, 100% 100%,
     100% 100%, 100% 100%, 24px 24px;
-  height: 100vh;
+  height: 75vh;
   display: flex;
   flex-direction: column;
   overflow: hidden;
-  padding: calc(70px + 1.75rem) 0 2.5rem;
+  padding: calc(5px + 1.75rem) 0 2.5rem;
   position: relative;
   isolation: isolate;
 }

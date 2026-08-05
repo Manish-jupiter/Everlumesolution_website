@@ -11,6 +11,24 @@
   gap: 0.75rem;
 }
 
+/* ── Backdrop ── */
+.cw-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(8, 15, 40, 0.55);
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.32s ease;
+  z-index: -1;
+}
+
+.cw-backdrop--open {
+  opacity: 1;
+  pointer-events: auto;
+}
+
 /* ── Trigger button ── */
 .cw-trigger {
   display: inline-flex;
@@ -42,16 +60,12 @@
   box-shadow: 0 10px 32px rgba(232, 119, 34, 0.5);
 }
 
-/* Shrink to icon-only when panel is open */
+/* Hide floating trigger while panel is open — close lives in the header */
 .cw-trigger--active {
-  padding: 0.72rem;
-  background: #0c1836;
-  box-shadow: 0 6px 20px rgba(12, 24, 54, 0.35);
+  opacity: 0;
+  pointer-events: none;
+  transform: scale(0.85);
   animation-play-state: paused;
-}
-
-.cw-trigger--active:hover {
-  background: #1b2e5a;
 }
 
 .cw-trigger__label {
@@ -74,10 +88,13 @@
     opacity    0.3s ease,
     transform  0.35s cubic-bezier(0.22, 1, 0.36, 1);
   pointer-events: none;
+  display: flex;
+  flex-direction: column;
 }
 
 .cw-panel--open {
   max-height: 620px;
+  height: 620px;
   opacity: 1;
   transform: none;
   pointer-events: auto;
@@ -91,6 +108,7 @@
   padding: 1.1rem 1.25rem;
   background: #0c1836;
   border-radius: 16px 16px 0 0;
+  flex-shrink: 0;
 }
 
 .cw-panel__header-left {
@@ -142,11 +160,12 @@
   color: #fff;
 }
 
-/* ── Panel body ── */
+/* ── Panel body (success state only) ── */
 .cw-panel__body {
   padding: 1.25rem;
   overflow-y: auto;
-  max-height: 540px;
+  flex: 1 1 auto;
+  min-height: 0;
 }
 
 .cw-panel__sub {
@@ -156,11 +175,31 @@
   line-height: 1.5;
 }
 
-/* ── Form ── */
+/* ── Form: flex column so scroll area + footer split the panel ── */
 .cw-form {
   display: flex;
   flex-direction: column;
+  flex: 1 1 auto;
+  min-height: 0;
+  overflow: hidden;
+}
+
+.cw-form__scroll {
+  flex: 1 1 auto;
+  min-height: 0;
+  overflow-y: auto;
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
   gap: 0.85rem;
+}
+
+.cw-form__footer {
+  flex-shrink: 0;
+  padding: 0.9rem 1.25rem;
+  border-top: 1px solid #eef0f3;
+  background: #fff;
+  border-radius: 0 0 16px 16px;
 }
 
 .cw-form__group {
@@ -219,15 +258,66 @@
   font-size: 0.9rem;
   font-weight: 600;
   cursor: pointer;
-  margin-top: 0.25rem;
-  transition: background 0.22s ease, transform 0.22s ease;
+  transition: background 0.22s ease, transform 0.22s ease, opacity 0.22s ease;
   width: 100%;
 }
 
-.cw-form__submit:hover {
+.cw-form__submit:hover:enabled {
   background: #d06a1c;
   transform: translateY(-1px);
 }
+
+.cw-form__submit:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* Inline field-error text */
+.cw-form__msg {
+  color: #dc2626;
+  font-size: 0.72rem;
+  margin-top: 0.15rem;
+  line-height: 1.4;
+}
+
+.cw-form__group--err .cw-form__input {
+  border-color: #dc2626;
+  background: #fff5f5;
+}
+
+.cw-form__group--err .cw-form__input:focus {
+  border-color: #dc2626;
+  box-shadow: 0 0 0 3px rgba(220, 38, 38, 0.14);
+}
+
+/* Delivery-failure banner */
+.cw-form__error {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  background: #fff5f5;
+  border: 1px solid #fca5a5;
+  color: #b91c1c;
+  border-radius: 8px;
+  padding: 0.55rem 0.7rem;
+  font-size: 0.78rem;
+  line-height: 1.45;
+}
+
+.cw-form__error svg { flex-shrink: 0; margin-top: 1px; }
+
+/* Spinner used on the Sending… button */
+.cw-spinner {
+  width: 14px;
+  height: 14px;
+  border: 2px solid rgba(255, 255, 255, 0.35);
+  border-top-color: #fff;
+  border-radius: 50%;
+  animation: cw-spin 0.7s linear infinite;
+}
+
+@keyframes cw-spin { to { transform: rotate(360deg); } }
 
 /* ── Success state ── */
 .cw-success {
@@ -250,6 +340,33 @@
   font-size: 0.85rem;
   color: #888;
   margin: 0;
+}
+
+.cw-success__ref {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 0.6rem;
+  background: linear-gradient(135deg, #f0fdf4, #ecfeff);
+  border: 1px dashed #86efac;
+  border-radius: 10px;
+  padding: 0.35rem 0.7rem;
+}
+
+.cw-success__ref-label {
+  font-size: 0.62rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: #15803d;
+}
+
+.cw-success__ref-value {
+  font-family: ui-monospace, monospace;
+  font-weight: 700;
+  color: #0a6640;
+  font-size: 0.82rem;
+  letter-spacing: 0.04em;
 }
 
 /* ── Responsive ── */

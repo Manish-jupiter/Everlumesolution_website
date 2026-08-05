@@ -192,15 +192,15 @@ import { RouterLink } from '@angular/router';
             </div>
           </div>
 
-          <div *ngIf="successMessage" class="cu-success">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+          <div *ngIf="errorMessage" class="cu-error">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
             <div>
-              <strong>Message Received!</strong>
-              <span>{{ successMessage }}</span>
+              <strong>Delivery Failed</strong>
+              <span>{{ errorMessage }}</span>
             </div>
           </div>
 
-          <form [formGroup]="contactForm" (ngSubmit)="onSubmit()" novalidate *ngIf="!successMessage">
+          <form [formGroup]="contactForm" (ngSubmit)="onSubmit()" novalidate>
 
             <div class="cu-form-section">
               <div class="cu-form-section__label">
@@ -365,6 +365,56 @@ import { RouterLink } from '@angular/router';
 
       </div>
     </section>
+
+    <!-- SUCCESS MODAL -->
+    <div class="cu-modal" *ngIf="showSuccessModal" (click)="closeSuccessModal()">
+      <div class="cu-modal__card" (click)="$event.stopPropagation()" role="dialog" aria-modal="true" aria-labelledby="cu-modal-title">
+        <button type="button" class="cu-modal__close" aria-label="Close" (click)="closeSuccessModal()">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        </button>
+
+        <div class="cu-modal__confetti">
+          <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+        </div>
+
+        <div class="cu-modal__badge">
+          <div class="cu-modal__badge-ring"></div>
+          <div class="cu-modal__badge-ring cu-modal__badge-ring--2"></div>
+          <div class="cu-modal__badge-core">
+            <svg viewBox="0 0 52 52" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="14 27 22 35 38 18" class="cu-modal__check-path"/>
+            </svg>
+          </div>
+        </div>
+
+        <h3 id="cu-modal-title" class="cu-modal__title">Message Sent Successfully!</h3>
+        <p class="cu-modal__text">
+          Thank you for reaching out. Your enquiry has been delivered to our team and we will be in touch
+          within <strong>one business day</strong>.
+        </p>
+
+        <div class="cu-modal__ref">
+          <span class="cu-modal__ref-label">Reference ID</span>
+          <span class="cu-modal__ref-value">{{ referenceId }}</span>
+        </div>
+
+        <div class="cu-modal__meta">
+          <div class="cu-modal__meta-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            <div><span>Delivered to</span><strong>Our contact team</strong></div>
+          </div>
+          <div class="cu-modal__meta-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            <div><span>Response time</span><strong>&lt; 24 hours</strong></div>
+          </div>
+        </div>
+
+        <button type="button" class="cu-modal__cta" (click)="closeSuccessModal()">
+          Close
+          <svg viewBox="0 0 18 18" fill="none"><path d="M3.75 9H14.25M14.25 9L9.75 4.5M14.25 9L9.75 13.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+      </div>
+    </div>
   `,
   styles: [`
 :host {
@@ -510,10 +560,60 @@ import { RouterLink } from '@angular/router';
 .cu-form-note { margin: 0; font-size: 0.8rem; color: var(--mid); line-height: 1.4; }
 .cu-spinner { display: inline-block; width: 18px; height: 18px; border: 2.5px solid rgba(255,255,255,0.3); border-top-color: #fff; border-radius: 50%; animation: spin 0.7s linear infinite; }
 @keyframes spin { to { transform: rotate(360deg); } }
-.cu-success { display: flex; gap: 0.9rem; align-items: flex-start; background: #edfaf3; border: 1px solid #7ee5af; border-radius: 14px; padding: 1.1rem 1.2rem; margin-bottom: 0.5rem; }
-.cu-success svg { flex-shrink: 0; width: 26px; height: 26px; color: #12885c; margin-top: 1px; }
-.cu-success strong { display: block; color: #0a6640; font-size: 1rem; }
-.cu-success span { color: #147a52; font-size: 0.9rem; }
+.cu-error { display: flex; gap: 0.9rem; align-items: flex-start; background: #fff5f5; border: 1px solid #fca5a5; border-radius: 14px; padding: 1.1rem 1.2rem; margin-bottom: 1rem; }
+.cu-error svg { flex-shrink: 0; width: 24px; height: 24px; color: #dc2626; margin-top: 1px; }
+.cu-error strong { display: block; color: #991b1b; font-size: 0.98rem; }
+.cu-error span { color: #b91c1c; font-size: 0.88rem; }
+
+/* SUCCESS MODAL */
+.cu-modal { position: fixed; inset: 0; z-index: 9999; display: flex; align-items: center; justify-content: center; padding: 1.25rem; background: rgba(8, 15, 40, 0.62); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); animation: cu-modal-fade 0.32s ease; }
+@keyframes cu-modal-fade { from { opacity: 0; } to { opacity: 1; } }
+.cu-modal__card { position: relative; width: 100%; max-width: 480px; background: #fff; border-radius: 24px; padding: 2.4rem 2rem 1.8rem; text-align: center; box-shadow: 0 30px 70px -20px rgba(8, 15, 40, 0.55); animation: cu-modal-pop 0.45s cubic-bezier(0.34, 1.56, 0.64, 1); overflow: hidden; }
+@keyframes cu-modal-pop { from { opacity: 0; transform: translateY(24px) scale(0.9); } to { opacity: 1; transform: none; } }
+.cu-modal__card::before { content: ''; position: absolute; inset: 0 0 auto 0; height: 4px; background: linear-gradient(90deg, #22c55e, #16a34a, #22c55e); }
+.cu-modal__close { position: absolute; top: 0.85rem; right: 0.85rem; width: 32px; height: 32px; border: none; background: #f1f5fb; border-radius: 50%; display: flex; align-items: center; justify-content: center; cursor: pointer; color: #64748b; transition: background 0.2s, color 0.2s, transform 0.2s; }
+.cu-modal__close svg { width: 15px; height: 15px; }
+.cu-modal__close:hover { background: #e2e8f0; color: #0f1f47; transform: rotate(90deg); }
+.cu-modal__confetti { position: absolute; inset: 0; pointer-events: none; overflow: hidden; }
+.cu-modal__confetti span { position: absolute; top: -20px; width: 8px; height: 12px; border-radius: 2px; opacity: 0; animation: cu-confetti-fall 2.4s ease-out forwards; }
+.cu-modal__confetti span:nth-child(1) { left: 8%; background: #22c55e; animation-delay: 0.15s; }
+.cu-modal__confetti span:nth-child(2) { left: 18%; background: #e87722; animation-delay: 0.35s; transform: rotate(20deg); }
+.cu-modal__confetti span:nth-child(3) { left: 30%; background: #1B3A8F; animation-delay: 0.05s; }
+.cu-modal__confetti span:nth-child(4) { left: 42%; background: #fbbf24; animation-delay: 0.42s; transform: rotate(-15deg); }
+.cu-modal__confetti span:nth-child(5) { left: 54%; background: #22c55e; animation-delay: 0.22s; }
+.cu-modal__confetti span:nth-child(6) { left: 65%; background: #e87722; animation-delay: 0.55s; transform: rotate(25deg); }
+.cu-modal__confetti span:nth-child(7) { left: 76%; background: #1B3A8F; animation-delay: 0.1s; }
+.cu-modal__confetti span:nth-child(8) { left: 84%; background: #fbbf24; animation-delay: 0.48s; transform: rotate(-25deg); }
+.cu-modal__confetti span:nth-child(9) { left: 92%; background: #22c55e; animation-delay: 0.28s; }
+.cu-modal__confetti span:nth-child(10) { left: 60%; background: #e87722; animation-delay: 0.6s; }
+@keyframes cu-confetti-fall { 0% { opacity: 0; transform: translateY(0) rotate(0deg); } 15% { opacity: 1; } 100% { opacity: 0; transform: translateY(320px) rotate(720deg); } }
+.cu-modal__badge { position: relative; width: 96px; height: 96px; margin: 0 auto 1.25rem; }
+.cu-modal__badge-ring { position: absolute; inset: 0; border-radius: 50%; border: 2px solid rgba(34, 197, 94, 0.35); animation: cu-badge-ripple 2s ease-out infinite; }
+.cu-modal__badge-ring--2 { animation-delay: 1s; }
+@keyframes cu-badge-ripple { 0% { transform: scale(1); opacity: 0.7; } 100% { transform: scale(1.6); opacity: 0; } }
+.cu-modal__badge-core { position: relative; width: 96px; height: 96px; border-radius: 50%; background: linear-gradient(135deg, #22c55e, #15803d); display: flex; align-items: center; justify-content: center; color: #fff; box-shadow: 0 12px 28px -6px rgba(34, 197, 94, 0.55), 0 0 0 6px rgba(34, 197, 94, 0.12); animation: cu-badge-scale 0.55s cubic-bezier(0.34, 1.56, 0.64, 1); }
+.cu-modal__badge-core svg { width: 52px; height: 52px; }
+.cu-modal__check-path { stroke-dasharray: 60; stroke-dashoffset: 60; animation: cu-check-draw 0.6s ease-out 0.4s forwards; }
+@keyframes cu-check-draw { to { stroke-dashoffset: 0; } }
+@keyframes cu-badge-scale { from { transform: scale(0); opacity: 0; } to { transform: scale(1); opacity: 1; } }
+.cu-modal__title { font-family: 'DM Serif Display', serif; font-size: clamp(1.5rem, 2.5vw, 1.85rem); margin: 0 0 0.6rem; color: var(--dark); }
+.cu-modal__text { color: var(--mid); font-size: 0.96rem; line-height: 1.6; margin: 0 0 1.4rem; }
+.cu-modal__text strong { color: var(--dark); font-weight: 700; }
+.cu-modal__ref { display: inline-flex; align-items: center; gap: 0.6rem; background: linear-gradient(135deg, #f0fdf4, #ecfeff); border: 1px dashed #86efac; border-radius: 12px; padding: 0.55rem 1rem; margin: 0 0 1.4rem; }
+.cu-modal__ref-label { font-size: 0.7rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.14em; color: #15803d; }
+.cu-modal__ref-value { font-family: 'DM Mono', ui-monospace, monospace; font-weight: 700; color: #0a6640; font-size: 0.98rem; letter-spacing: 0.04em; }
+.cu-modal__meta { display: grid; grid-template-columns: 1fr 1fr; gap: 0.6rem; margin-bottom: 1.5rem; padding-top: 1.1rem; border-top: 1px solid #eef2fb; }
+.cu-modal__meta-item { display: flex; align-items: center; gap: 0.55rem; text-align: left; }
+.cu-modal__meta-item svg { flex-shrink: 0; width: 30px; height: 30px; padding: 6px; border-radius: 8px; background: rgba(27, 58, 143, 0.08); color: var(--blue); }
+.cu-modal__meta-item span { display: block; font-size: 0.68rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; color: #94a3b8; }
+.cu-modal__meta-item strong { display: block; font-size: 0.86rem; color: var(--dark); font-weight: 600; margin-top: 0.1rem; }
+.cu-modal__cta { border: none; cursor: pointer; border-radius: 999px; padding: 0.85rem 2rem; background: linear-gradient(130deg, var(--orange), var(--blue)); color: #fff; font-weight: 700; font-size: 0.96rem; font-family: inherit; display: inline-flex; align-items: center; gap: 0.55rem; transition: transform 0.2s, box-shadow 0.2s; }
+.cu-modal__cta svg { width: 15px; height: 15px; }
+.cu-modal__cta:hover { transform: translateY(-2px); box-shadow: 0 14px 28px -12px rgba(27, 58, 143, 0.55); }
+@media (max-width: 480px) {
+  .cu-modal__card { padding: 2rem 1.4rem 1.5rem; }
+  .cu-modal__meta { grid-template-columns: 1fr; }
+}
 [data-cu-reveal] { opacity: 0; transform: translateY(24px); transition: opacity 0.55s ease,transform 0.55s ease; }
 [data-cu-reveal].is-visible { opacity: 1; transform: none; }
 @media (max-width: 1024px) {
@@ -544,8 +644,10 @@ import { RouterLink } from '@angular/router';
 export class ContactUs implements AfterViewInit, OnDestroy {
   protected isSubmitting = false;
   protected formShake = false;
-  protected successMessage = '';
-  private readonly submissionStoreKey = 'everlume_contact_submissions';
+  protected showSuccessModal = false;
+  protected referenceId = '';
+  protected errorMessage = '';
+  private readonly recipientEmail = 'arvindpuskar70@gmail.com';
   protected readonly contactForm;
   private observer?: IntersectionObserver;
 
@@ -591,33 +693,70 @@ export class ContactUs implements AfterViewInit, OnDestroy {
     return Math.round((valid / controls.length) * 100);
   }
 
-  protected onSubmit(): void {
-    this.successMessage = '';
+  protected async onSubmit(): Promise<void> {
+    this.errorMessage = '';
     this.contactForm.markAllAsTouched();
     if (this.contactForm.invalid || this.isSubmitting) {
       this.formShake = true;
       setTimeout(() => { this.formShake = false; }, 500);
       return;
     }
+
     this.isSubmitting = true;
-    setTimeout(() => {
-      const payload = {
-        ...this.contactForm.getRawValue(),
-        referenceId: `EVL-${Date.now().toString().slice(-8)}`,
-        submittedAt: new Date().toISOString(),
-      };
-      this.persistSubmission(payload);
-      this.isSubmitting = false;
-      this.successMessage = `Your enquiry has been received. Reference: ${payload.referenceId}. We will be in touch within one business day.`;
+    const referenceId = `EVL-${Date.now().toString().slice(-8)}`;
+    const submittedAt = new Date();
+    const data = this.contactForm.getRawValue();
+
+    try {
+      const response = await fetch(`https://formsubmit.co/ajax/${this.recipientEmail}`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Accept': 'application/json',
+        },
+        body: JSON.stringify({
+          _subject: `New Enquiry from ${data.name} — ${data.serviceInterest}`,
+          _template: 'table',
+          _captcha: 'false',
+          'Reference ID':    referenceId,
+          'Submitted At':    submittedAt.toLocaleString(),
+          'Full Name':       data.name,
+          'Organisation':    data.organisation,
+          'Email':           data.email,
+          'Phone':           data.phone,
+          'Service Interest': data.serviceInterest,
+          'Preferred Timeline': data.timeline,
+          'Message':         data.message,
+          'Consent Granted': data.consent ? 'Yes' : 'No',
+        }),
+      });
+
+      if (!response.ok) {
+        throw new Error(`Server responded with status ${response.status}`);
+      }
+
+      const result = await response.json().catch(() => ({}));
+      const succeeded = result?.success === 'true' || result?.success === true;
+      if (!succeeded) {
+        throw new Error(result?.message || 'The email service did not confirm delivery.');
+      }
+
+      this.referenceId = referenceId;
+      this.showSuccessModal = true;
       this.contactForm.reset();
-    }, 700);
+    } catch (err) {
+      const detail = err instanceof Error ? err.message : 'Unknown error';
+      this.errorMessage = `We could not deliver your message right now (${detail}). Please try again shortly, or email us directly at ${this.recipientEmail}.`;
+      this.formShake = true;
+      setTimeout(() => { this.formShake = false; }, 500);
+    } finally {
+      this.isSubmitting = false;
+    }
   }
 
-  private persistSubmission(payload: Record<string, unknown>): void {
-    const existing = localStorage.getItem(this.submissionStoreKey);
-    const submissions = existing ? (JSON.parse(existing) as Record<string, unknown>[]) : [];
-    submissions.push(payload);
-    localStorage.setItem(this.submissionStoreKey, JSON.stringify(submissions));
+  protected closeSuccessModal(): void {
+    this.showSuccessModal = false;
+    this.referenceId = '';
   }
 
   private spawnParticles(): void {

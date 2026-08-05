@@ -1,3 +1,6 @@
+<!-- ── Backdrop (body fade when panel is open) ── -->
+<div class="cw-backdrop" [class.cw-backdrop--open]="isOpen()" (click)="toggle()" aria-hidden="true"></div>
+
 <!-- ── Floating trigger ── -->
 <button
   class="cw-trigger"
@@ -30,11 +33,16 @@
       <span class="cw-panel__dot"></span>
       <span class="cw-panel__title">Talk To Us</span>
     </div>
+    <button type="button" class="cw-panel__close" (click)="toggle()" aria-label="Close">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+        <path d="M18 6L6 18M6 6l12 12"
+          stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+      </svg>
+    </button>
   </div>
 
-  <div class="cw-panel__body">
-
-    @if (submitted()) {
+  @if (submitted()) {
+    <div class="cw-panel__body">
       <div class="cw-success">
         <svg width="44" height="44" viewBox="0 0 24 24" fill="none" aria-hidden="true">
           <circle cx="12" cy="12" r="10" stroke="#e87722" stroke-width="1.6"/>
@@ -42,51 +50,98 @@
         </svg>
         <p class="cw-success__title">Message Sent!</p>
         <p class="cw-success__sub">We'll get back to you shortly.</p>
+        @if (referenceId()) {
+          <div class="cw-success__ref">
+            <span class="cw-success__ref-label">Reference ID</span>
+            <span class="cw-success__ref-value">{{ referenceId() }}</span>
+          </div>
+        }
       </div>
-    } @else {
-      <p class="cw-panel__sub">Fill in the details below and we'll reach out to you.</p>
+    </div>
+  } @else {
+    <form class="cw-form" [formGroup]="chatForm" (submit)="onSubmit($event)" novalidate>
 
-      <form class="cw-form" (submit)="onSubmit($event)" novalidate>
+      <div class="cw-form__scroll">
+        <p class="cw-panel__sub">Fill in the details below and we'll reach out to you.</p>
 
-        <div class="cw-form__group">
-          <label class="cw-form__label" for="cw-name">Name</label>
-          <input class="cw-form__input" id="cw-name" type="text"
-            placeholder="Your full name" autocomplete="name" required />
+        @if (errorMessage()) {
+          <div class="cw-form__error" role="alert">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/>
+              <line x1="12" y1="8" x2="12" y2="12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              <line x1="12" y1="16" x2="12.01" y2="16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+            <span>{{ errorMessage() }}</span>
+          </div>
+        }
+
+        <div class="cw-form__group" [class.cw-form__group--err]="showError('name')">
+          <label class="cw-form__label" for="cw-name">Name *</label>
+          <input class="cw-form__input" id="cw-name" type="text" formControlName="name"
+            placeholder="Your full name" autocomplete="name" />
+          @if (showError('name')) {
+            <small class="cw-form__msg">
+              @if (chatForm.controls.name.errors?.['required']) { Name is required. }
+              @else if (chatForm.controls.name.errors?.['minlength']) { Name must be at least 2 characters. }
+            </small>
+          }
         </div>
 
         <div class="cw-form__group">
           <label class="cw-form__label" for="cw-org">Organisation</label>
-          <input class="cw-form__input" id="cw-org" type="text"
+          <input class="cw-form__input" id="cw-org" type="text" formControlName="organisation"
             placeholder="Company or organisation" autocomplete="organization" />
         </div>
 
-        <div class="cw-form__group">
+        <div class="cw-form__group" [class.cw-form__group--err]="showError('phone')">
           <label class="cw-form__label" for="cw-phone">Phone Number</label>
-          <input class="cw-form__input" id="cw-phone" type="tel"
+          <input class="cw-form__input" id="cw-phone" type="tel" formControlName="phone"
             placeholder="+1 (000) 000-0000" autocomplete="tel" />
+          @if (showError('phone')) {
+            <small class="cw-form__msg">Enter a valid phone number.</small>
+          }
         </div>
 
-        <div class="cw-form__group">
-          <label class="cw-form__label" for="cw-email">Email Id</label>
-          <input class="cw-form__input" id="cw-email" type="email"
-            placeholder="you@company.com" autocomplete="email" required />
+        <div class="cw-form__group" [class.cw-form__group--err]="showError('email')">
+          <label class="cw-form__label" for="cw-email">Email Id *</label>
+          <input class="cw-form__input" id="cw-email" type="email" formControlName="email"
+            placeholder="you@company.com" autocomplete="email" />
+          @if (showError('email')) {
+            <small class="cw-form__msg">
+              @if (chatForm.controls.email.errors?.['required']) { Email is required. }
+              @else if (chatForm.controls.email.errors?.['email']) { Enter a valid email address. }
+            </small>
+          }
         </div>
 
-        <div class="cw-form__group">
-          <label class="cw-form__label" for="cw-message">Message</label>
-          <textarea class="cw-form__input cw-form__textarea" id="cw-message"
-            rows="3" placeholder="How can we help you?"></textarea>
+        <div class="cw-form__group" [class.cw-form__group--err]="showError('message')">
+          <label class="cw-form__label" for="cw-message">Message *</label>
+          <textarea class="cw-form__input cw-form__textarea" id="cw-message" formControlName="message"
+            rows="3" placeholder="How can we help you?" maxlength="1000"></textarea>
+          @if (showError('message')) {
+            <small class="cw-form__msg">
+              @if (chatForm.controls.message.errors?.['required']) { Please write a short message. }
+              @else if (chatForm.controls.message.errors?.['minlength']) { Message must be at least 5 characters. }
+            </small>
+          }
         </div>
+      </div>
 
-        <button type="submit" class="cw-form__submit">
-          Send Message
-          <svg width="16" height="16" viewBox="0 0 20 20" fill="none" aria-hidden="true">
-            <path d="M4.5 10H15.5M15.5 10L10.8 5.3M15.5 10L10.8 14.7"
-              stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
+      <div class="cw-form__footer">
+        <button type="submit" class="cw-form__submit" [disabled]="isSubmitting()">
+          @if (!isSubmitting()) {
+            Send Message
+            <svg width="16" height="16" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+              <path d="M4.5 10H15.5M15.5 10L10.8 5.3M15.5 10L10.8 14.7"
+                stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          } @else {
+            <span class="cw-spinner" aria-hidden="true"></span>
+            Sending…
+          }
         </button>
+      </div>
 
-      </form>
-    }
-  </div>
+    </form>
+  }
 </div>

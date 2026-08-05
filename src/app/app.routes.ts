@@ -4,12 +4,12 @@ export const routes: Routes = [
   {
     path: '',
     loadComponent: () =>
-      import('./landing-page/landing-page').then((m) => m.LandingPage),
+      import('./landing-page/landing1').then((m) => m.Landing1),
   },
   {
-    path: 'landing1',
+    path: 'landing-page',
     loadComponent: () =>
-      import('./landing-page/landing1').then((m) => m.Landing1),
+      import('./landing-page/landing-page').then((m) => m.LandingPage),
   },
 
   // What We Offer (parent + sub-menus)
