@@ -22,9 +22,7 @@ interface SecurityTopic {
       <!-- ─── 1. VIDEO HERO ────────────────────────────── -->
       <section class="um-hero" aria-label="Utilities Management">
         <div class="um-hero__bg" aria-hidden="true">
-          <video class="um-hero__video" autoplay muted loop playsinline preload="auto">
-            <source src="VIdeos/Evelume_video.mp4" type="video/mp4" />
-          </video>
+          <img class="um-hero__video" src="Images/utilities-hero.jpg" alt="Utilities Management" />
           <div class="um-hero__overlay"></div>
           <div class="um-hero__grid"></div>
         </div>

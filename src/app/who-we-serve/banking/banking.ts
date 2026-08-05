@@ -18,18 +18,12 @@ import { RouterLink } from '@angular/router';
 
   <!-- â”€â”€â”€ HERO CAROUSEL â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ -->
   <section class="hc-hero" id="hc-hero">
+   
     <div class="hc-hero__slide is-active">
-      <img src="Images/banking-slider-01.jpg" alt="Healthcare technology" />
-      <div class="hc-hero__overlay"></div>
-    </div>
-    <div class="hc-hero__slide">
       <img src="Images/banking-slider-02.jpg" alt="Medical professionals" />
       <div class="hc-hero__overlay"></div>
     </div>
-    <div class="hc-hero__slide">
-      <img src="Images/banking-slider-03.jpg" alt="AI in healthcare" />
-      <div class="hc-hero__overlay"></div>
-    </div>
+   
 
     <!-- Abstract decorative shapes -->
     <div class="hc-hero__abstract-1"></div>

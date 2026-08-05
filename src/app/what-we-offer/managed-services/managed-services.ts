@@ -16,9 +16,7 @@ interface Deliverable {
       <!-- ─── VIDEO HERO ─────────────────────────────────── -->
       <section class="ms-hero" id="ms-hero" aria-label="Managed Services">
         <div class="ms-hero__bg" aria-hidden="true">
-          <video class="ms-hero__video" autoplay muted loop playsinline preload="auto">
-            <source src="VIdeos/Evelume_video.mp4" type="video/mp4" />
-          </video>
+          <img class="ms-hero__video" src="Images/image_025.jpg" alt="Managed Services" />
           <div class="ms-hero__overlay"></div>
           <div class="ms-hero__grid"></div>
         </div>

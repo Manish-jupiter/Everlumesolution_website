@@ -1,0 +1,92 @@
+<!-- ── Floating trigger ── -->
+<button
+  class="cw-trigger"
+  (click)="toggle()"
+  [class.cw-trigger--active]="isOpen()"
+  [attr.aria-expanded]="isOpen()"
+  aria-label="Talk to us"
+>
+  @if (!isOpen()) {
+    <!-- Chat bubble icon -->
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+      <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"
+        stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+    <span class="cw-trigger__label">Talk To Us</span>
+  } @else {
+    <!-- Close icon -->
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+      <path d="M18 6L6 18M6 6l12 12"
+        stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+    </svg>
+  }
+</button>
+
+<!-- ── Chat panel ── -->
+<div class="cw-panel" [class.cw-panel--open]="isOpen()" role="dialog" aria-label="Talk to us form">
+
+  <div class="cw-panel__header">
+    <div class="cw-panel__header-left">
+      <span class="cw-panel__dot"></span>
+      <span class="cw-panel__title">Talk To Us</span>
+    </div>
+  </div>
+
+  <div class="cw-panel__body">
+
+    @if (submitted()) {
+      <div class="cw-success">
+        <svg width="44" height="44" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <circle cx="12" cy="12" r="10" stroke="#e87722" stroke-width="1.6"/>
+          <path d="M8 12l3 3 5-5" stroke="#e87722" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <p class="cw-success__title">Message Sent!</p>
+        <p class="cw-success__sub">We'll get back to you shortly.</p>
+      </div>
+    } @else {
+      <p class="cw-panel__sub">Fill in the details below and we'll reach out to you.</p>
+
+      <form class="cw-form" (submit)="onSubmit($event)" novalidate>
+
+        <div class="cw-form__group">
+          <label class="cw-form__label" for="cw-name">Name</label>
+          <input class="cw-form__input" id="cw-name" type="text"
+            placeholder="Your full name" autocomplete="name" required />
+        </div>
+
+        <div class="cw-form__group">
+          <label class="cw-form__label" for="cw-org">Organisation</label>
+          <input class="cw-form__input" id="cw-org" type="text"
+            placeholder="Company or organisation" autocomplete="organization" />
+        </div>
+
+        <div class="cw-form__group">
+          <label class="cw-form__label" for="cw-phone">Phone Number</label>
+          <input class="cw-form__input" id="cw-phone" type="tel"
+            placeholder="+1 (000) 000-0000" autocomplete="tel" />
+        </div>
+
+        <div class="cw-form__group">
+          <label class="cw-form__label" for="cw-email">Email Id</label>
+          <input class="cw-form__input" id="cw-email" type="email"
+            placeholder="you@company.com" autocomplete="email" required />
+        </div>
+
+        <div class="cw-form__group">
+          <label class="cw-form__label" for="cw-message">Message</label>
+          <textarea class="cw-form__input cw-form__textarea" id="cw-message"
+            rows="3" placeholder="How can we help you?"></textarea>
+        </div>
+
+        <button type="submit" class="cw-form__submit">
+          Send Message
+          <svg width="16" height="16" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+            <path d="M4.5 10H15.5M15.5 10L10.8 5.3M15.5 10L10.8 14.7"
+              stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+
+      </form>
+    }
+  </div>
+</div>
