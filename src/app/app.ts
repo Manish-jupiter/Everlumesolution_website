@@ -3,10 +3,11 @@ import { RouterOutlet } from '@angular/router';
 
 import { Header } from './shared/header/header';
 import { Footer } from './shared/footer/footer';
+import { ChatWidget } from './shared/chat-widget/chat-widget';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, Header, Footer],
+  imports: [RouterOutlet, Header, Footer, ChatWidget],
   templateUrl: './app.html',
   styleUrl: './app.css',
 })

@@ -6,6 +6,11 @@ export const routes: Routes = [
     loadComponent: () =>
       import('./landing-page/landing-page').then((m) => m.LandingPage),
   },
+  {
+    path: 'landing1',
+    loadComponent: () =>
+      import('./landing-page/landing1').then((m) => m.Landing1),
+  },
 
   // What We Offer (parent + sub-menus)
   {
