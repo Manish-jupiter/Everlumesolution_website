@@ -1,0 +1,33 @@
+❯ Building...
+✔ Building...
+Initial chunk files | Names                         |  Raw size
+chunk-TCLEHFZR.js   | -                             | 901.71 kB | 
+chunk-Y23EQLQU.js   | -                             | 424.57 kB | 
+chunk-766D7ILK.js   | -                             | 163.52 kB | 
+main.js             | main                          | 136.71 kB | 
+styles.css          | styles                        |  83.62 kB | 
+
+                    | Initial total                 |   1.71 MB
+
+Lazy chunk files    | Names                         |  Raw size
+chunk-25WEWEY7.js   | banking                       | 185.88 kB | 
+chunk-LX3TGD62.js   | contact-us                    | 142.50 kB | 
+chunk-ZUZAM6FM.js   | telecom                       | 140.31 kB | 
+chunk-U5RMTJXL.js   | healthcare                    | 128.42 kB | 
+chunk-EPW5754T.js   | manufacturing                 | 122.92 kB | 
+chunk-7SSHEFYD.js   | retail                        | 115.83 kB | 
+chunk-L5MNGMN5.js   | managed-services              |  93.91 kB | 
+chunk-4IAMFRBT.js   | automation-services           |  92.42 kB | 
+chunk-OSLRPH5H.js   | clinical-operational-workflow |  84.52 kB | 
+chunk-PANERBBV.js   | remote-patient-monitoring     |  83.96 kB | 
+chunk-QM6SIWX7.js   | human-in-the-loop             |  83.96 kB | 
+chunk-TTE73HW4.js   | care-gap-identification       |  83.43 kB | 
+chunk-Q3LK6ZAP.js   | clinical-digital-support      |  82.88 kB | 
+chunk-MJI67OAC.js   | landing1                      |  82.43 kB | 
+chunk-5NAWZXNB.js   | medical-coding                |  82.35 kB | 
+...and 77 more lazy chunks files. Use "--verbose" to show all the files.
+
+Application bundle generation complete. [4.878 seconds] - 2026-08-06T06:47:05.879Z
+
+Output location: C:\dummyproject\everlume-angular\dist\everlume-angular
+
