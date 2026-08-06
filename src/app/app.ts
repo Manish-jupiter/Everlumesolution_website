@@ -4,10 +4,11 @@ import { RouterOutlet } from '@angular/router';
 import { Header } from './shared/header/header';
 import { Footer } from './shared/footer/footer';
 import { ChatWidget } from './shared/chat-widget/chat-widget';
+import { CookieConsent } from './shared/cookie-consent/cookie-consent';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, Header, Footer, ChatWidget],
+  imports: [RouterOutlet, Header, Footer, ChatWidget, CookieConsent],
   templateUrl: './app.html',
   styleUrl: './app.css',
 })
