@@ -104,7 +104,7 @@ import { RouterLink } from '@angular/router';
           <img src="Images/image_047.jpg" alt="Healthcare AI integration" loading="lazy" />
         </div>
         <div class="hc-intro__float-card">
-          <div class="hc-intro__float-icon">ðŸ¤–</div>
+          <div class="hc-intro__float-icon"><i class="ph ph-robot"></i></div>
           <div class="hc-intro__float-text">
             <strong>AI-Powered</strong>
             <span>Autonomous workflows</span>
@@ -292,23 +292,23 @@ import { RouterLink } from '@angular/router';
 
       <div class="hc-outcomes__grid">
         <div class="hc-outcome-card">
-          <div class="hc-outcome-card__icon">âš¡</div>
+          <div class="hc-outcome-card__icon"><i class="ph ph-lightning"></i></div>
           <span class="hc-outcome-card__text">Faster administrative workflows</span>
         </div>
         <div class="hc-outcome-card">
-          <div class="hc-outcome-card__icon">ðŸ“‰</div>
+          <div class="hc-outcome-card__icon"><i class="ph ph-trend-down"></i></div>
           <span class="hc-outcome-card__text">Lower operational overhead</span>
         </div>
         <div class="hc-outcome-card">
-          <div class="hc-outcome-card__icon">ðŸ˜Š</div>
+          <div class="hc-outcome-card__icon"><i class="ph ph-smiley"></i></div>
           <span class="hc-outcome-card__text">Improved patient & staff experience</span>
         </div>
         <div class="hc-outcome-card">
-          <div class="hc-outcome-card__icon">ðŸ”„</div>
+          <div class="hc-outcome-card__icon"><i class="ph ph-arrows-clockwise"></i></div>
           <span class="hc-outcome-card__text">Better consistency across care processes</span>
         </div>
         <div class="hc-outcome-card">
-          <div class="hc-outcome-card__icon">ðŸ‘ï¸</div>
+          <div class="hc-outcome-card__icon"><i class="ph ph-eye"></i></div>
           <span class="hc-outcome-card__text">Greater visibility & control over actions</span>
         </div>
       </div>
@@ -782,6 +782,7 @@ import { RouterLink } from '@angular/router';
       color: #fff;
       font-size: 1.2rem;
     }
+    .hc-intro__float-icon i.ph { font-size: 1.4rem; line-height: 1; }
 
     .hc-intro__float-text strong {
       display: block;
@@ -1396,6 +1397,14 @@ import { RouterLink } from '@angular/router';
       align-items: center;
       justify-content: center;
       font-size: 1.4rem;
+      color: var(--orange);
+      transition: background 0.3s, transform 0.3s;
+    }
+    .hc-outcome-card__icon i.ph { font-size: 1.55rem; line-height: 1; }
+    .hc-outcome-card:hover .hc-outcome-card__icon {
+      background: linear-gradient(135deg, var(--orange), #c96418);
+      color: #fff;
+      transform: scale(1.08) rotate(-3deg);
     }
 
     .hc-outcome-card__text {

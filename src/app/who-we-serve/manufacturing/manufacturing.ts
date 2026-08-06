@@ -57,7 +57,7 @@ import { RouterLink } from '@angular/router';
             <img src="Images/image_051.jpg" alt="Manufacturing AI" loading="lazy" />
           </div>
           <div class="mf-intro__float-card">
-            <div class="mf-intro__float-icon">ðŸ­</div>
+            <div class="mf-intro__float-icon"><i class="ph ph-factory"></i></div>
             <div class="mf-intro__float-text">
               <strong>Smart Factory</strong>
               <span>AI-powered operations</span>
@@ -138,31 +138,31 @@ import { RouterLink } from '@angular/router';
         <h2 class="mf-section-heading">Business value</h2>
         <div class="mf-value__grid">
           <div class="mf-value-card">
-            <div class="mf-value-card__icon">âš™ï¸</div>
+            <div class="mf-value-card__icon"><i class="ph ph-gear"></i></div>
             <span>Reduce unplanned equipment downtime through predictive monitoring and intelligent maintenance orchestration.</span>
           </div>
           <div class="mf-value-card">
-            <div class="mf-value-card__icon">âš¡</div>
+            <div class="mf-value-card__icon"><i class="ph ph-lightning"></i></div>
             <span>Accelerate operational decision-making with real-time production, inventory, and supply chain intelligence.</span>
           </div>
           <div class="mf-value-card">
-            <div class="mf-value-card__icon">ðŸ“ˆ</div>
+            <div class="mf-value-card__icon"><i class="ph ph-chart-line-up"></i></div>
             <span>Improve production efficiency, asset utilisation, and throughput across manufacturing operations.</span>
           </div>
           <div class="mf-value-card">
-            <div class="mf-value-card__icon">ðŸ“¦</div>
+            <div class="mf-value-card__icon"><i class="ph ph-package"></i></div>
             <span>Enhance inventory visibility and optimise material flow across plants, warehouses, and suppliers.</span>
           </div>
           <div class="mf-value-card">
-            <div class="mf-value-card__icon">âœ…</div>
+            <div class="mf-value-card__icon"><i class="ph ph-check-circle"></i></div>
             <span>Improve product quality and consistency through AI-assisted quality monitoring and process optimisation.</span>
           </div>
           <div class="mf-value-card">
-            <div class="mf-value-card__icon">ðŸ¤–</div>
+            <div class="mf-value-card__icon"><i class="ph ph-robot"></i></div>
             <span>Reduce manual effort across production planning, maintenance, quality assurance, and supply chain operations through intelligent workflow orchestration.</span>
           </div>
           <div class="mf-value-card">
-            <div class="mf-value-card__icon">ðŸ­</div>
+            <div class="mf-value-card__icon"><i class="ph ph-factory"></i></div>
             <span>Strengthen operational resilience while lowering manufacturing costs and improving on-time delivery performance.</span>
           </div>
         </div>
@@ -345,7 +345,8 @@ import { RouterLink } from '@angular/router';
     .mf-intro__img img { width: 100%; height: auto; display: block; }
     .mf-intro__float-card { position: absolute; bottom: -30px; right: -20px; background: #fff; border-radius: 16px; padding: 1.1rem 1.4rem; box-shadow: 0 10px 40px rgba(0,0,0,0.1); display: flex; align-items: center; gap: 0.8rem; z-index: 2; animation: floatCard 4s ease-in-out infinite; }
     @keyframes floatCard { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-8px); } }
-    .mf-intro__float-icon { width: 44px; height: 44px; background: linear-gradient(135deg, var(--orange), #c96418); border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 1.2rem; }
+    .mf-intro__float-icon { width: 44px; height: 44px; background: linear-gradient(135deg, var(--orange), #c96418); border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 1.2rem; color: #fff; }
+    .mf-intro__float-icon i.ph { font-size: 1.4rem; line-height: 1; }
     .mf-intro__float-text strong { display: block; font-size: 0.85rem; color: var(--dark); }
     .mf-intro__float-text span { font-size: 0.75rem; color: var(--mid); }
     .mf-intro__actions { display: flex; flex-wrap: wrap; gap: 0.9rem; margin-top: 1.8rem; }
@@ -403,7 +404,9 @@ import { RouterLink } from '@angular/router';
     .mf-value__grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-top: 3rem; text-align: left; }
     .mf-value-card { background: #fff; border-radius: 16px; padding: 1.8rem 1.5rem; display: flex; align-items: flex-start; gap: 1rem; border: 1px solid rgba(232,119,34,0.1); transition: transform 0.3s, box-shadow 0.3s; }
     .mf-value-card:hover { transform: translateY(-6px); box-shadow: 0 14px 40px rgba(27,58,143,0.1); }
-    .mf-value-card__icon { width: 46px; height: 46px; flex-shrink: 0; background: linear-gradient(135deg, rgba(232,119,34,0.1), rgba(232,119,34,0.04)); border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 1.2rem; }
+    .mf-value-card__icon { width: 46px; height: 46px; flex-shrink: 0; background: linear-gradient(135deg, rgba(232,119,34,0.1), rgba(232,119,34,0.04)); border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 1.2rem; color: var(--orange); transition: background 0.3s, transform 0.3s; }
+    .mf-value-card__icon i.ph { font-size: 1.4rem; line-height: 1; }
+    .mf-value-card:hover .mf-value-card__icon { background: linear-gradient(135deg, var(--orange), #c96418); color: #fff; transform: scale(1.08) rotate(-3deg); }
     .mf-value-card span { font-size: 0.9rem; font-weight: 500; color: var(--dark); line-height: 1.6; }
     @media (max-width: 768px) { .mf-value { padding: 3.5rem 1.2rem; } .mf-value__grid { grid-template-columns: 1fr; } }
 
