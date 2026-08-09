@@ -17,6 +17,7 @@ export const routes: Routes = [
     path: 'what-we-offer',
     loadChildren: () =>
       import('./what-we-offer/what-we-offer.routes').then((m) => m.routes),
+    data: { preload: false },
   },
 
   // Who We Serve (parent + sub-menus)
@@ -24,6 +25,7 @@ export const routes: Routes = [
     path: 'who-we-serve',
     loadChildren: () =>
       import('./who-we-serve/who-we-serve.routes').then((m) => m.routes),
+    data: { preload: false },
   },
 
   {
