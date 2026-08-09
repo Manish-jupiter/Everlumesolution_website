@@ -52,7 +52,7 @@ import { RouterLink } from '@angular/router';
             <img src="Images/image_054.jpg" alt="Clinical Decision Support AI" loading="lazy" />
           </div>
           <div class="cd-intro__float-card">
-            <div class="cd-intro__float-icon">ðŸ§ </div>
+            <div class="cd-intro__float-icon"><i class="ph ph-brain"></i></div>
             <div class="cd-intro__float-text">
               <strong>Smart Decisions</strong>
               <span>AI-powered support</span>
@@ -143,31 +143,31 @@ import { RouterLink } from '@angular/router';
         <h2 class="cd-section-heading">Business value</h2>
         <div class="cd-value__grid">
           <div class="cd-value-card">
-            <div class="cd-value-card__icon">âš¡</div>
+            <div class="cd-value-card__icon"><i class="ph ph-lightning"></i></div>
             <span>Deliver faster access to evidence-based, patient-specific clinical guidance at the point of care.</span>
           </div>
           <div class="cd-value-card">
-            <div class="cd-value-card__icon">âœ…</div>
+            <div class="cd-value-card__icon"><i class="ph ph-check-circle"></i></div>
             <span>Improve consistency and quality of clinical decision-making across care teams and specialties.</span>
           </div>
           <div class="cd-value-card">
-            <div class="cd-value-card__icon">ðŸ§ </div>
+            <div class="cd-value-card__icon"><i class="ph ph-brain"></i></div>
             <span>Reduce clinician cognitive burden by filtering, prioritising, and contextualising relevant clinical information.</span>
           </div>
           <div class="cd-value-card">
-            <div class="cd-value-card__icon">ðŸŽ¯</div>
+            <div class="cd-value-card__icon"><i class="ph ph-target"></i></div>
             <span>Enhance early identification of high-risk patients and enable timely clinical interventions.</span>
           </div>
           <div class="cd-value-card">
-            <div class="cd-value-card__icon">ðŸ“‹</div>
+            <div class="cd-value-card__icon"><i class="ph ph-clipboard-text"></i></div>
             <span>Improve adherence to evidence-based care pathways, organisational protocols, and clinical best practices.</span>
           </div>
           <div class="cd-value-card">
-            <div class="cd-value-card__icon">ðŸ“ˆ</div>
+            <div class="cd-value-card__icon"><i class="ph ph-chart-line-up"></i></div>
             <span>Increase workflow efficiency by embedding intelligent decision support within existing clinical systems.</span>
           </div>
           <div class="cd-value-card">
-            <div class="cd-value-card__icon">ðŸ¥</div>
+            <div class="cd-value-card__icon"><i class="ph ph-hospital"></i></div>
             <span>Strengthen patient safety, care quality, and operational performance while supporting value-based care initiatives.</span>
           </div>
         </div>
@@ -261,7 +261,8 @@ import { RouterLink } from '@angular/router';
     .cd-intro__img img { width: 100%; height: auto; display: block; }
     .cd-intro__float-card { position: absolute; bottom: -30px; right: -20px; background: #fff; border-radius: 16px; padding: 1.1rem 1.4rem; box-shadow: 0 10px 40px rgba(0,0,0,0.1); display: flex; align-items: center; gap: 0.8rem; z-index: 2; animation: floatCard 4s ease-in-out infinite; }
     @keyframes floatCard { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-8px); } }
-    .cd-intro__float-icon { width: 44px; height: 44px; background: linear-gradient(135deg, var(--orange), #c96418); border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 1.2rem; }
+    .cd-intro__float-icon { width: 44px; height: 44px; background: linear-gradient(135deg, var(--orange), #c96418); border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 1.2rem; color: #fff; }
+    .cd-intro__float-icon i.ph { font-size: 1.4rem; line-height: 1; }
     .cd-intro__float-text strong { display: block; font-size: 0.85rem; color: var(--dark); }
     .cd-intro__float-text span { font-size: 0.75rem; color: var(--mid); }
     @media (max-width: 991px) { .cd-intro { padding: 4rem 1.5rem; } .cd-intro__grid { grid-template-columns: 1fr; gap: 2.5rem; } .cd-intro__float-card { right: 10px; bottom: -20px; } }
@@ -303,7 +304,8 @@ import { RouterLink } from '@angular/router';
     .cd-value__grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-top: 3rem; text-align: left; }
     .cd-value-card { background: #fff; border-radius: 16px; padding: 1.8rem 1.5rem; display: flex; align-items: flex-start; gap: 1rem; border: 1px solid rgba(232,119,34,0.1); transition: transform 0.3s, box-shadow 0.3s; }
     .cd-value-card:hover { transform: translateY(-6px); box-shadow: 0 14px 40px rgba(27,58,143,0.1); }
-    .cd-value-card__icon { width: 46px; height: 46px; flex-shrink: 0; background: linear-gradient(135deg, rgba(232,119,34,0.1), rgba(232,119,34,0.04)); border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 1.2rem; }
+    .cd-value-card__icon { width: 46px; height: 46px; flex-shrink: 0; background: linear-gradient(135deg, rgba(232,119,34,0.1), rgba(232,119,34,0.04)); border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 1.2rem; color: var(--orange); }
+    .cd-value-card__icon i.ph { font-size: 1.4rem; line-height: 1; }
     .cd-value-card span { font-size: 0.9rem; font-weight: 500; color: var(--dark); line-height: 1.6; }
     @media (max-width: 768px) { .cd-value { padding: 3.5rem 1.2rem; } .cd-value__grid { grid-template-columns: 1fr; } }
 

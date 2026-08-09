@@ -500,6 +500,7 @@
   box-shadow: 0 3px 12px rgba(0,0,0,0.4);
   z-index: 2;
   transition: transform 0.3s ease;
+  display:none;
 }
 
 .hw-card.is-visible:hover .hw-card__badge {

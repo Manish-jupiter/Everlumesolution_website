@@ -53,27 +53,6 @@ import { RouterLink } from '@angular/router';
     </div>
   </section>
 
-  <!-- â”€â”€â”€ STATS STRIP â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ -->
-  <div class="hc-stats-strip" data-reveal-scale>
-    <div class="hc-stat">
-      <span class="hc-counter" data-target="40">0</span><span class="hc-counter">%</span>
-      <p class="hc-stat__label">Cost Reduction</p>
-    </div>
-    <div class="hc-stat">
-      <span class="hc-counter" data-target="3">0</span><span class="hc-counter">x</span>
-      <p class="hc-stat__label">Faster Workflows</p>
-    </div>
-    <div class="hc-stat">
-      <span class="hc-counter" data-target="95">0</span><span class="hc-counter">%</span>
-      <p class="hc-stat__label">Accuracy Rate</p>
-    </div>
-    <div class="hc-stat">
-      <span class="hc-counter" data-target="24">0</span><span class="hc-counter">/7</span>
-      <p class="hc-stat__label">Autonomous Ops</p>
-    </div>
-  </div>
-
-  <!-- â”€â”€â”€ INTRO â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ -->
   <section class="hc-intro" style="position:relative; overflow:hidden;">
     <div class="hc-intro__blob"></div>
     <div class="hc-intro__dots-pattern"></div>
@@ -130,70 +109,70 @@ import { RouterLink } from '@angular/router';
           <div class="hc-card__icon"><i class="ph ph-calendar"></i></div>
           <span class="hc-card__title">Patient Scheduling & Coordination</span>
           <span class="hc-card__desc">AI-driven appointment optimization, automated reminders, and intelligent care coordination across providers.</span>
-          <span class="hc-card__arrow">Learn more â†’</span>
+          <span class="hc-card__arrow">Learn more <i class="ph ph-arrow-right"></i></span>
         </a>
 
         <a routerLink="/who-we-serve/healthcare/prior-authorization" class="hc-card" data-reveal>
           <div class="hc-card__icon"><i class="ph ph-check-square"></i></div>
           <span class="hc-card__title">Prior Authorization & Eligibility</span>
           <span class="hc-card__desc">Automated eligibility verification and prior auth workflows that reduce denials and accelerate approvals.</span>
-          <span class="hc-card__arrow">Learn more â†’</span>
+          <span class="hc-card__arrow">Learn more <i class="ph ph-arrow-right"></i></span>
         </a>
 
         <a routerLink="/who-we-serve/healthcare/claims-processing" class="hc-card" data-reveal>
           <div class="hc-card__icon"><i class="ph ph-file-text"></i></div>
           <span class="hc-card__title">Claims Processing Assistance</span>
           <span class="hc-card__desc">Intelligent claims adjudication, error detection, and automated follow-up to maximize clean claim rates.</span>
-          <span class="hc-card__arrow">Learn more â†’</span>
+          <span class="hc-card__arrow">Learn more <i class="ph ph-arrow-right"></i></span>
         </a>
 
         <a routerLink="/who-we-serve/healthcare/medical-coding" class="hc-card" data-reveal>
           <div class="hc-card__icon"><i class="ph ph-book-open"></i></div>
           <span class="hc-card__title">Medical Coding</span>
           <span class="hc-card__desc">AI-assisted code suggestion and validation ensuring accuracy, compliance, and faster reimbursement cycles.</span>
-          <span class="hc-card__arrow">Learn more â†’</span>
+          <span class="hc-card__arrow">Learn more <i class="ph ph-arrow-right"></i></span>
         </a>
 
         <a routerLink="/who-we-serve/healthcare/care-gap-identification" class="hc-card" data-reveal>
           <div class="hc-card__icon"><i class="ph ph-clock"></i></div>
           <span class="hc-card__title">Care Gap Identification & Follow-up</span>
           <span class="hc-card__desc">Proactive identification of care gaps with automated patient outreach and follow-up orchestration.</span>
-          <span class="hc-card__arrow">Learn more â†’</span>
+          <span class="hc-card__arrow">Learn more <i class="ph ph-arrow-right"></i></span>
         </a>
 
         <a routerLink="/who-we-serve/healthcare/clinical-digital-support" class="hc-card" data-reveal>
           <div class="hc-card__icon"><i class="ph ph-monitor"></i></div>
           <span class="hc-card__title">Clinical Digital Support Integration</span>
           <span class="hc-card__desc">Seamless integration with clinical decision support tools to enhance diagnostic and treatment workflows.</span>
-          <span class="hc-card__arrow">Learn more â†’</span>
+          <span class="hc-card__arrow">Learn more <i class="ph ph-arrow-right"></i></span>
         </a>
 
         <a routerLink="/who-we-serve/healthcare/remote-patient-monitoring" class="hc-card" data-reveal>
           <div class="hc-card__icon"><i class="ph ph-pulse"></i></div>
           <span class="hc-card__title">Remote Patient Monitoring Integration</span>
           <span class="hc-card__desc">Real-time data aggregation from wearables and IoT devices with intelligent alerting and care escalation.</span>
-          <span class="hc-card__arrow">Learn more â†’</span>
+          <span class="hc-card__arrow">Learn more <i class="ph ph-arrow-right"></i></span>
         </a>
 
         <a routerLink="/who-we-serve/healthcare/clinical-operational-workflow" class="hc-card" data-reveal>
           <div class="hc-card__icon"><i class="ph ph-arrows-left-right"></i></div>
           <span class="hc-card__title">Clinical & Operational Workflow Integration</span>
           <span class="hc-card__desc">End-to-end workflow orchestration connecting clinical and administrative systems for unified operations.</span>
-          <span class="hc-card__arrow">Learn more â†’</span>
+          <span class="hc-card__arrow">Learn more <i class="ph ph-arrow-right"></i></span>
         </a>
 
         <a routerLink="/who-we-serve/healthcare/human-in-the-loop" class="hc-card" data-reveal>
           <div class="hc-card__icon"><i class="ph ph-users-three"></i></div>
           <span class="hc-card__title">Human-in-the-Loop Controls</span>
           <span class="hc-card__desc">Configurable escalation paths and approval gates ensuring human oversight for critical decisions.</span>
-          <span class="hc-card__arrow">Learn more â†’</span>
+          <span class="hc-card__arrow">Learn more <i class="ph ph-arrow-right"></i></span>
         </a>
 
         <a routerLink="/who-we-serve/healthcare/security-compliance" class="hc-card" data-reveal>
           <div class="hc-card__icon"><i class="ph ph-lock-simple"></i></div>
           <span class="hc-card__title">Security & Compliance</span>
           <span class="hc-card__desc">HIPAA-compliant architectures with enterprise-grade encryption, audit trails, and regulatory adherence.</span>
-          <span class="hc-card__arrow">Learn more â†’</span>
+          <span class="hc-card__arrow">Learn more <i class="ph ph-arrow-right"></i></span>
         </a>
       </div>
     </div>
@@ -325,10 +304,6 @@ import { RouterLink } from '@angular/router';
     <div class="hc-cta-band__dots"></div>
     <h2 class="hc-cta-band__heading">Ready to transform your healthcare operations?</h2>
     <p class="hc-cta-band__sub">Let's discuss how Agentic AI can accelerate your organisation's digital transformation.</p>
-    <a href="#" class="hc-cta-band__btn">
-      Schedule a Consultation
-      <svg width="16" height="16" viewBox="0 0 18 18" fill="none"><path d="M3.75 9H14.25M14.25 9L9.75 4.5M14.25 9L9.75 13.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
-    </a>
   </section>
    
   `,
@@ -870,11 +845,6 @@ import { RouterLink } from '@angular/router';
       flex-direction: column;
       gap: 0.8rem;
       box-shadow: 0 4px 20px rgba(27,58,143,0.06);
-      counter-increment: card-counter;
-    }
-
-    .hc-deliver__grid {
-      counter-reset: card-counter;
     }
 
     /* Top accent gradient bar */
@@ -892,24 +862,6 @@ import { RouterLink } from '@angular/router';
     .hc-card:hover::before {
       opacity: 1;
       height: 4px;
-    }
-
-    /* Card number watermark */
-    .hc-card::after {
-      content: "0" counter(card-counter);
-      position: absolute;
-      bottom: 12px; right: 16px;
-      font-family: "DM Serif Display", serif;
-      font-size: 2.5rem;
-      font-weight: 400;
-      color: rgba(27,58,143,0.04);
-      line-height: 1;
-      pointer-events: none;
-      transition: color 0.4s;
-    }
-
-    .hc-card:hover::after {
-      color: rgba(27,58,143,0.08);
     }
 
     .hc-card:hover {

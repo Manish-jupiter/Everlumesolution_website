@@ -53,7 +53,7 @@ import { RouterLink } from '@angular/router';
             <img src="Images/image_027.jpg" alt="Workflow Orchestration AI" loading="lazy" />
           </div>
           <div class="co-intro__float-card">
-            <div class="co-intro__float-icon">âš™ï¸</div>
+            <div class="co-intro__float-icon"><i class="ph ph-gear"></i></div>
             <div class="co-intro__float-text">
               <strong>Smart Orchestration</strong>
               <span>AI-powered workflows</span>
@@ -144,31 +144,31 @@ import { RouterLink } from '@angular/router';
         <h2 class="co-section-heading">Business value</h2>
         <div class="co-value__grid">
           <div class="co-value-card">
-            <div class="co-value-card__icon">âš¡</div>
+            <div class="co-value-card__icon"><i class="ph ph-lightning"></i></div>
             <span>Accelerate end-to-end workflow execution across clinical, administrative, and operational functions.</span>
           </div>
           <div class="co-value-card">
-            <div class="co-value-card__icon">ðŸ”„</div>
+            <div class="co-value-card__icon"><i class="ph ph-arrows-clockwise"></i></div>
             <span>Eliminate workflow bottlenecks and reduce delays through intelligent task orchestration and prioritisation.</span>
           </div>
           <div class="co-value-card">
-            <div class="co-value-card__icon">ðŸ¤</div>
+            <div class="co-value-card__icon"><i class="ph ph-handshake"></i></div>
             <span>Improve coordination and continuity of care by reducing missed handoffs and fragmented processes.</span>
           </div>
           <div class="co-value-card">
-            <div class="co-value-card__icon">ðŸ“Š</div>
+            <div class="co-value-card__icon"><i class="ph ph-chart-bar"></i></div>
             <span>Provide real-time visibility into workflow status, operational performance, and service-level compliance.</span>
           </div>
           <div class="co-value-card">
-            <div class="co-value-card__icon">ðŸ“‰</div>
+            <div class="co-value-card__icon"><i class="ph ph-trend-down"></i></div>
             <span>Reduce manual coordination effort, enabling staff to focus on higher-value patient care and operational activities.</span>
           </div>
           <div class="co-value-card">
-            <div class="co-value-card__icon">ðŸ“ˆ</div>
+            <div class="co-value-card__icon"><i class="ph ph-chart-line-up"></i></div>
             <span>Optimise workforce productivity and resource utilisation through intelligent workload distribution.</span>
           </div>
           <div class="co-value-card">
-            <div class="co-value-card__icon">ðŸ¥</div>
+            <div class="co-value-card__icon"><i class="ph ph-hospital"></i></div>
             <span>Enhance patient, clinician, and staff experiences by delivering faster, more reliable, and seamlessly coordinated care journeys.</span>
           </div>
         </div>
@@ -262,7 +262,8 @@ import { RouterLink } from '@angular/router';
     .co-intro__img img { width: 100%; height: auto; display: block; }
     .co-intro__float-card { position: absolute; bottom: -30px; right: -20px; background: #fff; border-radius: 16px; padding: 1.1rem 1.4rem; box-shadow: 0 10px 40px rgba(0,0,0,0.1); display: flex; align-items: center; gap: 0.8rem; z-index: 2; animation: floatCard 4s ease-in-out infinite; }
     @keyframes floatCard { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-8px); } }
-    .co-intro__float-icon { width: 44px; height: 44px; background: linear-gradient(135deg, var(--orange), #c96418); border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 1.2rem; }
+    .co-intro__float-icon { width: 44px; height: 44px; background: linear-gradient(135deg, var(--orange), #c96418); border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 1.2rem; color: #fff; }
+    .co-intro__float-icon i.ph { font-size: 1.4rem; line-height: 1; }
     .co-intro__float-text strong { display: block; font-size: 0.85rem; color: var(--dark); }
     .co-intro__float-text span { font-size: 0.75rem; color: var(--mid); }
     @media (max-width: 991px) { .co-intro { padding: 4rem 1.5rem; } .co-intro__grid { grid-template-columns: 1fr; gap: 2.5rem; } .co-intro__float-card { right: 10px; bottom: -20px; } }
@@ -304,7 +305,8 @@ import { RouterLink } from '@angular/router';
     .co-value__grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-top: 3rem; text-align: left; }
     .co-value-card { background: #fff; border-radius: 16px; padding: 1.8rem 1.5rem; display: flex; align-items: flex-start; gap: 1rem; border: 1px solid rgba(232,119,34,0.1); transition: transform 0.3s, box-shadow 0.3s; }
     .co-value-card:hover { transform: translateY(-6px); box-shadow: 0 14px 40px rgba(27,58,143,0.1); }
-    .co-value-card__icon { width: 46px; height: 46px; flex-shrink: 0; background: linear-gradient(135deg, rgba(232,119,34,0.1), rgba(232,119,34,0.04)); border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 1.2rem; }
+    .co-value-card__icon { width: 46px; height: 46px; flex-shrink: 0; background: linear-gradient(135deg, rgba(232,119,34,0.1), rgba(232,119,34,0.04)); border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 1.2rem; color: var(--orange); }
+    .co-value-card__icon i.ph { font-size: 1.4rem; line-height: 1; }
     .co-value-card span { font-size: 0.9rem; font-weight: 500; color: var(--dark); line-height: 1.6; }
     @media (max-width: 768px) { .co-value { padding: 3.5rem 1.2rem; } .co-value__grid { grid-template-columns: 1fr; } }
 

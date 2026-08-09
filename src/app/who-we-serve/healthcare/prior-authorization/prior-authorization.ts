@@ -53,7 +53,7 @@ import { RouterLink } from '@angular/router';
             <img src="Images/image_039.jpg" alt="Prior auth AI" loading="lazy" />
           </div>
           <div class="pa-intro__float-card">
-            <div class="pa-intro__float-icon">ðŸ”</div>
+            <div class="pa-intro__float-icon"><i class="ph ph-note-pencil"></i></div>
             <div class="pa-intro__float-text">
               <strong>Smart Verification</strong>
               <span>AI-powered workflows</span>
@@ -149,31 +149,31 @@ import { RouterLink } from '@angular/router';
         <h2 class="pa-section-heading">Business value</h2>
         <div class="pa-value__grid">
           <div class="pa-value-card">
-            <div class="pa-value-card__icon">âš¡</div>
+            <div class="pa-value-card__icon"><i class="ph ph-lightning"></i></div>
             <span>Accelerate prior authorisation turnaround times and improve patient access to treatment.</span>
           </div>
           <div class="pa-value-card">
-            <div class="pa-value-card__icon">âœ…</div>
+            <div class="pa-value-card__icon"><i class="ph ph-check-circle"></i></div>
             <span>Increase first-pass submission quality, reducing incomplete, delayed, and rejected requests.</span>
           </div>
           <div class="pa-value-card">
-            <div class="pa-value-card__icon">ðŸ“‰</div>
+            <div class="pa-value-card__icon"><i class="ph ph-trend-down"></i></div>
             <span>Significantly reduce administrative effort for clinical, revenue cycle, and care management teams.</span>
           </div>
           <div class="pa-value-card">
-            <div class="pa-value-card__icon">âš™ï¸</div>
+            <div class="pa-value-card__icon"><i class="ph ph-gear"></i></div>
             <span>Improve operational efficiency by automating repetitive eligibility, documentation, and validation tasks.</span>
           </div>
           <div class="pa-value-card">
-            <div class="pa-value-card__icon">ðŸ“Š</div>
+            <div class="pa-value-card__icon"><i class="ph ph-chart-bar"></i></div>
             <span>Enhance visibility into authorisation status, workflow bottlenecks, and operational performance through real-time tracking and reporting.</span>
           </div>
           <div class="pa-value-card">
-            <div class="pa-value-card__icon">ðŸ¤</div>
+            <div class="pa-value-card__icon"><i class="ph ph-handshake"></i></div>
             <span>Improve payer-provider collaboration through consistent, accurate, and policy-compliant submissions.</span>
           </div>
           <div class="pa-value-card">
-            <div class="pa-value-card__icon">ðŸ“ˆ</div>
+            <div class="pa-value-card__icon"><i class="ph ph-chart-line-up"></i></div>
             <span>Deliver measurable improvements in productivity, cost efficiency, and patient satisfaction.</span>
           </div>
         </div>
@@ -268,7 +268,8 @@ import { RouterLink } from '@angular/router';
     .pa-intro__img img { width: 100%; height: auto; display: block; }
     .pa-intro__float-card { position: absolute; bottom: -30px; right: -20px; background: #fff; border-radius: 16px; padding: 1.1rem 1.4rem; box-shadow: 0 10px 40px rgba(0,0,0,0.1); display: flex; align-items: center; gap: 0.8rem; z-index: 2; animation: floatCard 4s ease-in-out infinite; }
     @keyframes floatCard { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-8px); } }
-    .pa-intro__float-icon { width: 44px; height: 44px; background: linear-gradient(135deg, var(--orange), #c96418); border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 1.2rem; }
+    .pa-intro__float-icon { width: 44px; height: 44px; background: linear-gradient(135deg, var(--orange), #c96418); border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 1.2rem; color: #fff; }
+    .pa-intro__float-icon i.ph { font-size: 1.4rem; line-height: 1; }
     .pa-intro__float-text strong { display: block; font-size: 0.85rem; color: var(--dark); }
     .pa-intro__float-text span { font-size: 0.75rem; color: var(--mid); }
     @media (max-width: 991px) { .pa-intro { padding: 4rem 1.5rem; } .pa-intro__grid { grid-template-columns: 1fr; gap: 2.5rem; } .pa-intro__float-card { right: 10px; bottom: -20px; } }
@@ -310,7 +311,8 @@ import { RouterLink } from '@angular/router';
     .pa-value__grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-top: 3rem; text-align: left; }
     .pa-value-card { background: #fff; border-radius: 16px; padding: 1.8rem 1.5rem; display: flex; align-items: flex-start; gap: 1rem; border: 1px solid rgba(232,119,34,0.1); transition: transform 0.3s, box-shadow 0.3s; }
     .pa-value-card:hover { transform: translateY(-6px); box-shadow: 0 14px 40px rgba(27,58,143,0.1); }
-    .pa-value-card__icon { width: 46px; height: 46px; flex-shrink: 0; background: linear-gradient(135deg, rgba(232,119,34,0.1), rgba(232,119,34,0.04)); border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 1.2rem; }
+    .pa-value-card__icon { width: 46px; height: 46px; flex-shrink: 0; background: linear-gradient(135deg, rgba(232,119,34,0.1), rgba(232,119,34,0.04)); border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 1.2rem; color: var(--orange); }
+    .pa-value-card__icon i.ph { font-size: 1.4rem; line-height: 1; }
     .pa-value-card span { font-size: 0.9rem; font-weight: 500; color: var(--dark); line-height: 1.6; }
     @media (max-width: 768px) { .pa-value { padding: 3.5rem 1.2rem; } .pa-value__grid { grid-template-columns: 1fr; } }
 

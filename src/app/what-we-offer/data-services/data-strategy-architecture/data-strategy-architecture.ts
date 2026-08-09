@@ -1,4 +1,4 @@
-﻿import { Component } from '@angular/core';
+import { Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
 
 @Component({
@@ -6,53 +6,68 @@ import { RouterLink } from '@angular/router';
   standalone: true,
   imports: [RouterLink],
   template: `
-    <div class="dp-sub-bc">
-      <a routerLink="/">Home</a><span class="sep">></span>
-      <a routerLink="/what-we-offer">What We Offer</a><span class="sep">></span>
-      <a routerLink="/what-we-offer/data-services">Data Services</a><span class="sep">></span>
-      <span class="cur">Data Strategy &amp; Architecture</span>
-    </div>
+    <div class="dp-sub-bc"><a routerLink="/">Home</a><span class="sep">></span><a routerLink="/what-we-offer">What We Offer</a><span class="sep">></span><a routerLink="/what-we-offer/data-services">Data Services</a><span class="sep">></span><span class="cur">Data Strategy and Architecture</span></div>
+
     <header class="dp-sub-hdr">
-      <div class="dp-sub-hdr__grid"></div><div class="dp-sub-hdr__glow"></div>
+      <div class="dp-sub-hdr__bg">
+        <img src="Images/image_038.jpg" alt="Data Strategy Architecture" />
+        <div class="dp-sub-hdr__overlay"></div>
+      </div>
+      <div class="dp-sub-hdr__grid"></div>
       <div class="dp-sub-hdr__inner">
-        <div class="dp-sub-hdr__badge"><i class="ph ph-sitemap"></i><span>Data Services</span></div>
-        <h1 class="dp-sub-hdr__title">Data Strategy and <em>Architecture</em></h1>
+        <div class="dp-sub-hdr__badge"><i class="ph ph-blueprint"></i><span>Data Services</span></div>
+        <h1 class="dp-sub-hdr__title">Data Strategy <em>and Architecture</em></h1>
       </div>
     </header>
-    <section class="dp-sub-body"><div class="dp-sub-body__inner">
-      <p>A successful data transformation begins with a clear strategy and a well-defined architecture that aligns data investments with business objectives. Our Data Strategy and Architecture services help organisations establish a robust, scalable, and future-ready data foundation that enables trusted decision-making, operational efficiency, advanced analytics, and Artificial Intelligence.</p>
-      <p>We work closely with business and technology stakeholders to assess the current data landscape, identify critical data domains, evaluate data maturity, and define a strategic vision for enterprise data management. Through a structured assessment, we uncover gaps in data quality, governance, integration, and accessibility, enabling organisations to prioritise initiatives that deliver the greatest business value while reducing complexity across the enterprise.</p>
-      <p>Our architectural approach designs modern data ecosystems that support both operational and analytical workloads through scalable data platforms, cloud-native architectures, data lakes, data warehouses, real-time data pipelines, and enterprise integration frameworks. We establish a unified architecture that promotes data consistency, interoperability, governance, and secure access while eliminating duplication, reducing information silos, and improving collaboration across business functions.</p>
-      <p>Beyond technology design, we define comprehensive data operating models, governance frameworks, metadata strategies, and lifecycle management practices that ensure enterprise data remains accurate, secure, compliant, and aligned with evolving business requirements. Every architecture is designed to support future growth, digital transformation initiatives, AI adoption, and continuous innovation.</p>
-      <p>The result is a cohesive, resilient, and intelligent data architecture that provides a trusted foundation for enterprise analytics, AI, automation, and data-driven decision-making, enabling organisations to maximise the strategic value of their data while remaining agile in an increasingly digital world.</p>
-    </div></section>
+
+    <section class="dp-sub-body">
+      <div class="dp-sub-body__inner">
+        <div class="dp-sub-body__text">
+          <p>A successful data transformation begins with a clear strategy and a well-defined architecture that aligns data investments with business objectives. Our Data Strategy and Architecture services help organisations establish a robust, scalable, and future-ready data foundation that enables trusted decision-making, operational efficiency, advanced analytics, and Artificial Intelligence.</p>
+          <p>We work closely with business and technology stakeholders to assess the current data landscape, identify critical data domains, evaluate data maturity, and define a strategic vision for enterprise data management. Through a structured assessment, we uncover gaps in data quality, governance, integration, and accessibility, enabling organisations to prioritise initiatives that deliver the greatest business value while reducing complexity across the enterprise.</p>
+          <p>Our architectural approach designs modern data ecosystems that support both operational and analytical workloads through scalable data platforms, cloud-native architectures, data lakes, data warehouses, real-time data pipelines, and enterprise integration frameworks. We establish a unified architecture that promotes data consistency, interoperability, governance, and secure access while eliminating duplication, reducing information silos, and improving collaboration across business functions.</p>
+          <p>Beyond technology design, we define comprehensive data operating models, governance frameworks, metadata strategies, and lifecycle management practices that ensure enterprise data remains accurate, secure, compliant, and aligned with evolving business requirements. Every architecture is designed to support future growth, digital transformation initiatives, AI adoption, and continuous innovation.</p>
+          <p>The result is a cohesive, resilient, and intelligent data architecture that provides a trusted foundation for enterprise analytics, AI, automation, and data-driven decision-making, enabling organisations to maximise the strategic value of their data while remaining agile in an increasingly digital world.</p>
+        </div>
+        <div class="dp-sub-body__image">
+          <img src="Images/image_039.jpg" alt="Data Strategy" loading="lazy" />
+        </div>
+      </div>
+    </section>
+
     <section class="dp-sub-cta">
       <a routerLink="/what-we-offer/data-services" class="dp-sub-cta__back"><i class="ph ph-arrow-left"></i> Back to Data Services</a>
       <a routerLink="/contact-us" class="dp-sub-cta__btn">Talk to an Expert <i class="ph ph-arrow-right"></i></a>
     </section>
   `,
-  styles: [`
-    :host { display: block; font-family: 'DM Sans', system-ui, sans-serif; }
-    .dp-sub-bc { background:#142d6b; padding:.55rem 3rem; display:flex; gap:.4rem; flex-wrap:wrap; }
-    .dp-sub-bc a,.dp-sub-bc span { color:rgba(255,255,255,.65); font-size:.8rem; text-decoration:none; }
-    .dp-sub-bc .cur { color:#E87722; font-weight:600; }
-    .dp-sub-hdr { background:linear-gradient(135deg,#060d1f,#1B3A8F); padding:5rem 3rem; text-align:center; position:relative; overflow:hidden; }
-    .dp-sub-hdr__grid { position:absolute; inset:0; background-image:linear-gradient(rgba(255,255,255,.03) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.03) 1px,transparent 1px); background-size:50px 50px; }
-    .dp-sub-hdr__glow { position:absolute; width:400px; height:400px; border-radius:50%; background:radial-gradient(circle,rgba(232,119,34,.14),transparent 70%); top:-120px; right:-80px; }
-    .dp-sub-hdr__inner { position:relative; z-index:2; }
-    .dp-sub-hdr__badge { display:inline-flex; gap:.5rem; background:rgba(255,255,255,.1); border:1px solid rgba(255,255,255,.18); border-radius:999px; padding:.4rem 1.2rem; margin-bottom:1.8rem; }
-    .dp-sub-hdr__badge i.ph { color:#E87722; }
-    .dp-sub-hdr__badge span { color:rgba(255,255,255,.85); font-size:.78rem; text-transform:uppercase; letter-spacing:.07em; }
-    .dp-sub-hdr__title { font-family:"DM Serif Display",serif; font-size:clamp(2rem,4vw,3rem); color:#fff; font-weight:400; }
-    .dp-sub-hdr__title em { color:#E87722; font-style:italic; }
-    .dp-sub-body { padding:5rem 3rem; background:#f5f5f3; }
-    .dp-sub-body__inner { max-width:900px; margin:0 auto; background:#fff; border-radius:24px; padding:3.5rem; position:relative; border:1px solid rgba(27,58,143,.06); box-shadow:0 8px 40px rgba(27,58,143,.07); }
-    .dp-sub-body__inner::before { content:""; position:absolute; top:0; left:0; width:100%; height:4px; background:linear-gradient(90deg,#1B3A8F,#E87722); }
-    .dp-sub-body__inner p { font-size:1rem; color:#444; line-height:1.85; margin-bottom:1.4rem; }
-    .dp-sub-cta { padding:2.5rem 3rem; background:linear-gradient(135deg,#142d6b,#1B3A8F); display:flex; justify-content:space-between; gap:1rem; flex-wrap:wrap; }
-    .dp-sub-cta__back { color:rgba(255,255,255,.75); text-decoration:none; font-weight:600; }
-    .dp-sub-cta__btn { background:#E87722; color:#fff; text-decoration:none; font-weight:700; padding:.75rem 1.8rem; border-radius:999px; }
-  `],
+  styles: [`:host { display: block; font-family: 'DM Sans', system-ui, sans-serif; }
+    .dp-sub-bc { background: #142d6b; padding: 0.55rem 3rem; display: flex; align-items: center; gap: 0.4rem; flex-wrap: wrap; }
+    .dp-sub-bc a, .dp-sub-bc span { color: rgba(255,255,255,0.6); font-size: 0.8rem; font-weight: 500; text-decoration: none; }
+    .dp-sub-bc a:hover { color: #fff; } .dp-sub-bc .sep { color: rgba(255,255,255,0.25); } .dp-sub-bc .cur { color: #E87722; font-weight: 600; }
+    .dp-sub-hdr { position: relative; padding: 7rem 3rem 6rem; text-align: center; overflow: hidden; min-height: 340px; display: flex; align-items: center; justify-content: center; }
+    .dp-sub-hdr__bg { position: absolute; inset: 0; }
+    .dp-sub-hdr__bg img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .dp-sub-hdr__overlay { position: absolute; inset: 0; background: linear-gradient(135deg,rgba(6,13,31,.9) 0%,rgba(27,58,143,.78) 100%); }
+    .dp-sub-hdr__grid { position: absolute; inset: 0; background-image: linear-gradient(rgba(255,255,255,0.03) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,0.03) 1px,transparent 1px); background-size: 50px 50px; pointer-events: none; }
+    .dp-sub-hdr__inner { position: relative; z-index: 2; max-width: 820px; margin: 0 auto; }
+    .dp-sub-hdr__badge { display: inline-flex; align-items: center; gap: 0.5rem; background: rgba(255,255,255,0.1); backdrop-filter: blur(8px); border: 1px solid rgba(255,255,255,0.18); border-radius: 999px; padding: 0.4rem 1.2rem; margin-bottom: 1.8rem; }
+    .dp-sub-hdr__badge i.ph { font-size: 1rem; color: #E87722; line-height: 1; }
+    .dp-sub-hdr__badge span { color: rgba(255,255,255,0.85); font-size: 0.78rem; font-weight: 600; letter-spacing: 0.07em; text-transform: uppercase; }
+    .dp-sub-hdr__title { font-family: "DM Serif Display", serif; font-size: clamp(2rem,4vw,3rem); color: #fff; font-weight: 400; line-height: 1.1; margin: 0; }
+    .dp-sub-hdr__title em { font-style: italic; color: #E87722; }
+    .dp-sub-body { padding: 5rem 3rem; background: #f5f5f3; }
+    .dp-sub-body__inner { max-width: 1200px; margin: 0 auto; background: #fff; border-radius: 24px; padding: 3rem; position: relative; border: 1px solid rgba(27,58,143,.06); box-shadow: 0 8px 40px rgba(27,58,143,.07); display: grid; grid-template-columns: 1fr 360px; gap: 2.5rem; align-items: start; }
+    .dp-sub-body__inner::before { content: ""; position: absolute; top: 0; left: 0; width: 100%; height: 4px; background: linear-gradient(90deg,#1B3A8F,#E87722); border-radius: 24px 24px 0 0; }
+    .dp-sub-body__text p { font-size: 1rem; color: #444; line-height: 1.85; margin-bottom: 1.4rem; }
+    .dp-sub-body__text p:last-child { margin-bottom: 0; }
+    .dp-sub-body__image { border-radius: 16px; overflow: hidden; box-shadow: 0 8px 32px rgba(27,58,143,.12); }
+    .dp-sub-body__image img { width: 100%; height: 100%; object-fit: cover; display: block; min-height: 280px; max-height: 480px; }
+    @media (max-width: 1024px) { .dp-sub-body__inner { grid-template-columns: 1fr; } }
+    .dp-sub-cta { padding: 2.5rem 3rem; background: linear-gradient(135deg,#142d6b,#1B3A8F); display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem; }
+    .dp-sub-cta__back { display: inline-flex; align-items: center; gap: 0.4rem; color: rgba(255,255,255,0.75); font-size: 0.88rem; font-weight: 600; text-decoration: none; transition: color 0.25s; }
+    .dp-sub-cta__back:hover { color: #fff; }
+    .dp-sub-cta__btn { display: inline-flex; align-items: center; gap: 0.5rem; background: #E87722; color: #fff; font-weight: 700; font-size: 0.9rem; padding: 0.75rem 1.8rem; border-radius: 999px; text-decoration: none; transition: transform 0.3s, box-shadow 0.3s; }
+    .dp-sub-cta__btn:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(232,119,34,0.4); color: #fff; }
+    @media (max-width: 768px) { .dp-sub-bc { padding: 0.55rem 1rem; margin-top: 58px; } .dp-sub-hdr { padding: 4rem 1.5rem; } .dp-sub-body { padding: 3rem 1.2rem; } .dp-sub-body__inner { padding: 2rem 1.5rem; } .dp-sub-cta { padding: 2rem 1.5rem; flex-direction: column; align-items: flex-start; } }`],
 })
 export class DataStrategyArchitecture {}
-

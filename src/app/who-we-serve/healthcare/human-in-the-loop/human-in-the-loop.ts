@@ -53,7 +53,7 @@ import { RouterLink } from '@angular/router';
             <img src="Images/image_045.jpg" alt="Human-in-the-Loop AI" loading="lazy" />
           </div>
           <div class="hl-intro__float-card">
-            <div class="hl-intro__float-icon">ðŸ‘¥</div>
+            <div class="hl-intro__float-icon"><i class="ph ph-users"></i></div>
             <div class="hl-intro__float-text">
               <strong>Smart Oversight</strong>
               <span>Human-centered AI</span>
@@ -144,31 +144,31 @@ import { RouterLink } from '@angular/router';
         <h2 class="hl-section-heading">Business value</h2>
         <div class="hl-value__grid">
           <div class="hl-value-card">
-            <div class="hl-value-card__icon">âš¡</div>
+            <div class="hl-value-card__icon"><i class="ph ph-lightning"></i></div>
             <span>Enable safe and responsible automation of clinically sensitive, financially significant, and compliance-critical workflows.</span>
           </div>
           <div class="hl-value-card">
-            <div class="hl-value-card__icon">âœ…</div>
+            <div class="hl-value-card__icon"><i class="ph ph-check-circle"></i></div>
             <span>Strengthen regulatory compliance and organisational accountability through structured governance and human oversight.</span>
           </div>
           <div class="hl-value-card">
-            <div class="hl-value-card__icon">ðŸš€</div>
+            <div class="hl-value-card__icon"><i class="ph ph-rocket"></i></div>
             <span>Accelerate the review and resolution of complex cases and workflow exceptions.</span>
           </div>
           <div class="hl-value-card">
-            <div class="hl-value-card__icon">ðŸ›¡ï¸</div>
+            <div class="hl-value-card__icon"><i class="ph ph-shield"></i></div>
             <span>Reduce operational risk by ensuring that critical decisions remain subject to expert validation and approval.</span>
           </div>
           <div class="hl-value-card">
-            <div class="hl-value-card__icon">ðŸ¤</div>
+            <div class="hl-value-card__icon"><i class="ph ph-handshake"></i></div>
             <span>Increase confidence and trust in AI-driven processes among clinicians, operational teams, patients, and regulatory stakeholders.</span>
           </div>
           <div class="hl-value-card">
-            <div class="hl-value-card__icon">ðŸ“ˆ</div>
+            <div class="hl-value-card__icon"><i class="ph ph-chart-line-up"></i></div>
             <span>Improve workforce productivity by allowing AI to manage routine activities while enabling experts to focus on high-value decisions.</span>
           </div>
           <div class="hl-value-card">
-            <div class="hl-value-card__icon">ðŸ¥</div>
+            <div class="hl-value-card__icon"><i class="ph ph-hospital"></i></div>
             <span>Support enterprise-wide adoption of Agentic AI through a balanced approach that combines intelligent automation with human expertise.</span>
           </div>
         </div>
@@ -263,7 +263,8 @@ import { RouterLink } from '@angular/router';
     .hl-intro__img img { width: 100%; height: auto; display: block; }
     .hl-intro__float-card { position: absolute; bottom: -30px; right: -20px; background: #fff; border-radius: 16px; padding: 1.1rem 1.4rem; box-shadow: 0 10px 40px rgba(0,0,0,0.1); display: flex; align-items: center; gap: 0.8rem; z-index: 2; animation: floatCard 4s ease-in-out infinite; }
     @keyframes floatCard { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-8px); } }
-    .hl-intro__float-icon { width: 44px; height: 44px; background: linear-gradient(135deg, var(--orange), #c96418); border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 1.2rem; }
+    .hl-intro__float-icon { width: 44px; height: 44px; background: linear-gradient(135deg, var(--orange), #c96418); border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 1.2rem; color: #fff; }
+    .hl-intro__float-icon i.ph { font-size: 1.4rem; line-height: 1; }
     .hl-intro__float-text strong { display: block; font-size: 0.85rem; color: var(--dark); }
     .hl-intro__float-text span { font-size: 0.75rem; color: var(--mid); }
     @media (max-width: 991px) { .hl-intro { padding: 4rem 1.5rem; } .hl-intro__grid { grid-template-columns: 1fr; gap: 2.5rem; } .hl-intro__float-card { right: 10px; bottom: -20px; } }
@@ -305,7 +306,8 @@ import { RouterLink } from '@angular/router';
     .hl-value__grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-top: 3rem; text-align: left; }
     .hl-value-card { background: #fff; border-radius: 16px; padding: 1.8rem 1.5rem; display: flex; align-items: flex-start; gap: 1rem; border: 1px solid rgba(232,119,34,0.1); transition: transform 0.3s, box-shadow 0.3s; }
     .hl-value-card:hover { transform: translateY(-6px); box-shadow: 0 14px 40px rgba(27,58,143,0.1); }
-    .hl-value-card__icon { width: 46px; height: 46px; flex-shrink: 0; background: linear-gradient(135deg, rgba(232,119,34,0.1), rgba(232,119,34,0.04)); border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 1.2rem; }
+    .hl-value-card__icon { width: 46px; height: 46px; flex-shrink: 0; background: linear-gradient(135deg, rgba(232,119,34,0.1), rgba(232,119,34,0.04)); border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 1.2rem; color: var(--orange); }
+    .hl-value-card__icon i.ph { font-size: 1.4rem; line-height: 1; }
     .hl-value-card span { font-size: 0.9rem; font-weight: 500; color: var(--dark); line-height: 1.6; }
     @media (max-width: 768px) { .hl-value { padding: 3.5rem 1.2rem; } .hl-value__grid { grid-template-columns: 1fr; } }
 

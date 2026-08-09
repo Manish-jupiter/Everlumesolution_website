@@ -55,18 +55,18 @@ import { RouterLink } from '@angular/router';
           <div class="cu-viz">
             <!-- SVG rings + dashed lines to corner chips -->
             <svg class="cu-viz__lines" viewBox="0 0 340 340" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <circle cx="170" cy="170" r="148" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+              <circle cx="170" cy="170" r="148" stroke="rgba(27,58,143,0.1)" stroke-width="1"/>
               <circle cx="170" cy="170" r="104" stroke="rgba(27,58,143,0.45)" stroke-width="1"/>
               <circle cx="170" cy="170" r="62" stroke="rgba(232,119,34,0.22)" stroke-width="1"/>
-              <line x1="170" y1="170" x2="46" y2="32" stroke="rgba(255,255,255,0.1)" stroke-width="1" stroke-dasharray="4 5"/>
-              <line x1="170" y1="170" x2="294" y2="32" stroke="rgba(255,255,255,0.1)" stroke-width="1" stroke-dasharray="4 5"/>
-              <line x1="170" y1="170" x2="46" y2="308" stroke="rgba(255,255,255,0.1)" stroke-width="1" stroke-dasharray="4 5"/>
-              <line x1="170" y1="170" x2="294" y2="308" stroke="rgba(255,255,255,0.1)" stroke-width="1" stroke-dasharray="4 5"/>
+              <line x1="170" y1="170" x2="46" y2="32" stroke="rgba(27,58,143,0.15)" stroke-width="1" stroke-dasharray="4 5"/>
+              <line x1="170" y1="170" x2="294" y2="32" stroke="rgba(27,58,143,0.15)" stroke-width="1" stroke-dasharray="4 5"/>
+              <line x1="170" y1="170" x2="46" y2="308" stroke="rgba(27,58,143,0.15)" stroke-width="1" stroke-dasharray="4 5"/>
+              <line x1="170" y1="170" x2="294" y2="308" stroke="rgba(27,58,143,0.15)" stroke-width="1" stroke-dasharray="4 5"/>
               <!-- decorative arc nodes on middle ring -->
-              <circle cx="170" cy="66" r="4" fill="rgba(255,255,255,0.18)"/>
-              <circle cx="274" cy="170" r="4" fill="rgba(232,119,34,0.4)"/>
-              <circle cx="170" cy="274" r="4" fill="rgba(255,255,255,0.18)"/>
-              <circle cx="66" cy="170" r="4" fill="rgba(232,119,34,0.4)"/>
+              <circle cx="170" cy="66" r="4" fill="rgba(27,58,143,0.3)"/>
+              <circle cx="274" cy="170" r="4" fill="rgba(232,119,34,0.6)"/>
+              <circle cx="170" cy="274" r="4" fill="rgba(27,58,143,0.3)"/>
+              <circle cx="66" cy="170" r="4" fill="rgba(232,119,34,0.6)"/>
             </svg>
 
             <!-- Dashed rotating ring -->
@@ -433,20 +433,20 @@ import { RouterLink } from '@angular/router';
 .breadcrumb-bar a:hover { color: #fff; }
 .breadcrumb-bar .sep { margin: 0 0.45rem; color: rgba(255,255,255,0.3); }
 .breadcrumb-bar .current { color: var(--orange); font-weight: 600; }
-.cu-hero { position: relative; background: linear-gradient(135deg,#0b1e4d 0%,#1B3A8F 55%,#0e2560 100%); padding: 5rem 3rem 4rem; overflow: hidden; }
+.cu-hero { position: relative; background: linear-gradient(135deg,#edf2ff 0%,#f5f7ff 50%,#e8effe 100%); padding: 5rem 3rem 4rem; overflow: hidden; }
 .cu-hero__particles { position: absolute; inset: 0; pointer-events: none; z-index: 0; }
 .cu-hero__glow-1,.cu-hero__glow-2 { position: absolute; border-radius: 50%; filter: blur(90px); pointer-events: none; }
-.cu-hero__glow-1 { width: 520px; height: 520px; background: rgba(232,119,34,0.18); top: -120px; right: -80px; }
-.cu-hero__glow-2 { width: 380px; height: 380px; background: rgba(27,58,143,0.35); bottom: -100px; left: 5%; }
+.cu-hero__glow-1 { width: 520px; height: 520px; background: rgba(232,119,34,0.12); top: -120px; right: -80px; }
+.cu-hero__glow-2 { width: 380px; height: 380px; background: rgba(27,58,143,0.07); bottom: -100px; left: 5%; }
 .cu-hero__inner { position: relative; z-index: 1; max-width: 1180px; margin: 0 auto; display: grid; grid-template-columns: 1.15fr 0.85fr; gap: 3rem; align-items: center; }
-.cu-hero__badge { display: inline-flex; align-items: center; gap: 0.5rem; background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.15); border-radius: 999px; padding: 0.35rem 0.85rem; color: #d0deff; font-size: 0.78rem; letter-spacing: 0.12em; text-transform: uppercase; margin-bottom: 1rem; }
+.cu-hero__badge { display: inline-flex; align-items: center; gap: 0.5rem; background: rgba(27,58,143,0.07); border: 1px solid rgba(27,58,143,0.18); border-radius: 999px; padding: 0.35rem 0.85rem; color: #1B3A8F; font-size: 0.78rem; letter-spacing: 0.12em; text-transform: uppercase; margin-bottom: 1rem; }
 .cu-hero__badge-dot { width: 7px; height: 7px; border-radius: 50%; background: var(--orange); box-shadow: 0 0 8px var(--orange); }
-.cu-hero__heading { font-family: 'DM Serif Display',serif; font-size: clamp(2.2rem,4.5vw,3.6rem); line-height: 1.07; color: #fff; margin: 0 0 1rem; }
+.cu-hero__heading { font-family: 'DM Serif Display',serif; font-size: clamp(2.2rem,4.5vw,3.6rem); line-height: 1.07; color: #142d6b; margin: 0 0 1rem; }
 .cu-hero__heading em { font-style: italic; color: var(--orange); }
-.cu-hero__sub { max-width: 62ch; color: rgba(255,255,255,0.72); line-height: 1.72; margin: 0 0 2.2rem; font-size: 1.05rem; }
+.cu-hero__sub { max-width: 62ch; color: #4a5568; line-height: 1.72; margin: 0 0 2.2rem; font-size: 1.05rem; }
 .cu-hero__stats { display: flex; flex-wrap: wrap; gap: 1rem 2.5rem; }
-.cu-stat__value { display: block; font-family: 'DM Serif Display',serif; font-size: 1.85rem; color: #fff; line-height: 1; }
-.cu-stat__label { display: block; font-size: 0.8rem; color: rgba(255,255,255,0.55); text-transform: uppercase; letter-spacing: 0.1em; margin-top: 0.28rem; }
+.cu-stat__value { display: block; font-family: 'DM Serif Display',serif; font-size: 1.85rem; color: #142d6b; line-height: 1; }
+.cu-stat__label { display: block; font-size: 0.8rem; color: #6b7a99; text-transform: uppercase; letter-spacing: 0.1em; margin-top: 0.28rem; }
 .cu-hero__visual { display: flex; align-items: center; justify-content: center; }
 .cu-viz { position: relative; width: 340px; height: 340px; flex-shrink: 0; }
 .cu-viz__lines { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; }
@@ -462,9 +462,9 @@ import { RouterLink } from '@angular/router';
 .cu-viz__orbit--c { width: 128px; height: 128px; margin: -64px 0 0 -64px; animation: cu-orbit 8s linear infinite; }
 .cu-viz__orb-dot { position: absolute; top: -5px; left: 50%; transform: translateX(-50%); border-radius: 50%; }
 .cu-viz__orb-dot--orange { width: 11px; height: 11px; background: var(--orange); box-shadow: 0 0 10px var(--orange); }
-.cu-viz__orb-dot--white { width: 9px; height: 9px; background: rgba(255,255,255,0.85); box-shadow: 0 0 8px rgba(255,255,255,0.55); top: -4px; }
+.cu-viz__orb-dot--white { width: 9px; height: 9px; background: #1B3A8F; box-shadow: 0 0 8px rgba(27,58,143,0.5); top: -4px; }
 .cu-viz__orb-dot--blue { width: 8px; height: 8px; background: #6699ff; box-shadow: 0 0 8px #6699ff; top: -4px; }
-.cu-viz__chip { position: absolute; display: flex; align-items: center; gap: 0.4rem; background: rgba(255,255,255,0.07); border: 1px solid rgba(255,255,255,0.15); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border-radius: 10px; padding: 0.45rem 0.75rem; color: #e8eeff; font-size: 0.78rem; font-weight: 600; white-space: nowrap; animation: cu-float-chip 4s ease-in-out infinite; }
+.cu-viz__chip { position: absolute; display: flex; align-items: center; gap: 0.4rem; background: rgba(255,255,255,0.92); border: 1px solid rgba(27,58,143,0.12); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border-radius: 10px; padding: 0.45rem 0.75rem; color: #142d6b; font-size: 0.78rem; font-weight: 600; white-space: nowrap; box-shadow: 0 4px 20px rgba(27,58,143,0.1); animation: cu-float-chip 4s ease-in-out infinite; }
 .cu-viz__chip svg { width: 13px; height: 13px; color: var(--orange); flex-shrink: 0; }
 .cu-viz__chip--1 { top: 3%; left: -3%; animation-delay: 0s; }
 .cu-viz__chip--2 { top: 3%; right: -3%; animation-delay: 1s; }
@@ -769,7 +769,7 @@ export class ContactUs implements AfterViewInit, OnDestroy {
         position: 'absolute',
         width: `${size}px`, height: `${size}px`,
         borderRadius: '50%',
-        background: `rgba(255,255,255,${Math.random() * 0.35 + 0.08})`,
+        background: `rgba(27,58,143,${Math.random() * 0.12 + 0.04})`,  
         top: `${Math.random() * 100}%`,
         left: `${Math.random() * 100}%`,
         animation: `cu-float ${Math.random() * 10 + 8}s ease-in-out infinite`,

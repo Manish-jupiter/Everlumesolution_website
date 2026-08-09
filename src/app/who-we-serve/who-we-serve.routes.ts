@@ -108,6 +108,26 @@ export const routes: Routes = [
         loadComponent: () => import('./banking/banking').then((m) => m.Banking),
       },
       {
+        path: 'banking/banking-solutions',
+        loadComponent: () =>
+          import('./banking/banking-solutions/banking-solutions').then((m) => m.BankingSolutions),
+      },
+      {
+        path: 'banking/customer-service-agent',
+        loadComponent: () =>
+          import('./banking/customer-service-agent/customer-service-agent').then((m) => m.CustomerServiceAgent),
+      },
+      {
+        path: 'banking/fraud-detection-case-triage-agent',
+        loadComponent: () =>
+          import('./banking/fraud-detection-case-triage-agent/fraud-detection-case-triage-agent').then((m) => m.FraudDetectionCaseTriageAgent),
+      },
+      {
+        path: 'banking/kyc-compliance-agent',
+        loadComponent: () =>
+          import('./banking/kyc-compliance-agent/kyc-compliance-agent').then((m) => m.KycComplianceAgent),
+      },
+      {
         path: 'telecom',
         loadComponent: () => import('./telecom/telecom').then((m) => m.Telecom),
       },

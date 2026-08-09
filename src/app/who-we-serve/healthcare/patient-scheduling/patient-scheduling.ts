@@ -53,7 +53,7 @@ import { RouterLink } from '@angular/router';
             <img src="Images/image_029.jpg" alt="AI scheduling" loading="lazy" />
           </div>
           <div class="ps-intro__float-card">
-            <div class="ps-intro__float-icon">ðŸ“…</div>
+            <div class="ps-intro__float-icon"><i class="ph ph-calendar"></i></div>
             <div class="ps-intro__float-text">
               <strong>Smart Scheduling</strong>
               <span>AI-optimised workflows</span>
@@ -159,23 +159,23 @@ import { RouterLink } from '@angular/router';
         <h2 class="ps-section-heading">Business value</h2>
         <div class="ps-value__grid">
           <div class="ps-value-card">
-            <div class="ps-value-card__icon">ðŸ“‰</div>
+            <div class="ps-value-card__icon"><i class="ph ph-trend-down"></i></div>
             <span>Lower no-show rates.</span>
           </div>
           <div class="ps-value-card">
-            <div class="ps-value-card__icon">âš¡</div>
+            <div class="ps-value-card__icon"><i class="ph ph-lightning"></i></div>
             <span>Faster appointment turnaround.</span>
           </div>
           <div class="ps-value-card">
-            <div class="ps-value-card__icon">ðŸ“ž</div>
+            <div class="ps-value-card__icon"><i class="ph ph-phone"></i></div>
             <span>Reduced call center workload.</span>
           </div>
           <div class="ps-value-card">
-            <div class="ps-value-card__icon">ðŸ“Š</div>
+            <div class="ps-value-card__icon"><i class="ph ph-chart-bar"></i></div>
             <span>Better utilization of provider schedules.</span>
           </div>
           <div class="ps-value-card">
-            <div class="ps-value-card__icon">ðŸ˜Š</div>
+            <div class="ps-value-card__icon"><i class="ph ph-smiley"></i></div>
             <span>Improved patient satisfaction and access.</span>
           </div>
         </div>
@@ -472,8 +472,9 @@ import { RouterLink } from '@angular/router';
       background: linear-gradient(135deg, var(--orange), #c96418);
       border-radius: 12px;
       display: flex; align-items: center;
-      justify-content: center; font-size: 1.2rem;
+      justify-content: center; font-size: 1.2rem; color: #fff;
     }
+    .ps-intro__float-icon i.ph { font-size: 1.4rem; line-height: 1; }
     .ps-intro__float-text strong {
       display: block; font-size: 0.85rem; color: var(--dark);
     }
@@ -722,8 +723,9 @@ import { RouterLink } from '@angular/router';
       background: linear-gradient(135deg, rgba(232,119,34,0.1), rgba(232,119,34,0.04));
       border-radius: 14px;
       display: flex; align-items: center;
-      justify-content: center; font-size: 1.4rem;
+      justify-content: center; font-size: 1.4rem; color: var(--orange);
     }
+    .ps-value-card__icon i.ph { font-size: 1.4rem; line-height: 1; }
     .ps-value-card span {
       font-size: 0.92rem; font-weight: 600;
       color: var(--dark); line-height: 1.5;

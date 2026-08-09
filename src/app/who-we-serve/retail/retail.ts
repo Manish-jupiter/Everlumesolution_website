@@ -57,7 +57,7 @@ import { RouterLink } from '@angular/router';
             <img src="Images/image_036.jpg" alt="Retail AI" loading="lazy" />
           </div>
           <div class="rt-intro__float-card">
-            <div class="rt-intro__float-icon">ðŸ›ï¸</div>
+            <div class="rt-intro__float-icon"><i class="ph ph-shopping-bag"></i></div>
             <div class="rt-intro__float-text">
               <strong>Smart Retail</strong>
               <span>AI-powered commerce</span>
@@ -302,7 +302,8 @@ import { RouterLink } from '@angular/router';
     .rt-intro__img img { width: 100%; height: auto; display: block; }
     .rt-intro__float-card { position: absolute; bottom: -30px; right: -20px; background: #fff; border-radius: 16px; padding: 1.1rem 1.4rem; box-shadow: 0 10px 40px rgba(0,0,0,0.1); display: flex; align-items: center; gap: 0.8rem; z-index: 2; animation: floatCard 4s ease-in-out infinite; }
     @keyframes floatCard { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-8px); } }
-    .rt-intro__float-icon { width: 44px; height: 44px; background: linear-gradient(135deg, var(--orange), #c96418); border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 1.2rem; }
+    .rt-intro__float-icon { width: 44px; height: 44px; background: linear-gradient(135deg, var(--orange), #c96418); border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 1.2rem; color: #fff; }
+    .rt-intro__float-icon i.ph { font-size: 1.4rem; line-height: 1; }
     .rt-intro__float-text strong { display: block; font-size: 0.85rem; color: var(--dark); }
     .rt-intro__float-text span { font-size: 0.75rem; color: var(--mid); }
     .rt-intro__actions { display: flex; flex-wrap: wrap; gap: 0.9rem; margin-top: 1.8rem; }
@@ -339,12 +340,11 @@ import { RouterLink } from '@angular/router';
     .rt-deliver__blob { position: absolute; bottom: 50px; right: -80px; width: 200px; height: 200px; background: rgba(232,119,34,0.04); border-radius: 50%; filter: blur(60px); animation: drift 15s ease-in-out infinite; pointer-events: none; }
     .rt-deliver__inner { max-width: 1200px; margin: 0 auto; }
     .rt-deliver__header { text-align: center; margin-bottom: 4rem; }
-    .rt-deliver__grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1.5rem; counter-reset: cap-counter; }
-    .rt-cap-card { background: var(--card-bg); border-radius: 20px; padding: 2rem 1.8rem; border: 1px solid rgba(27,58,143,0.06); position: relative; overflow: hidden; transition: transform 0.4s cubic-bezier(0.22,1,0.36,1), box-shadow 0.4s, border-color 0.3s; display: flex; flex-direction: column; gap: 0.8rem; box-shadow: 0 4px 20px rgba(27,58,143,0.06); counter-increment: cap-counter; }
+    .rt-deliver__grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1.5rem; }
+    .rt-cap-card { background: var(--card-bg); border-radius: 20px; padding: 2rem 1.8rem; border: 1px solid rgba(27,58,143,0.06); position: relative; overflow: hidden; transition: transform 0.4s cubic-bezier(0.22,1,0.36,1), box-shadow 0.4s, border-color 0.3s; display: flex; flex-direction: column; gap: 0.8rem; box-shadow: 0 4px 20px rgba(27,58,143,0.06); }
     .rt-cap-card::before { content: ""; position: absolute; top: 0; left: 0; width: 100%; height: 3px; background: linear-gradient(90deg, var(--blue), var(--orange)); opacity: 0.5; transition: opacity 0.4s, height 0.4s; }
     .rt-cap-card:hover::before { opacity: 1; height: 4px; }
-    .rt-cap-card::after { content: "0" counter(cap-counter); position: absolute; bottom: 12px; right: 16px; font-family: "DM Serif Display", serif; font-size: 2.5rem; font-weight: 400; color: rgba(27,58,143,0.04); line-height: 1; pointer-events: none; transition: color 0.4s; }
-    .rt-cap-card:hover::after { color: rgba(27,58,143,0.08); }
+    .rt-cap-card::after { content: none; }
     .rt-cap-card:hover { transform: translateY(-8px); box-shadow: 0 20px 50px rgba(27,58,143,0.12); border-color: rgba(27,58,143,0.15); }
     .rt-cap-card__icon { width: 50px; height: 50px; background: linear-gradient(135deg, rgba(27,58,143,0.08), rgba(232,119,34,0.06)); border-radius: 14px; display: flex; align-items: center; justify-content: center; transition: background 0.3s, transform 0.3s; box-shadow: 0 2px 8px rgba(27,58,143,0.08); }
     .rt-cap-card:hover .rt-cap-card__icon { background: linear-gradient(135deg, var(--teal), var(--teal-dark)); transform: scale(1.1) rotate(-3deg); }

@@ -53,7 +53,7 @@ import { RouterLink } from '@angular/router';
             <img src="Images/image_024.jpg" alt="Remote Patient Monitoring AI" loading="lazy" />
           </div>
           <div class="rp-intro__float-card">
-            <div class="rp-intro__float-icon">ðŸ“¡</div>
+            <div class="rp-intro__float-icon"><i class="ph ph-broadcast"></i></div>
             <div class="rp-intro__float-text">
               <strong>Real-time Monitoring</strong>
               <span>AI-powered insights</span>
@@ -144,31 +144,31 @@ import { RouterLink } from '@angular/router';
         <h2 class="rp-section-heading">Business value</h2>
         <div class="rp-value__grid">
           <div class="rp-value-card">
-            <div class="rp-value-card__icon">ðŸ‘ï¸</div>
+            <div class="rp-value-card__icon"><i class="ph ph-eye"></i></div>
             <span>Provide real-time visibility into patient health status between clinical encounters.</span>
           </div>
           <div class="rp-value-card">
-            <div class="rp-value-card__icon">âš¡</div>
+            <div class="rp-value-card__icon"><i class="ph ph-lightning"></i></div>
             <span>Enable earlier identification of patient deterioration and accelerate clinical intervention.</span>
           </div>
           <div class="rp-value-card">
-            <div class="rp-value-card__icon">ðŸ“‰</div>
+            <div class="rp-value-card__icon"><i class="ph ph-trend-down"></i></div>
             <span>Reduce clinician burden by automating data interpretation, risk assessment, and routine monitoring activities.</span>
           </div>
           <div class="rp-value-card">
-            <div class="rp-value-card__icon">ðŸ¤</div>
+            <div class="rp-value-card__icon"><i class="ph ph-handshake"></i></div>
             <span>Improve care coordination and continuity through intelligent workflow orchestration across virtual and in-person care teams.</span>
           </div>
           <div class="rp-value-card">
-            <div class="rp-value-card__icon">ðŸ¥</div>
+            <div class="rp-value-card__icon"><i class="ph ph-hospital"></i></div>
             <span>Enhance chronic disease management and support better adherence to personalised care plans.</span>
           </div>
           <div class="rp-value-card">
-            <div class="rp-value-card__icon">ðŸ“ˆ</div>
+            <div class="rp-value-card__icon"><i class="ph ph-chart-line-up"></i></div>
             <span>Increase the scalability of Remote Patient Monitoring programmes without proportionally increasing staffing requirements.</span>
           </div>
           <div class="rp-value-card">
-            <div class="rp-value-card__icon">âœ…</div>
+            <div class="rp-value-card__icon"><i class="ph ph-check-circle"></i></div>
             <span>Improve patient engagement, clinical outcomes, and operational efficiency while reducing avoidable emergency visits, hospital admissions, and readmissions.</span>
           </div>
         </div>
@@ -262,7 +262,8 @@ import { RouterLink } from '@angular/router';
     .rp-intro__img img { width: 100%; height: auto; display: block; }
     .rp-intro__float-card { position: absolute; bottom: -30px; right: -20px; background: #fff; border-radius: 16px; padding: 1.1rem 1.4rem; box-shadow: 0 10px 40px rgba(0,0,0,0.1); display: flex; align-items: center; gap: 0.8rem; z-index: 2; animation: floatCard 4s ease-in-out infinite; }
     @keyframes floatCard { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-8px); } }
-    .rp-intro__float-icon { width: 44px; height: 44px; background: linear-gradient(135deg, var(--orange), #c96418); border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 1.2rem; }
+    .rp-intro__float-icon { width: 44px; height: 44px; background: linear-gradient(135deg, var(--orange), #c96418); border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 1.2rem; color: #fff; }
+    .rp-intro__float-icon i.ph { font-size: 1.4rem; line-height: 1; }
     .rp-intro__float-text strong { display: block; font-size: 0.85rem; color: var(--dark); }
     .rp-intro__float-text span { font-size: 0.75rem; color: var(--mid); }
     @media (max-width: 991px) { .rp-intro { padding: 4rem 1.5rem; } .rp-intro__grid { grid-template-columns: 1fr; gap: 2.5rem; } .rp-intro__float-card { right: 10px; bottom: -20px; } }
@@ -304,7 +305,8 @@ import { RouterLink } from '@angular/router';
     .rp-value__grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-top: 3rem; text-align: left; }
     .rp-value-card { background: #fff; border-radius: 16px; padding: 1.8rem 1.5rem; display: flex; align-items: flex-start; gap: 1rem; border: 1px solid rgba(232,119,34,0.1); transition: transform 0.3s, box-shadow 0.3s; }
     .rp-value-card:hover { transform: translateY(-6px); box-shadow: 0 14px 40px rgba(27,58,143,0.1); }
-    .rp-value-card__icon { width: 46px; height: 46px; flex-shrink: 0; background: linear-gradient(135deg, rgba(232,119,34,0.1), rgba(232,119,34,0.04)); border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 1.2rem; }
+    .rp-value-card__icon { width: 46px; height: 46px; flex-shrink: 0; background: linear-gradient(135deg, rgba(232,119,34,0.1), rgba(232,119,34,0.04)); border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 1.2rem; color: var(--orange); }
+    .rp-value-card__icon i.ph { font-size: 1.4rem; line-height: 1; }
     .rp-value-card span { font-size: 0.9rem; font-weight: 500; color: var(--dark); line-height: 1.6; }
     @media (max-width: 768px) { .rp-value { padding: 3.5rem 1.2rem; } .rp-value__grid { grid-template-columns: 1fr; } }
 
