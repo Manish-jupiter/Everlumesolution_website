@@ -247,6 +247,7 @@
   color: #e87722;
   display: block;
   margin-bottom: 0.5rem;
+  display: none;
 }
 
 .ev__focus-title {
