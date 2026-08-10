@@ -55,14 +55,16 @@ import { RouterLink } from '@angular/router';
         <span class="hc-intro__eyebrow">Agentic AI for Banking</span>
         <h2 class="hc-intro__heading">Enterprise-grade AI that <em>transforms</em> banking operations</h2>
         <p class="hc-intro__text">
-        Transform banking operations with intelligent AI agents that can reason, orchestrate, and execute complex business processes across risk management, compliance, operations, lending, and customer engagement. Our Agentic AI solutions enable banks and financial institutions to accelerate decision-making, enhance operational efficiency, strengthen regulatory compliance, and deliver exceptional customer experiences through secure, intelligent automationâ€”while maintaining robust human oversight and governance.
+        Transform banking operations with intelligent AI agents that can reason, orchestrate, and execute complex business processes across risk management, compliance, operations, lending, and customer engagement. Our Agentic AI solutions enable banks and financial institutions to accelerate decision-making, enhance operational efficiency, strengthen regulatory compliance, and deliver exceptional customer experiences through secure, intelligent automation ”while maintaining robust human oversight and governance. <button class="hc-intro__toggle" [style.display]="introExpanded ? 'none' : 'inline'" (click)="introExpanded = true">Read more ↓</button>
           </p>
+        <div class="hc-intro__more" [class.hc-intro__more--open]="introExpanded">
         <p class="hc-intro__text">
         We design and deploy enterprise-grade, banking-ready Agentic AI solutions that seamlessly integrate with core banking platforms, loan origination systems, payment networks, customer relationship management (CRM) applications, risk and compliance platforms, fraud management systems, and digital banking ecosystems. By intelligently coordinating activities across people, systems, and AI agents, our solutions streamline end-to-end workflows, eliminate operational silos, and enable faster, more informed business decisions. 
         </p>
         <p class="hc-intro__text">
-        From intelligent customer onboarding and Know Your Customer (KYC) verification to credit underwriting, fraud detection, anti-money laundering (AML) investigations, payment operations, regulatory reporting, collections, and customer service automation, our Agentic AI solutions optimise every stage of the banking value chain. Built on secure, scalable, and governance-first AI architectures, they empower financial institutions to reduce operational costs, improve productivity, strengthen risk management, and accelerate digital transformation while ensuring the highest standards of security, regulatory compliance, and responsible AI. 
+        From intelligent customer onboarding and Know Your Customer (KYC) verification to credit underwriting, fraud detection, anti-money laundering (AML) investigations, payment operations, regulatory reporting, collections, and customer service automation, our Agentic AI solutions optimise every stage of the banking value chain. Built on secure, scalable, and governance-first AI architectures, they empower financial institutions to reduce operational costs, improve productivity, strengthen risk management, and accelerate digital transformation while ensuring the highest standards of security, regulatory compliance, and responsible AI. <button class="hc-intro__toggle" [style.display]="introExpanded ? 'inline' : 'none'" (click)="introExpanded = false">Read less ↑</button>
         </p>
+        </div>
         <div class="hc-intro__actions">
           <a routerLink="/customer-delight" class="hc-intro__btn hc-intro__btn--primary">Customer Delight <svg width="14" height="14" viewBox="0 0 18 18" fill="none"><path d="M3.75 9H14.25M14.25 9L9.75 4.5M14.25 9L9.75 13.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
           <a routerLink="/who-we-serve/banking/banking-solutions" class="hc-intro__btn hc-intro__btn--outline">Our Solutions <svg width="14" height="14" viewBox="0 0 18 18" fill="none"><path d="M3.75 9H14.25M14.25 9L9.75 4.5M14.25 9L9.75 13.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
@@ -460,8 +462,8 @@ import { RouterLink } from '@angular/router';
 
     /* â”€â”€â”€ INTRO SECTION â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
     .hc-intro {
-      padding: 6rem 3rem;
-      padding-top: 7rem;
+      padding: 4rem 3rem;
+      padding-top: 5rem;
       max-width: 1200px;
       margin: 0 auto;
     }
@@ -510,6 +512,50 @@ import { RouterLink } from '@angular/router';
       gap: 1rem;
       margin-top: 1.2rem;
     }
+
+    .hc-intro__more {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.5s ease;
+    }
+    .hc-intro__more--open {
+      max-height: 1200px;
+    }
+    .hc-intro__toggle {
+      display: inline;
+      background: none;
+      border: none;
+      cursor: pointer;
+      color: var(--blue);
+      font-size: inherit;
+      font-weight: 600;
+      padding: 0;
+      margin-left: 0.2rem;
+      transition: color 0.2s;
+    }
+    .hc-intro__toggle:hover { color: var(--orange); }
+
+    .hc-intro__more {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.5s ease;
+    }
+    .hc-intro__more--open {
+      max-height: 1200px;
+    }
+    .hc-intro__toggle {
+      display: inline;
+      background: none;
+      border: none;
+      cursor: pointer;
+      color: var(--blue);
+      font-size: inherit;
+      font-weight: 600;
+      padding: 0;
+      margin-left: 0.2rem;
+      transition: color 0.2s;
+    }
+    .hc-intro__toggle:hover { color: var(--orange); }
 
     .hc-intro__btn {
       display: inline-flex;
@@ -744,7 +790,7 @@ import { RouterLink } from '@angular/router';
 
     /* â”€â”€â”€ WHAT WE DELIVER â€” CLICKABLE CARDS â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
     .hc-deliver {
-      padding: 6rem 3rem;
+      padding: 4rem 3rem;
       background: linear-gradient(180deg, rgba(27,58,143,0.04) 0%, var(--bg) 100%);
       position: relative;
       overflow: hidden;
@@ -757,7 +803,7 @@ import { RouterLink } from '@angular/router';
 
     .hc-deliver__header {
       text-align: center;
-      margin-bottom: 4rem;
+      margin-bottom: 2.5rem;
     }
 
     .hc-deliver__eyebrow {
@@ -917,7 +963,7 @@ import { RouterLink } from '@angular/router';
 
     /* â”€â”€â”€ WHY IT MATTERS â€” REDESIGNED â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
     .hc-why {
-      padding: 4rem 3rem;
+      padding: 3rem 3rem;
       background: linear-gradient(135deg, #060d1f 0%, #0a1635 40%, #0f1f4a 100%);
       position: relative;
       overflow: hidden;
@@ -1301,7 +1347,7 @@ import { RouterLink } from '@angular/router';
 
     /* â”€â”€â”€ OUTCOMES â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
     .hc-outcomes {
-      padding: 6rem 3rem;
+      padding: 4rem 3rem;
       background: linear-gradient(180deg, var(--bg) 0%, rgba(232,119,34,0.04) 100%);
       position: relative;
       overflow: hidden;
@@ -1658,7 +1704,7 @@ import { RouterLink } from '@angular/router';
     /* â”€â”€â”€ CTA BAND â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
     .hc-cta-band {
       background: linear-gradient(135deg, #142d6b 0%, #1B3A8F 100%);
-      padding: 4rem 3rem;
+      padding: 3rem 3rem;
       text-align: center;
       position: relative;
       overflow: hidden;
@@ -2330,6 +2376,7 @@ import { RouterLink } from '@angular/router';
 })
 
 export class Banking implements AfterViewInit, OnDestroy  {
+  introExpanded = false;
   private carouselTimer: any;
   private revealObserver: IntersectionObserver | null = null;
   private counterObserver: IntersectionObserver | null = null;

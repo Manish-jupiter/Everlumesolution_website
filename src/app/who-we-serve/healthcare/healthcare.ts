@@ -61,14 +61,16 @@ import { RouterLink } from '@angular/router';
         <span class="hc-intro__eyebrow">About Our Service</span>
         <h2 class="hc-intro__heading">Enterprise-grade AI that <em>transforms</em> healthcare operations</h2>
         <p class="hc-intro__text">
-          Transform healthcare operations with intelligent AI agents capable of reasoning, orchestrating, and executing complex workflows autonomously. Our Agentic AI services empower healthcare providers, payers, and health technology organizations to streamline patient engagement, optimise administrative processes, and enhance operational performanceâ€”while ensuring appropriate human oversight and governance.
+          Transform healthcare operations with intelligent AI agents capable of reasoning, orchestrating, and executing complex workflows autonomously. Our Agentic AI services empower healthcare providers, payers, and health technology organizations to streamline patient engagement, optimise administrative processes, and enhance operational performanceâ€”while ensuring appropriate human oversight and governance. <button class="hc-intro__toggle" [style.display]="introExpanded ? 'none' : 'inline'" (click)="introExpanded = true">Read more ↓</button>
         </p>
-        <p class="hc-intro__text">
-          We design and deploy enterprise-grade, healthcare-ready agentic AI solutions that seamlessly integrate with EHRs, revenue cycle management platforms, claims processing systems, scheduling applications, and customer support ecosystems.
-        </p>
-        <p class="hc-intro__text">
-          Built on secure, scalable, and compliant AI architectures, our solutions enable healthcare organisations to reduce operational costs, improve workforce productivity, enhance patient experiences, and achieve measurable business outcomes while maintaining the highest standards of security, privacy, and regulatory compliance.
-        </p>
+        <div class="hc-intro__more" [class.hc-intro__more--open]="introExpanded">
+          <p class="hc-intro__text">
+            We design and deploy enterprise-grade, healthcare-ready agentic AI solutions that seamlessly integrate with EHRs, revenue cycle management platforms, claims processing systems, scheduling applications, and customer support ecosystems.
+          </p>
+          <p class="hc-intro__text">
+            Built on secure, scalable, and compliant AI architectures, our solutions enable healthcare organisations to reduce operational costs, improve workforce productivity, enhance patient experiences, and achieve measurable business outcomes while maintaining the highest standards of security, privacy, and regulatory compliance. <button class="hc-intro__toggle" [style.display]="introExpanded ? 'inline' : 'none'" (click)="introExpanded = false">Read less ↑</button>
+          </p>
+        </div>
         <a routerLink="/customer-delight" class="hc-intro__btn">
           Customer Delight
           <svg width="16" height="16" viewBox="0 0 18 18" fill="none"><path d="M3.75 9H14.25M14.25 9L9.75 4.5M14.25 9L9.75 13.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
@@ -513,8 +515,8 @@ import { RouterLink } from '@angular/router';
 
     /* â”€â”€â”€ INTRO SECTION â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
     .hc-intro {
-      padding: 6rem 3rem;
-      padding-top: 7rem;
+      padding: 4rem 3rem;
+      padding-top: 5rem;
       max-width: 1200px;
       margin: 0 auto;
     }
@@ -556,6 +558,28 @@ import { RouterLink } from '@angular/router';
       line-height: 1.85;
       margin-bottom: 1.2rem;
     }
+
+    .hc-intro__more {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.5s ease;
+    }
+    .hc-intro__more--open {
+      max-height: 1200px;
+    }
+    .hc-intro__toggle {
+      display: inline;
+      background: none;
+      border: none;
+      cursor: pointer;
+      color: var(--blue);
+      font-size: inherit;
+      font-weight: 600;
+      padding: 0;
+      margin-left: 0.2rem;
+      transition: color 0.2s;
+    }
+    .hc-intro__toggle:hover { color: var(--orange); }
 
     .hc-intro__btn {
       display: inline-flex;
@@ -778,7 +802,7 @@ import { RouterLink } from '@angular/router';
 
     /* â”€â”€â”€ WHAT WE DELIVER â€” CLICKABLE CARDS â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
     .hc-deliver {
-      padding: 6rem 3rem;
+      padding: 4rem 3rem;
       background: linear-gradient(180deg, rgba(27,58,143,0.04) 0%, var(--bg) 100%);
       position: relative;
       overflow: hidden;
@@ -791,7 +815,7 @@ import { RouterLink } from '@angular/router';
 
     .hc-deliver__header {
       text-align: center;
-      margin-bottom: 4rem;
+      margin-bottom: 2.5rem;
     }
 
     .hc-deliver__eyebrow {
@@ -929,7 +953,7 @@ import { RouterLink } from '@angular/router';
 
     /* â”€â”€â”€ WHY IT MATTERS â€” REDESIGNED â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
     .hc-why {
-      padding: 4rem 3rem;
+      padding: 3rem 3rem;
       background: linear-gradient(135deg, #060d1f 0%, #0a1635 40%, #0f1f4a 100%);
       position: relative;
       overflow: hidden;
@@ -1289,7 +1313,7 @@ import { RouterLink } from '@angular/router';
 
     /* â”€â”€â”€ OUTCOMES â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
     .hc-outcomes {
-      padding: 6rem 3rem;
+      padding: 4rem 3rem;
       background: linear-gradient(180deg, var(--bg) 0%, rgba(232,119,34,0.04) 100%);
       position: relative;
       overflow: hidden;
@@ -1392,7 +1416,7 @@ import { RouterLink } from '@angular/router';
     /* â”€â”€â”€ CTA BAND â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
     .hc-cta-band {
       background: linear-gradient(135deg, #142d6b 0%, #1B3A8F 100%);
-      padding: 4rem 3rem;
+      padding: 3rem 3rem;
       text-align: center;
       position: relative;
       overflow: hidden;
@@ -1714,6 +1738,7 @@ import { RouterLink } from '@angular/router';
   ],
 })
 export class Healthcare implements AfterViewInit, OnDestroy {
+  introExpanded = false;
   private carouselTimer: any;
   private revealObserver: IntersectionObserver | null = null;
   private counterObserver: IntersectionObserver | null = null;

@@ -42,9 +42,11 @@ import { RouterLink } from '@angular/router';
         <div class="rt-intro__text" data-reveal-left>
           <span class="rt-eyebrow">Overview</span>
           <h2 class="rt-section-heading">Intelligent AI agents that <em>transform</em> retail operations</h2>
-          <p>Our Agentic AI solutions empower retailers to deliver personalised shopping experiences, optimise inventory, accelerate fulfilment, and improve operational efficiency through intelligent automationâ€”while maintaining robust human oversight and governance.</p>
+          <p>Our Agentic AI solutions empower retailers to deliver personalised shopping experiences, optimise inventory, accelerate fulfilment, and improve operational efficiency through intelligent automationâ€”while maintaining robust human oversight and governance. <button class="rt-intro__toggle" [style.display]="introExpanded ? 'none' : 'inline'" (click)="introExpanded = true">Read more ↓</button></p>
+          <div class="rt-intro__more" [class.rt-intro__more--open]="introExpanded">
           <p>We design and deploy enterprise-grade, retail-ready Agentic AI solutions that seamlessly integrate with eCommerce platforms, point-of-sale (POS) systems, customer relationship management (CRM) applications, inventory management solutions, order management systems (OMS), warehouse management systems (WMS), merchandising platforms, and customer support ecosystems. By intelligently coordinating activities across people, systems, and AI agents, our solutions eliminate operational silos, streamline end-to-end retail workflows, and enable faster, more informed business decisions.</p>
-          <p>From personalised product discovery and customer engagement to demand forecasting, inventory optimisation, order fulfilment, returns management, pricing intelligence, and customer service automation, our Agentic AI solutions optimise every stage of the retail value chain. Built on secure, scalable, and governance-first AI architectures, they enable retailers to increase conversion rates, improve customer loyalty, enhance supply chain agility, reduce operational costs, and deliver consistent omnichannel experiences while maintaining the highest standards of security, data privacy, and responsible AI.</p>
+          <p>From personalised product discovery and customer engagement to demand forecasting, inventory optimisation, order fulfilment, returns management, pricing intelligence, and customer service automation, our Agentic AI solutions optimise every stage of the retail value chain. Built on secure, scalable, and governance-first AI architectures, they enable retailers to increase conversion rates, improve customer loyalty, enhance supply chain agility, reduce operational costs, and deliver consistent omnichannel experiences while maintaining the highest standards of security, data privacy, and responsible AI. <button class="rt-intro__toggle" [style.display]="introExpanded ? 'inline' : 'none'" (click)="introExpanded = false">Read less ↑</button></p>
+          </div>
           <div class="rt-intro__actions">
             <a routerLink="/customer-delight" class="rt-intro__btn rt-intro__btn--primary">Customer Delight</a>
             <a routerLink="/who-we-serve/retail/retail-solutions" class="rt-intro__btn rt-intro__btn--outline">Our Solutions <svg width="14" height="14" viewBox="0 0 18 18" fill="none"><path d="M3.75 9H14.25M14.25 9L9.75 4.5M14.25 9L9.75 13.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
@@ -294,6 +296,10 @@ import { RouterLink } from '@angular/router';
     .rt-intro__dots { position: absolute; bottom: -40px; left: -40px; width: 150px; height: 150px; background-image: radial-gradient(circle, rgba(232,119,34,0.2) 1.5px, transparent 1.5px); background-size: 16px 16px; opacity: 0.6; pointer-events: none; animation: float 10s ease-in-out infinite; }
     .rt-intro__grid { display: grid; grid-template-columns: 1.3fr 1fr; gap: 5rem; align-items: center; }
     .rt-intro__text p { font-size: 1rem; color: #444; line-height: 1.85; margin-bottom: 1.2rem; }
+    .rt-intro__more { max-height: 0; overflow: hidden; transition: max-height 0.5s ease; }
+    .rt-intro__more--open { max-height: 1200px; }
+    .rt-intro__toggle { display: inline; background: none; border: none; cursor: pointer; color: var(--blue); font-size: inherit; font-weight: 600; padding: 0; margin-left: 0.2rem; transition: color 0.2s; }
+    .rt-intro__toggle:hover { color: var(--orange); }
     .rt-intro__visual { position: relative; padding: 2rem; }
     .rt-intro__ring { position: absolute; top: -10px; right: -10px; width: 280px; height: 280px; border: 2px dashed rgba(27,58,143,0.1); border-radius: 50%; animation: spinSlow 35s linear infinite; pointer-events: none; }
     .rt-intro__ring::after { content: ""; position: absolute; top: -5px; left: 50%; width: 10px; height: 10px; background: var(--orange); border-radius: 50%; box-shadow: 0 0 16px rgba(232,119,34,0.5); }
@@ -439,6 +445,7 @@ import { RouterLink } from '@angular/router';
   `],
 })
 export class Retail implements AfterViewInit, OnDestroy {
+  introExpanded = false;
   private revealObserver: IntersectionObserver | null = null;
 
   constructor(private el: ElementRef) {}

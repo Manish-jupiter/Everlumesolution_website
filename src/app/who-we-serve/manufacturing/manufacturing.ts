@@ -42,9 +42,11 @@ import { RouterLink } from '@angular/router';
         <div class="mf-intro__text" data-reveal-left>
           <span class="mf-eyebrow">Overview</span>
           <h2 class="mf-section-heading">Intelligent AI agents that <em>orchestrate</em> manufacturing operations</h2>
-          <p>Our Agentic AI solutions empower manufacturers to optimise production, enhance operational resilience, improve product quality, and accelerate decision-making through secure, intelligent automationâ€”while maintaining robust human oversight and governance.</p>
+          <p>Our Agentic AI solutions empower manufacturers to optimise production, enhance operational resilience, improve product quality, and accelerate decision-making through secure, intelligent automationâ€”while maintaining robust human oversight and governance. <button class="mf-intro__toggle" [style.display]="introExpanded ? 'none' : 'inline'" (click)="introExpanded = true">Read more ↓</button></p>
+          <div class="mf-intro__more" [class.mf-intro__more--open]="introExpanded">
           <p>We design and deploy enterprise-grade, manufacturing-ready Agentic AI solutions that seamlessly integrate with Enterprise Resource Planning (ERP) systems, Manufacturing Execution Systems (MES), Supply Chain Management (SCM) platforms, Industrial IoT (IIoT) devices, Computerised Maintenance Management Systems (CMMS), Product Lifecycle Management (PLM) applications, quality management systems, and plant operations environments. By intelligently coordinating activities across people, machines, enterprise systems, and AI agents, our solutions eliminate operational silos, streamline end-to-end manufacturing processes, and enable faster, data-driven decisions across the production ecosystem.</p>
-          <p>From predictive maintenance and production scheduling to quality assurance, inventory optimisation, supplier collaboration, warehouse operations, and supply chain orchestration, our Agentic AI solutions optimise every stage of the manufacturing value chain. Built on secure, scalable, and governance-first AI architectures, they enable manufacturers to reduce downtime, increase asset utilisation, improve product quality, strengthen supply chain resilience, lower operating costs, and accelerate digital transformation while maintaining the highest standards of operational safety, regulatory compliance, and responsible AI.</p>
+          <p>From predictive maintenance and production scheduling to quality assurance, inventory optimisation, supplier collaboration, warehouse operations, and supply chain orchestration, our Agentic AI solutions optimise every stage of the manufacturing value chain. Built on secure, scalable, and governance-first AI architectures, they enable manufacturers to reduce downtime, increase asset utilisation, improve product quality, strengthen supply chain resilience, lower operating costs, and accelerate digital transformation while maintaining the highest standards of operational safety, regulatory compliance, and responsible AI. <button class="mf-intro__toggle" [style.display]="introExpanded ? 'inline' : 'none'" (click)="introExpanded = false">Read less ↑</button></p>
+          </div>
           <div class="mf-intro__actions">
             <a routerLink="/customer-delight" class="mf-intro__btn mf-intro__btn--primary">Customer Delight</a>
             <a routerLink="/what-we-offer" class="mf-intro__btn mf-intro__btn--outline">Our Solutions <svg width="14" height="14" viewBox="0 0 18 18" fill="none"><path d="M3.75 9H14.25M14.25 9L9.75 4.5M14.25 9L9.75 13.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
@@ -337,6 +339,10 @@ import { RouterLink } from '@angular/router';
     .mf-intro__dots { position: absolute; bottom: -40px; left: -40px; width: 150px; height: 150px; background-image: radial-gradient(circle, rgba(232,119,34,0.2) 1.5px, transparent 1.5px); background-size: 16px 16px; opacity: 0.6; pointer-events: none; animation: float 10s ease-in-out infinite; }
     .mf-intro__grid { display: grid; grid-template-columns: 1.3fr 1fr; gap: 5rem; align-items: center; }
     .mf-intro__text p { font-size: 1rem; color: #444; line-height: 1.85; margin-bottom: 1.2rem; }
+    .mf-intro__more { max-height: 0; overflow: hidden; transition: max-height 0.5s ease; }
+    .mf-intro__more--open { max-height: 1200px; }
+    .mf-intro__toggle { display: inline; background: none; border: none; cursor: pointer; color: var(--blue); font-size: inherit; font-weight: 600; padding: 0; margin-left: 0.2rem; transition: color 0.2s; }
+    .mf-intro__toggle:hover { color: var(--orange); }
     .mf-intro__visual { position: relative; padding: 2rem; }
     .mf-intro__ring { position: absolute; top: -10px; right: -10px; width: 280px; height: 280px; border: 2px dashed rgba(27,58,143,0.1); border-radius: 50%; animation: spinSlow 35s linear infinite; pointer-events: none; }
     .mf-intro__ring::after { content: ""; position: absolute; top: -5px; left: 50%; width: 10px; height: 10px; background: var(--orange); border-radius: 50%; box-shadow: 0 0 16px rgba(232,119,34,0.5); }
@@ -478,6 +484,7 @@ import { RouterLink } from '@angular/router';
   `],
 })
 export class Manufacturing implements AfterViewInit, OnDestroy {
+  introExpanded = false;
   private revealObserver: IntersectionObserver | null = null;
 
   constructor(private el: ElementRef) {}
