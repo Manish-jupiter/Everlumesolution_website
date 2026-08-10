@@ -18,7 +18,7 @@ import { RouterLink } from '@angular/router';
     <!-- â”€â”€â”€ HERO â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ -->
     <section class="co-hero">
       <div class="co-hero__bg">
-        <img src="Images/image_042.jpg" alt="Clinical and Operational Workflow Orchestration" />
+        <img src="Images/image_046.jpg" alt="Clinical and Operational Workflow Orchestration" />
         <div class="co-hero__overlay"></div>
       </div>
       <div class="co-hero__abstract-ring"></div>

@@ -14,6 +14,7 @@ import { RouterLink } from '@angular/router';
     </div>
 
     <header class="ra-header">
+      <div class="ra-header__bg"><img src="Images/image_019.jpg" alt="KYC compliance team" /><div class="ra-header__overlay"></div></div>
       <div class="ra-header__glow-1"></div>
       <div class="ra-header__glow-2"></div>
       <div class="ra-header__grid-bg"></div>
@@ -107,7 +108,7 @@ import { RouterLink } from '@angular/router';
     .breadcrumb-bar a, .breadcrumb-bar span { color: rgba(255,255,255,0.6); font-size: 0.8rem; font-weight: 500; text-decoration: none; }
     .breadcrumb-bar a:hover { color: #fff; } .breadcrumb-bar .sep { color: rgba(255,255,255,0.25); } .breadcrumb-bar .current { color: var(--orange); font-weight: 600; }
     @media (max-width: 768px) { .breadcrumb-bar { padding: 0.55rem 1rem; margin-top: 58px; } }
-    .ra-header { background: linear-gradient(135deg,#060d1f 0%,#0f1f4a 60%,#1B3A8F 100%); padding: 5rem 3rem; position: relative; overflow: hidden; text-align: center; }
+    .ra-header { padding: 5rem 3rem; position: relative; overflow: hidden; text-align: center; }    .ra-header__bg { position: absolute; inset: 0; z-index: 0; }    .ra-header__bg img { width: 100%; height: 100%; object-fit: cover; }    .ra-header__overlay { position: absolute; inset: 0; background: linear-gradient(135deg,rgba(6,13,31,0.90) 0%,rgba(15,31,74,0.82) 60%,rgba(27,58,143,0.70) 100%); }
     .ra-header__grid-bg { position: absolute; inset: 0; background-image: linear-gradient(rgba(255,255,255,0.03) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,0.03) 1px,transparent 1px); background-size: 50px 50px; pointer-events: none; }
     .ra-header__glow-1 { position: absolute; width: 450px; height: 450px; border-radius: 50%; background: radial-gradient(circle,rgba(232,119,34,0.14) 0%,transparent 70%); top: -150px; right: -100px; pointer-events: none; }
     .ra-header__glow-2 { position: absolute; width: 300px; height: 300px; border-radius: 50%; background: radial-gradient(circle,rgba(123,163,255,0.1) 0%,transparent 70%); bottom: -100px; left: -60px; pointer-events: none; }

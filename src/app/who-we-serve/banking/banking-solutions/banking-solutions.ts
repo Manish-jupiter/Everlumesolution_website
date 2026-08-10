@@ -15,6 +15,7 @@ import { RouterLink } from '@angular/router';
 
     <!-- PAGE HEADER -->
     <header class="bs-header">
+      <div class="bs-header__bg"><img src="Images/image_004.jpg" alt="Global banking solutions" /><div class="bs-header__overlay"></div></div>
       <div class="bs-header__grid-bg"></div>
       <div class="bs-header__glow-1"></div>
       <div class="bs-header__glow-2"></div>
@@ -70,7 +71,7 @@ import { RouterLink } from '@angular/router';
     @media (max-width: 768px) { .breadcrumb-bar { padding: 0.55rem 1rem; margin-top: 58px; } }
 
     /* HEADER */
-    .bs-header { background: linear-gradient(135deg, #060d1f 0%, #0f1f4a 60%, #1B3A8F 100%); padding: 5rem 3rem 4.5rem; position: relative; overflow: hidden; text-align: center; }
+    .bs-header { padding: 5rem 3rem 4.5rem; position: relative; overflow: hidden; text-align: center; }    .bs-header__bg { position: absolute; inset: 0; z-index: 0; }    .bs-header__bg img { width: 100%; height: 100%; object-fit: cover; }    .bs-header__overlay { position: absolute; inset: 0; background: linear-gradient(135deg,rgba(6,13,31,0.90) 0%,rgba(15,31,74,0.82) 60%,rgba(27,58,143,0.70) 100%); }
     .bs-header__grid-bg { position: absolute; inset: 0; background-image: linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px); background-size: 50px 50px; pointer-events: none; }
     .bs-header__glow-1 { position: absolute; width: 450px; height: 450px; border-radius: 50%; background: radial-gradient(circle, rgba(232,119,34,0.14) 0%, transparent 70%); top: -150px; right: -80px; pointer-events: none; }
     .bs-header__glow-2 { position: absolute; width: 300px; height: 300px; border-radius: 50%; background: radial-gradient(circle, rgba(123,163,255,0.1) 0%, transparent 70%); bottom: -80px; left: -60px; pointer-events: none; }
