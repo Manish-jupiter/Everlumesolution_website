@@ -30,7 +30,7 @@ import { RouterLink } from '@angular/router';
           <p>The result is a new generation of intelligent digital products that leverage the power of AI and data to deliver richer user experiences, smarter business processes, personalised interactions, and continuous innovation — creating sustainable competitive advantage and long-term business value.</p>
         </div>
         <div class="dp-sub-body__image">
-          <img src="Images/image_046.jpg" alt="AI Data Integration" loading="lazy" />
+          <img src="Images/image_005.jpg" alt="AI Data Integration" loading="lazy" />
         </div>
       </div>
     </section>

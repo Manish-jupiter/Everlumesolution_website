@@ -31,7 +31,7 @@ import { RouterLink } from '@angular/router';
           <p>The result is an intelligent and insight-driven revenue cycle operation where data powers strategy, improves execution, accelerates financial performance, and supports sustainable operational excellence.</p>
         </div>
         <div class="dp-sub-body__image">
-          <img src="Images/image_054.jpg" alt="KPI Analytics" loading="lazy" />
+          <img src="Images/image_005.jpg" alt="KPI Analytics" loading="lazy" />
         </div>
       </div>
     </section>

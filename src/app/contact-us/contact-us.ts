@@ -160,24 +160,7 @@ import { RouterLink } from '@angular/router';
                 <a href="mailto:contact@everlume.com">contact&#64;everlume.com</a>
               </div>
             </div>
-            <div class="cu-contact-item">
-              <div class="cu-contact-item__icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13.5 19.79 19.79 0 0 1 1.61 5a2 2 0 0 1 1.95-2.18h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 10a16 16 0 0 0 6 6l.9-.9a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-              </div>
-              <div>
-                <span>Phone</span>
-                <a href="tel:+10000000000">+1 (000) 000-0000</a>
-              </div>
-            </div>
-            <div class="cu-contact-item">
-              <div class="cu-contact-item__icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-              </div>
-              <div>
-                <span>Business Hours</span>
-                <p>Mon – Fri, 9:00 AM – 6:00 PM</p>
-              </div>
-            </div>
+           
           </div>
         </aside>
 
@@ -444,7 +427,7 @@ import { RouterLink } from '@angular/router';
 .cu-hero__heading { font-family: 'DM Serif Display',serif; font-size: clamp(2.2rem,4.5vw,3.6rem); line-height: 1.07; color: #142d6b; margin: 0 0 1rem; }
 .cu-hero__heading em { font-style: italic; color: var(--orange); }
 .cu-hero__sub { max-width: 62ch; color: #4a5568; line-height: 1.72; margin: 0 0 2.2rem; font-size: 1.05rem; }
-.cu-hero__stats { display: flex; flex-wrap: wrap; gap: 1rem 2.5rem; }
+.cu-hero__stats { display: flex; flex-wrap: nowrap; gap: 1rem 2.5rem; }
 .cu-stat__value { display: block; font-family: 'DM Serif Display',serif; font-size: 1.85rem; color: #142d6b; line-height: 1; }
 .cu-stat__label { display: block; font-size: 0.8rem; color: #6b7a99; text-transform: uppercase; letter-spacing: 0.1em; margin-top: 0.28rem; }
 .cu-hero__visual { display: flex; align-items: center; justify-content: center; }

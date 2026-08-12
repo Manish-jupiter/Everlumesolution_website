@@ -30,7 +30,7 @@ import { RouterLink } from '@angular/router';
           <p>The result is a future-ready digital platform that delivers superior performance, accelerated time-to-market, operational efficiency, and the scalability required to support business growth, evolving customer expectations, and continuous innovation.</p>
         </div>
         <div class="dp-sub-body__image">
-          <img src="Images/image_052.jpg" alt="Cloud Native Apps" loading="lazy" />
+          <img src="Images/image_004.jpg" alt="Cloud Native Apps" loading="lazy" />
         </div>
       </div>
     </section>

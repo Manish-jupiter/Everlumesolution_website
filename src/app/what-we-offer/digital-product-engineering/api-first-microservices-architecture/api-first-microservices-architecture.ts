@@ -30,7 +30,7 @@ import { RouterLink } from '@angular/router';
           <p>The result is a highly scalable, resilient, and extensible digital architecture that accelerates product innovation, simplifies enterprise integration, reduces technical debt, and provides a robust foundation for sustainable business growth and continuous digital transformation.</p>
         </div>
         <div class="dp-sub-body__image">
-          <img src="Images/image_048.jpg" alt="API Microservices" loading="lazy" />
+          <img src="Images/image_007.jpg" alt="API Microservices" loading="lazy" />
         </div>
       </div>
     </section>

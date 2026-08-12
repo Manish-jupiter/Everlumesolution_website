@@ -3920,6 +3920,7 @@ body.body--menu-open .nav.nav--scrolled {
     gap: 0.6rem;
     text-align: center;
     font-size: 0.72rem;
+    padding-bottom: 80px;
   }
   .site-footer__legal {
     flex-wrap: wrap;

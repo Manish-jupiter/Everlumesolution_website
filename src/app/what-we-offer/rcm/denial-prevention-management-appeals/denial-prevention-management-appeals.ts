@@ -31,7 +31,7 @@ import { RouterLink } from '@angular/router';
           <p>The result is a proactive, data-driven denial management operation that reduces avoidable denials, improves appeal success rates, accelerates revenue recovery, minimises revenue leakage, and strengthens the overall efficiency, resilience, and financial health of the revenue cycle.</p>
         </div>
         <div class="dp-sub-body__image">
-          <img src="Images/image_029.jpg" alt="Denial Management" loading="lazy" />
+          <img src="Images/image_016.jpg" alt="Denial Management" loading="lazy" />
         </div>
       </div>
     </section>

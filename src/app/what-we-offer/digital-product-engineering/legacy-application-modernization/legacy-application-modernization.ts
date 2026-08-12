@@ -30,7 +30,7 @@ import { RouterLink } from '@angular/router';
           <p>The result is a modern, scalable, and future-ready application landscape that reduces technical debt, lowers operational costs, improves system performance, enhances developer productivity, and provides a resilient foundation for continuous innovation and digital transformation.</p>
         </div>
         <div class="dp-sub-body__image">
-          <img src="Images/image_059.jpg" alt="Application Modernization" loading="lazy" />
+          <img src="Images/image_022.jpg" alt="Application Modernization" loading="lazy" />
         </div>
       </div>
     </section>

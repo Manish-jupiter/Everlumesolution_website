@@ -15,6 +15,7 @@ import { RouterLink } from '@angular/router';
 
     <!-- PAGE HEADER -->
     <header class="ra-header">
+      <div class="ra-header__bg"><img src="Images/image_004.jpg" alt="Retail" /><div class="ra-header__overlay"></div></div>
       <div class="ra-header__glow-1"></div>
       <div class="ra-header__glow-2"></div>
       <div class="ra-header__grid-bg"></div>
@@ -33,10 +34,11 @@ import { RouterLink } from '@angular/router';
     <section class="ra-overview">
       <div class="ra-overview__inner">
         <span class="ra-eyebrow">Overview</span>
-        <div class="ra-overview__body">
+        <div class="ra-overview__body"><div class="ra-overview__text">
           <p>Deliver highly engaging, context-aware retail experiences with an intelligent <strong>Personalized Shopping Agent</strong> that understands customer intent, orchestrates personalised interactions, and dynamically guides shoppers throughout their buying journey. Powered by Agentic AI, the solution continuously analyses customer behaviour, preferences, and real-time engagement signals to provide tailored recommendations, relevant offers, and proactive assistance that increase conversion, strengthen customer loyalty, and maximise lifetime value.</p>
           <p>The solution integrates seamlessly with eCommerce platforms, Customer Relationship Management (CRM) systems, Point of Sale (POS) applications, merchandising platforms, customer data platforms (CDPs), loyalty programmes, and marketing automation tools to create a unified personalisation orchestration layer. By combining browsing history, purchase behaviour, product interactions, customer preferences, inventory availability, and live journey context, the agent continuously adapts recommendations and customer experiences across digital and in-store channels. It proactively supports product discovery, delivers personalised promotions, identifies upsell and cross-sell opportunities, and coordinates customer engagement throughout the shopping journey while escalating complex enquiries to human advisors when appropriate.</p>
         </div>
+          <div class="ra-overview__img"><img src="Images/image_005.jpg" alt="Personalised shopping analytics" loading="lazy" /></div></div>
       </div>
     </section>
 
@@ -114,8 +116,8 @@ import { RouterLink } from '@angular/router';
     .breadcrumb-bar a, .breadcrumb-bar span { color: rgba(255,255,255,0.6); font-size: 0.8rem; font-weight: 500; text-decoration: none; }
     .breadcrumb-bar a:hover { color: #fff; } .breadcrumb-bar .sep { color: rgba(255,255,255,0.25); } .breadcrumb-bar .current { color: var(--orange); font-weight: 600; }
     @media (max-width: 768px) { .breadcrumb-bar { padding: 0.55rem 1rem; margin-top: 58px; } }
-    .ra-header { background: linear-gradient(135deg,#060d1f 0%,#0f1f4a 60%,#1B3A8F 100%); padding: 5rem 3rem; position: relative; overflow: hidden; text-align: center; }
-    .ra-header__grid-bg { position: absolute; inset: 0; background-image: linear-gradient(rgba(255,255,255,0.03) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,0.03) 1px,transparent 1px); background-size: 50px 50px; pointer-events: none; }
+    .ra-header { padding: 5rem 3rem; position: relative; overflow: hidden; text-align: center; }
+    .ra-header__bg { position: absolute; inset: 0; } .ra-header__bg img { width: 100%; height: 100%; object-fit: cover; display: block; } .ra-header__overlay { position: absolute; inset: 0; background: linear-gradient(135deg,rgba(6,13,31,.88) 0%,rgba(27,58,143,.78) 100%); } .ra-header__grid-bg { position: absolute; inset: 0; background-image: linear-gradient(rgba(255,255,255,0.03) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,0.03) 1px,transparent 1px); background-size: 50px 50px; pointer-events: none; }
     .ra-header__glow-1 { position: absolute; width: 450px; height: 450px; border-radius: 50%; background: radial-gradient(circle,rgba(232,119,34,0.14) 0%,transparent 70%); top: -150px; right: -100px; pointer-events: none; }
     .ra-header__glow-2 { position: absolute; width: 300px; height: 300px; border-radius: 50%; background: radial-gradient(circle,rgba(123,163,255,0.1) 0%,transparent 70%); bottom: -100px; left: -60px; pointer-events: none; }
     .ra-header__inner { position: relative; z-index: 2; max-width: 820px; margin: 0 auto; }
@@ -135,8 +137,8 @@ import { RouterLink } from '@angular/router';
     .ra-section-heading--light { color: #fff; }
     .ra-overview { padding: 5rem 3rem; background: var(--bg); }
     .ra-overview__inner { max-width: 900px; margin: 0 auto; }
-    .ra-overview__body p { font-size: 1rem; color: #444; line-height: 1.85; margin-bottom: 1.2rem; }
-    .ra-overview__body p:last-child { margin-bottom: 0; }
+    .ra-overview__body { display: grid; grid-template-columns: 1fr 300px; gap: 3rem; align-items: start; } .ra-overview__text p { font-size: 1rem; color: #444; line-height: 1.85; margin-bottom: 1.2rem; } .ra-overview__img { border-radius: 16px; overflow: hidden; box-shadow: 0 12px 40px rgba(27,58,143,.12); } .ra-overview__img img { width: 100%; height: 280px; object-fit: cover; display: block; }
+    .ra-overview__text p:last-child { margin-bottom: 0; }
     @media (max-width: 768px) { .ra-overview { padding: 3.5rem 1.5rem; } }
     .ra-caps { padding: 6rem 3rem; background: #fff; position: relative; overflow: hidden; }
     .ra-caps__ring { position: absolute; top: -80px; right: -80px; width: 300px; height: 300px; border: 1.5px solid rgba(27,58,143,0.06); border-radius: 50%; animation: spinSlow 40s linear infinite; pointer-events: none; }

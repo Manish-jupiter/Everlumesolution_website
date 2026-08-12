@@ -29,7 +29,7 @@ import { RouterLink } from '@angular/router';
           <p>The outcome is a comprehensive product strategy and execution roadmap that defines product vision, prioritised initiatives, delivery milestones, technology considerations, and success metrics. Rather than focusing solely on feature delivery, we help organisations build products that solve meaningful customer problems, adapt to changing market conditions, and create sustainable competitive advantage.</p>
         </div>
         <div class="dp-sub-body__image">
-          <img src="Images/image_026.jpg" alt="Product Strategy" loading="lazy" />
+          <img src="Images/image_019.jpg" alt="Product Strategy" loading="lazy" />
         </div>
       </div>
     </section>

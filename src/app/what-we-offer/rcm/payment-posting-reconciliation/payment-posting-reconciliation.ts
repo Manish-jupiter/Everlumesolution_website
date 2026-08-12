@@ -30,7 +30,7 @@ import { RouterLink } from '@angular/router';
           <p>The result is a highly accurate, efficient, and transparent payment posting and reconciliation operation that improves financial visibility, accelerates cash application, reduces reconciliation effort, strengthens revenue integrity, and provides healthcare organisations with a reliable financial foundation for sustained operational and financial excellence.</p>
         </div>
         <div class="dp-sub-body__image">
-          <img src="Images/image_046.jpg" alt="Payment Reconciliation" loading="lazy" />
+          <img src="Images/image_022.jpg" alt="Payment Reconciliation" loading="lazy" />
         </div>
       </div>
     </section>

@@ -30,7 +30,7 @@ import { RouterLink } from '@angular/router';
           <p>The result is a validated, user-centric product experience that accelerates development, improves customer adoption, enhances user satisfaction, and provides a strong foundation for scalable, high-performing digital products.</p>
         </div>
         <div class="dp-sub-body__image">
-          <img src="Images/image_034.jpg" alt="UX UI Design" loading="lazy" />
+          <img src="Images/image_008.jpg" alt="UX UI Design" loading="lazy" />
         </div>
       </div>
     </section>

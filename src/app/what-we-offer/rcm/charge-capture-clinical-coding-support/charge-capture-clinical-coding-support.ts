@@ -30,7 +30,7 @@ import { RouterLink } from '@angular/router';
           <p>The result is a highly accurate, compliant, and efficient charge capture and coding operation that strengthens revenue integrity, improves reimbursement outcomes, reduces audit and compliance risk, and provides healthcare organisations with a solid foundation for sustainable financial performance.</p>
         </div>
         <div class="dp-sub-body__image">
-          <img src="Images/image_048.jpg" alt="Clinical Coding" loading="lazy" />
+          <img src="Images/image_007.jpg" alt="Clinical Coding" loading="lazy" />
         </div>
       </div>
     </section>

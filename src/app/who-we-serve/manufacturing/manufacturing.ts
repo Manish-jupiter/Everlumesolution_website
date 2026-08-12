@@ -18,7 +18,7 @@ import { RouterLink } from '@angular/router';
     <!-- â”€â”€â”€ HERO â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ -->
     <section class="mf-hero">
       <div class="mf-hero__bg">
-        <img src="Images/image_011.jpg" alt="Manufacturing" />
+        <img src="Images/image_058.jpg" alt="Agentic AI for Manufacturing" />
         <div class="mf-hero__overlay"></div>
       </div>
       <div class="mf-hero__abstract-ring"></div>
@@ -56,7 +56,7 @@ import { RouterLink } from '@angular/router';
           <div class="mf-intro__dot-grid"></div>
           <div class="mf-intro__ring"></div>
           <div class="mf-intro__img">
-            <img src="Images/image_051.jpg" alt="Manufacturing AI" loading="lazy" />
+            <img src="Images/image_049.jpg" alt="Smart factory engineer with AI" loading="lazy" />
           </div>
           <div class="mf-intro__float-card">
             <div class="mf-intro__float-icon"><i class="ph ph-factory"></i></div>

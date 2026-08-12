@@ -31,7 +31,7 @@ import { RouterLink } from '@angular/router';
           <p>The result is a patient-focused, efficient, and scalable billing and collections operation that improves self-pay recovery, reduces bad debt, enhances patient satisfaction, and strengthens the overall financial performance of the revenue cycle.</p>
         </div>
         <div class="dp-sub-body__image">
-          <img src="Images/image_059.jpg" alt="Patient Billing" loading="lazy" />
+          <img src="Images/image_006.jpg" alt="Patient Billing" loading="lazy" />
         </div>
       </div>
     </section>

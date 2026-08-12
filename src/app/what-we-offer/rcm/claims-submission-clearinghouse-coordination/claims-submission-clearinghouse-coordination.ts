@@ -30,7 +30,7 @@ import { RouterLink } from '@angular/router';
           <p>The result is a highly efficient, compliant, and scalable claims submission process that improves first-pass claim acceptance, accelerates reimbursement cycles, reduces administrative overhead, strengthens revenue integrity, and enables healthcare organisations to maximise cash flow while delivering operational excellence.</p>
         </div>
         <div class="dp-sub-body__image">
-          <img src="Images/image_052.jpg" alt="Claims Submission" loading="lazy" />
+          <img src="Images/image_020.jpg" alt="Claims Submission" loading="lazy" />
         </div>
       </div>
     </section>

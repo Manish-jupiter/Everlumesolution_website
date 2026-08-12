@@ -30,7 +30,7 @@ import { RouterLink } from '@angular/router';
           <p>The result is a continuously evolving digital product that adapts to changing business needs, delivers exceptional user experiences, and remains secure, resilient, and future-ready — maximising long-term return on investment while enabling sustained innovation and competitive advantage.</p>
         </div>
         <div class="dp-sub-body__image">
-          <img src="Images/image_045.jpg" alt="Product Enhancement Support" loading="lazy" />
+          <img src="Images/image_006.jpg" alt="Product Enhancement Support" loading="lazy" />
         </div>
       </div>
     </section>

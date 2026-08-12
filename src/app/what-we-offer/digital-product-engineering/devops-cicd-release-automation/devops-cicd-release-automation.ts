@@ -30,7 +30,7 @@ import { RouterLink } from '@angular/router';
           <p>The result is a highly efficient, automated software delivery ecosystem that accelerates time-to-market, improves engineering productivity, enhances software quality, reduces operational risk, and enables organisations to continuously deliver innovative digital products with speed, confidence, and enterprise-scale reliability.</p>
         </div>
         <div class="dp-sub-body__image">
-          <img src="Images/image_054.jpg" alt="DevOps Automation" loading="lazy" />
+          <img src="Images/image_016.jpg" alt="DevOps Automation" loading="lazy" />
         </div>
       </div>
     </section>
