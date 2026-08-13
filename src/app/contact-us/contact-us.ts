@@ -157,7 +157,7 @@ import { RouterLink } from '@angular/router';
               </div>
               <div>
                 <span>Email</span>
-                <a href="mailto:contact@everlume.com">contact&#64;everlume.com</a>
+                <a href="mailto:contact@everlumesolutions.com">contact&#64;everlumesolutions.com</a>
               </div>
             </div>
            
@@ -607,6 +607,7 @@ import { RouterLink } from '@angular/router';
   .cu-info__intro { flex: 1 1 100%; }
   .cu-steps { flex: 1 1 calc(50% - 0.6rem); }
   .cu-contacts { flex: 1 1 calc(50% - 0.6rem); }
+  .cu-hero__stats { display: grid; grid-template-columns: repeat(4,1fr); gap: 1.2rem; }
 }
 @media (max-width: 768px) {
   .breadcrumb-bar { padding: 0.55rem 1rem; margin-top: 58px; }
@@ -616,6 +617,8 @@ import { RouterLink } from '@angular/router';
   .cu-form-panel { padding: 1.4rem; }
   .cu-info { flex-direction: column; }
   .cu-steps, .cu-contacts { flex: 1 1 100%; }
+  .cu-hero__stats { grid-template-columns: repeat(2,1fr); gap: 1rem 1.5rem; }
+  .cu-stat__value { font-size: 1.5rem; }
 }
 @media (max-width: 480px) {
   .cu-hero__heading { font-size: 2rem; }

@@ -22,7 +22,7 @@ import { RouterLink } from '@angular/router';
       <div class="cr-hero__abstract-ring"></div>
       <div class="cr-hero__abstract-blob"></div>
       <div class="cr-hero__content">
-        <div class="cr-hero__badge">
+        <div class="cr-hero__badge" style="cursor:pointer" (click)="goToPage(1)">
           <span class="cr-hero__badge-dot"></span>
           <span>We're Hiring</span>
         </div>
@@ -217,10 +217,7 @@ import { RouterLink } from '@angular/router';
           <div class="cr-brow__icon" style="background:linear-gradient(135deg,#1B3A8F,#2a52c9)"><i class="ph ph-globe"></i></div>
           <div class="cr-brow__body"><h4>Remote-First</h4><p>Work from anywhere. We're a globally distributed team built around async collaboration and deep work.</p></div>
         </div>
-        <div class="cr-brow">
-          <div class="cr-brow__icon" style="background:linear-gradient(135deg,#0d7a5f,#14a87f)"><i class="ph ph-graduation-cap"></i></div>
-          <div class="cr-brow__body"><h4>$2k Learning Budget</h4><p>Annual budget for courses, conferences, certifications, and books — entirely your choice.</p></div>
-        </div>
+     
         <div class="cr-brow">
           <div class="cr-brow__icon" style="background:linear-gradient(135deg,#e87722,#c96418)"><i class="ph ph-chart-bar"></i></div>
           <div class="cr-brow__body"><h4>Equity &amp; Growth</h4><p>Competitive salary, equity participation, and a clear progression framework to grow into leadership.</p></div>
@@ -253,7 +250,7 @@ import { RouterLink } from '@angular/router';
         </div>
 
         <!-- Form state -->
-        <div [style.display]="formSubmitted ? 'none' : 'flex'" style="flex-direction:column;flex:1;min-height:0;overflow-y:auto">
+        <div [style.display]="formSubmitted ? 'none' : 'flex'" style="flex-direction:column;flex:1;min-height:0;overflow:hidden">
           <div class="cr-modal__header">
             <div>
               <span class="cr-modal__label">Apply for</span>
@@ -262,43 +259,47 @@ import { RouterLink } from '@angular/router';
             </div>
             <button type="button" class="cr-modal__close" (click)="closeApply()"><i class="ph ph-x"></i></button>
           </div>
-          <form class="cr-modal__form" (submit)="submitApplication($event)" novalidate>
-            <div class="cr-modal__row">
-              <div class="cr-mfield">
-                <label>Full Name <span>*</span></label>
-                <input type="text" name="name" placeholder="Your full name" required />
+          <form id="cr-apply-form" class="cr-modal__form" (submit)="submitApplication($event)" novalidate>
+            <div class="cr-modal__fields">
+              <div class="cr-modal__row">
+                <div class="cr-mfield">
+                  <label>Full Name <span>*</span></label>
+                  <input type="text" name="name" placeholder="Your full name" required />
+                </div>
+                <div class="cr-mfield">
+                  <label>Email Address <span>*</span></label>
+                  <input type="email" name="email" placeholder="you@example.com" required />
+                </div>
               </div>
-              <div class="cr-mfield">
-                <label>Email Address <span>*</span></label>
-                <input type="email" name="email" placeholder="you@example.com" required />
+              <div class="cr-modal__row">
+                <div class="cr-mfield">
+                  <label>Phone Number</label>
+                  <input type="tel" name="phone" placeholder="+1 (000) 000-0000" />
+                </div>
+                <div class="cr-mfield">
+                  <label>LinkedIn / Portfolio URL</label>
+                  <input type="url" name="linkedin" placeholder="https://linkedin.com/in/..." />
+                </div>
+              </div>
+              <div class="cr-mfield cr-mfield--full">
+                <label>Why are you a great fit? <span>*</span></label>
+                <textarea name="message" rows="4" placeholder="Tell us about your experience and why you'd like to join Everlume..." required></textarea>
+              </div>
+              <div class="cr-mfield cr-mfield--full">
+                <label>Resume / CV <span>*</span></label>
+                <label class="cr-file-drop" [class.cr-file-drop--filled]="resumeFileName">
+                  <input type="file" name="resume" accept=".pdf,.doc,.docx" (change)="onResumeChange($event)" />
+                  <i class="ph" [class.ph-upload-simple]="!resumeFileName" [class.ph-file-check]="resumeFileName"></i>
+                  <span class="cr-file-drop__text">{{ resumeFileName || 'Click to upload PDF, DOC or DOCX' }}</span>
+                  <span class="cr-file-drop__hint" [style.display]="resumeFileName ? 'none' : 'block'">Max 5 MB</span>
+                </label>
+                <span class="cr-file-error" [style.display]="resumeError ? 'block' : 'none'">{{ resumeError }}</span>
               </div>
             </div>
-            <div class="cr-modal__row">
-              <div class="cr-mfield">
-                <label>Phone Number</label>
-                <input type="tel" name="phone" placeholder="+1 (000) 000-0000" />
-              </div>
-              <div class="cr-mfield">
-                <label>LinkedIn / Portfolio URL</label>
-                <input type="url" name="linkedin" placeholder="https://linkedin.com/in/..." />
-              </div>
-            </div>
-            <div class="cr-mfield cr-mfield--full">
-              <label>Why are you a great fit? <span>*</span></label>
-              <textarea name="message" rows="4" placeholder="Tell us about your experience and why you'd like to join Everlume..." required></textarea>
-            </div>
-            <div class="cr-mfield cr-mfield--full">
-              <label>Resume / CV <span>*</span></label>
-              <label class="cr-file-drop" [class.cr-file-drop--filled]="resumeFileName">
-                <input type="file" name="resume" accept=".pdf,.doc,.docx" (change)="onResumeChange($event)" />
-                <i class="ph" [class.ph-upload-simple]="!resumeFileName" [class.ph-file-check]="resumeFileName"></i>
-                <span class="cr-file-drop__text">{{ resumeFileName || 'Click to upload PDF, DOC or DOCX' }}</span>
-                <span class="cr-file-drop__hint" [style.display]="resumeFileName ? 'none' : 'block'">Max 5 MB</span>
-              </label>
-              <span class="cr-file-error" [style.display]="resumeError ? 'block' : 'none'">{{ resumeError }}</span>
-            </div>
-            <button type="submit" class="cr-modal__submit">Submit Application <i class="ph ph-paper-plane-tilt"></i></button>
           </form>
+          <div class="cr-modal__footer">
+            <button type="submit" form="cr-apply-form" class="cr-modal__submit">Submit Application <i class="ph ph-paper-plane-tilt"></i></button>
+          </div>
         </div>
 
       </div>
@@ -430,7 +431,7 @@ import { RouterLink } from '@angular/router';
 
     /* ── Apply Modal ── */
     .cr-modal-overlay { position: fixed; inset: 0; background: rgba(6,13,31,.72); backdrop-filter: blur(4px); -webkit-backdrop-filter: blur(4px); z-index: 1200; display: flex; align-items: center; justify-content: center; padding: 1rem; }
-    .cr-modal { background: #fff; border-radius: 20px; width: 100%; max-width: 620px; max-height: 92vh; overflow-y: auto; box-shadow: 0 30px 80px rgba(0,0,0,.3); display: flex; flex-direction: column; animation: crModalIn .3s cubic-bezier(.22,1,.36,1); }
+    .cr-modal { background: #fff; border-radius: 20px; width: 100%; max-width: 620px; max-height: 92vh; overflow: hidden; box-shadow: 0 30px 80px rgba(0,0,0,.3); display: flex; flex-direction: column; animation: crModalIn .3s cubic-bezier(.22,1,.36,1); }
     @keyframes crModalIn { from { opacity: 0; transform: translateY(24px) scale(.97); } to { opacity: 1; transform: none; } }
     .cr-modal__header { display: flex; justify-content: space-between; align-items: flex-start; padding: 1.8rem 2rem 1.2rem; border-bottom: 1px solid #eef0f6; flex-shrink: 0; }
     .cr-modal__label { font-size: .7rem; text-transform: uppercase; letter-spacing: .12em; color: #e87722; font-weight: 700; display: block; }
@@ -438,8 +439,10 @@ import { RouterLink } from '@angular/router';
     .cr-modal__dept { font-size: .78rem; color: #888; }
     .cr-modal__close { width: 36px; height: 36px; border-radius: 50%; border: 1.5px solid #e2e6ef; background: #f7f8fc; color: #444; display: flex; align-items: center; justify-content: center; cursor: pointer; font-size: 1.1rem; flex-shrink: 0; transition: background .2s; }
     .cr-modal__close:hover { background: #edf0f8; }
-    .cr-modal__form { padding: 1.5rem 2rem 2rem; display: flex; flex-direction: column; gap: 1rem; }
-    .cr-modal__row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+    .cr-modal__form { flex: 1; min-height: 0; overflow: hidden; display: flex; flex-direction: column; }
+    .cr-modal__fields { flex: 1; overflow-y: auto; padding: 1.5rem 2rem; display: flex; flex-direction: column; gap: 1rem; }
+    .cr-modal__footer { flex-shrink: 0; padding: 1rem 2rem 1.4rem; border-top: 1px solid #eef0f6; background: #fff; border-radius: 0 0 20px 20px; }
+    .cr-modal__submit { width: 100%; display: flex; align-items: center; justify-content: center; gap: .5rem; background: #1B3A8F; color: #fff; border: none; border-radius: 999px; padding: .85rem 2rem; font-weight: 700; font-size: .9rem; cursor: pointer; transition: background .25s, transform .25s; }
     .cr-mfield { display: flex; flex-direction: column; gap: .4rem; }
     .cr-mfield--full { grid-column: 1 / -1; }
     .cr-mfield label { font-size: .8rem; font-weight: 600; color: #101a3a; }
@@ -447,7 +450,7 @@ import { RouterLink } from '@angular/router';
     .cr-mfield input, .cr-mfield textarea { border: 1.5px solid #d6dce8; border-radius: 10px; padding: .65rem .9rem; font-size: .88rem; font-family: inherit; color: #101a3a; background: #f9faff; outline: none; transition: border-color .2s; resize: vertical; width: 100%; box-sizing: border-box; }
     .cr-mfield input:focus, .cr-mfield textarea:focus { border-color: #1B3A8F; background: #fff; }
     .cr-mfield input:invalid:not(:placeholder-shown), .cr-mfield textarea:invalid:not(:placeholder-shown) { border-color: #e11d48; }
-    .cr-modal__submit { display: flex; align-items: center; justify-content: center; gap: .5rem; background: #1B3A8F; color: #fff; border: none; border-radius: 999px; padding: .85rem 2rem; font-weight: 700; font-size: .9rem; cursor: pointer; transition: background .25s, transform .25s; margin-top: .5rem; }
+    .cr-modal__row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
     .cr-modal__submit:hover { background: #e87722; transform: translateY(-2px); }
     .cr-modal__success { display: flex; flex-direction: column; align-items: center; padding: 3.5rem 2rem; text-align: center; gap: .8rem; }
     .cr-modal__success-icon i.ph { font-size: 3.5rem; color: #16a34a; }
@@ -465,7 +468,7 @@ import { RouterLink } from '@angular/router';
     .cr-file-drop--filled i.ph { color: #16a34a; }
     .cr-file-drop--filled .cr-file-drop__text { color: #166534; font-weight: 600; }
     .cr-file-error { font-size: .75rem; color: #e11d48; margin-top: .25rem; display: block; }
-    @media (max-width: 600px) { .cr-modal { border-radius: 16px; } .cr-modal__header { padding: 1.4rem 1.2rem 1rem; } .cr-modal__form { padding: 1.2rem 1.2rem 1.5rem; } .cr-modal__row { grid-template-columns: 1fr; } }
+    @media (max-width: 600px) { .cr-modal { border-radius: 16px; } .cr-modal__header { padding: 1.4rem 1.2rem 1rem; } .cr-modal__fields { padding: 1.2rem 1.2rem 1rem; } .cr-modal__footer { padding: 0.75rem 1.2rem 1.2rem; border-radius: 0 0 16px 16px; } .cr-modal__row { grid-template-columns: 1fr; } }
 
     /* ── Responsive ── */
     @media (max-width: 900px) {
@@ -491,6 +494,7 @@ export class Career {
   currentPage = 1;
   applyJob: { title: string; dept: string } | null = null;
   formSubmitted = false;
+  sending = false;
   resumeFileName = '';
   resumeBase64 = '';
   resumeError = '';
@@ -503,6 +507,7 @@ export class Career {
   openApply(title: string, dept: string) {
     this.applyJob = { title, dept };
     this.formSubmitted = false;
+    this.sending = false;
     this.resumeFileName = '';
     this.resumeBase64 = '';
     this.resumeError = '';
@@ -512,6 +517,7 @@ export class Career {
   closeApply() {
     this.applyJob = null;
     this.formSubmitted = false;
+    this.sending = false;
     this.resumeFileName = '';
     this.resumeBase64 = '';
     this.resumeError = '';
@@ -556,14 +562,35 @@ export class Career {
       resumeData: this.resumeBase64,
       submittedAt: new Date().toISOString(),
     };
+
+    // Save to localStorage as backup
     try {
       const raw = localStorage.getItem('everlume_applications');
       const existing: object[] = raw ? (JSON.parse(raw) as object[]) : [];
       existing.push(application);
       localStorage.setItem('everlume_applications', JSON.stringify(existing));
     } catch (_) { /* storage quota exceeded or unavailable */ }
+
+    this.sending = true;
+
+    // Append Formsubmit config + extra fields; file input 'resume' is already in fd
+    fd.append('_subject',     `New Application: ${application.job} — ${application.name}`);
+    fd.append('_captcha',     'false');
+    fd.append('Job Title',    application.job);
+    fd.append('Department',   application.department);
+    fd.append('Submitted At', application.submittedAt);
+
+    fetch('https://formsubmit.co/ajax/mpmanish585@gmail.com', {
+      method: 'POST',
+      headers: { 'Accept': 'application/json' },
+      body: fd,
+    })
+    .then(r => r.json())
+    .then(res => { if (!res.success) console.error('Formsubmit error:', res); })
+    .catch(err => console.error('Formsubmit error:', err))
+    .finally(() => { this.sending = false; });
+
     this.formSubmitted = true;
-    console.log('Application submitted:', application);
   }
   
 }
