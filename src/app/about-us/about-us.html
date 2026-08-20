@@ -108,7 +108,6 @@
               [id]="'about-tab-' + tab.id"
               (click)="setTab(i)"
             >
-              <span class="about-tab__num">{{ (i + 1).toString().padStart(2, '0') }}</span>
               <span class="about-tab__icon">
                 <i class="ph {{ tab.icon }}" aria-hidden="true"></i>
               </span>
@@ -137,8 +136,32 @@
                 </div>
               </div>
               <div class="about-panel__body">
-                @for (para of tab.paragraphs; track $index) {
-                  <p>{{ para }}</p>
+                @if (tab.personImage) {
+                  <div class="about-panel__promoter">
+                    <div class="about-panel__promoter-img-wrap">
+                      <img
+                        class="about-panel__promoter-img"
+                        [src]="tab.personImage"
+                        [alt]="tab.personName"
+                      />
+                      <div class="about-panel__promoter-badge">
+                        <i class="ph ph-star-four" aria-hidden="true"></i>
+                      </div>
+                    </div>
+                    <div class="about-panel__promoter-identity">
+                      <span class="about-panel__promoter-name">{{ tab.personName }}</span>
+                      <span class="about-panel__promoter-role">{{ tab.personTitle }}</span>
+                    </div>
+                    <div class="about-panel__promoter-bio">
+                      @for (para of tab.paragraphs; track $index) {
+                        <p>{{ para }}</p>
+                      }
+                    </div>
+                  </div>
+                } @else {
+                  @for (para of tab.paragraphs; track $index) {
+                    <p>{{ para }}</p>
+                  }
                 }
               </div>
             </article>
