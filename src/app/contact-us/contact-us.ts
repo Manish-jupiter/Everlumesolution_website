@@ -1,7 +1,8 @@
 ﻿import { CommonModule } from '@angular/common';
-import { AfterViewInit, Component, ElementRef, OnDestroy } from '@angular/core';
+import { AfterViewInit, Component, ElementRef, inject, OnDestroy } from '@angular/core';
 import { FormBuilder, ReactiveFormsModule, Validators } from '@angular/forms';
 import { RouterLink } from '@angular/router';
+import { Api } from '../service/api/api';
 
 @Component({
   selector: 'app-contact-us',
@@ -633,9 +634,10 @@ export class ContactUs implements AfterViewInit, OnDestroy {
   protected showSuccessModal = false;
   protected referenceId = '';
   protected errorMessage = '';
-  private readonly recipientEmail = 'truthstarindia@gmail.com';
+  private readonly recipientEmail = 'dj4385@gmail.com';
   protected readonly contactForm;
   private observer?: IntersectionObserver;
+  api = inject(Api);
 
   constructor(private readonly fb: FormBuilder, private readonly elRef: ElementRef) {
     this.contactForm = this.fb.nonNullable.group({
@@ -693,52 +695,88 @@ export class ContactUs implements AfterViewInit, OnDestroy {
     const submittedAt = new Date();
     const data = this.contactForm.getRawValue();
 
-    try {
-      const response = await fetch(`https://formsubmit.co/ajax/${encodeURIComponent(this.recipientEmail)}`,
-  {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-          'Accept': 'application/json',
-        },
-        body: JSON.stringify({
-          _subject: `New Enquiry from ${data.name} — ${data.serviceInterest}`,
-          _template: 'table',
-          _captcha: 'false',
-          'Reference ID':    referenceId,
-          'Submitted At':    submittedAt.toLocaleString(),
-          'Full Name':       data.name,
-          'Organisation':    data.organisation,
-          'Email':           data.email,
-          'Phone':           data.phone,
-          'Service Interest': data.serviceInterest,
-          'Preferred Timeline': data.timeline,
-          'Message':         data.message,
-          'Consent Granted': data.consent ? 'Yes' : 'No',
-        }),
-      });
+    const fd = new FormData();
 
-      if (!response.ok) {
-        throw new Error(`Server responded with status ${response.status}`);
+    fd.append('subject', `New Enquiry from ${data.name} — ${data.serviceInterest}`);
+    fd.append('consentGranted', data.consent ? 'Yes' : 'No');
+    fd.append('email', data.email);
+    fd.append('fullName', data.name);
+    fd.append('message', data.message);
+    fd.append('organisation', data.organisation);
+    fd.append('phone', data.phone);
+    fd.append('preferredTimeline', data.timeline);
+    fd.append('referenceId', referenceId);
+    fd.append('serviceInterested', data.serviceInterest);
+    fd.append('submittedAt', submittedAt.toISOString());
+    fd.append('captcha', 'false');
+    fd.append('template', 'table');
+
+    this.api.sendContactMail(fd).subscribe({
+      next: (result: any) => {
+        if (!result?.success) {
+          this.isSubmitting = false;
+          throw new Error(`Server responded with status ${result?.message}`);
+        }
+
+         this.referenceId = referenceId;
+        this.showSuccessModal = true;
+        this.contactForm.reset();
+        this.isSubmitting = false;
+      },
+      error: (err: any) => {
+        const detail = err instanceof Error ? err.message : 'Unknown error';
+        this.errorMessage = `We could not deliver your message right now (${detail}). Please try again shortly, or email us directly at ${this.recipientEmail}.`;
+        this.formShake = true;
+        setTimeout(() => { this.formShake = false; this.isSubmitting = false; }, 500);
       }
+    });
 
-      const result = await response.json().catch(() => ({}));
-      const succeeded = result?.success === 'true' || result?.success === true;
-      if (!succeeded) {
-        throw new Error(result?.message || 'The email service did not confirm delivery.');
-      }
+  //   try {
+  //     const response = await fetch(`https://formsubmit.co/ajax/${encodeURIComponent(this.recipientEmail)}`,
+  // {
+  //       method: 'POST',
+  //       headers: {
+  //         'Content-Type': 'application/json',
+  //         'Accept': 'application/json',
+  //       },
+  //       body: JSON.stringify({
+  //         _subject: `New Enquiry from ${data.name} — ${data.serviceInterest}`,
+  //         _template: 'table',
+  //         _captcha: 'false',
+  //         'Reference ID':    referenceId,
+  //         'Submitted At':    submittedAt.toLocaleString(),
+  //         'Full Name':       data.name,
+  //         'Organisation':    data.organisation,
+  //         'Email':           data.email,
+  //         'Phone':           data.phone,
+  //         'Service Interest': data.serviceInterest,
+  //         'Preferred Timeline': data.timeline,
+  //         'Message':         data.message,
+  //         'Consent Granted': data.consent ? 'Yes' : 'No',
+  //       }),
+  //     });
 
-      this.referenceId = referenceId;
-      this.showSuccessModal = true;
-      this.contactForm.reset();
-    } catch (err) {
-      const detail = err instanceof Error ? err.message : 'Unknown error';
-      this.errorMessage = `We could not deliver your message right now (${detail}). Please try again shortly, or email us directly at ${this.recipientEmail}.`;
-      this.formShake = true;
-      setTimeout(() => { this.formShake = false; }, 500);
-    } finally {
-      this.isSubmitting = false;
-    }
+  //     if (!response.ok) {
+  //       throw new Error(`Server responded with status ${response.status}`);
+  //     }
+
+  //     const result = await response.json().catch(() => ({}));
+  //     const succeeded = result?.success === 'true' || result?.success === true;
+  //     if (!succeeded) {
+  //       throw new Error(result?.message || 'The email service did not confirm delivery.');
+  //     }
+
+  //     this.referenceId = referenceId;
+  //     this.showSuccessModal = true;
+  //     this.contactForm.reset();
+  //   } catch (err) {
+  //     const detail = err instanceof Error ? err.message : 'Unknown error';
+  //     this.errorMessage = `We could not deliver your message right now (${detail}). Please try again shortly, or email us directly at ${this.recipientEmail}.`;
+  //     this.formShake = true;
+  //     setTimeout(() => { this.formShake = false; }, 500);
+  //   } finally {
+  //     this.isSubmitting = false;
+  //   }
   }
 
   protected closeSuccessModal(): void {

@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, inject, signal } from '@angular/core';
 import { RouterLink } from '@angular/router';
+import { Api } from '../service/api/api';
 
 @Component({
   selector: 'app-career',
@@ -242,15 +243,15 @@ import { RouterLink } from '@angular/router';
       <div class="cr-modal" (click)="$event.stopPropagation()">
 
         <!-- Success state -->
-        <div class="cr-modal__success" [style.display]="formSubmitted ? 'flex' : 'none'">
+        <div class="cr-modal__success" [style.display]="formSubmitted() ? 'flex' : 'none'">
           <div class="cr-modal__success-icon"><i class="ph ph-check-circle"></i></div>
           <h3>Application Submitted!</h3>
           <p>Thank you for applying for <strong>{{ applyJob?.title }}</strong>.<br/>We'll review your application and get back to you soon.</p>
-          <button class="cr-modal__done-btn" (click)="closeApply()">Close</button>
+          <button type="button" class="cr-modal__done-btn" (click)="closeApply()">Close</button>
         </div>
 
         <!-- Form state -->
-        <div [style.display]="formSubmitted ? 'none' : 'flex'" style="flex-direction:column;flex:1;min-height:0;overflow:hidden">
+        <div [style.display]="formSubmitted() ? 'none' : 'flex'" style="flex-direction:column;flex:1;min-height:0;overflow:hidden">
           <div class="cr-modal__header">
             <div>
               <span class="cr-modal__label">Apply for</span>
@@ -287,18 +288,21 @@ import { RouterLink } from '@angular/router';
               </div>
               <div class="cr-mfield cr-mfield--full">
                 <label>Resume / CV <span>*</span></label>
-                <label class="cr-file-drop" [class.cr-file-drop--filled]="resumeFileName">
+                <label class="cr-file-drop" [class.cr-file-drop--filled]="!!resumeFileName()">
                   <input type="file" name="resume" accept=".pdf,.doc,.docx" (change)="onResumeChange($event)" />
-                  <i class="ph" [class.ph-upload-simple]="!resumeFileName" [class.ph-file-check]="resumeFileName"></i>
-                  <span class="cr-file-drop__text">{{ resumeFileName || 'Click to upload PDF, DOC or DOCX' }}</span>
-                  <span class="cr-file-drop__hint" [style.display]="resumeFileName ? 'none' : 'block'">Max 5 MB</span>
+                  <i class="ph" [class.ph-upload-simple]="!resumeFileName()" [class.ph-file-check]="!!resumeFileName()"></i>
+                  <span class="cr-file-drop__text">{{ resumeFileName() || 'Click to upload PDF, DOC or DOCX' }}</span>
+                  <span class="cr-file-drop__hint" [style.display]="resumeFileName() ? 'none' : 'block'">Max 5 MB</span>
                 </label>
-                <span class="cr-file-error" [style.display]="resumeError ? 'block' : 'none'">{{ resumeError }}</span>
+                <span class="cr-file-error" [style.display]="resumeError() ? 'block' : 'none'">{{ resumeError() }}</span>
               </div>
             </div>
           </form>
           <div class="cr-modal__footer">
-            <button type="submit" form="cr-apply-form" class="cr-modal__submit">Submit Application <i class="ph ph-paper-plane-tilt"></i></button>
+            <button type="submit" form="cr-apply-form" class="cr-modal__submit" [disabled]="sending()">
+              {{ sending() ? 'Submitting…' : 'Submit Application' }}
+              <i class="ph ph-paper-plane-tilt" [style.display]="sending() ? 'none' : 'inline'"></i>
+            </button>
           </div>
         </div>
 
@@ -443,6 +447,7 @@ import { RouterLink } from '@angular/router';
     .cr-modal__fields { flex: 1; overflow-y: auto; padding: 1.5rem 2rem; display: flex; flex-direction: column; gap: 1rem; }
     .cr-modal__footer { flex-shrink: 0; padding: 1rem 2rem 1.4rem; border-top: 1px solid #eef0f6; background: #fff; border-radius: 0 0 20px 20px; }
     .cr-modal__submit { width: 100%; display: flex; align-items: center; justify-content: center; gap: .5rem; background: #1B3A8F; color: #fff; border: none; border-radius: 999px; padding: .85rem 2rem; font-weight: 700; font-size: .9rem; cursor: pointer; transition: background .25s, transform .25s; }
+    .cr-modal__submit:disabled { opacity: .65; cursor: not-allowed; transform: none; }
     .cr-mfield { display: flex; flex-direction: column; gap: .4rem; }
     .cr-mfield--full { grid-column: 1 / -1; }
     .cr-mfield label { font-size: .8rem; font-weight: 600; color: #101a3a; }
@@ -493,12 +498,12 @@ import { RouterLink } from '@angular/router';
 export class Career {
   currentPage = 1;
   applyJob: { title: string; dept: string } | null = null;
-  formSubmitted = false;
-  sending = false;
-  resumeFileName = '';
-  resumeBase64 = '';
-  resumeError = '';
-    private readonly recipientEmail = 'truthstarindia@gmail.com';
+  formSubmitted = signal(false);
+  sending = signal(false);
+  resumeFileName = signal('');
+  resumeError = signal('');
+  private resumeFile: File | null = null;
+  private readonly api = inject(Api);
 
   goToPage(n: number) {
     this.currentPage = n;
@@ -507,92 +512,98 @@ export class Career {
 
   openApply(title: string, dept: string) {
     this.applyJob = { title, dept };
-    this.formSubmitted = false;
-    this.sending = false;
-    this.resumeFileName = '';
-    this.resumeBase64 = '';
-    this.resumeError = '';
+    this.resetFormState();
+    this.formSubmitted.set(false);
     document.body.style.overflow = 'hidden';
   }
 
   closeApply() {
     this.applyJob = null;
-    this.formSubmitted = false;
-    this.sending = false;
-    this.resumeFileName = '';
-    this.resumeBase64 = '';
-    this.resumeError = '';
+    this.resetFormState();
+    this.formSubmitted.set(false);
     document.body.style.overflow = '';
   }
 
   onResumeChange(event: Event) {
     const input = event.target as HTMLInputElement;
     const file = input.files?.[0];
-    this.resumeError = '';
-    this.resumeFileName = '';
-    this.resumeBase64 = '';
+    this.resumeError.set('');
+    this.resumeFileName.set('');
+    this.resumeFile = null;
     if (!file) return;
     if (file.size > 5 * 1024 * 1024) {
-      this.resumeError = 'File too large — max 5 MB allowed.';
+      this.resumeError.set('File too large — max 5 MB allowed.');
       input.value = '';
       return;
     }
-    this.resumeFileName = file.name;
-    const reader = new FileReader();
-    reader.onload = (e) => { this.resumeBase64 = (e.target?.result as string) ?? ''; };
-    reader.onerror = () => { this.resumeError = 'Could not read file. Please try again.'; this.resumeFileName = ''; };
-    reader.readAsDataURL(file);
+    this.resumeFileName.set(file.name);
+    this.resumeFile = file;
   }
 
   submitApplication(event: Event) {
     event.preventDefault();
+    if (this.sending()) return;
+
     const form = event.target as HTMLFormElement;
-    if (!form.checkValidity()) { form.reportValidity(); return; }
-    if (!this.resumeFileName) { this.resumeError = 'Please upload your resume.'; return; }
-    const fd = new FormData(form);
-    const application = {
-      id: Date.now(),
-      job: this.applyJob?.title ?? '',
-      department: this.applyJob?.dept ?? '',
-      name: fd.get('name') as string,
-      email: fd.get('email') as string,
-      phone: fd.get('phone') as string,
-      linkedin: fd.get('linkedin') as string,
-      message: fd.get('message') as string,
-      resumeFileName: this.resumeFileName,
-      resumeData: this.resumeBase64,
-      submittedAt: new Date().toISOString(),
-    };
+    if (!form.checkValidity()) {
+      form.reportValidity();
+      return;
+    }
+    if (!this.resumeFile) {
+      this.resumeError.set('Please upload your resume.');
+      return;
+    }
 
-    // Save to localStorage as backup
-    try {
-      const raw = localStorage.getItem('everlume_applications');
-      const existing: object[] = raw ? (JSON.parse(raw) as object[]) : [];
-      existing.push(application);
-      localStorage.setItem('everlume_applications', JSON.stringify(existing));
-    } catch (_) { /* storage quota exceeded or unavailable */ }
+    const name = (form.elements.namedItem('name') as HTMLInputElement).value.trim();
+    const email = (form.elements.namedItem('email') as HTMLInputElement).value.trim();
+    const phone = (form.elements.namedItem('phone') as HTMLInputElement).value.trim();
+    const linkedin = (form.elements.namedItem('linkedin') as HTMLInputElement).value.trim();
+    const message = (form.elements.namedItem('message') as HTMLTextAreaElement).value.trim();
+    const job = this.applyJob?.title ?? '';
+    const department = this.applyJob?.dept ?? '';
+    const submittedAt = new Date().toISOString();
 
-    this.sending = true;
+    const fd = new FormData();
+    fd.append('subject', `New Application: ${job} — ${name}`);
+    fd.append('name', name);
+    fd.append('email', email);
+    fd.append('phone', phone);
+    fd.append('linkedin', linkedin);
+    fd.append('message', message);
+    fd.append('captcha', 'false');
+    fd.append('jobTitle', job);
+    fd.append('department', department);
+    fd.append('submittedAt', submittedAt);
+    fd.append('resume', this.resumeFile, this.resumeFile.name);
 
-    // Append Formsubmit config + extra fields; file input 'resume' is already in fd
-    fd.append('_subject',     `New Application: ${application.job} — ${application.name}`);
-    fd.append('_captcha',     'false');
-    fd.append('Job Title',    application.job);
-    fd.append('Department',   application.department);
-    fd.append('Submitted At', application.submittedAt);
+    this.sending.set(true);
+    form.reset();
+    this.resumeFile = null;
+    this.resumeFileName.set('');
+    this.resumeError.set('');
+    this.formSubmitted.set(true);
 
-    fetch(`https://formsubmit.co/ajax/${encodeURIComponent(this.recipientEmail)}`,
-  {
-      method: 'POST',
-      headers: { 'Accept': 'application/json' },
-      body: fd,
-    })
-    .then(r => r.json())
-    .then(res => { if (!res.success) console.error('Formsubmit error:', res); })
-    .catch(err => console.error('Formsubmit error:', err))
-    .finally(() => { this.sending = false; });
-
-    this.formSubmitted = true;
+    this.api.sendCareerMail(fd).subscribe({
+      next: (res: any) => {
+        if (!res?.success) {
+          console.error('Career submit error:', res);
+        }
+        this.sending.set(false);
+      },
+      error: (err: unknown) => {
+        console.error('Career submit error:', err);
+        this.sending.set(false);
+      },
+    });
   }
-  
+
+  private resetFormState() {
+    this.sending.set(false);
+    this.resumeFile = null;
+    this.resumeFileName.set('');
+    this.resumeError.set('');
+    queueMicrotask(() => {
+      (document.getElementById('cr-apply-form') as HTMLFormElement | null)?.reset();
+    });
+  }
 }
