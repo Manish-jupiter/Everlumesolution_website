@@ -498,6 +498,7 @@ export class Career {
   resumeFileName = '';
   resumeBase64 = '';
   resumeError = '';
+    private readonly recipientEmail = 'truthstarindia@gmail.com';
 
   goToPage(n: number) {
     this.currentPage = n;
@@ -580,7 +581,8 @@ export class Career {
     fd.append('Department',   application.department);
     fd.append('Submitted At', application.submittedAt);
 
-    fetch('https://formsubmit.co/ajax/truthstarindia@gmail.com', {
+    fetch(`https://formsubmit.co/ajax/${encodeURIComponent(this.recipientEmail)}`,
+  {
       method: 'POST',
       headers: { 'Accept': 'application/json' },
       body: fd,
