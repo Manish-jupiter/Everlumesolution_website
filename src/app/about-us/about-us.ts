@@ -31,9 +31,9 @@ export class AboutUs {
       personImage: 'Images/Sartaj.jpg',
       paragraphs: [
         'A young, dynamic, and visionary serial entrepreneur, Sartaj Rekhi brings a proven track record of building, scaling, and transforming technology businesses. Combining entrepreneurial drive with strategic discipline and a deep understanding of evolving markets, he has consistently delivered sustainable growth and long-term value.',
-        'As a promoter and business leader, Sartaj successfully guided a technology company through its public listing and IPO, and subsequently led its expansion to more than USD 200 million in revenue, significantly strengthening its market position.',
+        'As a Founder and business leader, Sartaj successfully guided a technology company through its public listing and IPO, and subsequently led its expansion to more than USD 200 million in revenue, significantly strengthening its market position.',
         'His leadership style combines empathy and inclusiveness with a strong focus on execution and measurable outcomes.',
-        'As the promoter of EverLume Solutions, Sartaj brings together entrepreneurial experience, public-market insight, technology expertise, and a strong commitment to responsible innovation.',
+        'As the Founder of EverLume Solutions, Sartaj brings together entrepreneurial experience, public-market insight, technology expertise, and a strong commitment to responsible innovation.',
         'Sartaj is a graduate from American River College and San Jose State University and has also completed advanced management programs from UC Berkeley. In his free time, he loves traveling and watching boxing.',
       ],
     },
