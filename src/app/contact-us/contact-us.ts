@@ -633,7 +633,7 @@ export class ContactUs implements AfterViewInit, OnDestroy {
   protected showSuccessModal = false;
   protected referenceId = '';
   protected errorMessage = '';
-  private readonly recipientEmail = 'arvindpuskar70@gmail.com';
+  private readonly recipientEmail = 'truthstarindia@gmail.com';
   protected readonly contactForm;
   private observer?: IntersectionObserver;
 

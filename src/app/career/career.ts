@@ -580,7 +580,7 @@ export class Career {
     fd.append('Department',   application.department);
     fd.append('Submitted At', application.submittedAt);
 
-    fetch('https://formsubmit.co/ajax/mpmanish585@gmail.com', {
+    fetch('https://formsubmit.co/ajax/truthstarindia@gmail.com', {
       method: 'POST',
       headers: { 'Accept': 'application/json' },
       body: fd,

@@ -17,7 +17,7 @@ export class ChatWidget {
   referenceId = signal('');
 
   private readonly fb = inject(FormBuilder);
-  private readonly recipientEmail = 'arvindpuskar70@gmail.com';
+  private readonly recipientEmail = 'truthstarindia@gmail.com';
 
   readonly chatForm = this.fb.nonNullable.group({
     name:         ['', [Validators.required, Validators.minLength(2)]],
