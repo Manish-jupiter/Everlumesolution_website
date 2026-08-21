@@ -24,10 +24,10 @@ export class AboutUs {
   readonly tabs: AboutTab[] = [
     {
       id: 'what-we-do',
-      label: 'Promoter',
+      label: 'Founder',
       icon: 'ph-compass',
       personName: 'Sartaj Rekhi',
-      personTitle: 'Promoter & Visionary Entrepreneur',
+      personTitle: 'Chairman',
       personImage: 'Images/Sartaj.jpg',
       paragraphs: [
         'A young, dynamic, and visionary serial entrepreneur, Sartaj Rekhi brings a proven track record of building, scaling, and transforming technology businesses. Combining entrepreneurial drive with strategic discipline and a deep understanding of evolving markets, he has consistently delivered sustainable growth and long-term value.',
