@@ -54,7 +54,7 @@ export class ChatWidget {
     const data = this.chatForm.getRawValue();
 
     try {
-      const response = await fetch(`https://formsubmit.co/ajax/${this.recipientEmail}`, {
+      const response = await fetch(`https://formsubmit.co/ajax/${encodeURIComponent(this.recipientEmail)}`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
