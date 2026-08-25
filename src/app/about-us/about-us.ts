@@ -1,6 +1,13 @@
 import { Component, signal } from '@angular/core';
 import { RouterLink } from '@angular/router';
 
+interface AboutPerson {
+  name: string;
+  title: string;
+  image: string;
+  paragraphs: string[];
+}
+
 interface AboutTab {
   id: string;
   label: string;
@@ -9,6 +16,7 @@ interface AboutTab {
   personName?: string;
   personTitle?: string;
   personImage?: string;
+  people?: AboutPerson[];
 }
 
 @Component({
@@ -25,16 +33,32 @@ export class AboutUs {
     {
       id: 'what-we-do',
       label: 'Founder',
-      icon: 'ph-compass',
-      personName: 'Sartaj Rekhi',
-      personTitle: 'Chairman',
-      personImage: 'Images/Sartaj.jpg',
-      paragraphs: [
-        'A young, dynamic, and visionary serial entrepreneur, Sartaj Rekhi brings a proven track record of building, scaling, and transforming technology businesses. Combining entrepreneurial drive with strategic discipline and a deep understanding of evolving markets, he has consistently delivered sustainable growth and long-term value.',
-        'As a Founder and business leader, Sartaj successfully guided a technology company through its public listing and IPO, and subsequently led its expansion to more than USD 200 million in revenue, significantly strengthening its market position.',
-        'His leadership style combines empathy and inclusiveness with a strong focus on execution and measurable outcomes.',
-        'As the Founder of EverLume Solutions, Sartaj brings together entrepreneurial experience, public-market insight, technology expertise, and a strong commitment to responsible innovation.',
-        'Sartaj is a graduate from American River College and San Jose State University and has also completed advanced management programs from UC Berkeley. In his free time, he loves traveling and watching boxing.',
+      icon: 'ph-users-three',
+      paragraphs: [],
+      people: [
+        {
+          name: 'Sartaj Rekhi',
+          title: 'Chairman',
+          image: 'Images/Sartaj.jpg',
+          paragraphs: [
+            'A young, dynamic, and visionary serial entrepreneur, Sartaj Rekhi brings a proven track record of building, scaling, and transforming technology businesses. Combining entrepreneurial drive with strategic discipline and a deep understanding of evolving markets, he has consistently delivered sustainable growth and long-term value.',
+            'As a Founder and business leader, Sartaj successfully guided a technology company through its public listing and IPO, and subsequently led its expansion to more than USD 200 million in revenue, significantly strengthening its market position.',
+            'His leadership style combines empathy and inclusiveness with a strong focus on execution and measurable outcomes.',
+            'As the Founder of EverLume Solutions, Sartaj brings together entrepreneurial experience, public-market insight, technology expertise, and a strong commitment to responsible innovation.',
+            'Sartaj is a graduate from American River College and San Jose State University and has also completed advanced management programs from UC Berkeley. In his free time, he loves traveling and watching boxing.',
+          ],
+        },
+        {
+          name: 'Sidhartha Dubey',
+          title: 'CEO',
+          image: 'Images/ceo_Sidhartha_dubey.jpg',
+          paragraphs: [
+            'A seasoned technology and transformation leader, Sidhartha brings over two decades of experience managing global engagements and leading complex, multi-location transformation initiatives across industries, geographies, and diverse technology stacks. Sidhartha has worked closely with clients to develop technology strategies that optimize IT spend, modernize legacy environments, and build scalable, future-ready technology foundations. His expertise spans AI adoption, automation, digital transformation, technology modernization, and large-scale operational change—enabling organizations to improve efficiency, agility, and business outcomes while maximizing the value of their technology investments.',
+            'A strong believer in people-centric transformation, Sidhartha recognizes that sustainable change is ultimately driven by engaged and empowered people. He focuses on creating environments that encourage participation, collaboration, innovation, and employee satisfaction, ensuring that transformation delivers value not only for the business and its customers but also for the people who drive it.',
+            'Known for combining strategic vision with execution discipline, Sidhartha brings a pragmatic and collaborative approach to transformation—helping organizations simplify complexity, embrace AI and automation, optimize technology investments, and build high-performing, future-ready enterprises.',
+            'Sidhartha completed his graduation from Delhi University and the AMP program from IIM-Bangalore. Sidhartha is an avid reader, equally fascinated by Darśana Śāstra and western philosophy, and spends his free time swinging from Radhakrishnan to Wittgenstein.',
+          ],
+        },
       ],
     },
     {

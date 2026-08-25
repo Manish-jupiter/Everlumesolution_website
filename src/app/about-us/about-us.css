@@ -725,6 +725,31 @@
 .about-panel__promoter-full p:nth-child(2) { animation-delay: 0.4s; }
 .about-panel__promoter-full p:nth-child(3) { animation-delay: 0.5s; }
 
+.about-panel__person-divider {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin: 2.75rem 0;
+}
+.about-panel__person-divider-line {
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(27, 58, 143, 0.2), transparent);
+}
+.about-panel__person-divider-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--ab-orange), var(--ab-navy));
+  color: #fff;
+  font-size: 0.75rem;
+  flex-shrink: 0;
+  box-shadow: 0 4px 12px rgba(232, 119, 34, 0.3);
+}
+
 @media (max-width: 560px) {
   .about-panel__promoter-top {
     grid-template-columns: 1fr;

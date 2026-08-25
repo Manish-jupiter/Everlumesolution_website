@@ -136,7 +136,40 @@
                 </div>
               </div>
               <div class="about-panel__body">
-                @if (tab.personImage) {
+                @if (tab.people) {
+                  @for (person of tab.people; track person.name; let last = $last) {
+                    <div class="about-panel__promoter">
+                      <div class="about-panel__promoter-img-wrap">
+                        <img
+                          class="about-panel__promoter-img"
+                          [src]="person.image"
+                          [alt]="person.name"
+                        />
+                        <div class="about-panel__promoter-badge">
+                          <i class="ph ph-star-four" aria-hidden="true"></i>
+                        </div>
+                      </div>
+                      <div class="about-panel__promoter-identity">
+                        <span class="about-panel__promoter-name">{{ person.name }}</span>
+                        <span class="about-panel__promoter-role">{{ person.title }}</span>
+                      </div>
+                      <div class="about-panel__promoter-bio">
+                        @for (para of person.paragraphs; track $index) {
+                          <p>{{ para }}</p>
+                        }
+                      </div>
+                    </div>
+                    @if (!last) {
+                      <div class="about-panel__person-divider" aria-hidden="true">
+                        <span class="about-panel__person-divider-line"></span>
+                        <span class="about-panel__person-divider-icon">
+                          <i class="ph ph-diamond" aria-hidden="true"></i>
+                        </span>
+                        <span class="about-panel__person-divider-line"></span>
+                      </div>
+                    }
+                  }
+                } @else if (tab.personImage) {
                   <div class="about-panel__promoter">
                     <div class="about-panel__promoter-img-wrap">
                       <img
