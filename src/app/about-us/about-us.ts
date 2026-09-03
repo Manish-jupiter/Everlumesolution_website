@@ -59,6 +59,27 @@ export class AboutUs {
             'Sidhartha completed his graduation from Delhi University and the AMP program from IIM- Bangalore. Sidhartha is an avid reader, equally fascinated by Darśana Śāstra and western philosophy, and spends his free time oscillating from Radhakrishnan to Wittgenstein',
           ],
         },
+        {
+          name: 'Sanjeev Sethi',
+          title: 'CFO',
+          image: 'Images/SanjeevSethi.jpg',
+          paragraphs: [
+            'Sanjeev is a senior finance leader and Chartered Accountant with around 40 years of extensive experience across industry and consulting organizations. Over the course of his distinguished career, he has advised and led organizations across a broad spectrum of corporate finance, fund raising, IPOs, investor relations, financial management, accounting, audit, and direct and indirect taxation.',
+            'With deep expertise in financial strategy, corporate governance, regulatory compliance, and stakeholder management, Sanjeev brings a strong commercial perspective to business leadership. His experience in managing complex financial matters and capital-market initiatives enables him to provide strategic financial stewardship while supporting sustainable growth, operational excellence, and long-term enterprise value creation.',
+            'As CFO, Sanjeev plays a key role in strengthening the company\'s financial foundation, supporting strategic growth initiatives, and ensuring sound financial governance.',
+          ],
+        },
+        {
+          name: 'Vikram Jolly',
+          title: 'Vice President, Tech Infra',
+          image: 'Images/VikramJolly.jpg',
+          paragraphs: [
+            'Vikram Jolly is a seasoned technology leader with 25+ years of experience driving enterprise technology strategy, transformation, and operations across IT Infrastructure, Cybersecurity, Networks, Data Centers, Service Delivery, and Digital Transformation.',
+            'He brings a strong business-oriented approach to technology leadership, with a focus on building secure, resilient, scalable, and high-performing technology environments that enable business growth and operational excellence. His experience spans technology transformation, IT governance, cybersecurity, service delivery, and the development of high-performing, customer-centric teams.',
+            'An alumnus of the University of Delhi and IIM Lucknow, Vikram combines deep technology expertise with strong business and management acumen, enabling him to align technology investments with broader organizational priorities.',
+            'He is particularly passionate about Cybersecurity, AI-led transformation, Digital Infrastructure, and Enterprise Technology, and believes that sustainable technology leadership lies at the intersection of People, Process, Technology, and Business.',
+          ],
+        },
       ],
     },
     {
