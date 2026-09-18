@@ -152,7 +152,7 @@ import { Api } from '../service/api/api';
           </ul>
 
           <div class="cu-contacts" data-cu-reveal>
-            <div class="cu-contact-item">
+            <div class="cu-contact-item cu-contact-item--email">
               <div class="cu-contact-item__icon">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
               </div>
@@ -161,7 +161,24 @@ import { Api } from '../service/api/api';
                 <a href="mailto:contact@everlumesolutions.com">contact&#64;everlumesolutions.com</a>
               </div>
             </div>
+
+            <div class="cu-address-card">
+              <div class="cu-address-card__head">
+                <div class="cu-contact-item__icon cu-contact-item__icon--address">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-6-5.686-6-11a6 6 0 1 1 12 0c0 5.314-6 11-6 11Z"/><circle cx="12" cy="10" r="2.5"/></svg>
+                </div>
+                <span>Address</span>
+              </div>
+              <div class="cu-address-card__body">
            
+                <address>
+                  5th Floor, Tower D<br>
+                  Logix Cyberpark, Sector 62<br>
+                  Noida,<br>
+                  UP 201309
+                </address>
+              </div>
+            </div>
           </div>
         </aside>
 
@@ -471,13 +488,22 @@ import { Api } from '../service/api/api';
 .cu-step__num { flex-shrink: 0; width: 34px; height: 34px; border-radius: 50%; background: linear-gradient(135deg,var(--orange),var(--blue)); color: #fff; font-size: 0.75rem; font-weight: 700; display: flex; align-items: center; justify-content: center; }
 .cu-step strong { display: block; color: var(--dark); font-size: 0.96rem; margin-bottom: 0.2rem; }
 .cu-step p { margin: 0; color: var(--mid); font-size: 0.88rem; line-height: 1.5; }
-.cu-contacts { background: linear-gradient(160deg,#1B3A8F,#0c1836); border-radius: 18px; padding: 1.4rem; display: flex; flex-direction: column; gap: 1.1rem; }
-.cu-contact-item { display: flex; gap: 0.9rem; align-items: flex-start; }
-.cu-contact-item__icon { flex-shrink: 0; width: 38px; height: 38px; border-radius: 10px; background: rgba(255,255,255,0.1); display: flex; align-items: center; justify-content: center; color: var(--orange); }
-.cu-contact-item__icon svg { width: 18px; height: 18px; }
-.cu-contact-item > div > span { display: block; font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.1em; color: rgba(255,255,255,0.45); margin-bottom: 0.2rem; }
-.cu-contact-item > div a, .cu-contact-item > div p { margin: 0; color: #fff; font-size: 0.93rem; font-weight: 600; text-decoration: none; }
+.cu-contacts { background: linear-gradient(135deg,#173d8d 0%,#102d66 35%,#0b1838 100%); border-radius: 24px; padding: 1.35rem 1.35rem 1.1rem; display: flex; flex-direction: column; gap: 1rem; box-shadow: inset 0 1px 0 rgba(255,255,255,0.08), 0 26px 40px -28px rgba(5,14,32,0.95), 0 0 0 1px rgba(135,164,255,0.08); }
+.cu-contact-item { display: flex; gap: 0.9rem; align-items: flex-start; padding: 0.3rem 0.15rem; }
+.cu-contact-item--email { min-height: 52px; }
+.cu-contact-item__icon { flex-shrink: 0; width: 42px; height: 42px; border-radius: 12px; background: rgba(255,255,255,0.1); display: flex; align-items: center; justify-content: center; color: var(--orange); box-shadow: inset 0 0 0 1px rgba(255,255,255,0.08), 0 8px 18px rgba(9,22,50,0.18); }
+.cu-contact-item__icon svg { width: 19px; height: 19px; }
+.cu-contact-item__icon--address { width: 34px; height: 34px; border-radius: 10px; } 
+.cu-contact-item > div > span { display: block; font-size: 0.76rem; text-transform: uppercase; letter-spacing: 0.12em; color: rgba(255,255,255,0.58); margin-bottom: 0.38rem; }
+.cu-contact-item > div a, .cu-contact-item > div p { margin: 0; color: #fff; font-size: 1.1rem; font-weight: 700; text-decoration: none; line-height: 1.3; }
 .cu-contact-item > div a:hover { color: var(--orange); }
+.cu-address-card { background: linear-gradient(180deg, rgba(16,31,67,0.7), rgba(12,23,52,0.3)); border: 1px solid rgba(255,255,255,0.08); border-radius: 18px; padding: 0.9rem 0.95rem 0.8rem; box-shadow: inset 0 1px 0 rgba(255,255,255,0.05), 0 18px 30px -24px rgba(0,0,0,0.7); }
+.cu-address-card__head { display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.7rem; }
+.cu-address-card__head > span { display: block; font-size: 0.76rem; text-transform: uppercase; letter-spacing: 0.12em; color: rgba(255,255,255,0.58); margin: 0; }
+.cu-address-card__body { position: relative; padding-left: 0.9rem; }
+.cu-address-card__body::before { content: ''; position: absolute; inset: 0.25rem auto 0.25rem 0; width: 3px; background: linear-gradient(180deg, var(--orange), #ffb67d); border-radius: 999px; }
+.cu-address-card__body strong { display: block; color: #f7c79e; font-size: 0.7rem; letter-spacing: 0.12em; text-transform: uppercase; margin: 0 0 0.55rem 0.8rem; opacity: 0.95; }
+.cu-address-card__body address { margin: 0 0 0 0.8rem; color: #edf3ff; font-size: 1.02rem; line-height: 1.72; font-style: normal; font-weight: 500; }
 .cu-form-panel { background: #fff; border: 1px solid var(--line); border-radius: 22px; padding: 2rem 2rem 1.8rem; box-shadow: 0 24px 48px -28px rgba(18,47,113,0.35); }
 .cu-form-panel__head { border-bottom: 1px solid var(--line); padding-bottom: 1.25rem; margin-bottom: 1.4rem; }
 .cu-form-panel__head h2 { font-family: 'DM Serif Display',serif; font-size: clamp(1.55rem,2.5vw,2rem); margin: 0 0 0.4rem; color: var(--dark); }

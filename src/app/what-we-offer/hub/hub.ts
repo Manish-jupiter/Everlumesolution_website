@@ -60,10 +60,10 @@ export class WhatWeOfferHub {
       description: '24×7 application, cloud, and infrastructure operations.',
     },
     {
-      label: 'Utilities Management',
+      label: 'Property Operations',
       icon: 'ph-lightning',
       link: '/what-we-offer/utilities-management',
-      description: 'Smart utilities operations and asset intelligence.',
+      description: 'Smart property operations and asset intelligence.',
     },
   ];
 }

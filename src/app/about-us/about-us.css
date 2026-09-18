@@ -278,7 +278,7 @@
   background:
     radial-gradient(ellipse at top left, rgba(232, 119, 34, 0.05), transparent 60%),
     radial-gradient(ellipse at bottom right, rgba(27, 58, 143, 0.06), transparent 60%),
-    #fafbff;
+    #fafbff; 
 }
 .about-tabs__container {
   max-width: 1240px;

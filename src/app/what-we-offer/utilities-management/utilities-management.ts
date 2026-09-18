@@ -20,9 +20,9 @@ interface SecurityTopic {
   template: `
     <article class="um">
       <!-- ─── 1. VIDEO HERO ────────────────────────────── -->
-      <section class="um-hero" aria-label="Utilities Management">
+      <section class="um-hero" aria-label="Property Operations">
         <div class="um-hero__bg" aria-hidden="true">
-          <img class="um-hero__video" src="Images/utilities-hero.jpg" alt="Utilities Management" />
+          <img class="um-hero__video" src="Images/utilities-hero.jpg" alt="Property Operations" />
           <div class="um-hero__overlay"></div>
           <div class="um-hero__grid"></div>
         </div>
@@ -30,17 +30,18 @@ interface SecurityTopic {
         <div class="um-hero__inner">
           <span class="um-hero__eyebrow">
             <span class="um-hero__pulse"></span>
-            <span>Utilities Management</span>
+            <span>Property Operations</span>
           </span>
           <h1 class="um-hero__title">
-            Powering smarter utility<br />
+            Powering smarter property<br />
             <span class="um-hero__title-gradient">operations with Agentic AI</span>
           </h1>
           <p class="um-hero__lede">
-            Transform billing, customer service, service requests, and field
-            operations for energy, water, and gas providers — with intelligent
-            AI agents that orchestrate work across systems while keeping humans
-            in the loop for the decisions that matter.
+            Transform service requests, resident support, move-in and move-out
+            workflows, compliance checks, and operational coordination across
+            property portfolios — with intelligent AI agents that orchestrate
+            work across systems while keeping humans in the loop for the
+            decisions that matter.
           </p>
           <div class="um-hero__cta-wrap">
             <a routerLink="/contact-us" class="um-hero__cta">
@@ -61,7 +62,7 @@ interface SecurityTopic {
             </span>
             <h2 class="um-intro__title">
               Agentic AI for
-              <span class="um-intro__title-accent">Utilities Management</span>
+              <span class="um-intro__title-accent">Property Operations</span>
             </h2>
           </div>
 
@@ -69,14 +70,14 @@ interface SecurityTopic {
             <div class="um-intro__lead">
               <span class="um-intro__drop">A</span>
               <p>
-                Transform utility operations with intelligent Agentic AI solutions
-                that automate high-volume, rules-driven processes across billing,
-                customer service, service requests, and operational workflows.
-                Designed for utilities providers and service organisations, our
-                solutions reduce manual effort, improve accuracy, accelerate
-                issue resolution, and deliver more responsive customer
-                experiences — while keeping human oversight for complex or
-                sensitive decisions.
+                Transform property operations with intelligent Agentic AI solutions
+                that automate high-volume, rules-driven processes across service
+                requests, resident communications, inspections, work-order
+                coordination, and operational workflows. Designed for property
+                operators and service organisations, our solutions reduce manual
+                effort, improve accuracy, accelerate issue resolution, and
+                deliver more responsive resident experiences — while keeping
+                human oversight for complex or sensitive decisions.
               </p>
             </div>
 
@@ -303,7 +304,7 @@ interface SecurityTopic {
       }
       .um-hero__title {
         font-family: 'DM Serif Display', serif;
-        font-size: clamp(2.4rem, 5.5vw, 4.6rem);
+        font-size: clamp(2.1rem, 4.2vw, 3.8rem);
         line-height: 1.08;
         letter-spacing: -0.01em;
         margin: 0 0 1.25rem;
@@ -319,7 +320,7 @@ interface SecurityTopic {
         font-style: italic;
       }
       .um-hero__lede {
-        font-size: clamp(1rem, 1.4vw, 1.15rem);
+        font-size: clamp(0.94rem, 1.2vw, 1.08rem);
         line-height: 1.7;
         color: rgba(255,255,255,0.85);
         max-width: 640px;

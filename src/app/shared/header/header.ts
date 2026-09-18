@@ -73,7 +73,7 @@ export class Header implements OnInit, OnDestroy {
           link: '/what-we-offer/managed-services',
         },
         {
-          label: 'Utilities Management',
+          label: 'Property Operations',
           icon: 'ph-lightning',
           link: '/what-we-offer/utilities-management',
         },
