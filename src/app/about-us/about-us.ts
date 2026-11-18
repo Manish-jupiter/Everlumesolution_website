@@ -3,8 +3,8 @@ import { RouterLink } from '@angular/router';
 
 interface AboutPerson {
   name: string;
-  title: string;
-  image: string;
+  title?: string;
+  image?: string;
   paragraphs: string[];
 }
 
@@ -31,8 +31,8 @@ export class AboutUs {
 
   readonly tabs: AboutTab[] = [
     {
-      id: 'what-we-do',
-      label: 'Founder',
+      id: 'founder',
+      label: 'Founders',
       icon: 'ph-users-three',
       paragraphs: [],
       people: [
@@ -48,6 +48,24 @@ export class AboutUs {
             'Sartaj is a graduate from American River College and San Jose State University and has also completed advanced management programs from UC Berkeley. In his free time, he loves traveling and watching boxing.',
           ],
         },
+        {
+          name: 'Amrita Rekhi',
+          title: 'Director',
+          image: 'Images/Amrita.png',
+          paragraphs: [
+            'Amrita Rekhi brings a global perspective, a passion for learning, and a people-focused approach to business. Her background spans education, leadership, research, and technology-enabled environments, giving her a distinctive perspective on organizational growth and transformation.',
+            'Drawing on her diverse professional experience, Amrita brings an understanding of how organizations evolve, adapt, and navigate changing business environments. She has a strong interest in the intersection of people and technology and believes that sustainable growth is driven by innovation, adaptability, and continuous learning.',
+            'Amrita holds a Post Graduate Diploma in Management with a specialization in Marketing and a Master’s degree from the University of West Florida. She is actively engaged in research exploring technology integration and its impact on professional environments. In her free time, Amrita enjoys traveling, hiking, exploring different cultures, and spending time with her family.',
+          ],
+        },
+      ],
+    },
+    {
+      id: 'management',
+      label: 'Management Team',
+      icon: 'ph-briefcase',
+      paragraphs: [],
+      people: [
         {
           name: 'Sidhartha Dubey',
           title: 'CEO',

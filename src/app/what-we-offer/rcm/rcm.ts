@@ -28,6 +28,7 @@ import { RouterLink } from '@angular/router';
     </section>
 
     <section class="rcm-overview" id="rcm-overview">
+      
       <div class="rcm-overview__blob"></div>
       <div class="rcm-overview__dots"></div>
       <div class="rcm-overview__grid">

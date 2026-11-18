@@ -140,18 +140,24 @@
                   @for (person of tab.people; track person.name; let last = $last) {
                     <div class="about-panel__promoter">
                       <div class="about-panel__promoter-img-wrap">
-                        <img
-                          class="about-panel__promoter-img"
-                          [src]="person.image"
-                          [alt]="person.name"
-                        />
+                        @if (person.image) {
+                          <img
+                            class="about-panel__promoter-img"
+                            [src]="person.image"
+                            [alt]="person.name"
+                          />
+                        } @else {
+                          <div class="about-panel__promoter-placeholder" aria-hidden="true">AR</div>
+                        }
                         <div class="about-panel__promoter-badge">
                           <i class="ph ph-star-four" aria-hidden="true"></i>
                         </div>
                       </div>
                       <div class="about-panel__promoter-identity">
                         <span class="about-panel__promoter-name">{{ person.name }}</span>
-                        <span class="about-panel__promoter-role">{{ person.title }}</span>
+                        @if (person.title) {
+                          <span class="about-panel__promoter-role">{{ person.title }}</span>
+                        }
                       </div>
                       <div class="about-panel__promoter-bio">
                         @for (para of person.paragraphs; track $index) {

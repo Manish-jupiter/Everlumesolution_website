@@ -19,6 +19,13 @@ import { filter } from 'rxjs/operators';
 export interface NavChild {
   label: string;
   icon: string; // phosphor icon class suffix, e.g. 'ph-brain'
+  link?: string;
+  children?: NavSubChild[];
+}
+
+export interface NavSubChild {
+  label: string;
+  icon: string;
   link: string;
 }
 
@@ -61,7 +68,14 @@ export class Header implements OnInit, OnDestroy {
           icon: 'ph-database',
           link: '/what-we-offer/data-services',
         },
-        { label: 'RCM', icon: 'ph-heartbeat', link: '/what-we-offer/rcm' },
+        {
+          label: 'RCM',
+          icon: 'ph-heartbeat',
+          link: '/what-we-offer/rcm',
+          children: [
+            { label: 'Open EMR', icon: 'ph-first-aid-kit', link: '/what-we-offer/rcm/open-emr' },
+          ],
+        },
         {
           label: 'Automation Services',
           icon: 'ph-robot',
@@ -99,6 +113,9 @@ export class Header implements OnInit, OnDestroy {
   /** Which parent index (if any) has its dropdown/accordion currently open. */
   readonly openIndex = signal<number | null>(null);
 
+  /** Which nested submenu (if any) is open. */
+  readonly openSubmenu = signal<string | null>(null);
+
   /** Whether the mobile sidebar is open. */
   readonly mobileOpen = signal(false);
 
@@ -132,6 +149,7 @@ export class Header implements OnInit, OnDestroy {
       .pipe(filter((e) => e instanceof NavigationEnd))
       .subscribe(() => {
         this.openIndex.set(null);
+        this.openSubmenu.set(null);
         this.closeMobile();
         this.updateForceOpaque();
       });
@@ -150,7 +168,13 @@ export class Header implements OnInit, OnDestroy {
   // ── Desktop dropdown handlers (click-only) ─────────────────
   toggleParent(idx: number, event?: Event): void {
     event?.stopPropagation();
+    this.openSubmenu.set(null);
     this.openIndex.update((cur) => (cur === idx ? null : idx));
+  }
+
+  toggleSubmenu(label: string, event?: Event): void {
+    event?.stopPropagation();
+    this.openSubmenu.update((cur) => (cur === label ? null : label));
   }
 
   // ── Mobile sidebar ─────────────────────────────────────────
@@ -162,6 +186,7 @@ export class Header implements OnInit, OnDestroy {
   closeMobile(): void {
     this.mobileOpen.set(false);
     this.openIndex.set(null);
+    this.openSubmenu.set(null);
     this.unlockBody();
   }
 
@@ -189,6 +214,7 @@ export class Header implements OnInit, OnDestroy {
   @HostListener('document:keydown.escape')
   onEscape(): void {
     if (this.mobileOpen()) this.closeMobile();
+    else if (this.openSubmenu() !== null) this.openSubmenu.set(null);
     else this.openIndex.set(null);
   }
 
@@ -214,6 +240,7 @@ export class Header implements OnInit, OnDestroy {
   onDocumentClick(event: MouseEvent): void {
     // Ignore clicks inside this header (handled by button handlers).
     if (this.host.nativeElement.contains(event.target as Node)) return;
+    this.openSubmenu.set(null);
     if (this.openIndex() !== null) this.openIndex.set(null);
   }
 

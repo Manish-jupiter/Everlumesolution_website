@@ -6,8 +6,13 @@
    ========================================================= */
 
 .app-main {
-  /* padding-top: 88px; */
-  padding-top:75px;
+  padding-top: 85px;
+}
+
+@media (min-width: 992px) and (max-width: 1279.98px) {
+  .app-main {
+    padding-top: 71px;
+  }
 }
 
 /* Landing page keeps its hero flush under the transparent overlay. */

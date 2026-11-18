@@ -264,6 +264,36 @@ export const routes: Routes = [
         loadComponent: () => import('./rcm/rcm').then((m) => m.Rcm),
       },
       {
+        path: 'rcm/open-emr/implementation',
+        loadComponent: () =>
+          import('./rcm/open-emr/open-emr-implementation').then((m) => m.OpenEmrImplementation),
+      },
+      {
+        path: 'rcm/open-emr/customization',
+        loadComponent: () =>
+          import('./rcm/open-emr/open-emr-customization').then((m) => m.OpenEmrCustomization),
+      },
+      {
+        path: 'rcm/open-emr/system-integration',
+        loadComponent: () =>
+          import('./rcm/open-emr/open-emr-system-integration').then((m) => m.OpenEmrSystemIntegration),
+      },
+      {
+        path: 'rcm/open-emr/ai-uipath-automation',
+        loadComponent: () =>
+          import('./rcm/open-emr/open-emr-ai-uipath-automation').then((m) => m.OpenEmrAiUipathAutomation),
+      },
+      {
+        path: 'rcm/open-emr/technical-support',
+        loadComponent: () =>
+          import('./rcm/open-emr/open-emr-technical-support').then((m) => m.OpenEmrTechnicalSupport),
+      },
+      {
+        path: 'rcm/open-emr',
+        loadComponent: () =>
+          import('./rcm/open-emr/open-emr').then((m) => m.OpenEmr),
+      },
+      {
         path: 'rcm/patient-access-front-end-verification',
         loadComponent: () =>
           import('./rcm/patient-access-front-end-verification/patient-access-front-end-verification').then(

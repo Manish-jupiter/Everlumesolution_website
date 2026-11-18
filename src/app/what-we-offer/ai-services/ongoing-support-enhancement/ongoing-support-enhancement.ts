@@ -43,7 +43,7 @@ import { RouterLink } from '@angular/router';
     .dp-sub-bc{background:#142d6b;padding:.55rem 3rem;display:flex;gap:.4rem;flex-wrap:wrap;align-items:center;}
     .dp-sub-bc a,.dp-sub-bc span{color:rgba(255,255,255,.65);font-size:.8rem;text-decoration:none;font-weight:500;}
     .dp-sub-bc a:hover{color:#fff;} .dp-sub-bc .sep{color:rgba(255,255,255,.25);} .dp-sub-bc .cur{color:#E87722;font-weight:600;}
-    @media(max-width:768px){.dp-sub-bc{padding:.55rem 1rem;margin-top:58px;}}
+    @media(max-width:768px){.dp-sub-bc{padding:.55rem 1rem;}}
     .dp-sub-hdr{position:relative;padding:7rem 3rem 6rem;text-align:center;overflow:hidden;min-height:340px;display:flex;align-items:center;justify-content:center;}
     .dp-sub-hdr__bg{position:absolute;inset:0;}
     .dp-sub-hdr__bg img{width:100%;height:100%;object-fit:cover;display:block;}

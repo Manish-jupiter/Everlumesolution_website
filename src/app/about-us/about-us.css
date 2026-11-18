@@ -561,6 +561,20 @@
   background: linear-gradient(white, white) padding-box,
               linear-gradient(160deg, var(--ab-orange), var(--ab-navy)) border-box;
 }
+.about-panel__promoter-placeholder {
+  width: 200px;
+  height: 240px;
+  display: grid;
+  place-items: center;
+  border: 3px solid transparent;
+  border-radius: 16px;
+  background:
+    linear-gradient(145deg, rgba(232, 119, 34, 0.14), rgba(27, 58, 143, 0.12)) padding-box,
+    linear-gradient(160deg, var(--ab-orange), var(--ab-navy)) border-box;
+  color: var(--ab-ink);
+  font-family: 'DM Serif Display', serif;
+  font-size: 3rem;
+}
 .about-panel__promoter-badge {
   position: absolute;
   bottom: -10px;
