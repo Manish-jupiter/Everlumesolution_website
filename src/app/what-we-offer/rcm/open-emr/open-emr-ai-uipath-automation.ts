@@ -103,15 +103,22 @@ import { OpenEmrServiceLayout } from './open-emr-service-layout';
 })
 export class OpenEmrAiUipathAutomation {
   readonly automationCapabilities = [
-    'Patient registration and demographic data validation',
-    'Insurance eligibility and benefits verification workflows',
-    'Intelligent document classification and data extraction',
-    'Administrative task automation',
-    'Billing and claims-related workflow automation',
-    'Automated data entry and system updates',
-    'Notifications, task routing and follow-up management',
-    'Exception identification and human approval workflows',
-    'Automated status tracking and process monitoring',
+      'Patient Registration and Demographic Data Validation',
+      'Insurance Eligibility, Benefits, and Coverage Discovery',
+      'Denial Prevention and Automated Denial Management',
+      'Prior Authorization — Pre-Service and Retro',
+      'AR Follow-Up and Claim Status Automation',
+      'Cash Posting, ERA Reconciliation, and Underpayment Detection',
+      'Charge Capture and Coding Validation',
+      'Intelligent Document Classification and Data Extraction',
+      'Administrative Task Automation',
+      'Billing and Claims-Related Workflow Automation',
+      'Automated Data Entry and System Updates',
+      'Notifications, Task Routing, and Follow-Up Management',
+      'Exception Identification and Human Approval Workflows',
+      'Automated Status Tracking and Process Monitoring',
+
+    
   ];
 
   readonly automationApproach = [
